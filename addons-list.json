@@ -15,7 +15,7 @@
         , "nouninstall": 1
         , "thumbnail":   "/assets/img/coverart.svg"
         , "sourcecode":  "https://github.com/rern/rAudio-1"
-        , "installurl":  "https://github.com/rern/rAudio-1/raw/master/install.sh"
+        , "installurl":  "https://github.com/rern/rAudio-1/raw/main/install.sh"
         , "hide":        "[[ $( cat /srv/http/data/system/version ) == 1 ]] && echo 0 || echo 1"
     }
     , "radi": {
@@ -23,8 +23,8 @@
         , "description": "Import <code>*.pls</code> webradio files."
         , "buttonlabel": "<i class='fa fa-input'></i>Import"
         , "thumbnail":   "/assets/img/addons/thumbwebr.png"
-        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/master/webradio"
-        , "installurl":  "https://github.com/rern/rAudio-addons/raw/master/webradio/importwebradio.sh"
+        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/main/webradio"
+        , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/webradio/importwebradio.sh"
         , "option": {
               "wait":    "Copy directory with webradio files:<br><code>Webradio/*</code> > <code>/mnt/MPD</code><br>before continue."
         }
@@ -34,8 +34,8 @@
           "title":       "Import Playlists"
         , "description": "Import <code>*.m3u</code> playlists."
         , "buttonlabel": "<i class='fa fa-input'></i>Import"
-        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/master/playlist"
-        , "installurl":  "https://github.com/rern/rAudio-addons/raw/master/playlist/importplaylist.sh"
+        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/main/playlist"
+        , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/playlist/importplaylist.sh"
         , "option": {
               "wait":    "Copy playlist files to <code>/var/lib/mpd/playlists</code><br>before continue."
         }
@@ -45,8 +45,8 @@
         , "description": "Fix package download errors caused by unreachable servers.<br>Rank mirror package servers by download speed and latency."
         , "thumbnail":   "/assets/img/addons/thumbrank.png"
         , "buttonlabel": "<i class='fa fa-bars'></i>Rank"
-        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/master/rankmirrors"
-        , "installurl":  "https://github.com/rern/rAudio-addons/raw/master/rankmirrors/rankmirrors.sh"
+        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/main/rankmirrors"
+        , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/rankmirrors/rankmirrors.sh"
         , "option": {
               "select": {
                   "message": "Download test for each server:"
@@ -67,8 +67,8 @@
         , "revision":    "Initial release"
         , "description": "Download utility that supports HTTP, FTP, BitTorrent, and Metalink.<br>Pre-configured and ready to use."
         , "thumbnail":   "/assets/img/addons/thumbaria.png"
-        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/master/aria2"
-        , "installurl":  "https://github.com/rern/rAudio-addons/raw/master/aria2/install.sh"
+        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/main/aria2"
+        , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/aria2/install.sh"
     }
     , "tran": {
           "title":       "Transmission"
@@ -76,8 +76,8 @@
         , "revision":    "Initial release"
         , "description": "Fast, easy, and free BitTorrent client. Pre-configured and ready to use."
         , "thumbnail":   "/assets/img/addons/thumbtran.png"
-        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/master/transmission"
-        , "installurl":  "https://github.com/rern/rAudio-addons/raw/master/transmission/install.sh"
+        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/main/transmission"
+        , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/transmission/install.sh"
         , "option": {
               "password": {
                   "message": "Password for user <w>root</w> (blank = no password):"
