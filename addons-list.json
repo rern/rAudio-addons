@@ -1,30 +1,39 @@
 {
       "push": {
-          "bash": ""
+          "bash": "sed -i 's/rpi=1$/&;;/' /srv/http/bash/datareset.sh"
         , "url":  ""
         , "hide": 1
     }
-    , "r1": {
-          "title":       "rAudio 1"
-        , "version":     "20201212"
+    , "rre6": {
+          "title":       "RuneAudio+R e6"
+        , "version":     "20201201"
         , "revision":    [
-              "Initial release"
+              "Fix - Access point not assign IPs."
+            , "Fix - Progess status in Playlist page"
+			, "Add - Bottom bar menu in setting pages"
+            , "..."
+            , "Fix - MPD, System and Features setting"
+            , "Fix - New Wi-Fi connection"
+            , "Improve - Settings with options show default or last set values before enable."
+            , "..."
+            , "Fix - MPD option settings"
+            , "Fix - WebRadio station name changed after play"
         ]
-        , "description": "Updates for rAudio <i class='fa fa-addons'></i>"
+        , "description": "Updates for RuneAudio <i class='fa fa-addons'></i> e6"
         , "buttonlabel": "Update"
         , "nouninstall": 1
-        , "thumbnail":   "/assets/img/coverart.svg"
-        , "sourcecode":  "https://github.com/rern/rAudio-1"
-        , "installurl":  "https://github.com/rern/rAudio-1/raw/master/install.sh"
-        , "hide":        "[[ $( cat /srv/http/data/system/version ) == 1 ]] && echo 0 || echo 1"
+        , "thumbnail":   "/assets/img/cover.svg"
+        , "sourcecode":  "https://github.com/rern/RuneAudio-Re6"
+        , "installurl":  "https://github.com/rern/RuneAudio-Re6/raw/master/install.sh"
+        , "hide":        "[[ $( cat /srv/http/data/system/version ) == e6 ]] && echo 0 || echo 1"
     }
     , "radi": {
           "title":       "Import Webradio"
-        , "description": "Import webradio files with *.pls format."
+        , "description": "Import webradio files from other versions of RuneAudio."
         , "buttonlabel": "<i class='fa fa-input'></i>Import"
         , "thumbnail":   "/assets/img/addons/thumbwebr.png"
-        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/master/webradio"
-        , "installurl":  "https://github.com/rern/rAudio-addons/raw/master/webradio/importwebradio.sh"
+        , "sourcecode":  "https://github.com/rern/RuneAudio/tree/master/webradio"
+        , "installurl":  "https://github.com/rern/RuneAudio/raw/master/webradio/importwebradio.sh"
         , "option": {
               "wait":    "Copy directory with webradio files:<br><code>Webradio/*</code> > <code>/mnt/MPD</code><br>before continue."
         }
@@ -32,10 +41,10 @@
     }
     , "plsi": {
           "title":       "Import Playlists"
-        , "description": "Import playlists with *.m3u format"
+        , "description": "Import playlists from other versions of RuneAudio."
         , "buttonlabel": "<i class='fa fa-input'></i>Import"
-        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/master/playlist"
-        , "installurl":  "https://github.com/rern/rAudio-addons/raw/master/playlist/importplaylist.sh"
+        , "sourcecode":  "https://github.com/rern/RuneAudio/tree/master/playlist"
+        , "installurl":  "https://github.com/rern/RuneAudio/raw/master/playlist/importplaylist.sh"
         , "option": {
               "wait":    "Copy playlist files to <code>/var/lib/mpd/playlists</code><br>before continue."
         }
@@ -46,8 +55,8 @@
         , "description": "Fix package download errors caused by unreachable servers.<br>Rank mirror package servers by download speed and latency."
         , "thumbnail":   "/assets/img/addons/thumbrank.png"
         , "buttonlabel": "<i class='fa fa-bars'></i>Rank"
-        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/master/rankmirrors"
-        , "installurl":  "https://github.com/rern/rAudio-addons/raw/master/rankmirrors/rankmirrors.sh"
+        , "sourcecode":  "https://github.com/rern/RuneAudio/tree/master/rankmirrors"
+        , "installurl":  "https://github.com/rern/RuneAudio/raw/master/rankmirrors/rankmirrors.sh"
         , "option": {
               "select": {
                   "message": "Download test for each server:"
@@ -68,17 +77,17 @@
         , "revision":    "Initial release"
         , "description": "Download utility that supports HTTP, FTP, BitTorrent, and Metalink.<br>Pre-configured and ready to use."
         , "thumbnail":   "/assets/img/addons/thumbaria.png"
-        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/master/aria2"
-        , "installurl":  "https://github.com/rern/rAudio-addons/raw/master/aria2/install.sh"
+        , "sourcecode":  "https://github.com/rern/RuneAudio/tree/master/aria2"
+        , "installurl":  "https://github.com/rern/RuneAudio/raw/master/aria2/install.sh"
     }
     , "tran": {
           "title":       "Transmission"
         , "version":     "20190911"
-        , "revision":    "Initial release"
+        , "revision":    "Support RuneAudio+R<br>...<br>Fix bugs by reverting back to custom compiled package.<br>...<br>Update alternateive WebUI source"
         , "description": "Fast, easy, and free BitTorrent client. Pre-configured and ready to use."
         , "thumbnail":   "/assets/img/addons/thumbtran.png"
-        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/master/transmission"
-        , "installurl":  "https://github.com/rern/rAudio-addons/raw/master/transmission/install.sh"
+        , "sourcecode":  "https://github.com/rern/RuneAudio/tree/master/transmission"
+        , "installurl":  "https://github.com/rern/RuneAudio/raw/master/transmission/install.sh"
         , "option": {
               "password": {
                   "message": "Password for user <w>root</w> (blank = no password):"
