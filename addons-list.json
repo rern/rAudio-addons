@@ -1,6 +1,6 @@
 {
       "push": {
-          "bash": ""
+          "bash": "wget -qO /srv/http/assets/js/system.js https://github.com/rern/rAudio-1/raw/main/srv/http/assets/js/system.js"
         , "url":  ""
         , "hide": 1
     }
