@@ -1,12 +1,12 @@
 {
       "push": {
-          "bash": "wget -qO /srv/http/assets/js/system.js https://github.com/rern/rAudio-1/raw/main/srv/http/assets/js/system.js"
+          "bash": ""
         , "url":  ""
         , "hide": 1
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20201212"
+        , "version":     "20201213"
         , "revision":    [
               "Initial release"
         ]
