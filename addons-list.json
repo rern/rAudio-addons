@@ -6,9 +6,9 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20201213"
+        , "version":     "20201214"
         , "revision":    [
-              "Initial release"
+              "Fix - Restore"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
