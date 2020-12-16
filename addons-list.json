@@ -6,9 +6,9 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20201214"
+        , "version":     "20201215"
         , "revision":    [
-              "Fix - Restore"
+              "Fix - Restore - missing color and version"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
