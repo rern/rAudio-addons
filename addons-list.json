@@ -6,7 +6,7 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20201216"
+        , "version":     "20201217"
         , "revision":    [
               "Fix - Restore - missing color and version"
         ]
