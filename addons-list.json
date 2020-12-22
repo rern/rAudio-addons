@@ -6,10 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20201221"
+        , "version":     "20201222"
         , "revision":    [
-              "Fix - Enabling features"
-            , "Improve - Network settings"
+              "Fix - I2S setting"
+            , "Fix - Slash in CIFS share name"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
