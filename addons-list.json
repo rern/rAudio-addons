@@ -6,10 +6,9 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20201223"
+        , "version":     "20201224"
         , "revision":    [
-              "Fix - Color setting"
-            , "Fix - MPD No volume setting"
+              "Initial release"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
