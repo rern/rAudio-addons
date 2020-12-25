@@ -66,8 +66,8 @@ Simple mixer control 'xCORE USB Audio 2.0 Output',0
 Simple mixer control 'xCORE USB Audio 2.0 Output',1
 ```
 `scontents`
-- `**p**volume` - playback device
-- `**c**volume` - capture device
+- `pvolume` - playback device
+- `cvolume` - capture device
 ```
 Simple mixer control 'Mic',0
   Capabilities: cvolume cswitch
