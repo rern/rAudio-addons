@@ -40,9 +40,9 @@ control=$( amixer -c $card scontents \
 			| head -1 \
 			| cut -d"'" -f2 )
 
-amixer -c 1 set "$control" 0dB
-amixer -c 1 set "$control" 1dB-
-amixer -c 1 set "$control" 1dB+
+amixer -c 1 sset "$control" 0dB
+amixer -c 1 sset "$control" 1dB-
+amixer -c 1 sset "$control" 1dB+
 ```
 
 `scontrols`
