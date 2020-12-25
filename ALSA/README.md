@@ -40,9 +40,15 @@ control=$( amixer -c $card scontents \
 			| head -1 \
 			| cut -d"'" -f2 )
 
-amixer -c 1 sset "$control" 0dB
-amixer -c 1 sset "$control" 1dB-
-amixer -c 1 sset "$control" 1dB+
+# get % level ('-M' map to alsamixer scale)
+amixer -M -c $card sget "$control" \
+		| awk -F'[%[]' '/%/ {print $2}' \
+		| head -1
+
+amixer -c $card sset "$control" 0dB # 100%
+amixer -c $card sset "$control" 0   # mute
+amixer -c $card sset "$control" 1dB-
+amixer -c $card sset "$control" 1dB+
 ```
 
 `scontrols`
