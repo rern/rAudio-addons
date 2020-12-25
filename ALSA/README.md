@@ -25,6 +25,10 @@ amixer -c $card scontents
 ```
 
 ### `amixer`
+- `sset` / `set` - simple control (NAME)
+- `cset`         - control        (numid=N)
+- 0dB = 100% (don't use % - linear sale)
+- 1dB = logarithmic scale (1 step in alsamixer)
 ```sh
 card=$( head -1 /etc/asound.conf | tail -c 2 )
 
@@ -39,9 +43,8 @@ control=$( amixer -c $card scontents \
 			| grep pvolume \
 			| head -1 \
 			| cut -d"'" -f2 )
-# xCORE USB Audio 2.0 Output
+# >> xCORE USB Audio 2.0 Output
 
-amixer -c 1 sset "$control" 100%
 amixer -c 1 sset "$control" 0dB
 amixer -c 1 sset "$control" 1dB-
 amixer -c 1 sset "$control" 1dB+
@@ -54,12 +57,11 @@ control=$( amixer -c $card controls \
 			| grep 'Playback Volume' \
 			| head -1 \
 			| cut -d, -f1 )
-# numid=5
+# >> numid=5
 
-amixer -c 1 cset "$control" 100%
-amixer -c 1 cset "$control" 0dB
-amixer -c 1 cset "$control" 1dB-
-amixer -c 1 cset "$control" 1dB+
+amixer -c 1 cset $control 0dB
+amixer -c 1 cset $control 1dB-
+amixer -c 1 cset $control 1dB+
 ```
 
 `scontrols`
