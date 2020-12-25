@@ -30,8 +30,36 @@ card=$( head -1 /etc/asound.conf | tail -c 2 )
 
 amixer -c $card scontrols # simple list
 amixer -c $card scontents # simple details
+# get 1st simple control
+control=$( amixer -c $card scontents \
+			| grep -A1 ^Simple \
+			| sed 's/^\s*Cap.*: /^/' \
+			| tr -d '\n' \
+			| sed 's/--/\n/g' \
+			| grep pvolume \
+			| head -1 \
+			| cut -d"'" -f2 )
+# xCORE USB Audio 2.0 Output
+
+amixer -c 1 sset "$control" 100%
+amixer -c 1 sset "$control" 0dB
+amixer -c 1 sset "$control" 1dB-
+amixer -c 1 sset "$control" 1dB+
+# 'sset' or 'set'
+
 amixer -c $card controls # list
 amixer -c $card contents # details
+# get 1st control
+control=$( amixer -c $card controls \
+			| grep 'Playback Volume' \
+			| head -1 \
+			| cut -d, -f1 )
+# numid=5
+
+amixer -c 1 cset "$control" 100%
+amixer -c 1 cset "$control" 0dB
+amixer -c 1 cset "$control" 1dB-
+amixer -c 1 cset "$control" 1dB+
 ```
 
 `scontrols`
