@@ -49,6 +49,7 @@ amixer -c $card sset "$control" 0dB # 100%
 amixer -c $card sset "$control" 0   # mute
 amixer -c $card sset "$control" 1dB-
 amixer -c $card sset "$control" 1dB+
+amixer -M -c $card sset "$control" 50% # '-M' map to alsamixer scale
 ```
 
 `scontrols`
