@@ -27,8 +27,23 @@ amixer -c $card scontents
 ### `amixer`
 ```sh
 card=$( head -1 /etc/asound.conf | tail -c 2 )
-amixer -c $card scontents
+
+amixer -c $card scontrols # simple list
+amixer -c $card scontents # simple details
+amixer -c $card controls # list
+amixer -c $card contents # details
 ```
+
+`scontrols`
+```
+Simple mixer control 'Mic',0
+Simple mixer control 'Mic',1
+Simple mixer control 'xCORE USB Audio 2.0 Output',0
+Simple mixer control 'xCORE USB Audio 2.0 Output',1
+```
+`scontents`
+- `**p**volume` - playback device
+- `**c**volume` - capture device
 ```
 Simple mixer control 'Mic',0
   Capabilities: cvolume cswitch
@@ -53,4 +68,66 @@ Simple mixer control 'xCORE USB Audio 2.0 Output',1
   Playback channels: Mono
   Limits: Playback 0 - 127
   Mono: Playback 127 [100%] [0.00dB] [on]
+```
+`controls`
+```
+numid=12,iface=CARD,name='Keep Interface'
+numid=7,iface=CARD,name='XMOS Internal Clock Validity'
+numid=8,iface=MIXER,name='Mic Capture Switch'
+numid=9,iface=MIXER,name='Mic Capture Switch',index=1
+numid=10,iface=MIXER,name='Mic Capture Volume'
+numid=11,iface=MIXER,name='Mic Capture Volume',index=1
+numid=3,iface=MIXER,name='xCORE USB Audio 2.0 Output Playback Switch'
+numid=4,iface=MIXER,name='xCORE USB Audio 2.0 Output Playback Switch',index=1
+numid=5,iface=MIXER,name='xCORE USB Audio 2.0 Output Playback Volume'
+numid=6,iface=MIXER,name='xCORE USB Audio 2.0 Output Playback Volume',index=1
+numid=2,iface=PCM,name='Capture Channel Map'
+numid=1,iface=PCM,name='Playback Channel Map'
+```
+`contents`
+```
+numid=12,iface=CARD,name='Keep Interface'
+  ; type=BOOLEAN,access=rw------,values=1
+  : values=off
+numid=7,iface=CARD,name='XMOS Internal Clock Validity'
+  ; type=BOOLEAN,access=r-------,values=1
+  : values=on
+numid=8,iface=MIXER,name='Mic Capture Switch'
+  ; type=BOOLEAN,access=rw------,values=2
+  : values=on,on
+numid=9,iface=MIXER,name='Mic Capture Switch',index=1
+  ; type=BOOLEAN,access=rw------,values=1
+  : values=on
+numid=10,iface=MIXER,name='Mic Capture Volume'
+  ; type=INTEGER,access=rw---R--,values=2,min=0,max=127,step=0
+  : values=127,127
+  | dBminmax-min=-127.00dB,max=0.00dB
+numid=11,iface=MIXER,name='Mic Capture Volume',index=1
+  ; type=INTEGER,access=rw---R--,values=1,min=0,max=127,step=0
+  : values=127
+  | dBminmax-min=-127.00dB,max=0.00dB
+numid=3,iface=MIXER,name='xCORE USB Audio 2.0 Output Playback Switch'
+  ; type=BOOLEAN,access=rw------,values=2
+  : values=on,on
+numid=4,iface=MIXER,name='xCORE USB Audio 2.0 Output Playback Switch',index=1
+  ; type=BOOLEAN,access=rw------,values=1
+  : values=on
+numid=5,iface=MIXER,name='xCORE USB Audio 2.0 Output Playback Volume'
+  ; type=INTEGER,access=rw---R--,values=2,min=0,max=127,step=0
+  : values=127,127
+  | dBminmax-min=-127.00dB,max=0.00dB
+numid=6,iface=MIXER,name='xCORE USB Audio 2.0 Output Playback Volume',index=1
+  ; type=INTEGER,access=rw---R--,values=1,min=0,max=127,step=0
+  : values=127
+  | dBminmax-min=-127.00dB,max=0.00dB
+numid=2,iface=PCM,name='Capture Channel Map'
+  ; type=INTEGER,access=r----R--,values=2,min=0,max=36,step=0
+  : values=0,0
+  | container
+    | chmap-fixed=FL,FR
+numid=1,iface=PCM,name='Playback Channel Map'
+  ; type=INTEGER,access=r----R--,values=2,min=0,max=36,step=0
+  : values=3,4
+  | container
+    | chmap-fixed=FL,FR
 ```
