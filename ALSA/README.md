@@ -25,16 +25,12 @@ amixer -c $card scontents
 ```
 
 ### `amixer`
-- `sset` / `set` - simple control (NAME)
-- `cset`         - control        (numid=N)
+- `set` - simple control (NAME)
 - 0dB = 100% (don't use % - linear sale)
-- 1dB = logarithmic scale (1 step in alsamixer)
+- ±NdB - logarithmic scale (1dB = 1 step in alsamixer)
 ```sh
-card=$( head -1 /etc/asound.conf | tail -c 2 )
-
-amixer -c $card scontrols # simple list
-amixer -c $card scontents # simple details
 # get 1st simple control
+card=$( head -1 /etc/asound.conf | tail -c 2 )
 control=$( amixer -c $card scontents \
 			| grep -A1 ^Simple \
 			| sed 's/^\s*Cap.*: /^/' \
@@ -43,28 +39,17 @@ control=$( amixer -c $card scontents \
 			| grep pvolume \
 			| head -1 \
 			| cut -d"'" -f2 )
-# >> xCORE USB Audio 2.0 Output
 
-amixer -c 1 sset "$control" 0dB
-amixer -c 1 sset "$control" 1dB-
-amixer -c 1 sset "$control" 1dB+
-# 'sset' or 'set'
-
-amixer -c $card controls # list
-amixer -c $card contents # details
-# get 1st control
-control=$( amixer -c $card controls \
-			| grep 'Playback Volume' \
-			| head -1 \
-			| cut -d, -f1 )
-# >> numid=5
-
-amixer -c 1 cset $control 0dB
-amixer -c 1 cset $control 1dB-
-amixer -c 1 cset $control 1dB+
+amixer -c 1 set "$control" 0dB
+amixer -c 1 set "$control" 1dB-
+amixer -c 1 set "$control" 1dB+
 ```
 
 `scontrols`
+```sh
+amixer -c $card scontrols # simple list
+amixer -c $card scontents # simple details
+```
 ```
 Simple mixer control 'Mic',0
 Simple mixer control 'Mic',1
@@ -99,7 +84,12 @@ Simple mixer control 'xCORE USB Audio 2.0 Output',1
   Limits: Playback 0 - 127
   Mono: Playback 127 [100%] [0.00dB] [on]
 ```
+
 `controls`
+```sh
+amixer -c $card controls # list
+amixer -c $card contents # details
+```
 ```
 numid=12,iface=CARD,name='Keep Interface'
 numid=7,iface=CARD,name='XMOS Internal Clock Validity'
