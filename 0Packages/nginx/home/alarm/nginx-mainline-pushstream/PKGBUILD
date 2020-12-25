@@ -3,15 +3,17 @@
 # Contributor: Sébastien Luttringer
 # Contributor: Drew DeVault
 
+_pkgbase=nginx
+pkgbase=nginx-mainline
 pkgname=nginx-mainline-pushstream
-pkgver=1.19.1
+pkgver=1.19.6
 pushstreamver=0.5.4
-pkgrel=1
+pkgrel=2
 pkgdesc='Lightweight HTTP server and IMAP/POP3 proxy server, mainline release'
 arch=('x86_64')
 url='https://nginx.org'
 license=('custom')
-depends=('pcre' 'zlib' 'openssl' 'geoip' 'mailcap')
+depends=('pcre' 'zlib' 'openssl' 'geoip' 'mailcap' 'libxcrypt')
 backup=('etc/nginx/fastcgi.conf'
         'etc/nginx/fastcgi_params'
         'etc/nginx/koi-win'
@@ -21,8 +23,6 @@ backup=('etc/nginx/fastcgi.conf'
         'etc/nginx/uwsgi_params'
         'etc/nginx/win-utf'
         'etc/logrotate.d/nginx')
-provides=('nginx')
-conflicts=('nginx')
 source=($url/download/nginx-$pkgver.tar.gz{,.asc}
         https://github.com/wandenberg/nginx-push-stream-module/archive/$pushstreamver.tar.gz
         service
@@ -64,8 +64,12 @@ _common_flags=(
 _mainline_flags=(
 )
 
+prepare() {
+  cp -r $_pkgbase-$pkgver{,-src}
+}
+
 build() {
-  cd $provides-$pkgver
+  cd $_pkgbase-$pkgver
   ./configure \
     --prefix=/etc/nginx \
     --conf-path=/etc/nginx/nginx.conf \
@@ -89,8 +93,11 @@ build() {
   make
 }
 
-package() {
-  cd $provides-$pkgver
+package_nginx-mainline-pushstream() {
+  provides=($_pkgbase)
+  conflicts=($_pkgbase)
+
+  cd $_pkgbase-$pkgver
   make DESTDIR="$pkgdir" install
 
   sed -e 's|\<user\s\+\w\+;|user html;|g' \
@@ -112,7 +119,7 @@ package() {
 
   install -Dm644 ../logrotate "$pkgdir"/etc/logrotate.d/nginx
   install -Dm644 ../service "$pkgdir"/usr/lib/systemd/system/nginx.service
-  install -Dm644 LICENSE "$pkgdir"/usr/share/licenses/$provides/LICENSE
+  install -Dm644 LICENSE "$pkgdir"/usr/share/licenses/$_pkgbase/LICENSE
 
   rmdir "$pkgdir"/run
 
