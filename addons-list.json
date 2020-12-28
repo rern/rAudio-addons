@@ -6,7 +6,7 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20201228"
+        , "version":     "202012281"
         , "revision":    [
                 "Fix - Bugs"
               , "Improve - Volume drag latency"
