@@ -6,10 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "202012281"
+        , "version":     "20201230"
         , "revision":    [
-                "Fix - Bugs"
-              , "Improve - Volume drag latency"
+                "Fix - Setting bugs"
+              , "Fix - Software volume bug"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
