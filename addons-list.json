@@ -6,10 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20201230"
+        , "version":     "20201231"
         , "revision":    [
-                "Fix - Setting bugs"
-              , "Fix - Software volume bug"
+                "Fix - Progress ber"
+              , "Fix - Character LCD setting"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
