@@ -6,10 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20201231"
+        , "version":     "20210101"
         , "revision":    [
-                "Fix - Progress ber"
-              , "Fix - Character LCD setting"
+                "Fix - Elapsed time at the end of track"
+              , "Fix - Playlist drag"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
