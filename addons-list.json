@@ -6,7 +6,7 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210102"
+        , "version":     "202101021"
         , "revision":    [
                 "Fix - Elapsed time on small screen"
               , "Improve - Audio devices detection"
