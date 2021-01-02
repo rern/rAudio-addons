@@ -6,10 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210101"
+        , "version":     "20210102"
         , "revision":    [
-                "Fix - Elapsed time at the end of track"
-              , "Fix - Playlist drag"
+                "Fix - Elapsed time on small screen"
+              , "Improve - Audio devices detection"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
