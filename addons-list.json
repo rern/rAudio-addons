@@ -6,11 +6,12 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210105"
+        , "version":     "20210107"
         , "revision":    [
-                "Fix - Play on startup"
-              , "Improve - USB Wi-Fi/Bluetooth handling"
-              , "Improve - Status in settings"
+                "Improve - Library and Playlist available while in Renderers"
+              , "Improve - Volume control while in Renderers"
+              , "Add - Long-press volume -/+ button"
+              , "Fix - Playlist elapsed time"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
