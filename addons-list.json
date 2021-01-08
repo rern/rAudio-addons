@@ -6,12 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210107"
+        , "version":     "20210108"
         , "revision":    [
-                "Improve - Library and Playlist available while in Renderers"
-              , "Improve - Volume control while in Renderers"
-              , "Add - Long-press volume -/+ button"
-              , "Fix - Playlist elapsed time"
+                "Fix - Button colors"
+              , "Fix - Networks page with no dBm data"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
