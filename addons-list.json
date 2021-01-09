@@ -6,10 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210108"
+        , "version":     "20210109"
         , "revision":    [
-                "Fix - Button colors"
-              , "Fix - Networks page with no dBm data"
+                "Fix - Audio drop-outs on Raspberry Pi 4"
+              , "Improve - Selective track removal from Playlist"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
