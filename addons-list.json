@@ -11,6 +11,7 @@
                 "Fix - Audio drop-outs on Raspberry Pi 4"
               , "Improve - Selective track removal from Playlist"
         ]
+		, 'postinfo': "Please reboot."
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
         , "nouninstall": 1
