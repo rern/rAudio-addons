@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 453.5 226.8" style="enable-background:new 0 0 453.5 226.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FF0000;stroke-width:10;}
+	.st1{stroke:#000000;stroke-width:2;}
+	.st2{font-family:'Arial';}
+	.st3{font-size:25px;}
+	.st4{stroke:#FF0000;stroke-width:2;}
+	.st5{fill:#FF0000;}
+	.st6{stroke:#000000;}
+	.st7{stroke:#FF0000;}
+	.st8{stroke:#000000;stroke-width:6;stroke-linecap:round;}
+	.st9{font-size:20px;}
+	.st10{stroke:#000000;stroke-width:4;stroke-linecap:round;}
+	.st11{font-family:'Arial';}
+</style>
+<path class="st0" d="M297.2,93.6c38.8,7.7,76.1,21.5,110.6,40.9"/>
+<path class="st1" d="M50.9,137.4l-9.8-17.4"/>
+<text transform="matrix(0.8725 -0.4886 0.4886 0.8725 24.5046 119.6574)" class="st2 st3">20</text>
+<path class="st1" d="M106.5,112.2l-6.7-18.9"/>
+<text transform="matrix(0.9425 -0.3341 0.3341 0.9425 81.9762 91.627)" class="st2 st3">10</text>
+<path class="st1" d="M141.8,101.7l-4.7-19.4"/>
+<text transform="matrix(0.9718 -0.236 0.236 0.9718 127.3362 76.8224)" class="st2 st3">7</text>
+<path class="st1" d="M173.9,95.4L171,75.6"/>
+<text transform="matrix(0.9892 -0.1469 0.1469 0.9892 161.9977 69.5415)" class="st2 st3">5</text>
+<path class="st1" d="M214.9,91.7l-0.7-20"/>
+<text transform="matrix(0.9995 -3.302330e-02 3.302330e-02 0.9995 206.3341 63.8925)" class="st2 st3">3</text>
+<path class="st1" d="M239.3,91.7l0.7-20"/>
+<text transform="matrix(0.9994 3.480828e-02 -3.480828e-02 0.9994 232.7888 64.5391)" class="st2 st3">2</text>
+<path class="st1" d="M266.6,93.7l2.2-19.9"/>
+<text transform="matrix(0.9939 0.1107 -0.1107 0.9939 262.4214 65.278)" class="st2 st3">1</text>
+<path class="st1" d="M297,98.4l3.9-19.6"/>
+<text transform="matrix(0.9808 0.1951 -0.1951 0.9808 295.4023 69.9055)" class="st2 st3">0</text>
+<path class="st4" d="M330.5,106.8l5.8-19.2"/>
+<text transform="matrix(0.9576 0.288 -0.288 0.9576 331.783 78.4234)" class="st5 st2 st3">1</text>
+<path class="st4" d="M366.9,119.9l7.8-18.4"/>
+<text transform="matrix(0.9212 0.3892 -0.3892 0.9212 371.4169 92.0741)" class="st5 st2 st3">2</text>
+<path class="st4" d="M405.8,139.1l9.9-17.4"/>
+<text transform="matrix(0.8676 0.4972 -0.4972 0.8676 413.85 112.3508)" class="st5 st2 st3">3</text>
+<path class="st6" d="M156.9,98.3L154,83.6"/>
+<path class="st6" d="M193.2,93.1l-1.4-14.9"/>
+<path class="st6" d="M281.4,95.7l2.3-14.8"/>
+<path class="st6" d="M313.4,102.1l3.6-14.6"/>
+<path class="st7" d="M313.4,102.1l3.6-14.6"/>
+<path class="st8" d="M80.2,133.6L80.2,133.6"/>
+<text transform="matrix(0.9081 -0.4187 0.4187 0.9081 80.5531 158.6029)" class="st2 st9">20</text>
+<path class="st8" d="M131.8,114.6L131.8,114.6"/>
+<text transform="matrix(0.9625 -0.2714 0.2714 0.9625 127.7731 138.6974)" class="st2 st9">40</text>
+<path class="st8" d="M185.6,103.9L185.6,103.9"/>
+<text transform="matrix(0.9931 -0.1175 0.1175 0.9931 178.3568 126.5679)" class="st2 st9">60</text>
+<path class="st8" d="M240.5,101.8L240.5,101.8"/>
+<text transform="matrix(0.9992 3.925982e-02 -3.925982e-02 0.9992 229.0587 123.4885)" class="st2 st9">80</text>
+<path class="st8" d="M295.1,108.2L295.1,108.2"/>
+<text transform="matrix(0.9808 0.1951 -0.1951 0.9808 274.3332 125.8839)" class="st2 st9">100</text>
+<path class="st10" d="M55.8,146.1L55.8,146.1"/>
+<path class="st10" d="M105.6,123.1L105.6,123.1"/>
+<path class="st10" d="M158.5,108.2L158.5,108.2"/>
+<path class="st10" d="M213,101.8L213,101.8"/>
+<path class="st10" d="M267.9,103.9L267.9,103.9"/>
+<text transform="matrix(1 0 0 1 191.1354 188.3858)" class="st11 st3">rAudio</text>
+</svg>
