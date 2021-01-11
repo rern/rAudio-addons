@@ -10,9 +10,9 @@
 }
 #vuneedel {
 	margin: -185px 115px;
-	transform: rotate( -28.5deg);
+	transform: rotate( -28.4deg);
 	transform-origin: bottom;
-	transition-duration: 500ms;
+	transition-duration: 1500ms;
 }
 </style>
 </head>
@@ -26,23 +26,28 @@
 </div>
 <script src="/assets/js/plugin/jquery-2.2.4.min.<?=$time?>.js"></script>
 <script>
-$( document ).ready( function() {
 
-var deg = 0;
-var inc;
-var $needel = $( '#vuneedel' );
-setInterval( function() {
-	inc = Math.random() * 12;
-	deg += inc;
-	if ( deg < -28 ) {
-		deg = -28 + inc;
-	} else if ( deg > 12 ) {
-		deg = 12 - inc;
-	}
-	$needel.css( 'transform', 'rotate( '+ deg +'deg )' );
-}, 500 );
+function vu() {
+	var deg = 0;
+	var inc;
+	var $needel = $( '#vuneedel' );
+	vuInt = setInterval( function() {
+		inc = Math.random() * 40
+		deg += inc;
+		if ( deg < -28 ) {
+			deg = -28 + inc;
+		} else if ( deg > 12 ) {
+			deg = 12 - inc;
+		}
+		$needel.css( 'transform', 'rotate( '+ deg +'deg )' );
+	}, 1000 );
+}
+function vuStop() {
+	clearInterval( vuInt );
+	$( '#vuneedel' ).css( 'transform', 'rotate( -28.4deg )' );
+}
+vu();
 
-});
 </script>
 </body>
 </html>
