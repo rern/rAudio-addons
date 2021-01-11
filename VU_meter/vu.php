@@ -6,73 +6,41 @@
 #divvu {
 	width: 230px;
 	height: 230px;
-	background-color: #000000;
+	background: #000000;
+}
+#vuneedel {
+	margin: -185px 115px;
+	transform: rotate( -28.5deg);
+	transform-origin: bottom;
+	transition-duration: 500ms;
 }
 </style>
 </head>
 <body>
-<div id="divvu"><div id="vu"></div></div>
+<div id="divvu">
+	<img src="vu.svg">
+	<svg id="vuneedel" xmlns="http://www.w3.org/2000/svg" width="1px" height="180px" viewBox="0 0 1 180">
+		<defs><style>.cls-1{stroke:#000000;}</style></defs>
+		<line class="cls-1" x1="0.5" y1="180" x2="0.5"/>
+	</svg>
+</div>
 <script src="/assets/js/plugin/jquery-2.2.4.min.<?=$time?>.js"></script>
-<script src="/assets/js/plugin/highcharts.<?=$time?>.js"></script>
-<script src="/assets/js/plugin/highcharts-more.<?=$time?>.js"></script>  
 <script>
-$( document ).ready( function() { 
-	var options = {
-	  chart: {
-		  type: 'gauge'
-		, backgroundColor: 'none'
-		, plotBorderWidth: 2
-		, plotBorderColor: '#636769'
-		, plotBackgroundColor: '#ffffff'
-		, plotBackgroundImage: '/assets/img/vu.svg'
-		, height: 130
+$( document ).ready( function() {
+
+var deg = 0;
+var inc;
+var $needel = $( '#vuneedel' );
+setInterval( function() {
+	inc = Math.random() * 12;
+	deg += inc;
+	if ( deg < -28 ) {
+		deg = -28 + inc;
+	} else if ( deg > 12 ) {
+		deg = 12 - inc;
 	}
-	, pane: [
-		  {
-			  startAngle: -28.5
-			, endAngle: 28.5
-			, background: null
-			, center: [ '105px', '215px' ]
-			, size: 340
-		}
-	]
-	, yAxis: [
-		  {
-			  min: -20
-			, max: 6
-			, lineColor: 'none'
-			, minorTickColor: 'none'
-			, tickColor: 'none'
-			, labels: false
-			, pane: 0
-		}
-	]
-	, plotOptions: {
-		gauge: {
-			  dataLabels: { enabled: false }
-			, dial: {
-				  borderWidth: 1
-				, baseWidth: 1
-				, topWidth: 1
-				, radius: '107px'
-			}
-		}
-	}
-	, series: [ { data: [ -20 ], yAxis: 0 } ]
-	, tooltip: { enabled: false }
-	, credits: { enabled: false }
-	, title: { text: '' }
-}
-$( '#vu' ).highcharts( options, function ( chart ) {
-	setInterval( function () {
-		var left = chart.series[0].points[0];
-		var inc = (Math.random() - 0.5) * 8;
-		var leftVal =  left.y + inc;
-		if (leftVal < -20 || leftVal > 6) leftVal = left.y - inc;
-		left.update(leftVal, false);
-		chart.redraw();
-	}, 200 );
-} );
+	$needel.css( 'transform', 'rotate( '+ deg +'deg )' );
+}, 500 );
 
 });
 </script>
