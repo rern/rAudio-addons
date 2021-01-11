@@ -6,7 +6,7 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210111"
+        , "version":     "202101111"
         , "revision":    [
                 "Fix - USB DAC settings when on/off"
               , "Improve - Set 0dB for software volume on initial set only"
