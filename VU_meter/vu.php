@@ -6,11 +6,11 @@
 			height: 230px;
 			background: #000000;
 		}
-		#vuneedel {
+		#vuneedle {
 			margin: -185px 115px;
 			transform: rotate( -28.5deg);
 			transform-origin: bottom;
-			transition-duration: 1500ms;
+			transition-duration: 1000ms;
 		}
 	</style>
 </head>
@@ -25,30 +25,33 @@
 	<polygon class="cls-22" points="220.06 115.02 216.03 111 216.03 14 14.03 14 10 9.99 220.06 9.99 220.06 115.02"/>
 	<path d="M0,0V230H230V0ZM220,115H10V10H220Z" transform="translate(0 0)"/>
 	</svg>
-	<svg id="vuneedel" width="1px" height="180px" viewBox="0 0 1 180">
+	<svg id="vuneedle" width="1px" height="180px" viewBox="0 0 1 180">
 		<line style="stroke:#000000;" x1="0.5" y1="180" x2="0.5"/>
 	</svg>
 </div>
 <script>
 
-var needel = document.getElementById( 'vuneedel' );
-function vu() {
+var vuInt;
+var needle = document.getElementById( 'vuneedle' );
+function vu( range, ms ) {
+	var range = range || 12; // -/+
 	var deg = 0;
 	var inc;
+	clearInterval( vuInt );
 	vuInt = setInterval( function() {
-		inc = Math.random() * 24;
+		inc = Math.random() * range * 2;
 		deg += inc;
-		if ( deg < -12 ) {
-			deg = -12 + inc;
-		} else if ( deg > 12 ) {
-			deg = 12 - inc;
+		if ( deg < -range ) {
+			deg = -range + inc;
+		} else if ( deg > range ) {
+			deg = range - inc;
 		}
-		needel.style.transform = 'rotate( '+ deg +'deg )';
-	}, 1000 );
+		needle.style.transform = 'rotate( '+ deg +'deg )';
+	}, ms || 500 );
 }
 function vuStop() {
 	clearInterval( vuInt );
-	needel.style.transform = 'rotate( -28.5deg )';
+	needle.style.transform = 'rotate( -28.5deg )';
 }
 vu();
 
