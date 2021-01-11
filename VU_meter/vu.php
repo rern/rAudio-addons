@@ -20,8 +20,7 @@
 <div id="divvu">
 	<img src="vu.svg">
 	<svg id="vuneedel" xmlns="http://www.w3.org/2000/svg" width="1px" height="180px" viewBox="0 0 1 180">
-		<defs><style>.cls-1{stroke:#000000;}</style></defs>
-		<line class="cls-1" x1="0.5" y1="180" x2="0.5"/>
+		<line style="stroke:#000000;" x1="0.5" y1="180" x2="0.5"/>
 	</svg>
 </div>
 <script src="/assets/js/plugin/jquery-2.2.4.min.<?=$time?>.js"></script>
