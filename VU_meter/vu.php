@@ -36,12 +36,12 @@ function vu() {
 	var deg = 0;
 	var inc;
 	vuInt = setInterval( function() {
-		inc = Math.random() * 40
+		inc = Math.random() * 24;
 		deg += inc;
-		if ( deg < -28 ) {
-			deg = -28 + inc;
-		} else if ( deg > 11 ) {
-			deg = 11 - inc;
+		if ( deg < -12 ) {
+			deg = -12 + inc;
+		} else if ( deg > 12 ) {
+			deg = 12 - inc;
 		}
 		needel.style.transform = 'rotate( '+ deg +'deg )';
 	}, 1000 );
