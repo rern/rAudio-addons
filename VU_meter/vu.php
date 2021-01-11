@@ -10,7 +10,7 @@
 			margin: -185px 115px;
 			transform: rotate( -27.7deg);
 			transform-origin: bottom;
-			transition-duration: 1000ms;
+			transition-duration: 750ms;
 		}
 	</style>
 </head>
