@@ -6,10 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210109"
+        , "version":     "20210111"
         , "revision":    [
-                "Fix - Audio drop-outs on Raspberry Pi 4"
-              , "Improve - Selective track removal from Playlist"
+                "Fix - USB DAC settings when on/off"
+              , "Improve - Set 0dB for software volume on initial set only"
+              , "Add - Option for sampling to bluetooth receiver"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
