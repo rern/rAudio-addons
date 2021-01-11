@@ -42,7 +42,7 @@ function vuStop() {
 	clearInterval( vuInt );
 	needel.style.transform = 'rotate( -28.5deg )';
 }
-//vu();
+vu();
 
 </script>
 </body>
