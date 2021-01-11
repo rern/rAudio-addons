@@ -3,11 +3,8 @@
 	<style>
 		#divvu {
 			width: 230px;
-			height: 230px;
-			background: #000000;
 		}
 		#vuneedle {
-			margin: -185px 115px;
 			transform: rotate( -27.7deg);
 			transform-origin: bottom;
 			transition-duration: 750ms;
