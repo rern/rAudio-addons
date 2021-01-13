@@ -6,11 +6,12 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "202101111"
+        , "version":     "20210113"
         , "revision":    [
-                "Fix - USB DAC settings when on/off"
-              , "Improve - Set 0dB for software volume on initial set only"
-              , "Add - Option for sampling to bluetooth receiver"
+                "Fix - Volume mute/unmute display"
+              , "Improve - Volume control on small screen"
+              , "Change - WebRadio VU meter graphic"
+              , "Add - Option for character LCD backlight timer"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
