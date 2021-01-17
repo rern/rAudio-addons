@@ -8,7 +8,7 @@ USB Ddrive Detection Rules
 - Remove USB drive
 - `udevadm monitor --udev`
 - Plug in USB drive
-```sh
+```
 monitor will print the received events for:
 UDEV - the event which udev sends out after rule processing
 
@@ -30,14 +30,14 @@ UDEV  [251307.446161] bind     /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.2
 ```
 
 **udev.rules**
-```sh
+```
 ACTION=="add|remove", KERNEL=="block*", SUBSYSTEM=="sd*[0-9]", RUN+="/srv/http/bash/cmd.sh usbdrive"
 ACTION=="add|remove", KERNEL=="block*", SUBSYSTEM=="sd*[0-9]", RUN+="/srv/http/bash/cmd.sh usbdrive$'\n'remove"
 ```
 - from following info:
 
 - `udevadm info --path=/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.2/1-1.2:1.0/host1/target1:0:0/1:0:0:0/block/sdb/sdb1 --attribute-walk`
-```sh
+```
 Udevadm info starts with the device specified by the devpath and then
 walks up the chain of parent devices. It prints for every device
 found, all possible attributes in the udev rules key format.
