@@ -6,10 +6,13 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210115"
+        , "version":     "20210120"
         , "revision":    [
-                "Fix - Hardware volume detection"
-              , "Improve - Volume control"
+                "Fix - Hardware volume detection for some devices"
+              , "Fix - Volume bar"
+              , "Fix - Plug and play for exFAT USB drive"
+              , "Improve - Plug and play auto update Library for USB drive"
+              , "Add - Auto enable Access point when boot with no network connections."
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
