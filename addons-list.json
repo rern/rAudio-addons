@@ -6,13 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210120"
+        , "version":     "20210121"
         , "revision":    [
-                "Fix - Hardware volume detection for some devices"
-              , "Fix - Volume bar"
-              , "Fix - Plug and play for exFAT USB drive"
-              , "Improve - Plug and play auto update Library for USB drive"
-              , "Add - Auto enable Access point when boot with no network connections."
+                "Fix - Volume control for mixer devices with trailing space"
+              , "Fix - Library partial update"
+              , "Add - Support <code>/boot/startup.sh</code> and <code>/boot/shutdown.sh</code> scripts"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
