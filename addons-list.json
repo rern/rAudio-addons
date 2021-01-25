@@ -6,11 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210121"
+        , "version":     "20210125"
         , "revision":    [
-                "Fix - Volume control for mixer devices with trailing space"
-              , "Fix - Library partial update"
-              , "Add - Support <code>/boot/startup.sh</code> and <code>/boot/shutdown.sh</code> scripts"
+                "Fix - Non-file modes not list sub-directories with the same album title"
+              , "Improve - GPIO relays on-off dialog"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
