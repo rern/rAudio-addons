@@ -18,10 +18,9 @@ sed -i -e 's/\(enable-aac\)/\1 --enable-ofono --enable-debug/
 ' PKGBUILD
 
 makepkg -A
-
-# upload and update RR repo
-wget -qO - https://github.com/rern/rOS/raw/master/repoupdate.sh | sh
 ```
+[**Upload and upload and update RR repo**](https://github.com/rern/rOS/blob/main/repoupdate.md)
+
 Note: upgrade - uninstall existing then install
 
 ---

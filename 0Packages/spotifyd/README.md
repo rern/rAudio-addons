@@ -19,7 +19,5 @@ wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/spotifyd.tar.gz \
 cd spotifyd
 
 makepkg -A
-
-# upload and update RR repo
-wget https://github.com/rern/RuneOS/raw/master/repoupdate.sh -O - | sh
 ```
+[**Upload and upload and update RR repo**](https://github.com/rern/rOS/blob/main/repoupdate.md)

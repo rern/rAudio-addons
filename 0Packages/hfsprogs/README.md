@@ -13,7 +13,5 @@ wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/hfsprogs.tar.gz \
 cd hfsprogs
 
 makepkg -A
-
-# upload and update RR repo
-wget https://github.com/rern/RuneOS/raw/master/repoupdate.sh -O - | sh
 ```
+[**Upload and upload and update RR repo**](https://github.com/rern/rOS/blob/main/repoupdate.md)

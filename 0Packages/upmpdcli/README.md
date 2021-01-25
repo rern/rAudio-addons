@@ -49,7 +49,5 @@ cd upmpdcli
 sed -i 's/\(MAKEFLAGS=\).*/\1"-j1"/' /etc/makepkg.conf
 
 makepkg -A --skipinteg
-
-# upload and upload and update RR repo
-wget https://github.com/rern/RuneOS/raw/master/repoupdate.sh -O - | sh
 ```
+[**Upload and upload and update RR repo**](https://github.com/rern/rOS/blob/main/repoupdate.md)
