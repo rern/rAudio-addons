@@ -54,5 +54,5 @@ pushstreamver=$pushstreamver
 makepkg -A --skipinteg
 
 # upload and update RR repo
-wget https://github.com/rern/RuneOS/raw/master/repoupdate.sh -O - | sh
+wget -qO - https://github.com/rern/rOS/raw/main/repoupdate.sh | sh
 ```
