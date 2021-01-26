@@ -14,10 +14,7 @@ swapon /swapfile
 
 su alarm
 cd
-wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/spotifyd.tar.gz \
-    | bsdtar xf -
+wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/spotifyd.tar.gz | bsdtar xf -
 cd spotifyd
-
 makepkg -A
 ```
-[**Upload and upload and update RR repo**](https://github.com/rern/rOS/blob/main/repoupdate.md)
