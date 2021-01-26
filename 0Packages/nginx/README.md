@@ -25,7 +25,7 @@ mkdir nginx-mainline
 cd nginx-mainline
 
 # get build scripts
-for file in PKGBUILD logrotate nginx.install service; do
+for file in PKGBUILD logrotate service; do
     wget --show-progress -qO - https://github.com/archlinux/svntogit-community/raw/packages/nginx-mainline/trunk/$file
 done
 
