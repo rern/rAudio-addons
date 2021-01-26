@@ -34,9 +34,8 @@ su alarm
 cd
 wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/upmpdcli.tar.gz | bsdtar xf -
 cd upmpdcli
+makepkg -A
 
 # fix: errors on build with multicores
 #sed -i 's/\(MAKEFLAGS=\).*/\1"-j1"/' /etc/makepkg.conf
-
-makepkg -A
 ```
