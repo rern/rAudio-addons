@@ -16,7 +16,7 @@ cd gconf
 makepkg -A
 
 su
-pacman -U libmatchbox*.pkg.tar.xz
+pacman -U gconf*.pkg.tar.xz
 
 #2 - libmatchbox - depend
 su alarm
