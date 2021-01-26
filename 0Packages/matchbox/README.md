@@ -2,7 +2,7 @@
 
 ```sh
 pacman -Syu
-pacman -S --needed base-devel  dbus-glib intltool gtk-doc gobject-introspection git gnome-common
+pacman -S --needed base-devel  dbus-glib intltool gtk-doc gobject-introspection git gnome-common polkit
 
 # utilize all cpu cores
 sed -i 's/.*MAKEFLAGS=.*/MAKEFLAGS="-j'$( nproc )'"/' /etc/makepkg.conf
