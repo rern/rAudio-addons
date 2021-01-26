@@ -15,13 +15,11 @@ swapon /swapfile
 
 su alarm
 cd
-wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/snapcast.tar.gz \
-    | bsdtar xf -
+wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/snapcast.tar.gz | bsdtar xf -
 cd snapcast
-
 makepkg -A
 ```
-[**Upload and upload and update RR repo**](https://github.com/rern/rOS/blob/main/repoupdate.md)
+
 
 ### Configuration
 **mpd.conf**
