@@ -3,7 +3,7 @@
 ```sh
 pacman -Syu
 pacman -S --needed base-devel dbus-glib intltool gtk-doc gobject-introspection git gnome-common \
-    libjpeg libpng libxext polkit pango xsettings-client
+    libjpeg libpng libsm libxcursor libxext polkit pango startup-notification xsettings-client
 
 # utilize all cpu cores
 sed -i 's/.*MAKEFLAGS=.*/MAKEFLAGS="-j'$( nproc )'"/' /etc/makepkg.conf
