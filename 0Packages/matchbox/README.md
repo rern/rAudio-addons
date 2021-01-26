@@ -13,6 +13,7 @@ su alarm
 cd
 wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/gconf.tar.gz | bsdtar xf -
 cd gconf
+
 makepkg -A
 
 su
@@ -23,7 +24,9 @@ su alarm
 cd
 wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/libmatchbox.tar.gz | bsdtar xf -
 cd libmatchbox
+
 sed -i "s/ 'libjpeg>=7'//" PKGBUILD
+
 makepkg -A
 
 su
@@ -34,5 +37,6 @@ su alarm
 cd
 wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/matchbox-window-manager.tar.gz | bsdtar xvf -
 cd matchbox-window-manager
+
 makepkg -A
 ```
