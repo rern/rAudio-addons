@@ -2,7 +2,7 @@
 Source: [Snapcast](https://github.com/badaix/snapcast)
 ```sh
 pacman -Syu
-pacman -S --needed base-devel boost cmake
+pacman -S --needed alsa-utils base-devel boost cmake
 
 # utilize all cpu cores
 sed -i 's/.*MAKEFLAGS=.*/MAKEFLAGS="-j'$( nproc )'"/' /etc/makepkg.conf
