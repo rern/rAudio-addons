@@ -11,13 +11,10 @@ sed -i 's/.*MAKEFLAGS=.*/MAKEFLAGS="-j'$( nproc )'"/' /etc/makepkg.conf
 # libnpupnp - depend 1
 su alarm
 cd
-wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/libnpupnp.tar.gz \
-    | bsdtar xf -
+wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/libnpupnp.tar.gz | bsdtar xf -
 cd libnpupnp
+makepkg -A
 
-# get version from: https://www.lesbonscomptes.com/upmpdcli/downloads/
-
-makepkg -A --skipinteg
 
 su
 pacman -U libnpupnp*.pkg.tar.xz
@@ -25,13 +22,9 @@ pacman -U libnpupnp*.pkg.tar.xz
 # libupnpp - depend 2
 su alarm
 cd
-wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/libupnpp.tar.gz \
-    | bsdtar xf -
+wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/libupnpp.tar.gz | bsdtar xf -
 cd libupnpp
-
-# get version from: https://www.lesbonscomptes.com/upmpdcli/downloads/
-
-makepkg -A --skipinteg
+makepkg -A
 
 su
 pacman -U libupnpp*.pkg.tar.xz
@@ -39,15 +32,11 @@ pacman -U libupnpp*.pkg.tar.xz
 # upmpdcli
 su alarm
 cd
-wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/upmpdcli.tar.gz \
-    | bsdtar xf -
+wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/upmpdcli.tar.gz | bsdtar xf -
 cd upmpdcli
 
-# get version from: https://www.lesbonscomptes.com/upmpdcli/downloads/
-
 # fix: errors on build with multicores
-sed -i 's/\(MAKEFLAGS=\).*/\1"-j1"/' /etc/makepkg.conf
+#sed -i 's/\(MAKEFLAGS=\).*/\1"-j1"/' /etc/makepkg.conf
 
-makepkg -A --skipinteg
+makepkg -A
 ```
-[**Upload and upload and update RR repo**](https://github.com/rern/rOS/blob/main/repoupdate.md)
