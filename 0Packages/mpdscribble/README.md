@@ -2,7 +2,7 @@
 Source: [mpdscribble](https://github.com/MusicPlayerDaemon/mpdscribble)
 ```sh
 pacman -Syu
-pacman -S --needed base-devel libsoup
+pacman -S --needed base-devel boost libsoup meson ninja
 
 # utilize all cpu cores
 sed -i 's/.*MAKEFLAGS=.*/MAKEFLAGS="-j'$( nproc )'"/' /etc/makepkg.conf
@@ -15,7 +15,7 @@ cd mpdscribble
 
 makepkg -A
 ```
-[**Upload and upload and update RR repo**](https://github.com/rern/rOS/blob/main/repoupdate.md)
+
 
 ### Configue
 ```sh
