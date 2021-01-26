@@ -2,7 +2,7 @@
 Source: [hfsprogs](https://github.com/muflone/pkgbuilds/tree/master/hfsprogs)
 ```sh
 pacman -Syu
-pacman -S --needed base-devel
+pacman -S --needed base-devel libbsd
 # utilize all cpu cores
 sed -i 's/.*MAKEFLAGS=.*/MAKEFLAGS="-j'$( nproc )'"/' /etc/makepkg.conf
 
@@ -14,4 +14,3 @@ cd hfsprogs
 
 makepkg -A
 ```
-[**Upload and upload and update RR repo**](https://github.com/rern/rOS/blob/main/repoupdate.md)
