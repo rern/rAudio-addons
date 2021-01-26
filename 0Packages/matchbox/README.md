@@ -35,4 +35,3 @@ wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/matchbox-window-manage
 cd matchbox-window-manager
 makepkg -A
 ```
-[**Upload and upload and update RR repo**](https://github.com/rern/rOS/blob/main/repoupdate.md)
