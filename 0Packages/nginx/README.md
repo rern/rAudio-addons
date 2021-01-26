@@ -26,7 +26,7 @@ cd nginx-mainline
 
 # get build scripts
 for file in PKGBUILD logrotate service; do
-    wget --show-progress -qO - https://github.com/archlinux/svntogit-community/raw/packages/nginx-mainline/trunk/$file
+    wget --show-progress https://github.com/archlinux/svntogit-community/raw/packages/nginx-mainline/trunk/$file
 done
 
 # customize
