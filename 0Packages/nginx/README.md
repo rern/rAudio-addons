@@ -21,31 +21,23 @@ swapon /swapfile
 
 su alarm
 cd
-mkdir nginx-mainline-pushstream
-cd nginx-mainline-pushstream
+mkdir nginx-mainline
+cd nginx-mainline
 
 # get build scripts
-getScripts() {
-    for file in PKGBUILD logrotate service; do
-        wget --show-progress -qO - https://archlinuxarm.org/packages/armv7h/nginx-mainline/files/$file \
-            | sed -n '/<pre>/,/<\/pre>/ p' \
-            | sed 's/.*<pre><code>\|<\/code><\/pre>//g; s/&amp;/\&/g; s/&lt;/\</g; s/&gt;/\>/g; s/&quot;/\"/g' > $file
-    done
-}
-getScripts
+for file in PKGBUILD logrotate nginx.install service; do
+    wget --show-progress -qO - https://github.com/archlinux/svntogit-community/raw/packages/nginx-mainline/trunk/$file
+done
 
 # customize
 pushstreamver=$( curl -s https://api.github.com/repos/wandenberg/nginx-push-stream-module/tags | grep -m 1 '"name":' | cut -d\" -f4 )
-sed -i -e 's/\(pkgname=.*\)/\1-pushstream/
-' -e "/^pkgver/ a\
+sed -i -e "/^pkgver/ a\
 pushstreamver=$pushstreamver
 " -e '/^install/ d
 ' -e '/^source/ a\
         https://github.com/wandenberg/nginx-push-stream-module/archive/$pushstreamver.tar.gz
-' -e '/md5sums/,/)/ d
-' -e '/sha512sums/,/)/ d
 ' -e '/--with-threads/ a\
-  --add-module=/home/alarm/nginx-mainline-pushstream/src/nginx-push-stream-module-$pushstreamver
+  --add-module=/home/alarm/nginx-mainline/src/nginx-push-stream-module-$pushstreamver
 ' PKGBUILD
 
 # set integrity
@@ -53,4 +45,3 @@ pushstreamver=$pushstreamver
 
 makepkg -A --skipinteg
 ```
-[**Upload and upload and update RR repo**](https://github.com/rern/rOS/blob/main/repoupdate.md)
