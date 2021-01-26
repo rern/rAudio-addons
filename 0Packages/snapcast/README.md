@@ -2,7 +2,7 @@
 Source: [Snapcast](https://github.com/badaix/snapcast)
 ```sh
 pacman -Syu
-pacman -S --needed alsa-utils base-devel boost cmake
+pacman -S --needed alsa-utils base-devel boost cmake git
 
 # utilize all cpu cores
 sed -i 's/.*MAKEFLAGS=.*/MAKEFLAGS="-j'$( nproc )'"/' /etc/makepkg.conf
@@ -15,6 +15,11 @@ swapon /swapfile
 
 su alarm
 cd
+
+#git clone https://github.com/badaix/snapcast.git
+#cd snapcast/externals
+#git submodule update --init --recursive
+
 wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/snapcast.tar.gz | bsdtar xf -
 cd snapcast
 makepkg -A
