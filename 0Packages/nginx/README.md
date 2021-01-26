@@ -21,8 +21,8 @@ swapon /swapfile
 
 su alarm
 cd
-mkdir nginx-mainline
-cd nginx-mainline
+mkdir nginx
+cd nginx
 
 # get build scripts
 for file in PKGBUILD logrotate service; do
@@ -37,7 +37,7 @@ pushstreamver=$pushstreamver
 ' -e '/^source/ a\
         https://github.com/wandenberg/nginx-push-stream-module/archive/$pushstreamver.tar.gz
 ' -e '/--with-threads/ a\
-  --add-module=/home/alarm/nginx-mainline/src/nginx-push-stream-module-$pushstreamver
+  --add-module=/home/alarm/nginx/src/nginx-push-stream-module-$pushstreamver
 ' PKGBUILD
 
 # set integrity
