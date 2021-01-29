@@ -5,7 +5,7 @@
 pkgbase=spotifyd
 pkgname=('spotifyd' 'spotifyd-pulseaudio' 'spotifyd-dbus-mpris' 'spotifyd-full')
 pkgver=0.2.24
-pkgrel=1
+pkgrel=3
 arch=('x86_64' 'armv6h' 'armv7h' 'aarch64')
 license=('GPL3')
 depends=('alsa-lib' 'libogg' 'gcc-libs')
