@@ -4,6 +4,10 @@ Source: [Spotifyd](https://github.com/Spotifyd/spotifyd)
 pacman -Syu
 pacman -S --needed base-devel cargo
 
+# spotifyd 0.2.24 needs rust 1.47 (otherwise runtime error: librespot_tremor::tremor_sys::ov_callbacks)
+# link: http://tardis.tiny-vps.com/aarm/packages/r/rust/
+pacman -U rust*
+
 # utilize all cpu cores - already utilized
 
 # RPi Zero, 1 - setup swap file
