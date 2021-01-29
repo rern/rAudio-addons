@@ -6,10 +6,9 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210128"
+        , "version":     "20210129"
         , "revision":    [
-                "Fix - Spotifyd bug"
-              , "Improve - Minor issues"
+                "Fix - Minor issues"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
