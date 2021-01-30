@@ -3,5 +3,5 @@ On  Windows
 - Manage advanced sharing settings > All Networks - Turn off password protection sharing
 - Share `Git` - read-write for Everyone
 ```sh
-bash <( wget -qO - https://github.com/rern/rOS/raw/main/repoupdate.sh )
+bash <( wget -qO - https://github.com/rern/rAudio-addons/raw/main/0Packages/repoupdate.sh )
 ```
