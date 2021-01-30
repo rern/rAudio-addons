@@ -31,9 +31,11 @@ done
 
 # customize
 pushstreamver=$( curl -s https://api.github.com/repos/wandenberg/nginx-push-stream-module/tags | grep -m 1 '"name":' | cut -d\" -f4 )
-sed -i -e "/^pkgver/ a\
+sed -i -e 's/^\(pkgname=\).*/\1nginx-mainline-pushstream/
+' -e "/^pkgver/ a\
 pushstreamver=$pushstreamver
-" -e '/^install/ d
+" -e 's/\(package_nginx-mainline\)()/\1-pushstream()/
+' -e '/^install/ d
 ' -e '/^source/ a\
         https://github.com/wandenberg/nginx-push-stream-module/archive/$pushstreamver.tar.gz
 ' -e '/--with-threads/ a\
