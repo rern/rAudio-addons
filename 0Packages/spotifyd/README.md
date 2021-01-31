@@ -4,8 +4,8 @@ Source: [Spotifyd](https://github.com/Spotifyd/spotifyd)
 pacman -Syu
 pacman -S --needed base-devel cargo
 
-# spotifyd 0.2.24 needs rust 1.47 (otherwise runtime error: librespot_tremor::tremor_sys::ov_callbacks)
-# link: http://tardis.tiny-vps.com/aarm/packages/r/rust/
+# needs rust 1.47 (otherwise runtime error: librespot_tremor::tremor_sys::ov_callbacks)
+wget http://tardis.tiny-vps.com/aarm/packages/r/rust/rust-1%3A1.47.0-4-aarch64.pkg.tar.xz
 pacman -U rust*
 
 # utilize all cpu cores - already utilized
@@ -20,5 +20,7 @@ su alarm
 cd
 wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/spotifyd.tar.gz | bsdtar xf -
 cd spotifyd
+sed -i 's/rustup/rust/' PKGBUILD
+
 makepkg -A
 ```
