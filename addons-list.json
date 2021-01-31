@@ -6,9 +6,9 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210129"
+        , "version":     "20210131"
         , "revision":    [
-                "Fix - Minor issues"
+                "Fix - USB hotplug - auto update Library"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
