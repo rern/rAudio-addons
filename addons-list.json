@@ -8,7 +8,7 @@
           "title":       "rAudio 1"
         , "version":     "20210204"
         , "revision":    [
-                "Fix - Minor bugs"
+                "Fix - Browser on RPi setting"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
