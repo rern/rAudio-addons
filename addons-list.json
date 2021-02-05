@@ -6,7 +6,7 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210205"
+        , "version":     "202102051"
         , "revision":    [
               "Fix - GPIO relays bug"
             , "Change - Limit enabled MPD audio output to a single device."
