@@ -8,7 +8,8 @@
           "title":       "rAudio 1"
         , "version":     "20210205"
         , "revision":    [
-                "Fix - GPIO relays bug"
+              "Fix - GPIO relays bug"
+            , "Change - Limit enabled MPD audio output to a single device."
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
