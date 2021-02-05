@@ -6,9 +6,9 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210204"
+        , "version":     "20210205"
         , "revision":    [
-                "Fix - Browser on RPi setting"
+                "Fix - GPIO relays bug"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
