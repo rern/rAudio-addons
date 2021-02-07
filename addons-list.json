@@ -6,10 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "202102051"
+        , "version":     "20210207"
         , "revision":    [
-              "Fix - GPIO relays bug"
-            , "Change - Limit enabled MPD audio output to a single device."
+              "Fix - MPD audio output selection not available"
+            , "Improve - Power on/off button"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
