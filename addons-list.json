@@ -8,7 +8,7 @@
           "title":       "rAudio 1"
         , "version":     "20210209"
         , "revision":    [
-              "Fix - MPD software volume"
+              "Fix - MPD software volume for audio devices with no mixers"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
