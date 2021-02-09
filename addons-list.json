@@ -6,10 +6,9 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210207"
+        , "version":     "20210209"
         , "revision":    [
-              "Fix - MPD audio output selection not available"
-            , "Improve - Power on/off button"
+              "Fix - MPD software volume"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
