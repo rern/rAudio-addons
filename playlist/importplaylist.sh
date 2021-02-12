@@ -16,7 +16,7 @@ fi
 
 title -l '=' "$bar Playlist Import ..."
 
-(( mpc playlist | wc -l > 0 )) && php /srv/http/mpdplaylist.php save _importtemp || mpc -q clear
+(( $( mpc playlist | wc -l ) > 0 )) && php /srv/http/mpdplaylist.php save _importtemp || mpc -q clear
 
 readarray -t files <<<"$files"
 for file in "${files[@]}"; do
