@@ -6,9 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210209"
+        , "version":     "20210212"
         , "revision":    [
-              "Fix - MPD software volume for audio devices with no mixers"
+              "Fix - Saved Playlists bug"
+            , "Fix - Lyrics on attached display"
+            , "Improve - Import playlists"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
