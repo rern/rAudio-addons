@@ -9,7 +9,7 @@
         , "version":     "20210212"
         , "revision":    [
               "Fix - Saved Playlists bug"
-            , "Fix - Lyrics on attached display"
+            , "Fix - Lyrics on connected display"
             , "Improve - Import playlists"
         ]
         , "description": "Updates for rAudio 1"
