@@ -30,7 +30,7 @@ for file in "${files[@]}"; do
 done
 
 if [[ -e /srv/http/data/playlists/_existing ]]; then
-	mpc clear
+	mpc -q clear
 	php /srv/http/mpdplaylist.php load _existing
 	rm /srv/http/data/playlists/_existing
 fi
