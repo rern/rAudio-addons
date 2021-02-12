@@ -6,10 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210212"
+        , "version":     "202102121"
         , "revision":    [
               "Fix - Saved Playlists bug"
             , "Fix - Lyrics on connected display"
+            , "Fix - Library home title"
             , "Improve - Import playlists"
         ]
         , "description": "Updates for rAudio 1"
