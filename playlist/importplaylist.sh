@@ -22,10 +22,7 @@ mpc -q clear
 readarray -t files <<<"$files"
 for file in "${files[@]}"; do
 	name=$( basename "$file" .m3u )
-	if [[ -e "/srv/http/data/playlists/$name" ]]; then
-		echo -e "$info Skip: $name exists"
-		continue
-	fi
+	[[ -e "/srv/http/data/playlists/$name" ]] && name="$name_1"
 	
 	echo $name
 	sed 's|\\|/|g' "$file" | mpc add
