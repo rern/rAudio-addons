@@ -16,12 +16,13 @@ fi
 
 title -l '=' "$bar Playlist Import ..."
 
-(( $( mpc playlist | wc -l ) > 0 )) && php /srv/http/mpdplaylist.php save _importtemp || mpc -q clear
+(( $( mpc playlist | wc -l ) > 0 )) && php /srv/http/mpdplaylist.php save _importtemp
+mpc -q clear
 
 readarray -t files <<<"$files"
 for file in "${files[@]}"; do
 	name=$( basename "$file" .m3u )
-	[[ -e "/srv/http/data/playlists/$name" ]] && name+=_imported
+	[[ -e "/srv/http/data/playlists/$name" ]] && name="$name_imported"
 	echo $name
 	sed 's|\\|/|g' "$file" | mpc add
 	php /srv/http/mpdplaylist.php save "$name"
