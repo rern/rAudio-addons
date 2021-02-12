@@ -20,7 +20,7 @@ cd
 #cd snapcast/externals
 #git submodule update --init --recursive
 
-wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/snapcast.tar.gz | bsdtar xf -
+curl -s https://aur.archlinux.org/cgit/aur.git/snapshot/snapcast.tar.gz | bsdtar xf -
 cd snapcast
 makepkg -A
 ```
