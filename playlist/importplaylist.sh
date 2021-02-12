@@ -16,7 +16,7 @@ fi
 
 title -l '=' "$bar Playlist Import ..."
 
-mpc -q clear
+(( mpc playlist | wc -l > 0 )) && php /srv/http/mpdplaylist.php save _importtemp || mpc -q clear
 
 readarray -t files <<<"$files"
 for file in "${files[@]}"; do
@@ -29,6 +29,12 @@ for file in "${files[@]}"; do
 	echo $name
 	sed 's|\\|/|g' "$file" | mpc add
 	php /srv/http/mpdplaylist.php save "$name"
+	mpc -q clear
 done
+
+if [[ -e /srv/http/data/playlists/_importtemp ]]; then
+	/srv/http/mpdplaylist.php load _importtemp
+	rm /srv/http/data/playlists/_importtemp
+fi
 
 installfinish
