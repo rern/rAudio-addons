@@ -53,7 +53,7 @@ pacman -S --needed  base-devel chromaprint extra-cmake-modules id3lib libmp4v2 n
 
 su alarm
 cd
-curl -s https://aur.archlinux.org/cgit/aur.git/snapshot/kid3-cli.tar.gz | bsdtar xf -
+curl -L https://aur.archlinux.org/cgit/aur.git/snapshot/kid3-cli.tar.gz | bsdtar xf -
 cd kid3-cli
 makepkg -A
 ```

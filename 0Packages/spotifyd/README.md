@@ -18,7 +18,7 @@ swapon /swapfile
 
 su alarm
 cd
-curl -s https://aur.archlinux.org/cgit/aur.git/snapshot/spotifyd.tar.gz | bsdtar xf -
+curl -L https://aur.archlinux.org/cgit/aur.git/snapshot/spotifyd.tar.gz | bsdtar xf -
 cd spotifyd
 sed -i 's/rustup/rust/' PKGBUILD
 

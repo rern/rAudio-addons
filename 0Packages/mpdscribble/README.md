@@ -9,7 +9,7 @@ sed -i 's/.*MAKEFLAGS=.*/MAKEFLAGS="-j'$( nproc )'"/' /etc/makepkg.conf
 
 su alarm
 cd
-curl -s https://aur.archlinux.org/cgit/aur.git/snapshot/mpdscribble.tar.gz | bsdtar xf -
+curl -L https://aur.archlinux.org/cgit/aur.git/snapshot/mpdscribble.tar.gz | bsdtar xf -
 cd mpdscribble
 makepkg -A
 ```

@@ -10,7 +10,7 @@ sed -i 's/.*MAKEFLAGS=.*/MAKEFLAGS="-j'$( nproc )'"/' /etc/makepkg.conf
 
 su alarm
 cd
-curl -s https://aur.archlinux.org/cgit/aur.git/snapshot/bluez-alsa-git.tar.gz | bsdtar xf -
+curl -L https://aur.archlinux.org/cgit/aur.git/snapshot/bluez-alsa-git.tar.gz | bsdtar xf -
 cd bluez-alsa-git
 
 sed -i -e 's/\(enable-aac\)/\1 --enable-ofono --enable-debug/
