@@ -22,7 +22,7 @@ mpc -q clear
 readarray -t files <<<"$files"
 for file in "${files[@]}"; do
 	name=$( basename "$file" .m3u )
-	[[ -e "/srv/http/data/playlists/$name" ]] && name="$name_1"
+	[[ -e "/srv/http/data/playlists/$name" ]] && name="${name}_1"
 	
 	echo $name
 	sed 's|\\|/|g' "$file" | mpc add
