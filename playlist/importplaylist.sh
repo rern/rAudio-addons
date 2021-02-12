@@ -32,7 +32,7 @@ for file in "${files[@]}"; do
 	php /srv/http/mpdplaylist.php save "$name"
 done
 
-fi [[ -e /srv/http/data/playlists/_existing ]]; then
+if [[ -e /srv/http/data/playlists/_existing ]]; then
 	mpc clear
 	php /srv/http/mpdplaylist.php load _existing
 	rm /srv/http/data/playlists/_existing
