@@ -26,7 +26,7 @@
         , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/main/webradio"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/webradio/importwebradio.sh"
         , "option": {
-              "wait":    "Copy directory with webradio files:<br><code>Webradio/*</code> > <code>/mnt/MPD</code><br>before continue."
+              "wait":    "Copy directory with webradio files:<br><br><code>Webradio/*</code> > <code>/mnt/MPD</code>"
         }
         , "postinfo":    "Directory <code>/mnt/MPD/Webradio</code> can be deleted."
     }
@@ -37,7 +37,7 @@
         , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/main/playlist"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/playlist/importplaylist.sh"
         , "option": {
-              "wait":    "Copy playlist files to <code>/var/lib/mpd/playlists</code><br>before continue."
+              "wait":    "Copy playlist files to:<br><br><code>/var/lib/mpd/playlists</code>"
         }
     }
     , "rank": {
