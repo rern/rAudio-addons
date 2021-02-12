@@ -2,7 +2,7 @@
 
 alias=plsi
 
-[[ -e /srv/http/bash/addons.sh ]] && . /srv/http/bash/addons.sh || . /srv/http/bash/addons-functions.sh
+. /srv/http/bash/addons.sh
 
 installstart $@
 
@@ -16,6 +16,7 @@ fi
 
 title -l '=' "$bar Playlist Import ..."
 
+(( $( mpc playlist | wc -l ) > 0 )) && php /srv/http/mpdplaylist.php save _existing
 mpc -q clear
 
 readarray -t files <<<"$files"
@@ -30,5 +31,11 @@ for file in "${files[@]}"; do
 	sed 's|\\|/|g' "$file" | mpc add
 	php /srv/http/mpdplaylist.php save "$name"
 done
+
+fi [[ -e /srv/http/data/playlists/_existing ]]; then
+	mpc clear
+	php /srv/http/mpdplaylist.php load _existing
+	rm /srv/http/data/playlists/_existing
+fi
 
 installfinish
