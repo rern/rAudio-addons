@@ -34,7 +34,7 @@ pacman -U libmatchbox*.pkg.tar.xz
 #3 - matchbox-window-manager
 su alarm
 cd
-wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/matchbox-window-manager.tar.gz | bsdtar xvf -
+curl -s https://aur.archlinux.org/cgit/aur.git/snapshot/matchbox-window-manager.tar.gz | bsdtar xvf -
 cd matchbox-window-manager
 makepkg -A
 ```
