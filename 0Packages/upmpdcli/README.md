@@ -11,7 +11,7 @@ sed -i 's/.*MAKEFLAGS=.*/MAKEFLAGS="-j'$( nproc )'"/' /etc/makepkg.conf
 # libnpupnp - depend 1
 su alarm
 cd
-wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/libnpupnp.tar.gz | bsdtar xf -
+curl -s https://aur.archlinux.org/cgit/aur.git/snapshot/libnpupnp.tar.gz | bsdtar xf -
 cd libnpupnp
 makepkg -A
 
@@ -22,7 +22,7 @@ pacman -U libnpupnp*.pkg.tar.xz
 # libupnpp - depend 2
 su alarm
 cd
-wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/libupnpp.tar.gz | bsdtar xf -
+curl -s https://aur.archlinux.org/cgit/aur.git/snapshot/libupnpp.tar.gz | bsdtar xf -
 cd libupnpp
 makepkg -A
 
@@ -32,7 +32,7 @@ pacman -U libupnpp*.pkg.tar.xz
 # upmpdcli
 su alarm
 cd
-wget -qO- https://aur.archlinux.org/cgit/aur.git/snapshot/upmpdcli.tar.gz | bsdtar xf -
+curl -s https://aur.archlinux.org/cgit/aur.git/snapshot/upmpdcli.tar.gz | bsdtar xf -
 cd upmpdcli
 makepkg -A
 
