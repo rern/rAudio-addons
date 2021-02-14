@@ -24,7 +24,6 @@ for file in "${files[@]}"; do
 	name=$( basename "$file" .m3u )
 	[[ -e "/srv/http/data/playlists/$name" ]] && name="${name}_1"
 	
-	echo $name
 	sed -i 's|\\|/|g' "$file"
 	mpc load "$name"
 	php /srv/http/mpdplaylist.php save "$name"
