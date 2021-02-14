@@ -25,7 +25,8 @@ for file in "${files[@]}"; do
 	[[ -e "/srv/http/data/playlists/$name" ]] && name="${name}_1"
 	
 	echo $name
-	sed 's|\\|/|g' "$file" | mpc add
+	sed -i 's|\\|/|g' "$file"
+	mpc load "$name"
 	php /srv/http/mpdplaylist.php save "$name"
 done
 
