@@ -9,3 +9,4 @@ Title1=Pretty Name
 ```
 
 If `Title` is defined inside the `.pls` file that value will be used, else we fall back to `filename`
+

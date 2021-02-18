@@ -21,10 +21,11 @@ for file in "${files[@]}"; do
 	name=$( basename "$file" .pls )
 	url=$( grep '^File' "$file" | cut -d '=' -f2- )
 	title=$( grep '^Title' "$file" | cut -d '=' -f2-)
-	printf "%-30s : $url\n" "$title ($name)"
-	if [! -z $title ]; then
-		echo $title> /srv/http/data/webradios/${url//\//|}
+	if [ ! -z "$title" ]; then
+		printf "%-30s : $url\n" "$title"
+		echo $title > /srv/http/data/webradios/${url//\//|}
 	else
+		printf "%-30s : $url\n" "$name"
 		echo $name > /srv/http/data/webradios/${url//\//|}
 	fi
 done
