@@ -20,8 +20,13 @@ readarray -t files <<<"$files"
 for file in "${files[@]}"; do
 	name=$( basename "$file" .pls )
 	url=$( grep '^File' "$file" | cut -d '=' -f2- )
-	printf "%-30s : $url\n" "$name"
-	echo $name > /srv/http/data/webradios/${url//\//|}
+	title=$( grep '^Title' "$file" | cut -d '=' -f2-)
+	printf "%-30s : $url\n" "$title ($name)"
+	if [! -z $title ]; then
+		echo $title> /srv/http/data/webradios/${url//\//|}
+	else
+		echo $name > /srv/http/data/webradios/${url//\//|}
+	fi
 done
 count=$( ls -1q /srv/http/data/webradios | wc -l )
 sed -i 's/\("webradio": \).*/\1'$count'/' /srv/http/data/mpd/counts
