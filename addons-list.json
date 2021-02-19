@@ -6,9 +6,9 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210217"
+        , "version":     "20210219"
         , "revision":    [
-              "Fix - Browse by modes bug"
+              "Fix - Snapcast"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
