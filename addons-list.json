@@ -6,7 +6,7 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210219"
+        , "version":     "202102191"
         , "revision":    [
               "Fix - Snapcast"
         ]
