@@ -22,7 +22,7 @@
           "title":       "MPD OLED Display"
         , "version":     "20210220"
         , "revision":    "Initial release"
-        , "description": "Display information including music frequency spectrum on OLED screen connected to Raspberry Pi."
+        , "description": "Display information including music frequency spectrum on OLED screen connected to Raspberry Pi.<br><a href='https://gist.github.com/antiprism/44100b6c2b688f5d15a5c25172793f4b' target='_blank'>Configuration >></a>"
         , "sourcecode":  "https://github.com/antiprism/mpd_oled"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/mpd_oled/install.sh"
         , "option": {
@@ -31,7 +31,7 @@
                 , "list":    { "I²C": "i2c", "SPI": "spi" }
             }
         }
-		, "hide":        1
+		, "hide" : 1
     }
     , "radi": {
           "title":       "Import Webradio"
