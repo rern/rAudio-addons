@@ -18,6 +18,21 @@
         , "installurl":  "https://github.com/rern/rAudio-1/raw/main/install.sh"
         , "hide":        "[[ $( cat /srv/http/data/system/version ) == 1 ]] && echo 0 || echo 1"
     }
+    , "oled": {
+          "title":       "MPD OLED Display"
+        , "version":     "20210220"
+        , "revision":    "Initial release"
+        , "description": "Display information including music frequency spectrum on OLED screen connected to Raspberry Pi."
+        , "sourcecode":  "https://github.com/antiprism/mpd_oled"
+        , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/mpd_oled/install.sh"
+        , "option": {
+              "radio": {
+                  "message": "Interface"
+                , "list":    { "I²C": "i2c", "SPI": "spi" }
+            }
+        }
+		, "hide":        1
+    }
     , "radi": {
           "title":       "Import Webradio"
         , "description": "Import <code>*.pls</code> webradio files."
