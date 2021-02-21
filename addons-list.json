@@ -6,9 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210221"
+        , "version":     "202102211"
         , "revision":    [
               "Fix - Snapcast #2"
+            , "Fix - Chromium crashed / TFT LCD display"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
