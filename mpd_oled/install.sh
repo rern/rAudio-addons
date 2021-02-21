@@ -14,8 +14,6 @@ chmod +x /usr/bin/mpd_oled*
 
 getuninstall
 
-chmod +x /usr/bin/mpd_oled*
-
 if [[ ${args[0]} == i2c ]]; then
 	echo dtparam=i2c_arm=on >> /boot/config.txt
 	echo i2c-dev >> /etc/modules-load.d/raspberrypi.conf
