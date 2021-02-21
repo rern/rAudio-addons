@@ -4,11 +4,6 @@ alias=oled
 
 . /srv/http/bash/addons.sh
 
-if grep -q dtoverlay=tft35a /boot/config.txt; then
-	ech0 -e "$info TFT LCD must be disabled."
-	exit
-fi
-
 installstart "$1"
 
 wget -qP /etc/systemd/system https://github.com/rern/rAudio-addons/blob/main/mpd_oled/mpd_oled.service
