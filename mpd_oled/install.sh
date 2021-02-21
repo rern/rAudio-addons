@@ -11,7 +11,11 @@ fi
 
 installstart "$1"
 
-getinstallzip
+wget -qP /etc/systemd/system https://github.com/rern/rAudio-addons/blob/main/mpd_oled/mpd_oled.service
+wget -qP /usr/bin https://github.com/rern/rAudio-addons/blob/main/mpd_oled/mpd_oled
+wget -qP /usr/bin https://github.com/rern/rAudio-addons/blob/main/mpd_oled/mpd_oled_cava
+
+chmod +x /usr/bin/mpd_oled*
 
 getuninstall
 
