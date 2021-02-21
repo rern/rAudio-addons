@@ -1,14 +1,12 @@
 #!/bin/bash
 
-alias=oled
-
 . /srv/http/bash/addons.sh
 
 installstart "$1"
 
-wget -qP /etc/systemd/system https://github.com/rern/rAudio-addons/blob/main/mpd_oled/mpd_oled.service
-wget -qP /usr/bin https://github.com/rern/rAudio-addons/blob/main/mpd_oled/mpd_oled
-wget -qP /usr/bin https://github.com/rern/rAudio-addons/blob/main/mpd_oled/mpd_oled_cava
+wgetnc https://github.com/rern/rAudio-addons/raw/main/mpd_oled/mpd_oled.service -O /etc/systemd/system/mpd_oled.service
+wgetnc https://github.com/rern/rAudio-addons/raw/main/mpd_oled/mpd_oled -O /usr/bin/mpd_oled
+wgetnc https://github.com/rern/rAudio-addons/raw/main/mpd_oled/mpd_oled_cava -O /usr/bin/mpd_oled_cava
 
 chmod +x /usr/bin/mpd_oled*
 
