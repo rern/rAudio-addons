@@ -6,9 +6,9 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "202102191"
+        , "version":     "20210221"
         , "revision":    [
-              "Fix - Snapcast"
+              "Fix - Snapcast #2"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
