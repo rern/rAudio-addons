@@ -23,7 +23,7 @@
         , "version":     "20210220"
         , "revision":    "Initial release"
         , "description": "Display information including music frequency spectrum on OLED screen connected to Raspberry Pi.<br><a href='https://gist.github.com/antiprism/44100b6c2b688f5d15a5c25172793f4b' target='_blank'>Configuration >></a>"
-        , "sourcecode":  "https://github.com/antiprism/mpd_oled"
+        , "sourcecode":  "https://github.com/rern/rAudio-addons"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/mpd_oled/install.sh"
         , "option": {
               "radio": {
