@@ -1,15 +1,14 @@
 {
       "push": {
-          "bash": "sed -i -e \"/id === 'infoRadio'/ {N;d}\" -e \"s/chk === ''/\\!chk/\" /srv/http/assets/js/info.js; sed -i '/^-.*pam_systemd_home/ s/^/#/' /etc/pam.d/system-auth"
+          "bash": ""
         , "url":  ""
         , "hide": 1
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "202102211"
+        , "version":     "20210223"
         , "revision":    [
-              "Fix - Snapcast #2"
-            , "Fix - Chromium crashed / TFT LCD display"
+              "Fix - Create/Update Album thumbnails bug"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
