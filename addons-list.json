@@ -1,6 +1,6 @@
 {
       "push": {
-          "bash": "grep -q '\sif ! ifconfig' /srv/http/bash/startup.sh || wget -O /srv/http/bash/startup.sh https://github.com/rern/rAudio-1/raw/UPDATE/srv/http/bash/startup.sh"
+          "bash": "grep -q '\\sif ! ifconfig' /srv/http/bash/startup.sh || wget -O /srv/http/bash/startup.sh https://github.com/rern/rAudio-1/raw/UPDATE/srv/http/bash/startup.sh"
         , "url":  ""
         , "hide": 1
     }
