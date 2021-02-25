@@ -13,7 +13,7 @@ cd
 curl -L https://aur.archlinux.org/cgit/aur.git/snapshot/bluez-alsa-git.tar.gz | bsdtar xf -
 cd bluez-alsa-git
 
-sed -i -e '/\s\+--enable-aac/ a\
+sed -i -e '/^\s\+--enable-aac/ a\
 		--enable-ofono\
 		--enable-debug
 ' PKGBUILD
