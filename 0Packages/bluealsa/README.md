@@ -13,8 +13,10 @@ cd
 curl -L https://aur.archlinux.org/cgit/aur.git/snapshot/bluez-alsa-git.tar.gz | bsdtar xf -
 cd bluez-alsa-git
 
-sed -i -e 's/\(enable-aac\)/\1 --enable-ofono --enable-debug/
-' -e '/^pkgname=/ s/-git$//
+sed -i -e 's/^\(pkgname=.*\)-git/\1/
+' -e '/--enable-aac/ a\
+		--enable-ofono\
+		--enable-debug
 ' PKGBUILD
 
 makepkg -A
