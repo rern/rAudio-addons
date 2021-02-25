@@ -8,10 +8,7 @@ pacman -S --needed base-devel
 su alarm
 cd
 mkdir fakepkg
+curl -L https://aur.archlinux.org/cgit/aur.git/snapshot/fakepkg.tar.gz | bsdtar xf -
 cd fakepkg
-wget https://aur.archlinux.org/cgit/aur.git/snapshot/fakepkg.tar.gz
-bsdtar xf fakepkg.tar.gz
-rm fakepkg.tar.gz
-
 makepkg -A
 ```
