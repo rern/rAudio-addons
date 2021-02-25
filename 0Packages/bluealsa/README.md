@@ -14,7 +14,7 @@ curl -L https://aur.archlinux.org/cgit/aur.git/snapshot/bluez-alsa-git.tar.gz | 
 cd bluez-alsa-git
 
 sed -i -e 's/^\(pkgname=.*\)-git/\1/
-' -e '/--enable-aac/ a\
+' -e '/^\s+--enable-aac/ a\
 		--enable-ofono\
 		--enable-debug
 ' PKGBUILD
