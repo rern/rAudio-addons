@@ -6,9 +6,9 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210223"
+        , "version":     "20210227"
         , "revision":    [
-              "Fix - Create/Update Album thumbnails bug"
+              "Fix - Boot start Access point instaed of Wi-Fi"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
