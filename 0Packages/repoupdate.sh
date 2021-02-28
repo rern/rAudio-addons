@@ -4,7 +4,7 @@ rm $0
 
 updateRepo() {
 	# recreate database
-	cd /mnt/Git/rern.github.io/$1
+	cd /home/x/Git/rern.github.io/$1
 	rm -f +R* RR*
 	repo-add -R +R.db.tar.xz *.pkg.tar.xz
 	cp {+R,RR}.db
@@ -55,16 +55,7 @@ if [[ -z $armv6h && -z $armv7h && -z $aarch64 ]]; then
 	exit
 fi
 
-ip=$( dialog --colors --output-fd 1 --inputbox "\n\Z1Local Git IP:\Z0" 10 30 192.168.1.9 )
-
 clear
-
-mkdir -p /mnt/Git
-mount -t cifs -o password= //$ip/Git /mnt/Git
-if [[ $? == 1 ]]; then
-	dialog --colors --msgbox "\nMount \Z1$ip\Z0 failed." 8 30
-	exit
-fi
 
 currentdir=$( pwd )
 
@@ -73,7 +64,5 @@ currentdir=$( pwd )
 [[ -n $aarch64 ]] && updateRepo aarch64
 
 cd "$currentdir"
-umount -l /mnt/Git
-rmdir /mnt/Git
 
 dialog --colors --msgbox "\nRepositories updated succesfully." 8 30
