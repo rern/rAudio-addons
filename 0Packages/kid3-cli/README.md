@@ -49,11 +49,13 @@ kid3-cli -c "select \"/path/to file\"" \
 pacman -Syu
 pacman -S --needed  base-devel chromaprint extra-cmake-modules id3lib libmp4v2 ninja python qt5-multimedia qt5-tools docbook-xsl taglib
 
-# utilize all cpu cores - already utilized
+# setup distcc
 
 su alarm
 cd
 curl -L https://aur.archlinux.org/cgit/aur.git/snapshot/kid3-cli.tar.gz | bsdtar xf -
 cd kid3-cli
+
+systemctl start distccd
 makepkg -A
 ```
