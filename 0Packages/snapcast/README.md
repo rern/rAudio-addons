@@ -4,14 +4,7 @@ Source: [Snapcast](https://github.com/badaix/snapcast)
 pacman -Syu
 pacman -S --needed alsa-utils base-devel boost cmake git
 
-# utilize all cpu cores
-sed -i 's/.*MAKEFLAGS=.*/MAKEFLAGS="-j'$( nproc )'"/' /etc/makepkg.conf
-
-# RPi Zero, 1 - setup swap file
-dd if=/dev/zero of=/swapfile bs=1024 count=1048576
-chmod 666 /swapfile
-mkswap /swapfile
-swapon /swapfile
+# setup distcc
 
 su alarm
 cd
@@ -22,6 +15,8 @@ cd
 
 curl -L https://aur.archlinux.org/cgit/aur.git/snapshot/snapcast.tar.gz | bsdtar xf -
 cd snapcast
+
+systemctl start distccd
 makepkg -A
 ```
 
