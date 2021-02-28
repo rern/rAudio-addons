@@ -5,6 +5,9 @@ Source: [RPi.GPIO](https://sourceforge.net/projects/raspberry-gpio-python/)
 pacman -Syu
 pacman -S --needed base-devel
 
+# setup distcc
+systemctl start distccd
+
 su alarm
 cd
 mkdir rpigpio
