@@ -10,14 +10,7 @@ NGINX Upgrade with pushstream
 pacman -Syu
 pacman -S --needed base-devel geoip mailcap
 
-# utilize all cpu cores
-sed -i 's/.*MAKEFLAGS=.*/MAKEFLAGS="-j'$( nproc )'"/' /etc/makepkg.conf
-
-# RPi Zero, 1 - setup swap file
-dd if=/dev/zero of=/swapfile bs=1024 count=1048576
-chmod 666 /swapfile
-mkswap /swapfile
-swapon /swapfile
+# setup distcc
 
 su alarm
 cd
@@ -42,8 +35,7 @@ pushstreamver=$pushstreamver
   --add-module=/home/alarm/nginx/src/nginx-push-stream-module-$pushstreamver
 ' PKGBUILD
 
-# set integrity
-#makepkg -g >> PKGBUILD
+systemctl start distccd
 
 makepkg -A --skipinteg
 ```
