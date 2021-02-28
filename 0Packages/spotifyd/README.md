@@ -8,9 +8,8 @@ pacman -S --needed base-devel cargo
 wget http://tardis.tiny-vps.com/aarm/packages/r/rust/rust-1%3A1.47.0-4-aarch64.pkg.tar.xz
 pacman -U rust*
 
-# utilize all cpu cores - already utilized
-
 # setup distcc
+systemctl start distccd
 
 su alarm
 cd
@@ -18,6 +17,5 @@ curl -L https://aur.archlinux.org/cgit/aur.git/snapshot/spotifyd.tar.gz | bsdtar
 cd spotifyd
 sed -i 's/rustup/rust/' PKGBUILD
 
-systemctl start distccd
 makepkg -A
 ```
