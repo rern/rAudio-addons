@@ -5,8 +5,8 @@ Source: [bluealsa](https://github.com/Arkq/bluez-alsa)
 pacman -Syu
 pacman -S --needed base-devel bluez bluez-libs bluez-utils git libfdk-aac python-docutils sbc
 
-# utilize all cpu cores
-sed -i 's/.*MAKEFLAGS=.*/MAKEFLAGS="-j'$( nproc )'"/' /etc/makepkg.conf
+# setup distcc
+systemctl start distccd
 
 su alarm
 cd
