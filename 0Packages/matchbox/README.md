@@ -15,9 +15,11 @@ curl -L https://aur.archlinux.org/cgit/aur.git/snapshot/gconf.tar.gz | bsdtar xf
 cd gconf
 makepkg -A
 
-sudo pacman -U gconf*.pkg.tar.xz
+su
+pacman -U gconf*.pkg.tar.xz
 
 #2 - libmatchbox - depend
+su alarm
 cd
 curl -L https://aur.archlinux.org/cgit/aur.git/snapshot/libmatchbox.tar.gz | bsdtar xf -
 cd libmatchbox
@@ -26,9 +28,11 @@ sed -i "s/ 'libjpeg>=7'//" PKGBUILD
 
 makepkg -A
 
-sudo pacman -U libmatchbox*.pkg.tar.xz
+su
+pacman -U libmatchbox*.pkg.tar.xz
 
 #3 - matchbox-window-manager
+su alarm
 cd
 curl -L https://aur.archlinux.org/cgit/aur.git/snapshot/matchbox-window-manager.tar.gz | bsdtar xvf -
 cd matchbox-window-manager
