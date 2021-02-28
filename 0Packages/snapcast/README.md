@@ -5,18 +5,13 @@ pacman -Syu
 pacman -S --needed alsa-utils base-devel boost cmake git
 
 # setup distcc
+systemctl start distccd
 
 su alarm
 cd
 
-#git clone https://github.com/badaix/snapcast.git
-#cd snapcast/externals
-#git submodule update --init --recursive
-
 curl -L https://aur.archlinux.org/cgit/aur.git/snapshot/snapcast.tar.gz | bsdtar xf -
 cd snapcast
-
-systemctl start distccd
 makepkg -A
 ```
 
