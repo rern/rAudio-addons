@@ -45,7 +45,7 @@ updateRepo() {
 arch=$( dialog --colors --output-fd 1 --checklist '\n\Z1Arch:\Z0' 9 30 0 \
 	1 armv6h on \
 	2 armv7h on \
-	3 aarch64 on )
+	3 armv8/aarch64 on )
 arch=" $arch "
 [[ $arch == *' 1 '* ]] && armv6h=1
 [[ $arch == *' 2 '* ]] && armv7h=1
