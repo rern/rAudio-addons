@@ -11,6 +11,7 @@ pacman -Syu
 pacman -S --needed base-devel geoip mailcap
 
 # setup distcc
+systemctl start distccd
 
 su alarm
 cd
@@ -34,8 +35,6 @@ pushstreamver=$pushstreamver
 ' -e '/--with-threads/ a\
   --add-module=/home/alarm/nginx/src/nginx-push-stream-module-$pushstreamver
 ' PKGBUILD
-
-systemctl start distccd
 
 makepkg -A --skipinteg
 ```
