@@ -4,8 +4,8 @@ Source: [mpdscribble](https://github.com/MusicPlayerDaemon/mpdscribble)
 pacman -Syu
 pacman -S --needed base-devel boost libmpdclient libsoup meson ninja
 
-# utilize all cpu cores
-sed -i 's/.*MAKEFLAGS=.*/MAKEFLAGS="-j'$( nproc )'"/' /etc/makepkg.conf
+# setup distcc
+systemctl start distccd
 
 su alarm
 cd
