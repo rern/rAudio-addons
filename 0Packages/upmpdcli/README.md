@@ -15,7 +15,6 @@ curl -L https://aur.archlinux.org/cgit/aur.git/snapshot/libnpupnp.tar.gz | bsdta
 cd libnpupnp
 makepkg -A
 
-
 su
 pacman -U libnpupnp*.pkg.tar.xz
 
