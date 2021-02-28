@@ -3,8 +3,9 @@ Source: [hfsprogs](https://github.com/muflone/pkgbuilds/tree/master/hfsprogs)
 ```sh
 pacman -Syu
 pacman -S --needed base-devel libbsd
-# utilize all cpu cores
-sed -i 's/.*MAKEFLAGS=.*/MAKEFLAGS="-j'$( nproc )'"/' /etc/makepkg.conf
+
+# setup distcc
+systemctl start distccd
 
 su alarm
 cd
