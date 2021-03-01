@@ -1,6 +1,6 @@
 ### A spotify daemon
 
-Source: [Spotifyd[(https://github.com/Spotifyd/spotifyd)
+Source: [Spotifyd](https://github.com/Spotifyd/spotifyd)
 ```sh
 pacman -Syu
 pacman -S --needed base-devel cargo
