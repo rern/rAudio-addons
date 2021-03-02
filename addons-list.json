@@ -6,9 +6,9 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210227"
+        , "version":     "20210302"
         , "revision":    [
-              "Fix - Boot start Access point instaed of Wi-Fi"
+              "Extend waiting time for Wi-Fi and NAS to connect to 30 seconds"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
