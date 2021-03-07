@@ -352,6 +352,10 @@ ALIAS: {
 - `'exec'` if bash script result = true
 - `'php'` if php script result = true
 
+**`'verify'`** - for verification to continue
+- `'command'` command to verify
+- `'notverified'`  if result was false, show message and exit
+
 **`'option'`** - user inputs  
 - each `'key' : 'value'` open a dialog
 - each `'key'` will be appended as `install.sh` arguments / parameters
