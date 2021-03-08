@@ -6,9 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210302"
+        , "version":     "20210308"
         , "revision":    [
-              "Extend waiting time for Wi-Fi and NAS to connect to 30 seconds"
+              "Improve - Force reconnect Wi-Fi on startup if 1st attempt failed."
+			, "Fix - Icons rendering on some browsers."
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
