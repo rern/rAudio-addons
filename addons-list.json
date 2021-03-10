@@ -21,13 +21,11 @@
     }
     , "fran": {
           "title":       "Webradio - France Musique & Fip"
-        , "version":     "20210310"
-        , "revision":    [
-              "Initial release"
-        ]
+        , "buttonlabel": "<i class='fa fa-plus-circle'></i>Add"
         , "description": "Webradio stations by France Musique and Fip"
         , "sourcecode":  "https://github.com/rern/rAudio-addons/raw/main/webradio"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/webradio/install.sh"
+        , "hide":        "[[ -e '/srv/http/data/webradios/https:||icecast.radiofrance.fr|fip-hifi.aac' ]] && echo 1 || echo 0"
     }
     , "oled": {
           "title":       "MPD OLED Display"
