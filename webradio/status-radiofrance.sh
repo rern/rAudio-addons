@@ -1,9 +1,9 @@
-### Radio France metadata
-
-```sh
 #!/bin/bash
 
-name=$( echo $filename | sed 's/.*|\(.*\)\-.*/\1/' )
+# Radio France metadata
+# status-radiofrance.sh FILENAME
+
+name=$( echo $1 | sed 's/.*|\(.*\)\-.*/\1/' )
 case $name in
 	fipelectro ) id=74;;
 	fipgroove ) id=66;;
@@ -26,7 +26,7 @@ case $name in
 	francemusiqueopera ) id=409;;
 esac
 	
-metadata=$( curl -s -m 5 -G \
+readarray -t metadata <<< $( curl -s -m 5 -G \
 	--data-urlencode 'operationName=Now' \
 	--data-urlencode 'variables={"bannerPreset":"600x600-noTransform","stationId":'$id',"previousTrackLimit":1}' \
 	--data-urlencode 'extensions={"persistedQuery":{"version":1,"sha256Hash":"8a931c7d177ff69709a79f4c213bd2403f0c11836c560bc22da55628d8100df8"}}' \
@@ -35,4 +35,12 @@ metadata=$( curl -s -m 5 -G \
 	| grep -v '{\|"__typename"\|"start_time"\|}' \
 	| sed 's/^\s\+".*": "*//; s/"*,*$//' )
 
-```
+data='{"Artist":"'${metadata[0]}'", "Title":"'${metadata[1]}'"}'
+curl -s -X POST http://127.0.0.1/pub?id=mpdplayer -d "$data"
+
+curl -s -X POST http://127.0.0.1/pub?id=coverart -d '{ "url": "'${metadata[2]}'", "type": "coverart" }'
+
+change=$(( ${metadata[3]} - ${metadata[4]} )) # seconds
+sleep $change
+
+status-radiofrance.sh FILENAME
