@@ -25,7 +25,7 @@
         , "description": "Webradio stations by France Musique and Fip"
         , "sourcecode":  "https://github.com/rern/rAudio-addons/raw/main/webradio"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/webradio/install.sh"
-        , "hide":        "[[ $( ls '/srv/http/data/webradios/https:||icecast.radiofrance.fr|fip'* | wc -l ) == 9 ]] && echo 1 || echo 0"
+        , "hide":        "[[ $( ls '/srv/http/data/webradios/https:||icecast.radiofrance.fr'* | wc -l ) == 19 ]] && echo 1 || echo 0"
     }
     , "oled": {
           "title":       "MPD OLED Display"
