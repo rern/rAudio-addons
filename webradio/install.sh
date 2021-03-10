@@ -8,6 +8,5 @@ curl -sL https://github.com/rern/rAudio-addons/raw/main/webradio/radiofrance.tar
 chown -R http:http /srv/http/data/webradios*
 count=$( ls -1 /srv/http/data/webradios | wc -l )
 sed -i 's/\("webradio": \).*/\1'$count'/' /srv/http/data/mpd/counts
-touch /srv/http/data/addons/fran
 
 installfinish
