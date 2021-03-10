@@ -43,4 +43,4 @@ curl -s -X POST http://127.0.0.1/pub?id=coverart -d '{ "url": "'${metadata[2]}'"
 change=$(( ${metadata[3]} - ${metadata[4]} )) # seconds
 sleep $change
 
-status-radiofrance.sh FILENAME
+status-radiofrance.sh $1
