@@ -270,9 +270,9 @@ ALIAS: {
 /**/	'nouninstall'   : TRUE,
 /**/	'hide'          : BOOLEAN,
 /**/	'verify' : {
-		'command'     : 'COMMAND LINE'
+		'command'     : 'COMMAND && echo 1',
 		'notverified' : 'MESSAGE'
-	}
+		},
 /**/	'option'        : {
 		'wait'      : 'MESSAGE',
 		'warning'   : 'MESSAGE',
@@ -353,8 +353,8 @@ ALIAS: {
 - `'php'` if php script result = true
 
 **`'verify'`** - for verification to continue
-- `'command'` command to verify
-- `'notverified'`  if result was false, show message and exit
+- `'command'` command to verify (with ` && echo 1`)
+- `'notverified'`  if result was false, hide buttons and show message
 
 **`'option'`** - user inputs  
 - each `'key' : 'value'` open a dialog
