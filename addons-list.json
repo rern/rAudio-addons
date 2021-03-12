@@ -6,10 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210308"
+        , "version":     "20210312"
         , "revision":    [
-              "Improve - Force reconnect Wi-Fi on startup if 1st attempt failed."
-			, "Fix - Icons rendering on some browsers."
+              "Improve - On startup, if 2nd attempt failed, reconnect Wi-Fi after 10 seconds."
+            , "Add - Support France Musique & Fip metadata"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
@@ -18,6 +18,10 @@
         , "sourcecode":  "https://github.com/rern/rAudio-1"
         , "installurl":  "https://github.com/rern/rAudio-1/raw/main/install.sh"
         , "hide":        "[[ $( cat /srv/http/data/system/version ) == 1 ]] && echo 0 || echo 1"
+        , "verify": {
+              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20210302 ]] && echo 1"
+            , "notverified": "Please download the latest image file to be able to update."
+        }
     }
     , "fran": {
           "title":       "Webradio - France Musique & Fip"
