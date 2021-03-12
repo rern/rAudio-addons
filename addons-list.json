@@ -22,7 +22,8 @@
     , "fran": {
           "title":       "Webradio - France Musique & Fip"
         , "buttonlabel": "<i class='fa fa-plus-circle'></i>Add"
-        , "description": "Webradio stations by France Musique and Fip"
+        , "description": "Webradio stations by <a href='https://www.francemusique.fr/'>France Musique</a> and <a href='https://www.fip.fr/'>Fip</a>"
+        , "thumbnail":   "/assets/img/addons/thumbfran.gif"
         , "sourcecode":  "https://github.com/rern/rAudio-addons/raw/main/webradio"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/webradio/install.sh"
         , "hide":        "[[ $( ls '/srv/http/data/webradios/https:||icecast.radiofrance.fr'* | wc -l ) == 19 ]] && echo 1 || echo 0"
