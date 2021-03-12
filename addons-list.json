@@ -6,7 +6,7 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210312"
+        , "version":     "202103121"
         , "revision":    [
               "Improve - On startup, if 2nd attempt failed, reconnect Wi-Fi after 10 seconds."
             , "Add - Support France Musique & Fip metadata"
