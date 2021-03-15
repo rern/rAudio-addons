@@ -9,7 +9,7 @@
         , "version":     "20210315"
         , "revision":    [
               "Fix - RPi Zero Spotify failed to start"
-            , "Improve - Cache France Musique & Fip metadata"
+            , "Improve - Cache France Musique & Fip metadata and coverarts"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
