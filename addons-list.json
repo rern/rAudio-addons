@@ -1,6 +1,6 @@
 {
       "push": {
-          "bash": "file=/srv/http/assets/img/addons/thumbfran.gif; [[ ! -e $file ]] && wget -qO $file https://github.com/rern/rAudio-1/raw/main$file"
+          "bash": "file=/srv/http/settings/addons-progress.php; grep -q '$branch &&' $file || wget -qO $file https://github.com/rern/rAudio-1/raw/main$file"
         , "url":  ""
         , "hide": 1
     }
