@@ -1,15 +1,14 @@
 {
       "push": {
-          "bash": "file=/srv/http/settings/addons-progress.php; grep -q '$branch &&' $file || wget -qO $file https://github.com/rern/rAudio-1/raw/main$file"
+          "bash": ""
         , "url":  ""
         , "hide": 1
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210315"
+        , "version":     "20210316"
         , "revision":    [
-              "Fix - RPi Zero Spotify failed to start"
-            , "Improve - Cache France Musique & Fip metadata and coverarts"
+              "Fix - Addons bugs."
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
