@@ -43,18 +43,3 @@ kid3-cli -c "select \"/path/to file\"" \
 
 `METADATA_BLOCK_PICTURE` - Vorbis comments  
 `*.wav` files use RIFF  
-
-**Build**
-```sh
-pacman -Syu
-pacman -S --needed  base-devel chromaprint extra-cmake-modules id3lib libmp4v2 ninja python qt5-multimedia qt5-tools docbook-xsl taglib
-
-# kid3-cli ninja not support distcc
-# RPi Zero - compile on Docker
-
-su alarm
-cd
-curl -L https://aur.archlinux.org/cgit/aur.git/snapshot/kid3-cli.tar.gz | bsdtar xf -
-cd kid3-cli
-makepkg -A
-```
