@@ -16,8 +16,8 @@ npm install pica
 # create require line in a temp file
 echo "    pica = require('pica')();" > entry.js
 
-# browserify convert pica to /path/to/pica.js
-browserify entry.js -o /path/to/pica.js
+# browserify entry.js to pica.js
+browserify entry.js -o /root/node_modules/pica/dist/pica.js
 
 # remove temp file
 rm entry.js
