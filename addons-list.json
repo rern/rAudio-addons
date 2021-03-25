@@ -6,9 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210316"
+        , "version":     "20210325"
         , "revision":    [
-              "Fix - Addons bugs."
+              "Fix - Album thumbnails update bug"
+            , "Add - Browser by conductor"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
