@@ -10,6 +10,7 @@
         , "revision":    [
               "Fix - Album thumbnails update bug"
             , "Add - Browser by conductor"
+            , "Change - Move Sources setting to MPD"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
