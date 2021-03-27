@@ -10,7 +10,7 @@
         , "revision":    [
               "Fix - Composer show/hide"
             , "Fix - Tag Editor on *.cue files"
-            , "Change - Rename "MPD" setting to "Player""
+            , "Change - Rename \"MPD\" setting to \"Player\""
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
