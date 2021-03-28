@@ -6,11 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210327"
+        , "version":     "20210328"
         , "revision":    [
-              "Fix - Composer show/hide"
-            , "Fix - Tag Editor on *.cue files"
-            , "Change - Rename \"MPD\" setting to \"Player\""
+              "Fix - <code>Player</code> in bottom tab of Settings"
+            , "Change - Move <code>Sources</code> section from <code>Player</code> to <code>System</code> and rename to <code>Storage</code>"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
