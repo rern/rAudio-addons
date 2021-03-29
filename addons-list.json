@@ -6,10 +6,9 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210328"
+        , "version":     "20210330"
         , "revision":    [
-              "Fix - <code>Player</code> in bottom tab of Settings"
-            , "Change - Move <code>Sources</code> section from <code>Player</code> to <code>System</code> and rename to <code>Storage</code>"
+              "Improve - Wi-Fi connection on startup"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
