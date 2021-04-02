@@ -6,9 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210330"
+        , "version":     "20210402"
         , "revision":    [
-              "Improve - Wi-Fi connection on startup"
+              "Fix - Add/Replace from browse by modes"
+            , "Improve - Filter for browse by modes"
+            , "Improve - Show album name for Radio Paradise and France Musique & Fip"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
