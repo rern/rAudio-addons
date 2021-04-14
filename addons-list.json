@@ -6,11 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210403"
+        , "version":     "20210414"
         , "revision":    [
-              "Fix - Add/Replace with entire album in Album mode"
-            , "Fix - Add/Replace with directory in file mode"
-            , "Improve - Reconnect W-Fi on startup"
+              "Fix - Mount/Remount/Remove network shares"
+            , "Improve - Volume knob/bar moves in sync with level"
+            , "Support BeagleBone boards"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
