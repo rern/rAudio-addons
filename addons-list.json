@@ -8,9 +8,7 @@
           "title":       "rAudio 1"
         , "version":     "20210414"
         , "revision":    [
-              "Fix - Mount/Remount/Remove network shares"
-            , "Improve - Volume knob/bar moves in sync with level"
-            , "Support BeagleBone boards"
+              "Fix - Wi-Fi connection failed on reboot/startup"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
