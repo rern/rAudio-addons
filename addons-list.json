@@ -6,7 +6,7 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210414"
+        , "version":     "20210416"
         , "revision":    [
               "Fix - Wi-Fi connection failed on reboot/startup"
         ]
