@@ -6,12 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210428"
+        , "version":     "20210502"
         , "revision":    [
-              "Improve - Radio Paradise and Radio France - Show icons and station names"
-			, "Improve - NAS - Allow spaces in username/password"
-			, "Improve - Spotify Connect - Maintain Bluetooth output"
-			, "Add - Default coverart - Option for rAudio coverart"
+              "Improve - Volume drag"
+			, "Improve - Setting pages on small screen"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
