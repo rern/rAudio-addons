@@ -6,10 +6,12 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210502"
+        , "version":     "20210507"
         , "revision":    [
-              "Improve - Volume drag"
-			, "Improve - Setting pages on small screen"
+              "Fix - Add from browse modes to Playlist"
+			, "Fix - *.cue thumbnails in Playlist"
+			, "Add - Options for 3.5" Waveshare display"
+			, "Add - Option to save WebRadios added from other apps"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
