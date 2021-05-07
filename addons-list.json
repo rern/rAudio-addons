@@ -10,7 +10,7 @@
         , "revision":    [
               "Fix - Add from browse modes to Playlist"
 			, "Fix - *.cue thumbnails in Playlist"
-			, "Add - Options for 3.5" Waveshare display"
+			, "Add - Options for 3.5\" Waveshare display"
 			, "Add - Option to save WebRadios added from other apps"
         ]
         , "description": "Updates for rAudio 1"
