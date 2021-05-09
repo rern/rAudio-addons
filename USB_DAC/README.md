@@ -56,3 +56,9 @@ and the attributes from one single parent device.
 
   ...
 ```
+
+**Test rules**
+- `udevadm test $(udevadm info --query=path --name=device_name) 2>&1`
+
+**Trigger rules**
+- `udevadm trigger --verbose --type=subsystems --action=remove --subsystem-match=sound --attr-match="idVendor=abcd"`
