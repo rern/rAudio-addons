@@ -6,12 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210507"
+        , "version":     "20210515"
         , "revision":    [
-              "Fix - Add from browse modes to Playlist"
-			, "Fix - *.cue thumbnails in Playlist"
-			, "Add - Options for 3.5\" Waveshare display"
-			, "Add - Option to save WebRadios added from other apps"
+              "Fix - Change coverart bug"
+			, "Improve - Refresh changed coverart across multiple devices"
+			, "Add - Audio CD support (external power supply needed)"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
