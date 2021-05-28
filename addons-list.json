@@ -6,11 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210515"
+        , "version":     "20210528"
         , "revision":    [
-              "Fix - Change coverart bug"
-			, "Improve - Refresh changed coverart across multiple devices"
-			, "Add - Audio CD support (external power supply needed)"
+              "Fix - Add album to Playlist"
+			, "Improve - Dialog box"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
