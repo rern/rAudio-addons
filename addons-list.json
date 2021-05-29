@@ -6,10 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210528"
+        , "version":     "20210529"
         , "revision":    [
-              "Fix - Add album to Playlist"
-			, "Improve - Dialog box"
+              "Fix - Missing track icon"
+			, "Improve - Mixer device volume/0dB setting"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
