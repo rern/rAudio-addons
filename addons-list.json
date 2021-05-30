@@ -6,10 +6,12 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210529"
+        , "version":     "20210530"
         , "revision":    [
-              "Fix - Missing track icon"
-			, "Improve - Mixer device volume/0dB setting"
+              "Fix - Change coverart"
+			, "Fix - Mount NAS"
+			, "Fix - Tag Editor"
+			, "Fix - Context menu in NAS/USB modes"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
