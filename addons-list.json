@@ -6,12 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210530"
+        , "version":     "20210531"
         , "revision":    [
-              "Fix - Change coverart"
-			, "Fix - Mount NAS"
-			, "Fix - Tag Editor"
-			, "Fix - Context menu in NAS/USB modes"
+              "Fix - Unable to enter space character in dialog box"
+			, "Improve - Embedded coverart handling"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
