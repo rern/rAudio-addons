@@ -6,10 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210531"
+        , "version":     "20210601"
         , "revision":    [
-              "Fix - Unable to enter space character in dialog box"
-			, "Improve - Embedded coverart handling"
+              "Fix - Wi-Fi with hidden SSID"
+			, "Improve - Support <code>rtmp</code> <code>rtp</code> <code>rtsp</code> streams"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
