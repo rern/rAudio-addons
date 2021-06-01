@@ -20,6 +20,11 @@ kid3-cli -c "select \"/path/to file\"" \
 kid3-cli -c "select \"/path/to file\"" \
 	 -c 'get artist' \
 	 -c 'get picture:/path/destination'
+	 
+# run with systemd - MUST cd > select > get
+kid3-cli -c "cd \"/path/to dir\"" \
+	-c "select \"filename\"" \
+	-c 'get picture:/path/destination'
 	
 # remove tags
 kid3-cli -c "select \"/path/to file\"" \
