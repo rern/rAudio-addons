@@ -6,10 +6,12 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210601"
+        , "version":     "20210603"
         , "revision":    [
-              "Fix - Wi-Fi with hidden SSID"
-			, "Improve - Support <code>rtmp</code> <code>rtp</code> <code>rtsp</code> streams"
+              "Fix - UPnP not working"
+			, "Fix - WebRadio edit false warning"
+			, "Fix - WebRadio icon not hide in Playback"
+			, "Fix - Embedded coverart missing on track changed"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
