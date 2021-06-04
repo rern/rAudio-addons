@@ -6,7 +6,7 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210604"
+        , "version":     "202106041"
         , "revision":    [
               "Fix - Clear Playlist"
         ]
