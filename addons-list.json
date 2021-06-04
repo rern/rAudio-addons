@@ -6,12 +6,9 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210603"
+        , "version":     "20210604"
         , "revision":    [
-              "Fix - UPnP not working"
-			, "Fix - WebRadio edit false warning"
-			, "Fix - WebRadio icon not hide in Playback"
-			, "Fix - Embedded coverart missing on track changed"
+              "Fix - Clear Playlist"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
