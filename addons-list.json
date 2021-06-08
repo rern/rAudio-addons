@@ -6,9 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "202106041"
+        , "version":     "20210608"
         , "revision":    [
-              "Fix - Clear Playlist"
+              "Fix - UPnP with improvements"
+			, "Add - Option to disable auto start Access point on connection failed"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
