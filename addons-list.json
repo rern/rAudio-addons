@@ -6,10 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210608"
+        , "version":     "202106081"
         , "revision":    [
-              "Fix - UPnP with improvements"
-			, "Add - Option to disable auto start Access point on connection failed"
+              "Fix - Features: UPnP with improvements"
+			, "Fix - Features: Password login"
+			, "Add - System: Option to disable auto start Access point on connection failed"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
