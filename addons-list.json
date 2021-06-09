@@ -6,7 +6,7 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "202106081"
+        , "version":     "20210609"
         , "revision":    [
               "Fix - Missing context menu in Library"
 			, "Fix - Missing icons in Library/Playlist"
