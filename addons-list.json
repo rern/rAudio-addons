@@ -6,10 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "202106091"
+        , "version":     "20210612"
         , "revision":    [
-              "Fix - Missing context menu in Library"
-			, "Fix - Missing icons in Library/Playlist"
+              "Fix - Settings - Dropdown list on mobile devices"
+			, "Fix - Library - Album mode splash screen"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
