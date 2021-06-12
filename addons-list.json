@@ -10,6 +10,7 @@
         , "revision":    [
               "Fix - Settings - Dropdown list on mobile devices"
 			, "Fix - Library - Album mode splash screen"
+			, "Fix - Library/Playlist home button"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
