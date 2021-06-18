@@ -28,7 +28,7 @@ fi
 
 readarray servers < "$tmplist"
 
-echo -e "\nTest ${#servers[@]} servers @ $sec seconds download + 3 pings:\n"
+echo -e "\nTest ${#servers[@]} servers @ $sec seconds random download + 3 pings:\n"
 
 tmpdir=/tmp/rankmirrors
 rm -rf $tmpdir && mkdir $tmpdir
