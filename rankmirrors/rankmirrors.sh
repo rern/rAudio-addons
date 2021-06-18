@@ -30,14 +30,18 @@ readarray servers < "$tmplist"
 
 echo -e "\nTest ${#servers[@]} servers @ $sec seconds download + 3 pings:\n"
 
-dlfile='armv7h/community/community.db' # download test file
 tmpdir=/tmp/rankmirrors
 rm -rf $tmpdir && mkdir $tmpdir
+
+srcfiles=( $( curl -sL mirror.archlinuxarm.org/os/ | grep 'Arch.*gz<' | sed 's/.*href="\(.*\.gz\)".*/\1/' ) )
+srcL=${#srcfiles[@]}
 
 i=0
 for server in ${servers[@]}; do # download from each mirror
 	(( i++ ))
-	curl --connect-timeout $sec -sLo $tmpdir/community.db $server/$dlfile?$RANDOM
+	srcfile=${srcfiles[$(( $RANDOM % $srcL ))]}
+	tcolor "Download: $srcfile" 8
+	curl --max-time $sec -sLo $tmpdir/srcfile $server/os/$srcfile?$( date +%s )
 	wait
 	dl=$( du -c $tmpdir | grep total | awk '{print $1}' ) # get downloaded amount
 	ping=$( ping -4 -c 3 -w 3 ${server/http*\:\/\/} | tail -1 | cut -d'/' -f5 )
@@ -49,8 +53,8 @@ for server in ${servers[@]}; do # download from each mirror
 	
 	server0='Server = '$server'/$arch/$repo'
 	speed=$(( dl / sec ))
-	dl_server="$dl_server$server0 $speed $latency\n"
-	printf "%6d. %-23s :%7d kB/s%5s ms\n" $i ${server/archlinux*}.. $speed $latency
+	dl_server+="$server0 $speed $latency\n"
+	printf "%3s %-37s %11s %7s\n" $i. $server "$speed kB/s" "$latency ms"
 done
 
 rank=$( echo -e "$dl_server" | grep . | sort -g -k4,4nr -k5n )
@@ -61,7 +65,7 @@ echo -e "\n$info Top 3 package servers ranked by speed and latency:\n"
 lines=$( echo -e "$rank" | head -3 | sed 's/Server = \|\/\$arch.*repo//g' )
 for i in 1 2 3; do
 	fields=( $( echo "$lines" | sed -n "$i p" ) )
-	printf "%-33s%7d kB/s%5s ms\n" ${fields[0]} ${fields[1]} ${fields[2]}
+	printf "%3s %-37s %11s %7s\n" $i. ${fields[0]} "${fields[1]} kB/s" "${fields[2]} ms"
 done
 
 list=/etc/pacman.d/mirrorlist
