@@ -33,10 +33,11 @@ echo -e "\nTest ${#servers[@]} servers @ $sec seconds random download + 3 pings:
 tmpdir=/tmp/rankmirrors
 rm -rf $tmpdir && mkdir $tmpdir
 
-srcfiles=( $( curl -sL mirror.archlinuxarm.org/os/ | grep 'Arch.*gz<' | sed 's/.*href="\(.*\.gz\)".*/\1/' ) )
+echo -e "\n$bar Get file list for download test ..."
+srcfiles=( $( curl -L mirror.archlinuxarm.org/os/ | grep 'Arch.*gz<' | sed 's/.*href="\(.*\.gz\)".*/\1/' ) )
 srcL=${#srcfiles[@]}
 if (( $srcL == 0 ))n then
-	title "$warn Download file list from server failed."
+	title "$warn Download file list failed."
 	exit
 fi
 
