@@ -35,6 +35,10 @@ rm -rf $tmpdir && mkdir $tmpdir
 
 srcfiles=( $( curl -sL mirror.archlinuxarm.org/os/ | grep 'Arch.*gz<' | sed 's/.*href="\(.*\.gz\)".*/\1/' ) )
 srcL=${#srcfiles[@]}
+if (( $srcL == 0 ))n then
+	title "$warn Download file list from server failed."
+	exit
+fi
 
 i=0
 for server in ${servers[@]}; do # download from each mirror
