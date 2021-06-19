@@ -31,7 +31,7 @@ readarray servers < "$tmplist"
 tmpdir=/tmp/rankmirrors
 rm -rf $tmpdir && mkdir $tmpdir
 
-echo -e "\n$bar Get file list for download test ...\n"
+echo -e "\n$bar Get file list for download test ..."
 srcfiles=( $( curl -sL mirror.archlinuxarm.org/os/ | grep 'Arch.*gz<' | sed 's/.*href="\(.*\.gz\)".*/\1/' ) )
 srcL=${#srcfiles[@]}
 if (( $srcL == 0 )); then
@@ -39,6 +39,7 @@ if (( $srcL == 0 )); then
 	exit
 fi
 
+echo "File list: $srcL"
 echo -e "\n$bar Test ${#servers[@]} servers @ $sec seconds random download + 3 pings:"
 i=0
 for server in ${servers[@]}; do # download from each mirror
