@@ -64,7 +64,7 @@ done
 rank=$( echo -e "$dl_server" | grep . | sort -g -k4,4nr -k5n )
 rankfile=$( echo -e "$rank" | cut -d' ' -f1-3 )
 
-echo -e "\n$info Top 3 servers:\n"
+echo -e "\n$info Top 3 servers:"
 
 lines=$( echo -e "$rank" | head -3 | sed 's/Server = \|\/\$arch.*repo//g' )
 for i in 1 2 3; do
