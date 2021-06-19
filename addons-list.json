@@ -6,11 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210612"
+        , "version":     "20210619"
         , "revision":    [
-              "Fix - Settings - Dropdown list on mobile devices"
-			, "Fix - Library - Album mode splash screen"
-			, "Fix - Library/Playlist home button"
+              "General normalization"
+			, "Minor improvements"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
@@ -26,7 +25,7 @@
     }
     , "fran": {
           "title":       "Webradio - France Musique & Fip"
-        , "buttonlabel": "<i class='fa fa-plus-circle'></i>Add"
+        , "buttonlabel": "<i class='fa fa-plus-circle'></i> Add"
         , "description": "Webradio stations by <a href='https://www.francemusique.fr/'>France Musique</a> and <a href='https://www.fip.fr/'>Fip</a>"
         , "thumbnail":   "/assets/img/addons/thumbfran.gif"
         , "sourcecode":  "https://github.com/rern/rAudio-addons/raw/main/webradio"
@@ -51,7 +50,7 @@
     , "radi": {
           "title":       "Import Webradio"
         , "description": "Import <code>*.pls</code> webradio files."
-        , "buttonlabel": "<i class='fa fa-input'></i>Import"
+        , "buttonlabel": "<i class='fa fa-input'></i> Import"
         , "thumbnail":   "/assets/img/addons/thumbwebr.png"
         , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/main/webradio"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/webradio/importwebradio.sh"
@@ -63,7 +62,7 @@
     , "plsi": {
           "title":       "Import Playlists"
         , "description": "Import <code>*.m3u</code> playlists."
-        , "buttonlabel": "<i class='fa fa-input'></i>Import"
+        , "buttonlabel": "<i class='fa fa-input'></i> Import"
         , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/main/playlist"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/playlist/importplaylist.sh"
         , "option": {
@@ -74,7 +73,7 @@
           "title":       "Rank Mirror Package Servers"
         , "description": "Fix package download errors caused by unreachable servers.<br>Rank mirror package servers by download speed and latency."
         , "thumbnail":   "/assets/img/addons/thumbrank.png"
-        , "buttonlabel": "<i class='fa fa-bars'></i>Rank"
+        , "buttonlabel": "<i class='fa fa-bars'></i> Rank"
         , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/main/rankmirrors"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/rankmirrors/rankmirrors.sh"
         , "option": {
