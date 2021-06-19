@@ -6,7 +6,7 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210619"
+        , "version":     "202106191"
         , "revision":    [
               "General normalization"
 			, "Minor improvements"
