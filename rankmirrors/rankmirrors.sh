@@ -39,7 +39,7 @@ if (( $srcL == 0 )); then
 	exit
 fi
 
-echo -e "\nTest ${#servers[@]} servers @ $sec seconds random download + 3 pings:\n"
+echo -e "\n$bar Test ${#servers[@]} servers @ $sec seconds random download + 3 pings:"
 i=0
 for server in ${servers[@]}; do # download from each mirror
 	(( i++ ))
