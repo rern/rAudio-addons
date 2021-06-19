@@ -34,7 +34,7 @@ tmpdir=/tmp/rankmirrors
 rm -rf $tmpdir && mkdir $tmpdir
 
 echo -e "\n$bar Get file list for download test ..."
-srcfiles=( $( curl -L mirror.archlinuxarm.org/os/ | grep 'Arch.*gz<' | sed 's/.*href="\(.*\.gz\)".*/\1/' ) )
+srcfiles=( $( curl -sL mirror.archlinuxarm.org/os/ | grep 'Arch.*gz<' | sed 's/.*href="\(.*\.gz\)".*/\1/' ) )
 srcL=${#srcfiles[@]}
 if (( $srcL == 0 )); then
 	title "$warn Download file list failed."
