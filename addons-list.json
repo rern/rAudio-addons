@@ -6,10 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "202106191"
+        , "version":     "20210621"
         , "revision":    [
-              "General normalization"
-			, "Minor improvements"
+              "Fix - Playback - Hide WebRadio icon in file mode"
+			, "Fix - Library - Search box color"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
