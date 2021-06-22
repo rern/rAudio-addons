@@ -98,18 +98,4 @@
         , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/main/aria2"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/aria2/install.sh"
     }
-    , "tran": {
-          "title":       "Transmission"
-        , "revision":    "Initial release"
-        , "description": "Fast, easy, and free BitTorrent client. Pre-configured and ready to use."
-        , "thumbnail":   "/assets/img/addons/thumbtran.png"
-        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/main/transmission"
-        , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/transmission/install.sh"
-        , "option": {
-              "password": {
-                  "message": "Password for user <w>root</w> (blank = no password):"
-                , "label":   "Password"
-            }
-        }
-    }
 }
