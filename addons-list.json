@@ -6,10 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210621"
+        , "version":     "20210627"
         , "revision":    [
-              "Fix - Playback - Hide WebRadio icon in file mode"
-			, "Fix - Library - Search box color"
+              "Fix - On-screen keyboard (Browser on RPi)"
+			, "Improve - Limit Tag Editor to File mode only"
+			, "Minor improvements"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
@@ -62,6 +63,7 @@
     , "plsi": {
           "title":       "Import Playlists"
         , "description": "Import <code>*.m3u</code> playlists."
+        , "thumbnail":   "/assets/img/addons/thumbplst.jpg"
         , "buttonlabel": "<i class='fa fa-input'></i> Import"
         , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/main/playlist"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/playlist/importplaylist.sh"
