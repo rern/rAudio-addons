@@ -6,11 +6,9 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210627"
+        , "version":     "20210628"
         , "revision":    [
-              "Fix - On-screen keyboard (Browser on RPi)"
-			, "Improve - Limit Tag Editor to File mode only"
-			, "Minor improvements"
+              "Fix - Missing context menu items in File mode"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
