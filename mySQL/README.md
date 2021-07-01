@@ -1,6 +1,6 @@
 mySQL
 ---
-- Install
+- **Install**
 ```sh
 pacman -Sy mysql phpmyadmin
 
@@ -12,4 +12,9 @@ sed -i '/^;extension=iconv\|^;extension=mysqli\|^;extension=pdo_mysql/ s/^;//' /
 systemctl restart php-fpm
 ln -s /usr/share/webapps/phpMyAdmin /srv/http/phpMyAdmin
 ```
-- Access: `IP_ADDRESS/phpMyAdmin`
+
+- **phpMyAdmin**
+    - Access: `IP_ADDRESS/phpMyAdmin`
+    - Restore database:
+        - Create database
+        - Import
