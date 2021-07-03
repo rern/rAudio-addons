@@ -6,9 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210628"
+        , "version":     "20210703"
         , "revision":    [
-              "Fix - Missing context menu items in File mode"
+              "Fix - Playlist - elapsed time"
+			, "General improvements"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
