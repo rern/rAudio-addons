@@ -17,8 +17,8 @@ kid3-cli -c "select \"/path/to file\"" \
 	 
 # run with systemd - MUST cd > select > get
 kid3-cli -c "cd \"/path/to dir\"" \
-	-c "select \"filename\"" \
-	-c "get picture:\"/path/destination\""
+	 -c "select \"filename\"" \
+	 -c "get picture:\"/path/destination\""
 	
 # remove tags
 kid3-cli -c "select \"/path/to file\"" \
