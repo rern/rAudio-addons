@@ -7,30 +7,22 @@
 
 # set tags
 kid3-cli -c "select \"/path/to file\"" \
-	 -c 'set artist "ARTIST"' \
-	 -c 'set album "ALBUM"' \
-	 -c 'set albumartist "ALBUMARTIST"' \
-	 -c 'set composer "COMPOSER"' \
-	 -c 'set genre "GENRE"' \
-	 -c 'set lyrics "LYRICS"' \
-	 -c 'set title "TITLE"' \
-	 -c 'set tracknumber "TRACK"' \
-	 -c 'set picture:/path/source'
+ 	 -c "set artist \""ARTIST\"" \
+	 -c "set picture:\"/path/source\""
 	
 # get tags
 kid3-cli -c "select \"/path/to file\"" \
-	 -c 'get artist' \
-	 -c 'get picture:/path/destination'
+	 -c "get artist" \
+	 -c "get picture:\"/path/destination\""
 	 
 # run with systemd - MUST cd > select > get
 kid3-cli -c "cd \"/path/to dir\"" \
 	-c "select \"filename\"" \
-	-c 'get picture:/path/destination'
+	-c "get picture:\"/path/destination\""
 	
 # remove tags
 kid3-cli -c "select \"/path/to file\"" \
 	 -c 'remove artist' \
-	 -c 'remove picture' \
 	 -c 'remove 1' \ # remove ID3v1
 ```
 
@@ -48,5 +40,4 @@ kid3-cli -c "select \"/path/to file\"" \
 | tracknumber | TRACKNUMBER            | TRCK   | IPRT      |
 | picture     | METADATA_BLOCK_PICTURE | APIC   | APIC      |
 
-`METADATA_BLOCK_PICTURE` - Vorbis comments  
-`*.wav` files use RIFF  
+`METADATA_BLOCK_PICTURE` - Vorbis comments 
