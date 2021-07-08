@@ -6,10 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210703"
+        , "version":     "20210708"
         , "revision":    [
-              "Fix - Playlist - elapsed time"
-			, "General improvements"
+              "Fix - Library context menu - missing items"
+			, "Improve - Lyrics - get embedded ones if available"
+			, "Add - Permanent VU meter mode"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
