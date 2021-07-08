@@ -43,7 +43,7 @@ kid3-cli -c "select \"/path/to file\"" \
 | ALBUMARTIST            | TPE2   |      | albumartist |
 | COMPOSER               | TCOM   | IMUS | composer    |
 | GENRE                  | TCON   | IGNR | genre       |
-| LYRICS                 | USLT   |      | lyrics       |
+| LYRICS                 | USLT   |      | lyrics      |
 | TITLE                  | TIT2   | INAM | title       |
 | TRACKNUMBER            | TRCK   | IPRT | tracknumber |
 | METADATA_BLOCK_PICTURE | APIC   | APIC | picture     |
