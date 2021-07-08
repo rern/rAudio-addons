@@ -37,7 +37,7 @@ kid3-cli -c "select \"/path/to file\"" \
 [**Tag Mapping**](https://kid3.sourceforge.io/kid3_en.html#table-frame-list)
 
 | Kid3        | Vorbis                 | ID3v2  | RIFF |
-|------------ | ---------------------- | ----   | ---- |
+|:----------- | :--------------------- | :---   | :--- |
 | artist      | ARTIST                 | TPE1   | IART |
 | album       | ALBUM                  | TALB   | IPRD |
 | albumartist | ALBUMARTIST            | TPE2   |      |
