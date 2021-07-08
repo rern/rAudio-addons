@@ -6,24 +6,27 @@
 # escape double quotes for arguments with spaces
 
 # set tags
-kid3-cli -c "select \"/path/to file\"" \
- 	 -c "set artist \""ARTIST\"" \
-	 -c "set picture:\"/path/source\""
+kid3-cli -c "select \"$FILE\"" \
+ 	 -c "set artist \"$ARTIST\"" \
+	 -c "set picture:\"$IMAGE_FILE\""
 	
 # get tags
-kid3-cli -c "select \"/path/to file\"" \
+kid3-cli -c "select \"$FILE\"" \
 	 -c "get artist" \
-	 -c "get picture:\"/path/destination\""
+	 -c "get picture:\"$IMAGE_DEST\""
 	 
 # run with systemd - MUST cd > select > get
-kid3-cli -c "cd \"/path/to dir\"" \
-	 -c "select \"filename\"" \
-	 -c "get picture:\"/path/destination\""
+kid3-cli -c "cd \"$DIR\"" \
+	 -c "select \"$FILE\"" \
+	 -c "get picture:\"$IMAGE_DEST\""
 	
 # remove tags
-kid3-cli -c "select \"/path/to file\"" \
+kid3-cli -c "select \"$FILE\"" \
 	 -c 'remove artist' \
-	 -c 'remove 1' \ # remove ID3v1
+
+# remove ID3v1
+kid3-cli -c "select \"$FILE\"" \
+	 -c 'remove 1' \ 
 ```
 
 [**Tag Mapping**](https://kid3.sourceforge.io/kid3_en.html#table-frame-list)
