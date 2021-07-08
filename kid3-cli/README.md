@@ -36,17 +36,17 @@ kid3-cli -c "select \"/path/to file\"" \
 
 [**Tag Mapping**](https://kid3.sourceforge.io/kid3_en.html#table-frame-list)
 
-| FLAC                   | ID3v2  | RIFF | Kid3 name   |
-| ---------------------- | ----   | ---- | ----------- |
-| ARTIST                 | TPE1   | IART | artist      
-| ALBUM                  | TALB   | IPRD | album       |
-| ALBUMARTIST            | TPE2   |      | albumartist |
-| COMPOSER               | TCOM   | IMUS | composer    |
-| GENRE                  | TCON   | IGNR | genre       |
-| LYRICS                 | USLT   |      | lyrics      |
-| TITLE                  | TIT2   | INAM | title       |
-| TRACKNUMBER            | TRCK   | IPRT | tracknumber |
-| METADATA_BLOCK_PICTURE | APIC   | APIC | picture     |
+| Kid3        | Vorbis                 | ID3v2  | RIFF |
+|------------ | ---------------------- | ----   | ---- |
+| artist      | ARTIST                 | TPE1   | IART |
+| album       | ALBUM                  | TALB   | IPRD |
+| albumartist | ALBUMARTIST            | TPE2   |      |
+| composer    | COMPOSER               | TCOM   | IMUS |
+| genre       | GENRE                  | TCON   | IGNR |
+| lyrics      | LYRICS                 | USLT   |      |
+| title       | TITLE                  | TIT2   | INAM |
+| tracknumber | TRACKNUMBER            | TRCK   | IPRT |
+| picture     | METADATA_BLOCK_PICTURE | APIC   | APIC |
 
 `METADATA_BLOCK_PICTURE` - Vorbis comments  
 `*.wav` files use RIFF  
