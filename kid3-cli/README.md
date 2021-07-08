@@ -12,6 +12,7 @@ kid3-cli -c "select \"/path/to file\"" \
 	 -c 'set albumartist "ALBUMARTIST"' \
 	 -c 'set composer "COMPOSER"' \
 	 -c 'set genre "GENRE"' \
+	 -c 'set lyrics "LYRICS"' \
 	 -c 'set title "TITLE"' \
 	 -c 'set tracknumber "TRACK"' \
 	 -c 'set picture:/path/source'
@@ -42,6 +43,7 @@ kid3-cli -c "select \"/path/to file\"" \
 | ALBUMARTIST            | TPE2   |      | albumartist |
 | COMPOSER               | TCOM   | IMUS | composer    |
 | GENRE                  | TCON   | IGNR | genre       |
+| LYRICS                 | USLT   |      | lyrics       |
 | TITLE                  | TIT2   | INAM | title       |
 | TRACKNUMBER            | TRCK   | IPRT | tracknumber |
 | METADATA_BLOCK_PICTURE | APIC   | APIC | picture     |
