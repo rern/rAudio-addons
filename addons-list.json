@@ -6,11 +6,12 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210708"
+        , "version":     "20210716"
         , "revision":    [
-              "Fix - Library context menu - missing items"
-			, "Improve - Lyrics - get embedded ones if available"
-			, "Add - Permanent VU meter mode"
+                "Fix - Status update across multiple devices"
+              , "Fix - Character LCD refreshing"
+              , "Improve - Use <code>*.woff2</code> fonts only"
+              , "Add - GPIO LED VU meter"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
