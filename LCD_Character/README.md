@@ -83,8 +83,32 @@ lcd.write_string( lines )
 lcd.close()
 
 # read stdin
-# cava | script.py (cava.conf: framerate = 4, ascii_max_range = 20)
+# single line spectrum on character lcd
+#    cava.conf: framerate = 4, bar = 20, ascii_max_range = 8)
+#    cava | script.py
+
+# script.py
+off = 0b00000
+on = 0b11111
+b = [
+    ( off, off, off, off, off, off, off, on ),
+    ( off, off, off, off, off, off, on, on ),
+    ( off, off, off, off, off, on, on, on ),
+    ( off, off, off, off, on, on, on, on ),
+    ( off, off, off, on, on, on, on, on ),
+    ( off, off, on, on, on, on, on, on ),
+    ( off, on, on, on, on, on, on, on ),
+    ( on, on, on, on, on, on, on, on )
+]
+for i in range( 8 ):
+    lcd.create_char( i, b[ i - 1 ] )
+ib = [ '', '\x00', '\x01', '\x02', '\x03', '\x04', '\x05', '\x06', '\x07' ]
+# cava.conf: framerate = 4, ascii_max_range = 8
 for line in iter( sys.stdin.readline, b'' ):
+    val = line[:-2].split( ';' )
+    str = ''
+    for i in val:
+        str = str + ib[ int( i ) ]
     lcd.clear()
-    lcd.write_string( int( line[:-2] ) * ibox )
+    lcd.write_string( str )
 ```
