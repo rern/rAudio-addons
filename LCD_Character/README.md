@@ -86,7 +86,4 @@ lcd.close()
 for line in iter( sys.stdin.readline, b'' ):
     lcd.clear()
     lcd.write_string( line.rstrip() )
-
-# backlight on/off : True/False
-lcd.backlight_enabled = False
 ```
