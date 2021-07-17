@@ -60,7 +60,6 @@ address=0x$( i2cdetect -y $( ls /dev/i2c* | tail -c 2 ) | grep -v '^\s' | cut -d
 #!/usr/bin/python
 
 import sys
-lines = sys.argv[ 1 ]  # display strings (\r\n as newline)
 
 cols = 20
 rows = 4
@@ -76,10 +75,17 @@ lcd = CharLCD( cols=cols, rows=rows, address=address, i2c_expander=chip )
 ### gpio
 #from RPLCD.gpio import CharLCD
 #lcd = CharLCD( cols=cols, rows=rows, numbering_mode=GPIO.BOARD, pin_rs=15, pin_rw=18, pin_e=16, pins_data=[21, 22, 23, 24] )
-	
+
+# argument - string
+lines = sys.argv[ 1 ]  # display strings (\r\n as newline)
 lcd.clear()
 lcd.write_string( lines )
 lcd.close()
+
+# read stdin (e.g. from pipe)
+for line in iter( sys.stdin.readline, b'' ):
+    lcd.clear()
+    lcd.write_string( line.rstrip() )
 
 # backlight on/off : True/False
 lcd.backlight_enabled = False
