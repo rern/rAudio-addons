@@ -82,8 +82,9 @@ lcd.clear()
 lcd.write_string( lines )
 lcd.close()
 
-# read stdin (e.g. cava | script.py)
+# read stdin
+# cava | script.py (cava.conf: framerate = 4, ascii_max_range = 20)
 for line in iter( sys.stdin.readline, b'' ):
     lcd.clear()
-    lcd.write_string( line.rstrip() )
+    lcd.write_string( int( line[:-2] ) * ibox )
 ```
