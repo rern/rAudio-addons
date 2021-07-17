@@ -82,7 +82,7 @@ lcd.clear()
 lcd.write_string( lines )
 lcd.close()
 
-# read stdin (e.g. from pipe)
+# read stdin (e.g. cava | script.py)
 for line in iter( sys.stdin.readline, b'' ):
     lcd.clear()
     lcd.write_string( line.rstrip() )
