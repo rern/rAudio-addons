@@ -6,7 +6,7 @@ With [RPLCD](https://github.com/dbrgn/RPLCD)
 **Via I²C board**
 - 5V to 3.3V I²C + 5V LCD mod  
 
-![i2c](https://github.com/rern/rAudio-addons/raw/main/LCD_Character/i2c_backpack_wiring.jpg)
+![i2c](https://github.com/rern/rAudio-addons/raw/main/LCD_Character/i2c_backpack_mod.jpg)
 
 ```
 LCD: • 2 •...............
