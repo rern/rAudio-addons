@@ -3,8 +3,10 @@
 With [RPLCD](https://github.com/dbrgn/RPLCD)
 
 ### Wiring
-I²C board:
-- For [5V to 3.3V I²C + 5V LCD Mod](https://www.instructables.com/Raspberry-Pi-Using-1-I2C-LCD-Backpacks-for-1602-Sc/) only.
+I²C board - 5V to 3.3V I²C + 5V LCD mod:  
+
+![i2c](https://github.com/rern/rAudio-addons/raw/main/LCD_Character/i2c_backpack_wiring.jpg)
+
 ```
 LCD: • 2 •...............
 I²C: • | •GND•VCC•SDA•SCL•
