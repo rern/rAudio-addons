@@ -3,7 +3,8 @@
 With [RPLCD](https://github.com/dbrgn/RPLCD)
 
 ### Wiring
-I²C board - 5V to 3.3V I²C + 5V LCD mod:  
+**Via I²C board**
+- 5V to 3.3V I²C + 5V LCD mod  
 
 ![i2c](https://github.com/rern/rAudio-addons/raw/main/LCD_Character/i2c_backpack_wiring.jpg)
 
@@ -12,7 +13,7 @@ LCD: • 2 •...............
 I²C: • | •GND•VCC•SDA•SCL•
 J8:  • 4 • 6 • 1 • 3 • 5 •
 ```
-Direct:
+**Direct**
 - With 10k variable resister for contrast
 ```
 LCD: • 1 • 2 • 3 • 4 • 5 • 6 •  •11 •12 •13 •14 •15 •16 •
@@ -71,7 +72,6 @@ address = 0x27 # can be integer 39
 chip = 'PCF8574'
 
 from RPLCD.i2c import CharLCD
-lcd = CharLCD( chip, address )
 lcd = CharLCD( cols=cols, rows=rows, address=address, i2c_expander=chip )
 
 ### gpio
