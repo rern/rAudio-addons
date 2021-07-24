@@ -6,12 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210716"
+        , "version":     "20210724"
         , "revision":    [
-                "Fix - Status update across multiple devices"
-              , "Fix - Character LCD refreshing"
-              , "Improve - Use <code>*.woff2</code> fonts only"
-              , "Add - GPIO LED VU meter"
+                "Fix - Playback - Hide volume bar if Bit-perfect enabled."
+              , "Improve - Playback - Toggle coverart only mode. (top-left corner)"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
