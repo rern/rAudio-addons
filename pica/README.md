@@ -19,6 +19,10 @@ echo "    pica = require('pica')();" > entry.js
 # browserify entry.js to pica.js
 browserify entry.js -o /root/node_modules/pica/dist/pica.js
 
+# !important: 
+#   - DON'T use /root/node_modules/pica/dist/pica.min.js
+#   - manually minify with /root/node_modules/pica/dist/pica.js
+
 # remove temp file
 rm entry.js
 ```
