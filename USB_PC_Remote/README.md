@@ -28,24 +28,15 @@ key         | function
 
 #
 
-**How To**
+**`/root/.xbindkeysrc`**
 
-Replace `/root/.xbindkeysrc`
-
-#
-
-**Power on / off audio equipments**
-
-Install [**RuneUI GPIO**](https://github.com/rern/RuneUI_GPIO) and add these commands to desire buttons.
-
-Such as:
 ```bash
-#<www> power on
-"php /srv/http/gpioon.php"
+#<www> script1
+"script1.sh"
    m:0x0 + c:180
 
-#<close> power off
-"php /srv/http/gpiooff.php"
+#<close> script2
+"script2.sh"
    m:0x8 + c:64 + m:0x0 + c:70
 
 ```
