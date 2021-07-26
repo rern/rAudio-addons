@@ -9,8 +9,6 @@ For [less than $4 on ebay](http://www.ebay.com/sch/i.html?_from=R40&_trksid=p205
 
 _Use in Kodi without any settings. (no more CEC hassels)_
 
-![remote](https://github.com/rern/RuneAudio/blob/master/USB_PC_Remote/irremote.jpg)
-
 The following code assigns 6 keys:  
 
 key         | function
