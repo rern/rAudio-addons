@@ -1,27 +1,54 @@
 ### Radio Paradise API
 
-- Main Mix      : http://stream.radioparadise.com/flacm
-- Mellow Mix    : http://stream.radioparadise.com/mellow-flacm
-- Rock Mix      : http://stream.radioparadise.com/rock-flacm
-- Eclectic Mix  : http://stream.radioparadise.com/eclectic-flacm
+- Main Mix     - `chan=0` : http://stream.radioparadise.com/flacm
+- Mellow Mix   - `chan=1` : http://stream.radioparadise.com/mellow-flacm
+- Rock Mix     - `chan=2` : http://stream.radioparadise.com/rock-flacm
+- Eclectic Mix - `chan=3` : http://stream.radioparadise.com/eclectic-flacm
 
+**Now playing**
 ```sh
-# current playing
-data=$( curl -s -m 5 -G \
-    --data-urlencode "bitrate=4" \
-    --data-urlencode "info=true" \
-    https://api.radioparadise.com/api/get_block )
-
-url=http:$( jq -r .image_base <<< $data )
-url+=$( jq -r '.song."0".cover' <<< $data )
-
-echo $url
+chan=CHANNEL
+curl -s -m 5 -G \
+	--data-urlencode "chan=$chan" \
+	https://api.radioparadise.com/api/now_playing
 ```
-Alternative: http://radioparadise.com/xml/now.xml
+- `artist`
+- `title`
+- `album`
+- `cover`
+- `time` - seconds to next track
 
-**Slideshow**
+**Playlist**
+- FLAC - `bitrate=4`
+- List - Not consistent on reload (cache issue?)
 ```sh
-images=$( jq -r '.song."0".slideshow' <<< $data | tr ',' ' ' )
-for img in$images; do
-	wget -q http://img.radioparadise.com/slideshow/720/$img.jpg
-done
+chan=CHANNEL
+curl -s -m 5 -G \
+	--data-urlencode "chan=$chan" \
+	--data-urlencode "bitrate=4" \
+	--data-urlencode "info=true" \
+	https://api.radioparadise.com/api/get_block
+```
+- Track
+```sh
+chan=CHANNEL
+event=TRACK_ID
+curl -s -m 5 -G \
+	--data-urlencode "bitrate=4" \
+	--data-urlencode "info=true" \
+	--data-urlencode "chan=$chan" \
+	--data-urlencode "event=$event" \
+	https://api.radioparadise.com/api/get_block
+```
+- `event` - track id from List
+- `url` - url for play or skip track
+`song."0"`
+- `artist`
+- `title`
+- `album`
+- `cover` - prefix `https://img.radioparadise.com/` needed
+- `sched_time_millis` - start timestamp (ms)
+- `duration`
+- seconds to track change: ( `sched_time_millis` + `duration` ) / 1000 - `$( date +%s )`
+
+Legacy: http://radioparadise.com/xml/now.xml
