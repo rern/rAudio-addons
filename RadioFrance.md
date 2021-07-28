@@ -1,7 +1,7 @@
 ### Radio France API 
 
 | Station          | `chan` | URL                                                     |
-|------------------|--------|---------------------------------------------------------|
+| :--------------- | :----- | :------------------------------------------------------ |
 | Fip              | 7      | `https://icecast.radiofrance.fr/fip-hifi.aac`           |
 | Fip - Electro    | 74     | `https://icecast.radiofrance.fr/fipelectro-hifi.aac`    |
 | Fip - Groove     | 66     | `https://icecast.radiofrance.fr/fipgroove-hifi.aac`     |
@@ -11,6 +11,7 @@
 | Fip - Reggae     | 71     | `https://icecast.radiofrance.fr/fipreggae-hifi.aac`     |
 | Fip - Rock       | 64     | `https://icecast.radiofrance.fr/fiprock-hifi.aac`       |
 | Fip - World      | 69     | `https://icecast.radiofrance.fr/fipworld-hifi.aac`      |
+|                  |        |                                                         |
 | France Musique            | 4     | `https://icecast.radiofrance.fr/francemusique-hifi.aac`                    |
 | Classique Easy            | 401   | `https://icecast.radiofrance.fr/francemusiqueeasyclassique-hifi.aac`       |
 | Classique Plus            | 402   | `https://icecast.radiofrance.fr/francemusiqueclassiqueplus-hifi.aac`       |
