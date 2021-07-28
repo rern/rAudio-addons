@@ -1,4 +1,4 @@
-### Radio Paradise API
+### Radio Paradise API 
 
 - Main Mix     - `chan=0` : http://stream.radioparadise.com/flac
 - Mellow Mix   - `chan=1` : http://stream.radioparadise.com/mellow-flac
