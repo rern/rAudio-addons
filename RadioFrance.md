@@ -1,15 +1,17 @@
 ### Radio France API 
 
-- Fip              - `chan=7`  : `https://icecast.radiofrance.fr/fip-hifi.aac`
-- Fip - Electro    - `chan=74` : `https://icecast.radiofrance.fr/fipelectro-hifi.aac`
-- Fip - Groove     - `chan=66` : `https://icecast.radiofrance.fr/fipgroove-hifi.aac`
-- Fip - Jazz       - `chan=65` : `https://icecast.radiofrance.fr/fipjazz-hifi.aac`
-- Fip - Nouveautés - `chan=70` : `https://icecast.radiofrance.fr/fipnouveautes-hifi.aac`
-- Fip - Pop        - `chan=78` : `https://icecast.radiofrance.fr/fippop-hifi.aac`
-- Fip - Reggae     - `chan=71` : `https://icecast.radiofrance.fr/fipreggae-hifi.aac`
-- Fip - Rock       - `chan=64` : `https://icecast.radiofrance.fr/fiprock-hifi.aac`
-- Fip - World      - `chan=69` : `https://icecast.radiofrance.fr/fipworld-hifi.aac`
-- Fip - World      - `chan=69` : `https://icecast.radiofrance.fr/fipworld-hifi.aac`
+| Station          | `chan`    | URL                                                     |
+|------------------|-----------|---------------------------------------------------------|
+| Fip              | `chan=7`  | `https://icecast.radiofrance.fr/fip-hifi.aac`           |
+| Fip - Electro    | `chan=74` | `https://icecast.radiofrance.fr/fipelectro-hifi.aac`    |
+| Fip - Groove     | `chan=66` | `https://icecast.radiofrance.fr/fipgroove-hifi.aac`     |
+| Fip - Jazz       | `chan=65` | `https://icecast.radiofrance.fr/fipjazz-hifi.aac`       |
+| Fip - Nouveautés | `chan=70` | `https://icecast.radiofrance.fr/fipnouveautes-hifi.aac` |
+| Fip - Pop        | `chan=78` | `https://icecast.radiofrance.fr/fippop-hifi.aac`        |
+| Fip - Reggae     | `chan=71` | `https://icecast.radiofrance.fr/fipreggae-hifi.aac`     |
+| Fip - Rock       | `chan=64` | `https://icecast.radiofrance.fr/fiprock-hifi.aac`       |
+| Fip - World      | `chan=69` | `https://icecast.radiofrance.fr/fipworld-hifi.aac`      |
+| Fip - World      | `chan=69` | `https://icecast.radiofrance.fr/fipworld-hifi.aac`      |
 
 - France Musique            - `chan=4`   : `https://icecast.radiofrance.fr/francemusique-hifi.aac`
 - Classique Easy            - `chan=401` : `https://icecast.radiofrance.fr/francemusiqueeasyclassique-hifi.aac`
