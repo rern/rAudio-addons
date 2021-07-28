@@ -1,9 +1,10 @@
 ### Radio Paradise API
 
-- Main Mix     - `chan=0` : http://stream.radioparadise.com/flacm
-- Mellow Mix   - `chan=1` : http://stream.radioparadise.com/mellow-flacm
-- Rock Mix     - `chan=2` : http://stream.radioparadise.com/rock-flacm
-- Eclectic Mix - `chan=3` : http://stream.radioparadise.com/eclectic-flacm
+- Main Mix     - `chan=0` : http://stream.radioparadise.com/flac
+- Mellow Mix   - `chan=1` : http://stream.radioparadise.com/mellow-flac
+- Rock Mix     - `chan=2` : http://stream.radioparadise.com/rock-flac
+- Eclectic Mix - `chan=3` : http://stream.radioparadise.com/eclectic-flac
+Note: `*-falcm` streams - with metadata - emit `playlist` and `player` every 5 seconds
 
 **Now playing**
 ```sh
@@ -16,7 +17,7 @@ curl -s -m 5 -G \
 - `title`
 - `album`
 - `cover`
-- `time` - seconds to next track
+- `time` - seconds to track change
 
 **Playlist**
 - FLAC - `bitrate=4`
@@ -51,4 +52,4 @@ curl -s -m 5 -G \
 - `duration`
 - seconds to track change: ( `sched_time_millis` + `duration` ) / 1000 - `$( date +%s )`
 
-Legacy: http://radioparadise.com/xml/now.xml
+Legacy now playing: http://radioparadise.com/xml/now.xml
