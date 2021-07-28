@@ -1,11 +1,11 @@
 ### Radio Paradise API 
 
-- Main Mix     - `chan=0` : http://stream.radioparadise.com/flac
-- Mellow Mix   - `chan=1` : http://stream.radioparadise.com/mellow-flac
-- Rock Mix     - `chan=2` : http://stream.radioparadise.com/rock-flac
-- Eclectic Mix - `chan=3` : http://stream.radioparadise.com/eclectic-flac  
+- Main Mix     - `chan=0` : `http://stream.radioparadise.com/flac`
+- Mellow Mix   - `chan=1` : `http://stream.radioparadise.com/mellow-flac`
+- Rock Mix     - `chan=2` : `http://stream.radioparadise.com/rock-flac`
+- Eclectic Mix - `chan=3` : `http://stream.radioparadise.com/eclectic-flac`
 
-Note: `*-falcm` streams - with metadata - emit `playlist` and `player` every 5 seconds
+Note: `*-falcm`, streams with metadata, emit `playlist` and `player` every 5 seconds
 
 **Now playing**
 ```sh
