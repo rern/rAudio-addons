@@ -6,10 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210724"
+        , "version":     "20210731"
         , "revision":    [
-                "Fix - Playback - Hide volume bar if Bit-perfect enabled."
-              , "Improve - Playback - Toggle coverart only mode. (top-left corner)"
+                "Improve/fix - metadata and coverart for Radio Paradise and Radio France"
+              , "Upgrade - jQuery to 3.6.0"
+              , "Switch - Swipe/long-press from jQuery mobile to Tocca"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
