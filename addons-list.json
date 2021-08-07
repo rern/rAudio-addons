@@ -6,11 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210731"
+        , "version":     "20210807"
         , "revision":    [
-                "Improve/fix - metadata and coverart for Radio Paradise and Radio France"
-              , "Upgrade - jQuery to 3.6.0"
-              , "Switch - Swipe/long-press from jQuery mobile to Tocca"
+              "Improve - Show/Hide elements on different screen sizes"
+            , "Fix - AirPlay/Spotify - Missing coverarts on track change"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
