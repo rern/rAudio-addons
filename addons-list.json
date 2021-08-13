@@ -6,10 +6,13 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210807"
+        , "version":     "20210813"
         , "revision":    [
-              "Improve - Show/Hide elements on different screen sizes"
-            , "Fix - AirPlay/Spotify - Missing coverarts on track change"
+              "Fix - Missing coverart"
+            , "Fix - Restore audio output after disconnect USB DAC"
+            , "Fix - Color setting"
+            , "Fix - 2 rows Character LCD - Missing 2nd row"
+            , "Improve - Character LCD display"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
