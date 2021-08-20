@@ -6,13 +6,12 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210813"
+        , "version":     "20210820"
         , "revision":    [
-              "Fix - Missing coverart"
-            , "Fix - Restore audio output after disconnect USB DAC"
-            , "Fix - Color setting"
-            , "Fix - 2 rows Character LCD - Missing 2nd row"
-            , "Improve - Character LCD display"
+              "Fix - Settings - Refresh settings after dropdown changed"
+            , "Fix - Settings > Charater LCD - GPIO mode setting"
+            , "Fix - Settings > Power button with DAC HAT or LCD"
+            , "Improve - Settings > Power button - Single on/off pin"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
