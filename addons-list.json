@@ -6,12 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210820"
+        , "version":     "20210827"
         , "revision":    [
-              "Fix - Settings - Refresh settings after dropdown changed"
-            , "Fix - Settings > Charater LCD - GPIO mode setting"
-            , "Fix - Settings > Power button with DAC HAT or LCD"
-            , "Improve - Settings > Power button - Single on/off pin"
+              "Fix - Playlist - Vertical scroll on touch devices"
+            , "Improve - Settings - Relays settings"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
