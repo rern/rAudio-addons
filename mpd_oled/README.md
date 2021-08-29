@@ -11,7 +11,8 @@ cd
 git clone https://github.com/antiprism/mpd_oled
 cd mpd_oled
 ./bootstrap
-CPPFLAGS="-W -Wall -Wno-psabi" ./configure
+CPPFLAGS="-W -Wall -Wno-psabi"
+./configure
 make
 su
 make install-strip
