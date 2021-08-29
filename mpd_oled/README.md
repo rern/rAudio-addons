@@ -32,7 +32,7 @@ audio_output {
      type           "fifo"
      name           "mpd_oled"
      path           "/tmp/mpd.fifo"
-     buffer_time    "1000000"
+     buffer_time    "1200000"
 }
 ' >> /etc/mpd.conf
 
