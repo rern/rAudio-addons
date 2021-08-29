@@ -2,7 +2,7 @@ mpd_oled
 ---
 
 ## Build binary
-- with already `cava` installed
+- with already [`cava`](https://github.com/rern/rern.github.io/tree/master/Packages/cava) installed
 ```sh
 pacman -Sy --needed base-devel git
 
