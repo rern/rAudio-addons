@@ -22,12 +22,12 @@ make install-strip
 - `/etc/modules-load.d/raspberrypi.conf`
 - `/etc/systemd/system/mpd_oled.service`
 ```sh
-echo '\
+echo "\
 dtparam=i2c_arm=on
 dtparam=i2c_arm_baudrate=1200000
-' >> /boot/config.txt
+" >> /boot/config.txt
 
-echo '\
+echo '
 audio_output {
      type           "fifo"
      name           "mpd_oled"
@@ -36,11 +36,9 @@ audio_output {
 }
 ' >> /etc/mpd.conf
 
-echo '\
-i2c-dev
-' >> /etc/modules-load.d/raspberrypi.conf
+echo i2c-dev >> /etc/modules-load.d/raspberrypi.conf
 
-echo '\
+echo "\
 [Unit]
 Description=MPD OLED Display
 
@@ -49,5 +47,5 @@ ExecStart=/usr/local/bin/mpd_oled -o 6 -b 7 -f 25 -k -c 'fifo,/tmp/mpd.fifo'
 
 [Install]
 WantedBy=multi-user.target
-' > /etc/systemd/system/mpd_oled.service
+" > /etc/systemd/system/mpd_oled.service
 ```
