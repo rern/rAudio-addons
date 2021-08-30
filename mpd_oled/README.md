@@ -8,12 +8,10 @@ pacman -Sy --needed base-devel git
 
 su alarm
 cd
-git clone https://github.com/antiprism/mpd_oled
+git clone https://github.com/rern/mpd_oled
 cd mpd_oled
 ./bootstrap
-CPPFLAGS="-W -Wall -Wno-psabi"
-./configure
-make
+
 su
 make install-strip
 ```
