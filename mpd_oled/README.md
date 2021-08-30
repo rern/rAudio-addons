@@ -1,6 +1,8 @@
 mpd_oled
 ---
 
+Source: [mpd_oled](https://github.com/antiprism/mpd_oled)
+
 ## Build binary
 - with [`cava`](https://github.com/rern/rern.github.io/tree/master/Packages/cava) already installed
 ```sh
