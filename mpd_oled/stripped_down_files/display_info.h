@@ -25,7 +25,6 @@
 #ifndef DISPLAY_INFO_H
 #define DISPLAY_INFO_H
 
-#include "status.h"
 #include <vector>
 
 struct spect_graph {
@@ -41,7 +40,6 @@ struct spect_graph {
 
 struct display_info {
   spect_graph spect;
-  mpd_info status;
 };
 
 #endif // DISPLAY_INFO_H

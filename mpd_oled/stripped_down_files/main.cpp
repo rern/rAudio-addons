@@ -25,6 +25,7 @@
 #include "display.h"
 #include "display_info.h"
 #include "programopts.h"
+#include "utils.h"
 
 #include <errno.h>
 #include <pthread.h>
@@ -380,8 +381,6 @@ void *update_info(void *data)
     display_info disp_info = *disp_info_orig;
     pthread_mutex_unlock(&disp_info_lock);
 
-    disp_info.status.init(); // Update MPD status info
-
     pthread_mutex_lock(&disp_info_lock);
     pthread_mutex_unlock(&disp_info_lock);
 
@@ -403,7 +402,6 @@ int start_idle_loop(ArduiPi_OLED &display, const OledOpts &opts)
 
   display_info disp_info;
   disp_info.spect.init(opts.bars, opts.gap);
-  disp_info.status.init();
 
   // Update MPD info in separate thread to avoid stuttering in the spectrum
   // animation.
@@ -451,7 +449,7 @@ int start_idle_loop(ArduiPi_OLED &display, const OledOpts &opts)
     }
 
     // Clear spectrum data if no data read or music not playing
-    if (num_bars_read == 0 || disp_info.status.get_state() != MPD_STATE_PLAY) {
+    if (num_bars_read == 0) {
       std::fill(disp_info.spect.heights.begin(), disp_info.spect.heights.end(),
                 0);
       usleep(0.1 * 1000000); // 0.1 sec delay, don't idle too fast if no need
@@ -468,7 +466,7 @@ int start_idle_loop(ArduiPi_OLED &display, const OledOpts &opts)
     }
 
     display.reset_offset();
-    if (disp_info.status.get_state() == MPD_STATE_PLAY && fifo_fd < 0) {
+    if (fifo_fd < 0) {
       opts.print_status_or_exit(start_cava(&fifo_file, opts));
       fifo_fd = fileno(fifo_file);
     }
