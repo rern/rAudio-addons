@@ -32,21 +32,6 @@
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/webradio/install.sh"
         , "hide":        "[[ $( ls '/srv/http/data/webradios/https:||icecast.radiofrance.fr'* | wc -l ) == 19 ]] && echo 1 || echo 0"
     }
-    , "oled": {
-          "title":       "MPD OLED Display"
-        , "version":     "20210220"
-        , "revision":    "Initial release"
-        , "description": "Display information including music frequency spectrum on OLED screen connected to Raspberry Pi.<br><a href=\"https://gist.github.com/antiprism/44100b6c2b688f5d15a5c25172793f4b\" target='_blank'>Configuration >></a>"
-        , "sourcecode":  "https://github.com/rern/mpd_oled"
-        , "installurl":  "https://github.com/rern/mpd_oled/raw/main/install.sh"
-        , "option": {
-              "radio": {
-                  "message": "Interface"
-                , "list":    { "I²C": "i2c", "SPI": "spi" }
-            }
-        }
-        , "hide": 1
-    }
     , "radi": {
           "title":       "Import Webradio"
         , "description": "Import <code>*.pls</code> webradio files."
