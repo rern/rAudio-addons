@@ -9,7 +9,7 @@
         , "version":     "202109032"
         , "revision":    [
               "Fix - Settings menu - Suppress tapping on show"
-              "Fix - Settings - Dropdown selector"
+            , "Fix - Settings - Dropdown selector"
             , "Add - GPIO device support - Spectrum OLED (128x64)"
         ]
         , "description": "Updates for rAudio 1"
