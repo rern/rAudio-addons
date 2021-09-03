@@ -6,10 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210827"
+        , "version":     "20210903"
         , "revision":    [
-              "Fix - Playlist - Vertical scroll on touch devices"
-            , "Improve - Settings - Relays settings"
+              "Fix - Settings menu - Suppress tapping on show"
+            , "Add - GPIO device support - Spectrum OLED (128x64)"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
