@@ -6,7 +6,7 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210903"
+        , "version":     "202109031"
         , "revision":    [
               "Fix - Settings menu - Suppress tapping on show"
             , "Add - GPIO device support - Spectrum OLED (128x64)"
