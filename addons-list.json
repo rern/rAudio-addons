@@ -6,11 +6,13 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "202109032"
+        , "version":     "20210911"
         , "revision":    [
-              "Fix - Settings menu - Suppress tapping on show"
-            , "Fix - Settings - Dropdown selector"
-            , "Add - GPIO device support - Spectrum OLED (128x64)"
+              "Fix - Playback - Hide volume bar on disabled volume"
+            , "Fix - Playback - VU meter animation"
+            , "Improve - Playback - Time progress rendering"
+            , "Improve - Playback - Suppress switch page when wipe on time / volume / progress bar"
+            , "Add - Playback settings - Disable swipe"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"

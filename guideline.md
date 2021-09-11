@@ -51,7 +51,7 @@ _revision 20190308_
 - install script 
 	- for update, get saved options as install parameters / arguments
 	- install required packages and verify
-	- install `.../archive/$branch.zip` files from repository with `getinstallzip`
+	- install `.../archive/$branch.zip` files from branch/release with `getinstallzip`
 		- extracted to respective directory of target root
 		- files in repository root will be removed
 
@@ -59,12 +59,6 @@ _revision 20190308_
 	- restore everything to pre-install state
 		- restore files modified by [provided edit commands](#provided-edit-commands) with `restorefile FILE1 FILE2 ...`
 	- no need for non-install type
-	- file path:
-		- for install with `master.zip`
-			- must be at `/usr/local/bin/`
-		- for install with individual downloads
-			- must be the same as `install.sh` to use `getuninstall` function
-			- destination must be `/usr/local/bin/`
 	
 - update:
 	- will be done by uninstall > install
