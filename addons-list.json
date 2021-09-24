@@ -6,13 +6,18 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210911"
+        , "version":     "20210924"
         , "revision":    [
-              "Fix - Playback - Hide volume bar on disabled volume"
-            , "Fix - Playback - VU meter animation"
-            , "Improve - Playback - Time progress rendering"
-            , "Improve - Playback - Suppress switch page when wipe on time / volume / progress bar"
-            , "Add - Playback settings - Disable swipe"
+              "Fix - System - Date and time sync on WiFi"
+            , "Fix - System - Sound Profile setting"
+            , "Fix - Features - Browser on RPi setting"
+            , "Fix - Library - Maintaining scroll position"
+			, "Fix - Playback - Character LCD while playing WebRadio"
+            , "Improve - Playback rendering"
+            , "Improve - Coverart changed - Update all clients on all pages"
+            , "Improve - VU meter, VU LED, spectrum OLED on *.mp3 and *.dsf"
+            , "Add - Library - Long-press to exclude album thumbnail"
+            , "Add - Settings - Player - Exculded Lists"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
