@@ -31,6 +31,6 @@ ALSAEqual
 	```
 	- Set `su mpd` permission: `chsh -s /bin/bash mpd`
 
-- Equalizer console: `su mpd -c 'alsamoxer -D equal`
+- Equalizer console: `su mpd -c 'alsamixer -D equal`
 - Command line: `amixer -D equal -M sset 'BAND' N%`
 	- `BAND`: `00. 31 Hz`, `01. 63 Hz`, `02. 125 Hz`, `03. 250 Hz`, `04. 500 Hz`, `05. 1 kHz`, `06. 2 kHz`, `07. 4 kHz`, `08. 8 kHz`, `09. 16 kHz`
