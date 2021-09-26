@@ -1,7 +1,8 @@
 ALSAEqual
 ---
 
-- Install: `pacman -S alsaequal`
+- Install:
+	- `pacman -S alsaequal`
 	- `/etc/asound.conf`
 	```
 	...
