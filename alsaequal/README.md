@@ -38,10 +38,11 @@ ALSAEqual
 		- `N`: 0-100 (already mapped as %)
 	- Get: `amixer -D equal sget 'BAND'`
 	```sh
+	freq=( 31 63 125 250 500 1 2 4 8 16 )
 	for (( i=0; i < 10; i++ )); do
 		(( i < 5 )) && unit=Hz || unit=kHz
 		band="0$i. ${freq[$i]} $unit" 
-		val+=,$( amixer -D equal sget "$band" | awk '/^ *Front Left/ {print $4}' )
+		val+="$( amixer -D equal sget "$band" | awk '/^ *Front Left/ {print $4}' ) "
 	done
-	echo [ ${val:1} ]
+	echo $val
 	```
