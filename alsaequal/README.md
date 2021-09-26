@@ -34,6 +34,14 @@ ALSAEqual
 - Equalizer console: `su mpd -c 'alsamixer -D equal`
 - Command line:
 	- Set: `amixer -D equal sset 'BAND' N`
+		- `BAND`: `00. 31 Hz`, `01. 63 Hz`, `02. 125 Hz`, `03. 250 Hz`, `04. 500 Hz`, `05. 1 kHz`, `06. 2 kHz`, `07. 4 kHz`, `08. 8 kHz`, `09. 16 kHz`
+		- `N`: 0-100 (already mapped as %)
 	- Get: `amixer -D equal sget 'BAND'`
-	- `BAND`: `00. 31 Hz`, `01. 63 Hz`, `02. 125 Hz`, `03. 250 Hz`, `04. 500 Hz`, `05. 1 kHz`, `06. 2 kHz`, `07. 4 kHz`, `08. 8 kHz`, `09. 16 kHz`
-	- `N`: 0-100 (already mapped as %)
+	```sh
+	for (( i=0; i < 10; i++ )); do
+		(( i < 5 )) && unit=Hz || unit=kHz
+		band="0$i. ${freq[$i]} $unit" 
+		val+=,$( amixer -D equal sget "$band" | awk '/^ *Front Left/ {print $4}' )
+	done
+	echo [ ${val:1} ]
+	```
