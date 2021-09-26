@@ -10,6 +10,8 @@ audio_output {
 	name           "ALSAEqual"
 	device         "plug:plugequal"
 	type           "alsa"
+	auto_resample  "no"
+	mixer_type     "hardware"
 }
 ```
 - `/etc/asound.conf`
@@ -27,4 +29,4 @@ pcm.!default {
 	slave.pcm plugequal;
 }
 ```
-- Equalizer console: `su mpd -c 'alsamoxer -D equal'
+- Equalizer console: `su mpd -c 'alsamoxer -D equal`
