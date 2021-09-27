@@ -6,11 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20210927"
+        , "version":     "20210925"
         , "revision":    [
-              "Fix - System setting page on RPis with no LAN port"
-            , "Fix - Elasped time on hidden Time knob"
-            , "Improve - Playback vertical alignment on various settings"
+              "Fix - Player settings"
+            , "Fix - Features page bottom padding"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
