@@ -36,5 +36,5 @@ ALSAEqual
 	- Set: `su mpd -c 'amixer -D equal sset "BAND" N'`
 		- `BAND`: `00. 31 Hz`, `01. 63 Hz`, `02. 125 Hz`, `03. 250 Hz`, `04. 500 Hz`, `05. 1 kHz`, `06. 2 kHz`, `07. 4 kHz`, `08. 8 kHz`, `09. 16 kHz`
 		- `N`: 0-100 (already mapped as %)
-		- Flat (0dB): 66
+		- Flat (0dB): 60
 	- Get: `su mpd -c 'amixer -D equal contents' | awk -F ',' '/: val/ {print $NF}' | xargs`
