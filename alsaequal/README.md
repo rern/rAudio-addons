@@ -11,7 +11,7 @@ ALSAEqual
 	}
 	pcm.plugequal {
 		type equal;
-		slave.pcm "plug:dmix";
+		slave.pcm "plughw:$CARD,0";
 	}
 	pcm.!default {
 		type plug;
@@ -29,12 +29,12 @@ ALSAEqual
 		mixer_type     "hardware"
 	}
 	```
-	- Set `su mpd` permission: `chsh -s /bin/bash mpd`
+	- Set user `mpd` permission to run command: `chsh -s /bin/bash mpd`
 
-- Equalizer console: `su mpd -c 'alsamixer -D equal'`
+- Equalizer console: `sudo - mpd alsamixer -D equal`
 - Command line:
-	- Set: `su mpd -c 'amixer -D equal sset "BAND" N'`
+	- Get: `sudo -u mpd amixer -D equal contents | awk -F ',' '/: val/ {print $NF}' | xargs`
+	- Set: `sudo -u mpd amixer -D equal sset "BAND" N`
 		- `BAND`: `00. 31 Hz`, `01. 63 Hz`, `02. 125 Hz`, `03. 250 Hz`, `04. 500 Hz`, `05. 1 kHz`, `06. 2 kHz`, `07. 4 kHz`, `08. 8 kHz`, `09. 16 kHz`
 		- `N`: 0-100 (already mapped as %)
 		- Flat (0dB): 60
-	- Get: `su mpd -c 'amixer -D equal contents' | awk -F ',' '/: val/ {print $NF}' | xargs`
