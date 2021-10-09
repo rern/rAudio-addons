@@ -9,7 +9,7 @@
         , "version":     "20211009"
         , "revision":    [
               "Fix - Missing WebRadio coverarts"
-            , "Fix - Fix - Missing shortcuts for keyboard on RPi"
+            , "Fix - Missing shortcuts for keyboard on RPi"
             , "Fix - Networks - edit / remove Wi-Fi"
 			, "Add - Player - 10 band graphic qualizer (Andriod - cannot drag on Chrome but Firefox)"
         ]
