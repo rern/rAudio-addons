@@ -6,12 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20211009"
+        , "version":     "20211010"
         , "revision":    [
-              "Fix - Missing WebRadio coverarts"
-            , "Fix - Missing shortcuts for keyboard on RPi"
-            , "Fix - Networks - edit / remove Wi-Fi"
-            , "Add - Player - 10 band graphic qualizer (Andriod - cannot drag on Chrome but Firefox)"
+              "Fix - Swipe to switch between pages"
+            , "Fix - Drag to adjust equalizer on Andriod Chrome"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
