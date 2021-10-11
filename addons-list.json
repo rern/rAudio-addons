@@ -6,10 +6,9 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20211010"
+        , "version":     "20211011"
         , "revision":    [
-              "Fix - Swipe to switch between pages"
-            , "Fix - Drag to adjust equalizer on Andriod Chrome"
+              "Fix - Features setting page"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
