@@ -9,6 +9,7 @@
         , "version":     "20211011"
         , "revision":    [
               "Fix - Features setting page"
+            , "Fix - System - I2S module for HiFiBerry DAC+ RTC"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
