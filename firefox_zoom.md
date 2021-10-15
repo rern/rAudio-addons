@@ -1,10 +1,12 @@
 ## Set Firefox zoom + fullscreen
 
 ### Profile Folder
-Settings > Help > More Trobleshooting information > Profile Folder
+- Path: `/root/.mozilla/firefox`
+- Default profile directory: `/root/.mozilla/firefox/profiles.ini` > `Default=NAME.default-release`
+- or GUI: Settings > Help > More Trobleshooting information > Profile Folder
 
 ### User preference file
-Add `user.js` in the profile folder
+Add `user.js` in `/root/.mozilla/firefox/NAME.default-release`
 ```
 user_pref("layout.css.devPixelsPerPx", "1");
 ```
