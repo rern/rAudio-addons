@@ -1,4 +1,4 @@
-## Set Firefox zoom
+## Set Firefox zoom + fullscreen
 
 ### Profile Folder
 Settings > Help > More Trobleshooting information > Profile Folder
@@ -12,3 +12,8 @@ zoom level:
 `"1"` 100%
 `"1.5"` 150%
 `"2"` 200%
+
+### Fullscreen mode
+```
+firefox.exe -kiosk
+```
