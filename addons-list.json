@@ -9,6 +9,7 @@
         , "version":     "20211015"
         , "revision":    [
               "Fix - WebRadio coverart - update on track change"
+            , "Fix - Time bar and Volume bar on Android"
             , "Fix - Features - Browser on RPi - re-enable"
         ]
         , "description": "Updates for rAudio 1"
