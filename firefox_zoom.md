@@ -1,7 +1,7 @@
 ## Set Firefox zoom + fullscreen
 
 ### Profile Folder
-- Path: `/root/.mozilla/firefox` (or or GUI: Settings > Help > More Trobleshooting information > Profile Folder)
+- Path: `/root/.mozilla/firefox` (or GUI: Settings > Help > More Trobleshooting information > Profile Folder)
 - Default profile directory: `/root/.mozilla/firefox/profiles.ini` > `Default=NAME.default-release`
 
 ### User preference file
