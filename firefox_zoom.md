@@ -15,5 +15,5 @@ zoom level:
 
 ### Fullscreen mode
 ```
-firefox -kiosk
+firefox -kiosk http://localhost
 ```
