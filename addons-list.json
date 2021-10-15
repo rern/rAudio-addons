@@ -6,10 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20211011"
+        , "version":     "20211015"
         , "revision":    [
-              "Fix - Features setting page"
-            , "Fix - System - I2S module for HiFiBerry DAC+ RTC"
+              "Fix - WebRadio coverart - update on track change"
+            , "Fix - Features - Browser on RPi - re-enable"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
@@ -17,9 +17,8 @@
         , "thumbnail":   "/assets/img/coverart.svg"
         , "sourcecode":  "https://github.com/rern/rAudio-1"
         , "installurl":  "https://github.com/rern/rAudio-1/raw/main/install.sh"
-        , "hide":        "[[ $( cat /srv/http/data/system/version ) == 1 ]] && echo 0 || echo 1"
         , "verify": {
-              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20210302 ]] && echo 1"
+              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20210911 ]] && echo 1"
             , "notverified": "Please download the latest image file to be able to update."
         }
     }
