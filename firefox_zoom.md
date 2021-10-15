@@ -4,7 +4,7 @@
 `user.js`
 ```sh
 dirfirefox=/root/.mozilla/firefox
-profile=$( grep Default $dirfirefox/installs.ini | cut -d= -f2 )
+dirprofile=$dirfirefox/$( grep Default $dirfirefox/installs.ini | cut -d= -f2 )
 echo 'user_pref("layout.css.devPixelsPerPx", "1");' > fileuserjs=$dirfirefox/$profile/user.js
 ```
 zoom level `devPixelsPerPx`:
