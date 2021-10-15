@@ -15,5 +15,5 @@ zoom level:
 
 ### Fullscreen mode
 ```
-firefox.exe -kiosk
+firefox -kiosk
 ```
