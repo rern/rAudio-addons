@@ -4,26 +4,29 @@ ALSAEqual
 - Install:
 	- `pacman -S alsaequal`
 	- `/etc/asound.conf`
-	```
+	```sh
 	...
 	pcm.!default {
 		type plug;
 		slave.pcm plugequal;
+	}
+	ctl.equal {
+		type equal;
 	}
 	pcm.plugequal {
 		type equal;
 		slave.pcm "plughw:$CARD,0";
 	}
-	ctl.equal {
-		type equal;
-	}
 	```
-	Bluetooth ( `00:00:00:00:00:00` = latest connected device )
-	```
+	Bluetooth
+	```sh
 	...
 	pcm.!default {
 		type plug;
 		slave.pcm plugequal;
+	}
+	ctl.equal {
+		type equal;
 	}
 	pcm.plugequal {
 		type equal;
@@ -31,14 +34,12 @@ ALSAEqual
 			type plug
 			slave.pcm {
 				type bluealsa;
+				# 00:00:00:00:00:00 = latest connected device
 				device "00:00:00:00:00:00";
 				profile "a2dp";
 				delay 20000;
 			}
 		}
-	}
-	ctl.equal {
-		type equal;
 	}
 	```
 	- `/etc/mpd.conf`
