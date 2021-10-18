@@ -21,15 +21,15 @@ ALSAEqual
 	Bluetooth
 	```sh
 	...
-	pcm.!default {
-		type plug;
-		slave.pcm plugequal;
-	}
-	ctl.equal {
-		type equal;
-	}
-	pcm.plugequal {
-		type equal;
+	#pcm.!default {
+	#	type plug;
+	#	slave.pcm plugequal;
+	#}
+	#ctl.equal {
+	#	type equal;
+	#}
+	#pcm.plugequal {
+	#	type equal;
 		slave.pcm {
 			type plug
 			slave.pcm {
@@ -40,7 +40,7 @@ ALSAEqual
 				delay 20000;
 			}
 		}
-	}
+	#}
 	```
 	- `/etc/mpd.conf`
 	```
