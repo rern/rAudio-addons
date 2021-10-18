@@ -6,16 +6,39 @@ ALSAEqual
 	- `/etc/asound.conf`
 	```
 	...
-	ctl.equal {
-		type equal;
+	pcm.!default {
+		type plug;
+		slave.pcm plugequal;
 	}
 	pcm.plugequal {
 		type equal;
 		slave.pcm "plughw:$CARD,0";
 	}
+	ctl.equal {
+		type equal;
+	}
+	```
+	Bluetooth ( `00:00:00:00:00:00` = latest connected device )
+	```
+	...
 	pcm.!default {
 		type plug;
 		slave.pcm plugequal;
+	}
+	pcm.plugequal {
+		type equal;
+		slave.pcm {
+			type plug
+			slave.pcm {
+				type bluealsa;
+				device "00:00:00:00:00:00";
+				profile "a2dp";
+				delay 20000;
+			}
+		}
+	}
+	ctl.equal {
+		type equal;
 	}
 	```
 	- `/etc/mpd.conf`
