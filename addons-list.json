@@ -6,11 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20211019"
+        , "version":     "20211020"
         , "revision":    [
-              "Fix - System - Missing Audio - I²S select box"
-            , "Fix - Browser on RPi wider than screen size (switch from Firefox back to Chromium)"
-            , "Add - Playback volume and equalizer for Bluetooth receivers"
+              "Fix - System - I²S dropdown list cannot be selected on some devices"
+            , "Fix - Networks page - JSON error"
+            , "Fix - Playback - JSON error when equalizer enabled with Bluetooth"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
