@@ -6,11 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20211020"
+        , "version":     "20211022"
         , "revision":    [
-              "Fix - System - I²S dropdown list cannot be selected on some devices"
-            , "Fix - Networks page - JSON error"
-            , "Fix - Playback - JSON error when equalizer enabled with Bluetooth"
+              "Fix - Networks - Failed new connection"
+            , "Fix - System - JSON error when disable auto start access point"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
