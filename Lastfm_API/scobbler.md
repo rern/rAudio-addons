@@ -1,0 +1,91 @@
+### Lastfm API
+
+- Authorize with usernme and password > `.session.key`
+- `apisig` signature string:
+	- Must be in alphabetical order
+	- Syntax `key${value}...$sharedsecret`
+	- encode to `utf8`
+	- Hash with `md5sum`
+	- Trim to 32 characters
+- `curl`:
+	- Must be in alphabetical order
+	- Append with `apisig` and `format`
+```sh
+username=username
+password=password
+api_key=$apikey
+sharedsecret=$sharedsecret
+# signature string must be in alphabetical order
+apisig=$( echo -n "api_key${apikey}methodauth.getMobileSessionpassword${password}username${username}$sharedsecret" \
+			| iconv -t utf8 \
+			| md5sum \
+			| cut -c1-32 )
+# curl data - must be in alphabetical order
+sk=$( curl -sX POST \
+	--data-urlencode "api_key=$apikey" \
+	--data-urlencode "method=auth.getMobileSession" \
+	--data-urlencode "password=$password" \
+	--data-urlencode "username=$username" \
+	--data-urlencode "api_sig=$apisig" \
+	--data-urlencode "format=json" \
+	http://ws.audioscrobbler.com/2.0/ \
+	| jq -r .session.key )
+```
+
+- Scrobble
+```sh
+artist=$Artist
+track=$Title
+timestamp=$( date +%s )
+album=$Album
+api_key=$apikey
+sk=$sk
+apisigscrobble=$( echo -n "album${album}api_key${apikey}artist${artist}methodtrack.scrobblesk${sk}timestamp${timestamp}track${track}${sharedsecret}" \
+			| iconv -t utf8 \
+			| md5sum \
+			| cut -c1-32 )
+curl -sX POST \
+	--data-urlencode "album=$album" \
+	--data-urlencode "api_key=$apikey" \
+	--data-urlencode "artist=$artist" \
+	--data-urlencode "method=track.scrobble" \
+	--data-urlencode "sk=$sk" \
+	--data-urlencode "timestamp=$timestamp" \
+	--data-urlencode "track=$track" \
+	--data-urlencode "api_sig=$apisigscrobble" \
+	--data-urlencode "format=json" \
+	http://ws.audioscrobbler.com/2.0/
+```
+
+
+- Alternative - Authorize with user's browser
+	- Get token > `.token`
+	- URL link
+	- Get user's session key
+```sh
+# token
+apikey=$apikey
+sharedsecret=$sharedsecret
+apisig=$( echo -n "api_key${apikey}methodauth.getToken${sharedsecret}" | iconv -t utf8 | md5sum | cut -c1-32 )
+token=$( curl -sX POST \
+	--data-urlencode "api_key=$apikey" \
+	--data-urlencode "api_sig=$apisig" \
+	--data-urlencode "method=auth.getToken" \
+	--data-urlencode "format=json" \
+	http://ws.audioscrobbler.com/2.0/ \
+	| jq -r .token )
+
+# URL
+echo "URL: https://www.last.fm/api/auth?api_key=$apikey&token=$token"
+
+# session key
+apisig=$( echo -n "api_key${apikey}methodauth.getSessiontoken${token}${sharedsecret}" | iconv -t utf8 | md5sum | cut -c1-32 )
+sk=$( curl -sX POST \
+	--data-urlencode "api_key=$apikey" \
+	--data-urlencode "method=auth.getSession" \
+	--data-urlencode "token=$token" \
+	--data-urlencode "api_sig=$apisig" \
+	--data-urlencode "format=json" \
+	http://ws.audioscrobbler.com/2.0/ \
+	| jq -r .session.key )
+```
