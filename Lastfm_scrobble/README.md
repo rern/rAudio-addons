@@ -44,7 +44,7 @@ apisigscrobble=$( echo -n "album${album}api_key${apikey}artist${artist}methodtra
 					| iconv -t utf8 \
 					| md5sum \
 					| cut -c1-32 )
-curl -sX POST \
+accepted=$( curl -sX POST \
 	--data-urlencode "album=$album" \
 	--data-urlencode "api_key=$apikey" \
 	--data-urlencode "artist=$artist" \
@@ -54,7 +54,9 @@ curl -sX POST \
 	--data-urlencode "track=$track" \
 	--data-urlencode "api_sig=$apisigscrobble" \
 	--data-urlencode "format=json" \
-	http://ws.audioscrobbler.com/2.0/
+	http://ws.audioscrobbler.com/2.0/ \
+	| jq  '.scrobbles."@attr".accepted' )
+[[ $accepted == 1 ]] && success=yes
 ```
 
 
