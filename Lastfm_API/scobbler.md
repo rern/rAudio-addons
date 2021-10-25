@@ -13,8 +13,8 @@
 
 - Authorize with usernme and password > `.session.key` (`sk`)
 ```sh
-username=username
-password=password
+username=$username
+password=$password
 api_key=$apikey
 sharedsecret=$sharedsecret
 apisig=$( echo -n "api_key${apikey}methodauth.getMobileSessionpassword${password}username${username}$sharedsecret" \
