@@ -1,26 +1,26 @@
-### Lastfm API
+### Lastfm Scrobble
 
-- Authorize with usernme and password > `.session.key`
-- `apisig` signature string:
-	- Must be in alphabetical order
-	- Syntax `key${value}...$sharedsecret`
-	- encode to `utf8`
-	- Hash with `md5sum`
-	- Trim to 32 characters
-- `curl`:
-	- Must be in alphabetical order
-	- Append with `apisig` and `format`
+- API:
+	- `apisig` signature string:
+		- Must be in alphabetical order
+		- Syntax `key${value}...$sharedsecret`
+		- encode to `utf8`
+		- Hash with `md5sum`
+		- Trim to 32 characters
+	- `curl`:
+		- Must be in alphabetical order
+		- Append with `apisig` and `format`
+
+- Authorize with usernme and password > `.session.key` (`sk`)
 ```sh
 username=username
 password=password
 api_key=$apikey
 sharedsecret=$sharedsecret
-# signature string must be in alphabetical order
 apisig=$( echo -n "api_key${apikey}methodauth.getMobileSessionpassword${password}username${username}$sharedsecret" \
 			| iconv -t utf8 \
 			| md5sum \
 			| cut -c1-32 )
-# curl data - must be in alphabetical order
 sk=$( curl -sX POST \
 	--data-urlencode "api_key=$apikey" \
 	--data-urlencode "method=auth.getMobileSession" \
@@ -41,9 +41,9 @@ album=$Album
 api_key=$apikey
 sk=$sk
 apisigscrobble=$( echo -n "album${album}api_key${apikey}artist${artist}methodtrack.scrobblesk${sk}timestamp${timestamp}track${track}${sharedsecret}" \
-			| iconv -t utf8 \
-			| md5sum \
-			| cut -c1-32 )
+					| iconv -t utf8 \
+					| md5sum \
+					| cut -c1-32 )
 curl -sX POST \
 	--data-urlencode "album=$album" \
 	--data-urlencode "api_key=$apikey" \
@@ -60,13 +60,16 @@ curl -sX POST \
 
 - Alternative - Authorize with user's browser
 	- Get token > `.token`
-	- URL link
-	- Get user's session key
+	- Authorize at URL link
+	- Get `.session.key`
 ```sh
-# token
+# .token
 apikey=$apikey
 sharedsecret=$sharedsecret
-apisig=$( echo -n "api_key${apikey}methodauth.getToken${sharedsecret}" | iconv -t utf8 | md5sum | cut -c1-32 )
+apisig=$( echo -n "api_key${apikey}methodauth.getToken${sharedsecret}" \
+			| iconv -t utf8 \
+			| md5sum \
+			| cut -c1-32 )
 token=$( curl -sX POST \
 	--data-urlencode "api_key=$apikey" \
 	--data-urlencode "api_sig=$apisig" \
@@ -78,8 +81,11 @@ token=$( curl -sX POST \
 # URL
 echo "URL: https://www.last.fm/api/auth?api_key=$apikey&token=$token"
 
-# session key
-apisig=$( echo -n "api_key${apikey}methodauth.getSessiontoken${token}${sharedsecret}" | iconv -t utf8 | md5sum | cut -c1-32 )
+# .session.key
+apisig=$( echo -n "api_key${apikey}methodauth.getSessiontoken${token}${sharedsecret}" \
+			| iconv -t utf8 \
+			| md5sum \
+			| cut -c1-32 )
 sk=$( curl -sX POST \
 	--data-urlencode "api_key=$apikey" \
 	--data-urlencode "method=auth.getSession" \
