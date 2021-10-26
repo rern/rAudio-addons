@@ -13,9 +13,9 @@
 
 - Authorize with usernme and password > `.session.key` (`sk`)
 ```sh
-username=$username
+apikey=$apikey
 password=$password
-api_key=$apikey
+username=$username
 sharedsecret=$sharedsecret
 apisig=$( echo -n "api_key${apikey}methodauth.getMobileSessionpassword${password}username${username}$sharedsecret" \
 			| iconv -t utf8 \
@@ -34,12 +34,13 @@ sk=$( curl -sX POST \
 
 - Scrobble
 ```sh
-artist=$Artist
-track=$Title
-timestamp=$( date +%s )
 album=$Album
-api_key=$apikey
+apikey=$apikey
+artist=$Artist
 sk=$sk
+timestamp=$( date +%s )
+track=$Title
+sharedsecret=$sharedsecret
 apisigscrobble=$( echo -n "album${album}api_key${apikey}artist${artist}methodtrack.scrobblesk${sk}timestamp${timestamp}track${track}${sharedsecret}" \
 					| iconv -t utf8 \
 					| md5sum \
