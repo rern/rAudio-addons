@@ -20,16 +20,16 @@ cat /tmp/shairport-sync-metadata
 U29uZ3Mgb2YgSW5ub2NlbmNl</data></item>
 ...
 
-# <type>
+# <type> - decode with hex2bin
 --------------------------------------
-hex       hex2bin by
+hex       code    by
 --------------------------------------
 636f7265  core    AirPlay data
 73736e63  ssnc    Shairport-sync data
 
 # order (time unit @44100 / second)
 ----------------------------------------------------------------------------------
-hex2bin field
+code    field
 ----------------------------------------------------------------------------------
 pvol    volume         (-24.78,24.08,0.00,60.00 : airplay,current,limitH,limitL)
 mdst    metadata start (1056687241)
@@ -48,7 +48,7 @@ mden    metadata end   (1056687241)
 prgr    progress       (1056674953/1056687241/1072515673 : start/elapsed/end
 
 ----------------------------------------------------------------------------------------------------------------
-hex       hex2bin field              base64 decode - PHP / JS
+hex       code    field              base64 decode - PHP / JS
 ----------------------------------------------------------------------------------------------------------------
 6173616c  asal    Album              base64_decode( $DATA ) / atob( DATA )
 61736172  asar    Artist             base64_decode( $DATA ) / atob( DATA )
