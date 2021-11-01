@@ -49,7 +49,8 @@ hex       code    field          decoded value
           mdst    metadata start (1056687241)
 50494354  PICT    coverart
           mden    metadata end   (1056687241)
-70726772  prgr    progress       (1056674953/1056687241/1072515673 : start/elapsed/end
+70726772  prgr    progress       (1056674953/1056687241/1072515673 : start/current/end
+                                 time unit: @ 41000/second
 ```
 
 **`shairport-sync-metadata-reader`**
