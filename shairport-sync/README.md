@@ -20,8 +20,12 @@ cat /tmp/shairport-sync-metadata
 U29uZ3Mgb2YgSW5ub2NlbmNl</data></item>
 ...
 
+hex2bin() {
+	sed 's/\([0-9A-F]\{2\}\)/\\\\\\x\1/gI' <<< $1 | xargs printf
+}
+
 # STRING values
-<type> <code>                = hex2bin -i <<< $STRING
+<type> <code>                = hex2bin $STRING
 <data encoding="base64">     = base64 -d <<< $STRING
                                PHP: base64_decode( $DATA )
                                JS:  atob( DATA )
