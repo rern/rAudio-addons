@@ -45,12 +45,12 @@ hex       code    field           decoded value - example : format
           mdst    [data start]    1056687241
 6173616c  asal    Album
 61736172  asar    Artist
-                  Comment
-                  Composer
+          ascm    Comment
+          ascp    Composer
 6173676e  asgn    Genre
-                  filetype
+          asdt    filetype
 6d696e6d  minm    Title
-          sort
+          assn    sort as
           mden    [data end]      1056687241
           mdst    [data start]    1056687241
 50494354  PICT    coverart
