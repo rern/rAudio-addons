@@ -22,8 +22,11 @@ U29uZ3Mgb2YgSW5ub2NlbmNl</data></item>
 
 # STRING values
 <type> <code>                = hex2bin -i <<< $STRING
-<data encoding="base64">     = base64 -d <<< $STRING ( PHP: base64_decode( $DATA ); JS: atob( DATA ) )
-<code>50494354</code> - PICT = data:image/jpeg;base64,$STRING
+<data encoding="base64">     = base64 -d <<< $STRING
+                               PHP: base64_decode( $DATA )
+                               JS:  atob( DATA )
+<code>50494354</code> - PICT = file:   base64 -d <<< $STRING > coverart.jpg
+                               string: data:image/jpeg;base64,$STRING
 
 # <type>
 636f7265  core    AirPlay
