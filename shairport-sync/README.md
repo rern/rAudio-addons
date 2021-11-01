@@ -24,7 +24,6 @@ U29uZ3Mgb2YgSW5ub2NlbmNl</data></item>
 <type> <code>                = hex2bin -i <<< $STRING
 <data encoding="base64">     = base64 -d <<< $STRING ( PHP: base64_decode( $DATA ); JS: atob( DATA ) )
 <code>50494354</code> - PICT = data:image/jpeg;base64,$STRING
-prgr time value @ 41000/s    = $(( ( $value * 20500 ) / 41000 ))
 
 # <type>
 636f7265  core    AirPlay
