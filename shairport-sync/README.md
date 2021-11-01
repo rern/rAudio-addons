@@ -31,6 +31,7 @@ hex2bin() {
                                JS:  atob( DATA )
 <code>50494354</code> - PICT = file:   base64 -d <<< $STRING > coverart.jpg
                                string: data:image/jpeg;base64,$STRING
+time (unit: 41000/second)    = $(( value / 41000 ))
 
 # <type>
 636f7265  core    AirPlay
@@ -40,10 +41,7 @@ hex2bin() {
 hex       code    field           decoded value - example : format
 ----------------------------------------------------------------------------------
 70766f6c  pvol    volume          -24.78,24.08,0.00,60.00 : airplay,current,limitH,limitL
-70626567  pbeg    [play begin]
-70656e64  pend    [play end]
-
-# each metadata set (in order)					 
+70626567  pbeg    [play begin]				 
           mdst    [data start]    1056687241
 6173616c  asal    Album
 61736172  asar    Artist
@@ -53,12 +51,12 @@ hex       code    field           decoded value - example : format
                   filetype
 6d696e6d  minm    Title
           sort
-          mden    metadata end    1056687241
-          mdst    metadata start  1056687241
+          mden    [data end]      1056687241
+          mdst    [data start]    1056687241
 50494354  PICT    coverart
-          mden    metadata end    1056687241
+          mden    [adata end]     1056687241
 70726772  prgr    progress        1056674953/1056687241/1072515673 : start/current/end
-                                  time unit: @ 41000/second
+70656e64  pend    [play end]
 ```
 
 **`shairport-sync-metadata-reader`**
