@@ -30,12 +30,12 @@ U29uZ3Mgb2YgSW5ub2NlbmNl</data></item>
 73736e63  ssnc    Shairport-sync
 
 ----------------------------------------------------------------------------------
-hex       code    field          decoded value
+hex       code    field           decoded value - example : format
 ----------------------------------------------------------------------------------
-70766f6c  pvol    volume         (-24.78,24.08,0.00,60.00 : airplay,current,limitH,limitL)
+70766f6c  pvol    volume          -24.78,24.08,0.00,60.00 : airplay,current,limitH,limitL
 
 # each metadata set (in order)					 
-          mdst    metadata start (1056687241)
+          mdst    metadata start  1056687241
 6173616c  asal    Album
 61736172  asar    Artist
                   Comment
@@ -44,12 +44,12 @@ hex       code    field          decoded value
                   filetype
 6d696e6d  minm    Title
           sort
-          mden    metadata end   (1056687241)
-          mdst    metadata start (1056687241)
+          mden    metadata end    1056687241
+          mdst    metadata start  1056687241
 50494354  PICT    coverart
-          mden    metadata end   (1056687241)
-70726772  prgr    progress       (1056674953/1056687241/1072515673 : start/current/end
-                                 time unit: @ 41000/second
+          mden    metadata end    1056687241
+70726772  prgr    progress        1056674953/1056687241/1072515673 : start/current/end
+                                  time unit: @ 41000/second
 ```
 
 **`shairport-sync-metadata-reader`**
