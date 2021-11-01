@@ -35,7 +35,7 @@ hex       code    field          decoded value
 ----------------------------------------------------------------------------------
 70766f6c  pvol    volume         (-24.78,24.08,0.00,60.00 : airplay,current,limitH,limitL)
 
-# each meatadata set (in order)					 
+# each metadata set (in order)					 
           mdst    metadata start (1056687241)
 6173616c  asal    Album
 61736172  asar    Artist
