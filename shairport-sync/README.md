@@ -40,14 +40,16 @@ hex2bin() {
 hex       code    field           decoded value - example : format
 ----------------------------------------------------------------------------------
 70766f6c  pvol    volume          -24.78,24.08,0.00,60.00 : airplay,current,limitH,limitL
+70626567  pbeg    [play begin]
+70656e64  pend    [play end]
 
 # each metadata set (in order)					 
-          mdst    metadata start  1056687241
+          mdst    [data start]    1056687241
 6173616c  asal    Album
 61736172  asar    Artist
                   Comment
                   Composer
-                  Genre
+6173676e  asgn    Genre
                   filetype
 6d696e6d  minm    Title
           sort
