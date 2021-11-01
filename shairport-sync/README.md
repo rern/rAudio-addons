@@ -20,42 +20,35 @@ cat /tmp/shairport-sync-metadata
 U29uZ3Mgb2YgSW5ub2NlbmNl</data></item>
 ...
 
-# <type> - decode with hex2bin
---------------------------------------
-hex       code    by
---------------------------------------
-636f7265  core    AirPlay data
-73736e63  ssnc    Shairport-sync data
+# STRING values
+<type> <code>                = hex2bin -i <<< $STRING
+<data encoding="base64">     = base64 -d <<< $STRING ( PHP: base64_decode( $DATA ); JS: atob( DATA ) )
+<code>50494354</code> - PICT = data:image/jpeg;base64,$STRING
+prgr time value @ 41000/s    = $(( ( $value * 20500 ) / 41000 ))
 
-# order (time unit @44100 / second)
-----------------------------------------------------------------------------------
-code    field
-----------------------------------------------------------------------------------
-pvol    volume         (-24.78,24.08,0.00,60.00 : airplay,current,limitH,limitL)
-mdst    metadata start (1056687241)
-asal    Album
-asar    Artist
-        Comment
-        Composer
-        Genre
-        filetype
-minm    Title
-        sort
-mden    metadata end   (1056687241)
-mdst    metadata start (1056687241)
-PICT    coverart
-mden    metadata end   (1056687241)
-prgr    progress       (1056674953/1056687241/1072515673 : start/elapsed/end
+# <type>
+636f7265  core    AirPlay
+73736e63  ssnc    Shairport-sync
 
-----------------------------------------------------------------------------------------------------------------
-hex       code    field              base64 decode - PHP / JS
-----------------------------------------------------------------------------------------------------------------
-6173616c  asal    Album              base64_decode( $DATA ) / atob( DATA )
-61736172  asar    Artist             base64_decode( $DATA ) / atob( DATA )
-50494354  PICT    coverart           "data:image/jpeg;base64,$DATA" // already base64
-70726772  prgr    elapsed/start/end  base64_decode( $DATA ) / atob( DATA )
-6d696e6d  minm    Title              base64_decode( $DATA ) / atob( DATA )
-70766f6c  pvol    volume             base64_decode( $DATA ) / atob( DATA )
+# data set ( in order)
+----------------------------------------------------------------------------------
+hex       code    field          decoded value
+----------------------------------------------------------------------------------
+70766f6c  pvol    volume         (-24.78,24.08,0.00,60.00 : airplay,current,limitH,limitL)
+          mdst    metadata start (1056687241)
+6173616c  asal    Album
+61736172  asar    Artist
+                  Comment
+                  Composer
+                  Genre
+                  filetype
+6d696e6d  minm    Title
+          sort
+          mden    metadata end   (1056687241)
+          mdst    metadata start (1056687241)
+50494354  PICT    coverart
+          mden    metadata end   (1056687241)
+70726772  prgr    progress       (1056674953/1056687241/1072515673 : start/elapsed/end
 ```
 
 **`shairport-sync-metadata-reader`**
