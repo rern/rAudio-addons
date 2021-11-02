@@ -24,7 +24,7 @@ hex2bin() {
 	sed 's/\([0-9A-F]\{2\}\)/\\\\\\x\1/gI' <<< $1 | xargs printf
 }
 bin2hex() {
-	hexdump -v -e '1/1 "%02x"' <<< $1 | head -c -2
+	hexdump -e '1/1 "%02x"' <<< $1 | head -c -2
 }
 
 # STRING values
