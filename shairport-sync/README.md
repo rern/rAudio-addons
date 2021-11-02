@@ -69,3 +69,8 @@ chmod 755 /usr/local/bin/shairport-sync-metadata-reader
 
 shairport-sync-metadata-reader < /tmp/shairport-sync-metadata
 ```
+
+Request to AirPlay devices
+```sh
+curl -vX POST https://IP_ADDRESS:PORT
+```
