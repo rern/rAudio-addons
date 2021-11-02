@@ -23,6 +23,9 @@ U29uZ3Mgb2YgSW5ub2NlbmNl</data></item>
 hex2bin() {
 	sed 's/\([0-9A-F]\{2\}\)/\\\\\\x\1/gI' <<< $1 | xargs printf
 }
+bin2hex() {
+	hexdump -v -e '1/1 "%02x"' <<< $1 | head -c -2
+}
 
 # STRING values
 <type> <code>                = hex2bin $STRING
@@ -42,19 +45,19 @@ hex       code    field           decoded value - example : format
 ----------------------------------------------------------------------------------
 70766f6c  pvol    volume          -24.78,24.08,0.00,60.00 : airplay,current,limitH,limitL
 70626567  pbeg    [play begin]				 
-          mdst    [data start]    1056687241
+6d647374  mdst    [data start]    1056687241
 6173616c  asal    Album
 61736172  asar    Artist
-          ascm    Comment
-          ascp    Composer
+6173636d  ascm    Comment
+61736370  ascp    Composer
 6173676e  asgn    Genre
-          asdt    filetype
+61736474  asdt    filetype
 6d696e6d  minm    Title
-          assn    sort as
-          mden    [data end]      1056687241
-          mdst    [data start]    1056687241
+6173736e  assn    sort as
+6d64656e  mden    [data end]      1056687241
+6d647374  mdst    [data start]    1056687241
 50494354  PICT    coverart
-          mden    [adata end]     1056687241
+6d64656e  mden    [adata end]     1056687241
 70726772  prgr    progress        1056674953/1056687241/1072515673 : start/current/end
 70656e64  pend    [play end]
 ```
