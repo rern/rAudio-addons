@@ -43,6 +43,10 @@ time (unit: 41000/second)    = $(( value / 41000 ))
 ----------------------------------------------------------------------------------
 hex       code    field           decoded value - example : format
 ----------------------------------------------------------------------------------
+61637265  acre    Active-Remote token
+64616964  daid    DACP-ID
+636c6970  clip    IP
+6461706f  dapo    port
 70766f6c  pvol    volume          -24.78,24.08,0.00,60.00 : airplay,current,limitH,limitL
 70626567  pbeg    [play begin]				 
 6d647374  mdst    [data start]    1056687241
