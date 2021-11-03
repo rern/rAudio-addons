@@ -24,3 +24,9 @@ window.location = 'https://accounts.spotify.com/authorize?'+ $.param( data );
 
 ### Current track
 - `curl -X GET https://api.spotify.com/v1/me/player -H "Authorization: Bearer TOKEN"`
+
+### base64 encode for Authorization: Basic
+```sh
+# Authorization: Basic <base64 encoded CLIENT_ID:CLIENT_SECRET>
+base64auth=$( echo -n $CLIENT_ID:$CLIENT_SECRET | base64 | tr -d '\n=' )
+```
