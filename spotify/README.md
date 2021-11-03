@@ -10,3 +10,6 @@ Allow apps to access private data
 - Redirect to `APP_URL`
 - User's token in address bar: `access_token=TOKEN`
 - Exipre: `expires_in=3600`
+
+### Current track
+- `curl -X GET https://api.spotify.com/v1/me/player -H "Authorization: Bearer TOKEN"`
