@@ -8,7 +8,7 @@ Soptify API
 ### Get current track metadata
 - No user's authorization needed
 - No current progress and status available
-- Get `TOKEN` (expired after 60 minutes)
+- Get `TOKEN`
 ```sh
 CLIENT_ID=CLIENT_ID
 CLIENT_SECRET=CLIENT_SECRET
@@ -17,7 +17,7 @@ curl -s -X POST https://accounts.spotify.com/api/token \
 	-u $CLIENT_ID:$CLIENT_SECRET \
 	-d grant_type=client_credentials
 ```
-- response: `"access_token":"TOKEN"`
+- response: `"access_token":"TOKEN"` (expire: 1 hour)
 - Get `$TRACK_ID` from spotifyd env variable
 - Get metadata
 ```sh
@@ -48,7 +48,7 @@ window.location = 'https://accounts.spotify.com/authorize?'+ $.param( data );
 ```
 - response: `code=CODE` in address bar of `REDIRECT_URI` (`CODE` never expires.)
 
-- Get `TOKEN` (expired after 60 minutes)
+- Get `TOKEN`
 ```sh
 CODE=CODE
 CLIENT_ID=CLIENT_ID
@@ -63,7 +63,9 @@ curl -X POST https://accounts.spotify.com/api/token \
 	-d grant_type=authorization_code \
 	--data-urlencode "$REDIRECT_URI"
 ```
-- response: `"access_token":"TOKEN"` `"refresh_token":"REFRESH_TOKEN"` (`REFRESH_TOKEN` never expires.)
+- response:
+	- `"access_token":"TOKEN"` (expire: 1 hour)
+	- `"refresh_token":"REFRESH_TOKEN"` (never expires.)
 
 - Get status
 ```sh
@@ -72,7 +74,7 @@ TOKEN=TOKEN
 curl -X GET https://api.spotify.com/v1/me/player \
 	-H "Authorization: Bearer TOKEN"
 ```
-- response: `progress_ms`, `is_playing` (available after stop for a few seconds)
+- response: `progress_ms`, `is_playing` (not available after stop for a few seconds)
 
 - Get new `TOKEN` after expired
 ```sh
