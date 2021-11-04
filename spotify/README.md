@@ -1,7 +1,7 @@
 Soptify API
 ---
 
-Required: (from https://developer.spotify.com/dashboard/applications)
+- Required: (from https://developer.spotify.com/dashboard/applications)
 	- `CLIENT_ID`
 	- `CLIENT_SECRET`
 
