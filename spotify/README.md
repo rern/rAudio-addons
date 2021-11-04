@@ -31,8 +31,14 @@ curl -s -X GET https://api.spotify.com/v1/tracks/$TRACK_ID \
 ```
 - response: metadata
 
-### Get current progress and status
-- Need user's authorization (once)
+### Get current progress and metadata
+- Get authorization `CODE`
+- `REDIRECT_URI` page > `HOSTNAME`
+- Extract `CODE` and `error` on redirect back from `REDIRECT_URI`
+- `HOSTNAME` page response
+- Get `TOKEN` and `REFRESH_TOKEN`
+- Get new `TOKEN` after expired
+---
 - Get authorization `CODE`
 ```js
 // js
