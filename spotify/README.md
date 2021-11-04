@@ -45,7 +45,6 @@ var data = {
 window.location = 'https://accounts.spotify.com/authorize?'+ $.param( data );
 ```
 - `code=CODE` in address bar of `REDIRECT_URI`
-- `CODE` never expired unless revoked by user.
 
 ```sh
 # get token
