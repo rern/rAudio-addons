@@ -124,7 +124,7 @@ curl -X POST https://accounts.spotify.com/api/token \
 ```sh
 TOKEN=TOKEN
 
-curl -X GET https://api.spotify.com/v1/me/player \
+curl -X GET https://api.spotify.com/v1/me/player/currently-playing \
 	-H "Authorization: Bearer TOKEN"
 ```
 - response: 
