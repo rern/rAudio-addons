@@ -1,4 +1,4 @@
-Soptify API
+Spotify API
 ---
 
 - Required: (from https://developer.spotify.com/dashboard/applications)
