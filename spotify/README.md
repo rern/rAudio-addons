@@ -61,7 +61,7 @@ curl -X POST https://accounts.spotify.com/api/token \
 	-H 'Content-Type: application/x-www-form-urlencoded' \
 	-d "code=$CODE" \
 	-d grant_type=authorization_code \
-	--data-urlencode $REDIRECT_URI
+	--data-urlencode "$REDIRECT_URI"
 ```
 - response: `"access_token":"TOKEN"` `"refresh_token":"REFRESH_TOKEN"` (`REFRESH_TOKEN` never expires.)
 
