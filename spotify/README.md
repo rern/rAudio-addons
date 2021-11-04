@@ -38,13 +38,13 @@ curl -s -X GET https://api.spotify.com/v1/tracks/$TRACK_ID \
 // js
 var CLIENT_ID = 'CLIENT_ID';
 var REDIRECT_URI = 'REDIRECT_URI';
-var STATE = window.location.hostname; // for redirect back > get tokens
+var HOSTNAME = window.location.hostname; // for redirect back > get tokens
 
 var data = {
 	  response_type : 'code'
 	, client_id     : CLIENT_ID
 	, scope         : 'user-read-playback-position'
-	, state         : STATE
+	, state         : HOSTNAME
 	, redirect_uri  : REDIRECT_URI
 }
 
@@ -54,7 +54,7 @@ window.location = 'https://accounts.spotify.com/authorize?'+ $.param( data );
 	- `code=CODE` in address bar of `REDIRECT_URI`
 	- Expired on get `TOKEN`
 
-- `REDIRECT_URI` page 
+- `REDIRECT_URI` page > `HOSTNAME`
 ```html
 <!DOCTYPE html>
 <html>
@@ -73,13 +73,24 @@ window.location = 'https://accounts.spotify.com/authorize?'+ $.param( data );
 </html>
 ```
 
-- Extract `CODE`
+- Extract `CODE` and `error` on redirect back from `REDIRECT_URI`
 ```php
 <?php
 if ( isset( $_GET[ 'code' ] ) ) {
 	$code = $_GET[ 'code' ];
 	if ( $code ) exec( 'GET_TOKENS.sh '.$code );
-	echo '<a class="spotifycode hide" data-error="'.$_GET[ 'error' ].'"></a>';
+	echo '<a id="spotifycode" style="display: none">'.$_GET[ 'error' ].'</a>';
+}
+```
+
+- `HOSTNAME` page response
+```js
+// js
+var spotifycode = getElementById( 'spotifycode' );
+if ( spotifycode.length ) {
+	window.history.replaceState( 'page', 'normal', 'HOSTNAME' ); // reset URL with parameters to HOSTNAME
+	var error = spotifycode.textContent;
+	if ( error ) alert( error )
 }
 ```
 
