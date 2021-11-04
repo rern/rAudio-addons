@@ -10,6 +10,7 @@ Soptify API
 - No current progress and status available
 - Get `TOKEN`
 ```sh
+#!/bin/bash
 CLIENT_ID=CLIENT_ID
 CLIENT_SECRET=CLIENT_SECRET
 
@@ -21,6 +22,7 @@ curl -s -X POST https://accounts.spotify.com/api/token \
 - Get `$TRACK_ID` from spotifyd env variable
 - Get metadata
 ```sh
+#!/bin/bash
 TRACK_ID=TRACK_ID
 TOKEN=TOKEN
 
@@ -33,10 +35,10 @@ curl -s -X GET https://api.spotify.com/v1/tracks/$TRACK_ID \
 - Need user's authorization (once)
 - Get authorization `CODE`
 ```js
-// authorization page for user
+// js
 var CLIENT_ID = 'CLIENT_ID';
 var REDIRECT_URI = 'REDIRECT_URI';
-var STATE = 'optional for verify - can be used as extra param to pass';
+var STATE = window.location.hostname; // for redirect back > get tokens
 
 var data = {
 	  response_type : 'code'
@@ -52,9 +54,39 @@ window.location = 'https://accounts.spotify.com/authorize?'+ $.param( data );
 	- `code=CODE` in address bar of `REDIRECT_URI`
 	- Expired on get `TOKEN`
 
+- `REDIRECT_URI` page 
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+	var url = new URL( window.location.href );
+	var code = url.searchParams.get( 'code' );
+	var hostname = url.searchParams.get( 'state' );
+	var error = code ? '' : '&error='+ url.searchParams.get( 'error' );
+	window.location = 'http://'+ hostname +'?code='+ code + error;
+	</script>
+</body>
+</html>
+```
+
+- Extract `CODE`
+```php
+<?php
+if ( isset( $_GET[ 'code' ] ) ) {
+	$code = $_GET[ 'code' ];
+	if ( $code ) exec( 'GET_TOKENS.sh '.$code );
+	echo '<a class="spotifycode hide" data-error="'.$_GET[ 'error' ].'"></a>';
+}
+```
+
 - Get `TOKEN` and `REFRESH_TOKEN`
 ```sh
-CODE=CODE
+#!/bin/bash
+CODE=$1
 CLIENT_ID=CLIENT_ID
 CLIENT_SECRET=CLIENT_SECRET
 CLIENT_BASE64=$( echo -n $CLIENT_ID:$CLIENT_SECRET | base64 -w 0 )
@@ -78,11 +110,13 @@ TOKEN=TOKEN
 curl -X GET https://api.spotify.com/v1/me/player \
 	-H "Authorization: Bearer TOKEN"
 ```
-- response: `progress_ms`, `is_playing` (not available after stop for a few seconds)
+- response: 
+	- metadata
+	- `progress_ms` elapsed
+	- `is_playing`  play (missing = pause)
 
 - Get new `TOKEN` after expired
 ```sh
-CODE=CODE
 REFRESH_TOKEN=REFRESH_TOKEN
 CLIENT_ID=CLIENT_ID
 CLIENT_SECRET=CLIENT_SECRET
@@ -90,7 +124,6 @@ CLIENT_BASE64=$( echo -n $CLIENT_ID:$CLIENT_SECRET | base64 -w 0 )
 
 curl -X POST https://accounts.spotify.com/api/token \
 	-H "Authorization: Basic $CLIENT_BASE64" \
-	-d "code=$CODE" \
 	-d grant_type=refresh_token \
 	-d refresh_token=$REFRESH_TOKEN
 ```
