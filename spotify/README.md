@@ -36,17 +36,21 @@ curl -s -X GET https://api.spotify.com/v1/tracks/$TRACK_ID \
 // authorization page for user
 var CLIENT_ID = 'CLIENT_ID';
 var REDIRECT_URI = 'REDIRECT_URI';
+var STATE = 'optional for verify - can be used as extra param to pass';
 
 var data = {
 	  response_type : 'code'
 	, client_id     : CLIENT_ID
 	, scope         : 'user-read-playback-position'
+	, state         : STATE
 	, redirect_uri  : REDIRECT_URI
 }
 
 window.location = 'https://accounts.spotify.com/authorize?'+ $.param( data );
 ```
-- response: `code=CODE` in address bar of `REDIRECT_URI` (`CODE` expired on get `TOKEN`)
+- response:
+	- `code=CODE` in address bar of `REDIRECT_URI`
+	- Expired on get `TOKEN`
 
 - Get `TOKEN` and `REFRESH_TOKEN`
 ```sh
