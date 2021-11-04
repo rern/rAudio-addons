@@ -34,10 +34,14 @@ window.location = 'https://accounts.spotify.com/authorize?'+ $.param( data );
 - Get status
 ```sh
 # get token
-base64auth=$( echo -n $CLIENT_ID:$CLIENT_SECRET | base64 | tr -d '\n=' )
-curl https://accounts.spotify.com/api/token \
-	-d "code=$code&grant_type=authorization_code&redirect_uri=REDIRECT_URI" \
-	-H "Authorization: Basic $base64auth"
+BASE64=$( echo -n $client_id:$client_secret | base64 -w 0 )
+curl -X POST https://accounts.spotify.com/api/token \
+-H "Authorization: Basic $BASE64" \
+-H 'Content-Type: application/x-www-form-urlencoded' \
+-d "code=CODE" \
+-d grant_type=authorization_code \
+--data-urlencode REDIRECT_URI
+
 # get data
 curl -X GET https://api.spotify.com/v1/me/player \
 	-H "Authorization: Bearer TOKEN"
