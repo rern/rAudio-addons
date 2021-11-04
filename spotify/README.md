@@ -49,7 +49,7 @@ var HOSTNAME = window.location.hostname; // for redirect back > get tokens
 var data = {
 	  response_type : 'code'
 	, client_id     : CLIENT_ID
-	, scope         : 'user-read-playback-position'
+	, scope         : 'user-read-currently-playing user-read-playback-position'
 	, state         : HOSTNAME
 	, redirect_uri  : REDIRECT_URI
 }
