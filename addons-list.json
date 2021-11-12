@@ -6,10 +6,16 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20211022"
+        , "version":     "20211112"
         , "revision":    [
-              "Fix - Networks - Failed new connection"
-            , "Fix - System - JSON error when disable auto start access point"
+              "Fix - Bluetooth for Spotify, AirPlay"
+            , "Fix - Browser on RPi setting"
+            , "Fix - Snapcast, UPnP"
+            , "Add - WebRadio sub-directory"
+            , "Add - Browser on RPi - Screen on while playing"
+            , "Add - Option for embeded lyrics"
+            , "Improve - Last.fm scrobble - Option to include each renderer"
+            , "Improve - Spotify - Playing progress"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
