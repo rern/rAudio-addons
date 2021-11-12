@@ -35,7 +35,7 @@
         , "thumbnail":   "/assets/img/addons/thumbfran.gif"
         , "sourcecode":  "https://github.com/rern/rAudio-addons/raw/main/webradio"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/webradio/install.sh"
-        , "hide":        "[[ $( ls '/srv/http/data/webradios/https:||icecast.radiofrance.fr'* | wc -l ) == 19 ]] && echo 1 || echo 0"
+        , "hide":        "[[ -e /srv/http/data/webradios/Fip || $( ls '/srv/http/data/webradios/https:||icecast.radiofrance.fr'* | wc -l ) == 19 ]] && echo 1 || echo 0"
     }
     , "radi": {
           "title":       "Import Webradio"
