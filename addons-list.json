@@ -6,16 +6,12 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20211112"
+        , "version":     "20211114"
         , "revision":    [
-              "Fix - Bluetooth for Spotify, AirPlay"
-            , "Fix - Browser on RPi setting"
-            , "Fix - Snapcast, UPnP"
-            , "Add - WebRadio sub-directory"
-            , "Add - Browser on RPi - Screen on while playing"
-            , "Add - Option for embeded lyrics"
-            , "Improve - Last.fm scrobble - Option to include each renderer"
-            , "Improve - Spotify - Playing progress"
+              "Fix - Dialog box - validate input length"
+            , "Fix - WebRadio - delete, Fip Rock"
+            , "Fix - Play mode buttons - shuffle, single, repeat"
+            , "Improve - Last.fm scrobble - condition on stop / previous / next"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
