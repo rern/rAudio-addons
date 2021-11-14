@@ -1,7 +1,7 @@
 Suptronics X4000K - ES9018K2M
 ---
 
-![X4000K](https://github.com/rern/RuneAudio/raw/master/Suptronics_X4000K/X4000K.jpg)
+![X4000K](https://github.com/rern/rAudio-addons/raw/main/Suptronics_X4000K/X4000K.jpg)
 
 ### Hardware
 - 1st layer spacers: shorter ones with threaded tips
