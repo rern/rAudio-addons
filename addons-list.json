@@ -6,12 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20211121"
+        , "version":     "20211122"
         , "revision":    [
-              "Fix - Library context menu - Missing Tag Editor"
-            , "Fix - Playback - random/single/repeat status"
-            , "Improve - Features - Spectrum OLED"
-            , "Improve - Library - Bookmarks handling"
+              "Fix - Library - bookmarks with NAS"
+            , "Fix - Features - UPnP failed to start"
+            , "Fix - System - error when disable auto start access point"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
