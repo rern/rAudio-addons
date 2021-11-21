@@ -6,12 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20211114"
+        , "version":     "20211119"
         , "revision":    [
-              "Fix - Dialog box - validate input length"
-            , "Fix - WebRadio - delete, Fip Rock"
-            , "Fix - Play mode buttons - shuffle, single, repeat"
-            , "Improve - Last.fm scrobble - condition on stop / previous / next"
+              "Fix - Library context menu - Missing Tag Editor"
+            , "Fix - Playback - random/single/repeat status"
+            , "Improve - Features - Spectrum OLED"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
@@ -20,7 +19,7 @@
         , "sourcecode":  "https://github.com/rern/rAudio-1"
         , "installurl":  "https://github.com/rern/rAudio-1/raw/main/install.sh"
         , "verify": {
-              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20210911 ]] && echo 1"
+              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20211019 ]] && echo 1"
             , "notverified": "Please download the latest image file to be able to update."
         }
     }
