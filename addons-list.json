@@ -6,12 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20211120"
+        , "version":     "20211119"
         , "revision":    [
               "Fix - Library context menu - Missing Tag Editor"
             , "Fix - Playback - random/single/repeat status"
             , "Improve - Features - Spectrum OLED"
-            , "Improve - Library - Bookmarks handling"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
