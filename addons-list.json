@@ -6,7 +6,7 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20211121"
+        , "version":     "20211114"
         , "revision":    [
               "Fix - Library context menu - Missing Tag Editor"
             , "Fix - Playback - random/single/repeat status"
