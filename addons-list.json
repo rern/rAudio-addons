@@ -6,11 +6,13 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20211122"
+        , "version":     "20211126"
         , "revision":    [
-              "Fix - Library - bookmarks with NAS"
-            , "Fix - Features - UPnP failed to start"
-            , "Fix - System - error when disable auto start access point"
+              "Fix - Charater LCD"
+            , "Fix - Missing coverart when file path contains dots"
+            , "Fix - Volume up/down buttons"
+            , "Add - System - Hard drive spindown in context menu (required: <code>hdparm</code> or new image)"
+            , "Add - Features - Stop timer"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
