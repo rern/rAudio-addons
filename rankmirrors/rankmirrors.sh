@@ -7,7 +7,7 @@ alias=rank
 installstart "$1"
 
 sec=${args[0]}
-[[ -z $sec ]] && sec=3
+[[ ! $sec ]] && sec=3
 
 echo -e "\n$bar Get latest mirrorlist of package servers ..."
 curl -sLo /tmp/mirrorlist https://github.com/archlinuxarm/PKGBUILDs/raw/master/core/pacman-mirrorlist/mirrorlist
@@ -50,7 +50,7 @@ for server in ${servers[@]}; do # download from each mirror
 	wait
 	dl=$( du -c $tmpdir | grep total | awk '{print $1}' ) # get downloaded amount
 	ping=$( ping -4 -c 3 -w 3 ${server/http*\:\/\/} | tail -1 | cut -d'/' -f5 )
-	if [[ -n $ping ]]; then
+	if [[ $ping ]]; then
 		latency=$( printf %.0f $ping )
 	else
 		latency=999

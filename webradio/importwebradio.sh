@@ -8,7 +8,7 @@ installstart $@
 
 # all files include sub-directory
 files=$( find /mnt/MPD/Webradio -type f 2> /dev/null )
-if [[ -z $files ]]; then
+if [[ ! $files ]]; then
 	title -l '=' "$info No webradio files found."
 	title -nt 'Copy *.pls to /mnt/MPD/Webradio/ then run again.'
 	exit

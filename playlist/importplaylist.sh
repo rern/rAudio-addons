@@ -8,7 +8,7 @@ installstart $@
 
 # all files include sub-directory
 files=$( find /var/lib/mpd/playlists -type f 2> /dev/null )
-if [[ -z $files ]]; then
+if [[ ! $files ]]; then
 	title -l '=' "$info No playlists found."
 	title -nt 'Copy *.m3u to /var/lib/mpd/playlists then run again.'
 	exit
