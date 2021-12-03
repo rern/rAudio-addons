@@ -6,13 +6,12 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20211126"
+        , "version":     "20211203"
         , "revision":    [
-              "Fix - Charater LCD"
-            , "Fix - Missing coverart when file path contains dots"
-            , "Fix - Volume up/down buttons"
-            , "Add - System - Hard drive spindown in context menu (required: <code>hdparm</code> or new image)"
-            , "Add - Features - Stop timer"
+              "Fix - WebRadio coverart"
+            , "Fix - Coverart: replace / remove / save / online fetch"
+            , "Fix - Dialog box - enable button on paste"
+            , "Fix - Playback - Tap online fetched coverart"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
@@ -21,7 +20,7 @@
         , "sourcecode":  "https://github.com/rern/rAudio-1"
         , "installurl":  "https://github.com/rern/rAudio-1/raw/main/install.sh"
         , "verify": {
-              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20211019 ]] && echo 1"
+              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20211022 ]] && echo 1"
             , "notverified": "Please download the latest image file to be able to update."
         }
     }
@@ -75,6 +74,7 @@
                     , "6": 6
                 }
                 , "checked": 3
+                , "width": 80
             }
         }
     }
