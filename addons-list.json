@@ -11,7 +11,6 @@
               "Fix - WebRadio coverart"
             , "Fix - Coverart: replace / remove / save / online fetch"
             , "Fix - Dialog box - enable button on paste"
-            , "Fix - Playback - Tap online fetched coverart"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
