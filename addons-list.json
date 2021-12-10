@@ -6,11 +6,13 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20211203"
+        , "version":     "20211210"
         , "revision":    [
-              "Fix - WebRadio coverart"
-            , "Fix - Coverart: replace / remove / save / online fetch"
-            , "Fix - Dialog box - enable button on paste"
+              "Fix - Features - File Sharing - write permission"
+            , "Fix - Playback - Bluetooth buttons if Browser on RPi not enabled"
+            , "Add - Feature - AutoPlay on Bluetooth connected"
+            , "Add - Library - saved playlist"
+            , "Support RPi Zero 2"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
