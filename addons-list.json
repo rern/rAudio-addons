@@ -6,13 +6,12 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20211210"
+        , "version":     "20211218"
         , "revision":    [
-              "Fix - Features - File Sharing - write permission"
-            , "Fix - Playback - Bluetooth buttons if Browser on RPi not enabled"
-            , "Add - Feature - AutoPlay on Bluetooth connected"
-            , "Add - Library - saved playlist"
-            , "Support RPi Zero 2"
+              "Fix - System - Missing Bluetooth and Wi-Fi on RPi Zero 2"
+            , "Fix - Spotify with Bluetooth devices"
+            , "Fix - Bio - artist images"
+            , "Add - Features - Brightness control for Browser on RPi"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
