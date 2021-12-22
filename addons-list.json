@@ -6,7 +6,7 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20211224"
+        , "version":     "20211222"
         , "revision":    [
               "Fix - Playback progress, elapsed and duration"
             , "Fix - Bluetooth buttons"
