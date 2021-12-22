@@ -6,12 +6,12 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20211218"
+        , "version":     "20211224"
         , "revision":    [
-              "Fix - System - Missing Bluetooth and Wi-Fi on RPi Zero 2"
-            , "Fix - Spotify with Bluetooth devices"
-            , "Fix - Bio - artist images"
-            , "Add - Features - Brightness control for Browser on RPi"
+              "Fix - Playback progress, elapsed and duration"
+            , "Fix - Bluetooth buttons"
+            , "Fix - Missing brightness control for Browser on RPi"
+            , "Add - Rotary encoder support"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
@@ -20,7 +20,7 @@
         , "sourcecode":  "https://github.com/rern/rAudio-1"
         , "installurl":  "https://github.com/rern/rAudio-1/raw/main/install.sh"
         , "verify": {
-              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20211022 ]] && echo 1"
+              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20211122 ]] && echo 1"
             , "notverified": "Please download the latest image file to be able to update."
         }
     }
