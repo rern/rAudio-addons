@@ -1,5 +1,7 @@
 #!/bin/bash
 
+alias=tft3
+
 . /srv/http/bash/addons.sh
 
 installstart "$1"
