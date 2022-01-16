@@ -1,13 +1,13 @@
 #!/bin/bash
 
-alias=tft3
+alias=chro
 
 . /srv/http/bash/addons.sh
 
 installstart "$1"
 
 arch=$( uname -m )
-curl -LO https://github.com/rern/rAudio-addons/releases/download/fix-tft35lcd/$arch.tar.xz
+curl -LO https://github.com/rern/rAudio-addons/releases/download/chromium_downgrade/$arch.tar.xz
 bsdtar --strip 1 -xvf $arch.tar.xz
 
 mv libicu/* /lib
