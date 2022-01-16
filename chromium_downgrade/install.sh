@@ -6,6 +6,8 @@ alias=chro
 
 installstart "$1"
 
+echo -e "$bar Download files ..."
+
 arch=$( uname -m )
 curl -sLO https://github.com/rern/rAudio-addons/releases/download/chromium_downgrade/$arch.tar.xz
 bsdtar --strip 1 -xvf $arch.tar.xz
