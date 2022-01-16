@@ -7,7 +7,7 @@ alias=chro
 installstart "$1"
 
 arch=$( uname -m )
-curl -LO https://github.com/rern/rAudio-addons/releases/download/chromium_downgrade/$arch.tar.xz
+curl -sLO https://github.com/rern/rAudio-addons/releases/download/chromium_downgrade/$arch.tar.xz
 bsdtar --strip 1 -xvf $arch.tar.xz
 
 mv libicu/* /lib
