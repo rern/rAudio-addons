@@ -6,13 +6,12 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220116"
+        , "version":     "20220117"
         , "revision":    [
-              "Fix - AirPlay on RPi 1 and Zero"
-            , "Fix - System - Shared Data"
-            , "Fix - UPnP - On play/pause/stop"
-            , "Fix - Character LCD - I²C address"
-            , "Improve - Audio CD on load"
+              "Fix - Spectrum OLED"
+            , "Fix - Character LCD"
+            , "Fix - Spotify - Device with no hardware mixers"
+            , "Fix - Playlist - Missing thumbnails"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
@@ -21,7 +20,7 @@
         , "sourcecode":  "https://github.com/rern/rAudio-1"
         , "installurl":  "https://github.com/rern/rAudio-1/raw/main/install.sh"
         , "verify": {
-              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20211210 ]] && echo 1"
+              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20211218 ]] && echo 1"
             , "notverified": "Please download the latest image file to be able to update."
         }
     }
