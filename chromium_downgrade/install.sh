@@ -17,6 +17,6 @@ rm -rf libicu
 pacman -U --noconfirm chromium*
 rm chromium*
 
-sed -i '/#Ignore/ a\Ignore = chromium' /etc/pacman.conf
+grep -q chromium /etc/pacman.conf || sed -i '/#Ignore/ a\Ignore = chromium' /etc/pacman.conf
 
 installfinish
