@@ -26,7 +26,7 @@
     }
     , "chro": {
           "title":       "Chromium downgrade"
-        , "description": "Fix Browser on RPi starts with \"Aw, Snap.\" on TFT 3.5\" LCD"
+        , "description": "Fix Browser on RPi starts with \"Aw, Snap!\" on TFT 3.5\" LCD"
         , "sourcecode":  "https://github.com/rern/rAudio-addons/raw/main/chromium_downgrade/install.sh"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/chromium_downgrade/install.sh"
         , "hide":        "[[ ! -e /usr/bin/chromium || -e /lib/libicudata.so.69 || $( cat /srv/http/data/addons/r1 ) < 20220116 ]] && echo 1 || echo 0"
