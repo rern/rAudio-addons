@@ -6,12 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220117"
+        , "version":     "20220122"
         , "revision":    [
-              "Fix - Spectrum OLED"
-            , "Fix - Character LCD"
-            , "Fix - Spotify - Device with no hardware mixers"
-            , "Fix - Playlist - Missing thumbnails"
+              "Fix - Character LCD - Sleep"
+            , "Fix - Character LCD - SnapClient"
+            , "Fix - Relays setting - Page layout"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
