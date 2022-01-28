@@ -6,11 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220122"
+        , "version":     "20220128"
         , "revision":    [
-              "Fix - Character LCD - Sleep"
-            , "Fix - Character LCD - SnapClient"
-            , "Fix - Relays setting - Page layout"
+              "Fix - Rotary encoder - Volume control for Bluetooth devices"
+            , "Fix - Volume drag"
+            , "Fix - Relays setting"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
@@ -19,7 +19,7 @@
         , "sourcecode":  "https://github.com/rern/rAudio-1"
         , "installurl":  "https://github.com/rern/rAudio-1/raw/main/install.sh"
         , "verify": {
-              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20211218 ]] && echo 1"
+              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20211224 ]] && echo 1"
             , "notverified": "Please download the latest image file to be able to update."
         }
     }
