@@ -4,7 +4,9 @@
 
 installstart "$1"
 
-curl -sL https://github.com/rern/rAudio-addons/raw/main/webradio/radiofrance.tar.xz | bsdtar xvf - -C /srv/http/data
+curl -sL https://github.com/rern/rAudio-addons/raw/main/webradio/radiofrance.tar.xz | bsdtar xvf - -C /tmp
+cp -r /tmp/webradios/* /srv/http/data/webradios
+cp -r /tmp/webradiosimg/* /srv/http/data/webradiosimg
 chown -R http:http /srv/http/data/webradios*
 count=$( find $dirdata/webradios -type f \
 			| grep -v '.jpg$\|.gif$' \
