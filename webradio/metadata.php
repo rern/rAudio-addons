@@ -1,6 +1,7 @@
 #!/usr/bin/php
 
 <?php
+// extract metadada from stream and convert to utf-8
 // usage  : ./metadata.php URL
 
 // source : https://gist.github.com/fracasula/5781710
@@ -18,5 +19,6 @@ $metaint = substr( $h, 12 ); // icy-metaint: nnnnn
 $fopen = fopen( $url, 'r', false, $context );
 $stream = stream_get_contents( $fopen, $metaint, $metaint );
 fclose( $fopen );
-$title = explode( 'StreamTitle=', $stream )[ 1 ];
-echo substr( $title, 1, strpos( $title, ';' ) - 2 );
+$streamtitle = explode( 'StreamTitle=', $stream )[ 1 ];
+$artis_title = substr( $streamtitle, 1, strpos( $streamtitle, ';' ) - 2 );
+echo utf8_encode( $artis_title ); // convert iso-8859-1 to utf-8
