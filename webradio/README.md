@@ -9,11 +9,10 @@ Title1=filename
 
 ### Get metadata from stream
 ```sh
-# get interval - icy-metaint: 16000 (byte)
+# get data format
 curl -v $URL -H 'icy-metadata: 1'
-
-# get encoding - Transfer-Encoding: chunked
-curl -v $URL -H 'icy-charset: 1'
+#   - icy-metaint: 16000
+#   - ice-audio-info: bitrate=96
 ```
 
 - PHP Script (Bash curl not kill connection)
