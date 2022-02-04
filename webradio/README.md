@@ -10,7 +10,7 @@ Title1=filename
 ### Get metadata from stream
 ```sh
 # get data format: 
-#    - icy-metaint    - send interval in byte
+#    - icy-metaint    - metadata send interval in byte
 #    - ice-audio-info - audio format
 curl -v $URL -H 'icy-metadata: 1'
 
