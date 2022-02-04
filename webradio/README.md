@@ -11,7 +11,7 @@ Title1=filename
 ```sh
 # get data format: 
 #    - icy-metaint    - send interval in byte
-#    - ice-audio-info - audio 
+#    - ice-audio-info - audio format
 curl -v $URL -H 'icy-metadata: 1'
 
 > GET /m/rsc_de/aacp_96 HTTP/1.1
