@@ -15,6 +15,7 @@ bsdtar --strip 1 -xvf $arch.tar.xz
 mv libicu/* /lib
 rm -rf libicu
 pacman -U --noconfirm chromium*
+systemctl try-restart localbrowser
 rm chromium*
 
 grep -q chromium /etc/pacman.conf || sed -i '/#IgnorePkg/ a\IgnorePkg = chromium' /etc/pacman.conf
