@@ -26,7 +26,11 @@
     }
     , "chro": {
           "title":       "Chromium downgrade"
-        , "description": "For on TFT 3.5\" LCD - Fix Browser on RPi starts with:<br><code>Page unresponsive</code> > <code>Exit</code><br><code>Aw, Snap!</code>"
+        , "description": [
+              "For on TFT 3.5\" LCD - Fix Browser on RPi starts with:"
+            , " • <code>Page Unresponsive</code> > <code>Exit</code>"
+            , " • <code>Aw, Snap!</code> > <code>Reload</code>"
+        ]
         , "sourcecode":  "https://github.com/rern/rAudio-addons/raw/main/chromium_downgrade/install.sh"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/chromium_downgrade/install.sh"
         , "hide":        "[[ ! -e /usr/bin/chromium || -e /lib/libicudata.so.69 || $( cat /srv/http/data/addons/r1 ) < 20220116 ]] && echo 1 || echo 0"
