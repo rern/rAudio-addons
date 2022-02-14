@@ -6,12 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220204"
+        , "version":     "20220214"
         , "revision":    [
-              "Fix - Volume control for devices with no dB references"
-            , "Fix - System - Shared Data"
-            , "Fix - Icons on smart TV browser"
-            , "Add - WebRadio - custom character encoding"
+              "Fix - WebRadio - Edit when directory name contains spaces"
+            , "Fix - Bluetooth - Missing volume control when no audio devices available"
+            , "Fix - Playlist - Selective remove"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
@@ -20,7 +19,7 @@
         , "sourcecode":  "https://github.com/rern/rAudio-1"
         , "installurl":  "https://github.com/rern/rAudio-1/raw/main/install.sh"
         , "verify": {
-              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20211222 ]] && echo 1"
+              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20220107 ]] && echo 1"
             , "notverified": "Please download the latest image file to be able to update."
         }
     }
