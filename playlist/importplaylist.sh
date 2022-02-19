@@ -21,6 +21,7 @@ mpc -q clear
 
 readarray -t files <<<"$files"
 for file in "${files[@]}"; do
+	sed -i 's/^Localstorage/SD/' "$file"
 	name=$( basename "$file" .m3u )
 	[[ -e "/srv/http/data/playlists/$name" ]] && name="${name}_1"
 	
