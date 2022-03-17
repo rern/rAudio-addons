@@ -6,16 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220317"
+        , "version":     "20220225"
         , "revision":    [
-              "Fix - Saved Playlist - WebRadio thumbnails"
-            , "Fix - Snapcast - Metadata"
-            , "Improve - Snapcast - Simultaneously enable server and client"
-            , "Improve - Playlist - Saved playlist files now use normal format. (MPD parses individual *.cue tracks natively.)"
-            , "Improve - Playlist - Remove tracks and drag to rearrange"
-            , "Improve - Playlist - Track info"
-            , "Add - Features - Latest albums in Library"
-            , "Add - Library - context menu - Play next"
+              "Fix - Local keybaord - enter key"
+            , "Move - Long-press reload to Guide(coverart top)"
+            , "Add - Features - Multiple rAudios - Switch between rAudio devices"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
@@ -24,7 +19,7 @@
         , "sourcecode":  "https://github.com/rern/rAudio-1"
         , "installurl":  "https://github.com/rern/rAudio-1/raw/main/install.sh"
         , "verify": {
-              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20220214 ]] && echo 1"
+              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20220117 ]] && echo 1"
             , "notverified": "Please download the latest image file to be able to update."
         }
     }
@@ -70,7 +65,6 @@
         , "option": {
               "wait":    "Copy playlist files to:<br><br><code>/var/lib/mpd/playlists</code>"
         }
-        , "hide":        "[[ $( cat /srv/http/data/addons/r1 ) < 20220317  ]] && echo 0 || echo 1"
     }
     , "rank": {
           "title":       "Rank Mirror Package Servers"
