@@ -1,6 +1,6 @@
 {
       "push": {
-          "bash": ""
+          "bash": "sed -i 's/ 2>&1//' /srv/http/settings/addons-progress.php"
         , "url":  ""
         , "hide": 1
     }
@@ -27,9 +27,6 @@
               "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20220214 ]] && echo 1"
             , "notverified": "Please download the latest image file to be able to update."
         }
-		, "push": {
-			"bash": "sed -i 's/ 2>&1//' /srv/http/settings/addons-progress.php"
-		}
     }
     , "chro": {
           "title":       "Chromium downgrade"
