@@ -60,18 +60,6 @@
         }
         , "postinfo":    "Directory <code>/mnt/MPD/Webradio</code> can be deleted."
     }
-    , "plsi": {
-          "title":       "Import Playlists"
-        , "description": "Import <code>*.m3u</code> playlists."
-        , "thumbnail":   "/assets/img/addons/thumbplst.jpg"
-        , "buttonlabel": "<i class='fa fa-input'></i> Import"
-        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/main/playlist"
-        , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/playlist/importplaylist.sh"
-        , "option": {
-              "wait":    "Copy playlist files to:<br><br><code>/var/lib/mpd/playlists</code>"
-        }
-        , "hide":        "[[ $( cat /srv/http/data/addons/r1 ) < 20220317  ]] && echo 0 || echo 1"
-    }
     , "rank": {
           "title":       "Rank Mirror Package Servers"
         , "description": "Fix package download errors caused by unreachable servers.<br>Rank mirror package servers by download speed and latency."
