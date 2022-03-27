@@ -6,12 +6,13 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220327"
+        , "version":     "202203271"
         , "revision":    [
               "Fix - Library - Sorting"
             , "Fix - Library - Online coverart fetch"
             , "Fix - CoverArt - Save icon remains after saved."
             , "Fix - WebRadio - Warning for existing in the same directory on add new station."
+            , "Fix - Playlist - Current track and progress"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
