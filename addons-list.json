@@ -6,16 +6,12 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220317"
+        , "version":     "20220327"
         , "revision":    [
-              "Fix - Saved Playlist - WebRadio thumbnails"
-            , "Fix - Snapcast - Metadata"
-            , "Improve - Snapcast - Simultaneously enable server and client"
-            , "Improve - Playlist - Saved playlist files now use normal format. (MPD parses individual *.cue tracks natively.)"
-            , "Improve - Playlist - Remove tracks and drag to rearrange"
-            , "Improve - Playlist - Track info"
-            , "Add - Features - Latest albums in Library"
-            , "Add - Library - context menu - Play next"
+              "Fix - Library - Sorting"
+            , "Fix - Library - Online coverart fetch"
+            , "Fix - CoverArt - Save icon remains after saved."
+            , "Fix - WebRadio - Warning for existing in the same directory on add new station."
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
@@ -27,17 +23,6 @@
               "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20220214 ]] && echo 1"
             , "notverified": "Please download the latest image file to be able to update."
         }
-    }
-    , "chro": {
-          "title":       "Chromium downgrade"
-        , "description": [
-              "For on TFT 3.5\" LCD - Fix Browser on RPi starts with:"
-            , " • <code>Page Unresponsive</code> > <code>Exit</code>"
-            , " • <code>Aw, Snap!</code> > <code>Reload</code>"
-        ]
-        , "sourcecode":  "https://github.com/rern/rAudio-addons/raw/main/chromium_downgrade/install.sh"
-        , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/chromium_downgrade/install.sh"
-        , "hide":        "[[ ! -e /usr/bin/chromium || -e /lib/libicudata.so.69 || $( cat /srv/http/data/addons/r1 ) < 20220116 ]] && echo 1 || echo 0"
     }
     , "fran": {
           "title":       "Webradio - France Musique & Fip"
