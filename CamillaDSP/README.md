@@ -14,7 +14,9 @@ cp target/release/camilladsp /usr/bin
 
 - On-board audio - `/etc/camilladsp.yml`
 ```yml
+  ...
   playback:
     device: hw:0,0
     format: S16LE
+  ...
 ```
