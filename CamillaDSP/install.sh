@@ -52,7 +52,9 @@ wget https://github.com/HEnquist/camillagui-backend/releases/download/$version/c
 dir=/srv/http/camillagui
 unzip camillagui -d $dir
 mkdir $dir/coeffs
-sed -i "s|~/camilladsp|$dir|" $dir/config/camillagui.yml
+sed -i -e "s|~/camilladsp|$dir|
+" -e 's|^\(on_set_active_config: \).*|\1"/srv/http/bash/player.sh camillaguiset"|
+' $dir/config/camillagui.yml
 
 cat << EOF > /srv/http/camillagui/configs/camilladsp.yml
 devices:
