@@ -8,6 +8,8 @@ getVersion() {
 				| sed 's/[^v.0-9]//g' )
 }
 
+pacman -Sy --needed --noconfirm python-aiohttp python-jsonschema python-matplotlib python-pip python-websocket-client
+
 ### binary
 wget https://github.com/rern/rAudio-addons/raw/main/CamillaDSP/camilladsp -P /usr/bin
 chmod +x /usr/bin/camilladsp
@@ -88,3 +90,5 @@ ExecStart=python /srv/http/camillagui/main.py
 [Install]
 WantedBy=multi-user.target
 EOF
+
+systemctl daemon-reload
