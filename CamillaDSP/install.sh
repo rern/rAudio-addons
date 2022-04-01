@@ -21,6 +21,7 @@ pip install git+https://github.com/HEnquist/pycamilladsp-plot.git@v0.6.2
 getVersion camillagui-backend
 wget https://github.com/HEnquist/camillagui-backend/releases/download/$version/camillagui.zip
 dircamillagui=/srv/http/camillagui
+dircamilladsp=/srv/http/data/camilladsp
 unzip camillagui -d $dircamillagui
 rm camillagui.zip
 
@@ -34,10 +35,10 @@ cat << EOF > $dircamillagui/config/camillagui.yml
 camilla_host: "0.0.0.0"
 camilla_port: 1234
 port: 5005
-config_dir: "/srv/http/data/camilladsp/configs"
-coeff_dir: "/srv/http/data/camilladsp/coeffs"
-default_config: "/srv/http/camillagui/default_config.yml"
-active_config: "/srv/http/camillagui/active_config.yml"
+config_dir: "$dircamilladsp/configs"
+coeff_dir: "$dircamilladsp/coeffs"
+default_config: "$dircamillagui/default_config.yml"
+active_config: "$dircamillagui/active_config.yml"
 update_symlink: true
 on_set_active_config: "/srv/http/bash/features.sh camilladspasound"
 on_get_active_config: null
@@ -45,8 +46,8 @@ supported_capture_types: null
 supported_playback_types: null
 EOF
 
-mkdir -p /srv/http/data/camilladsp/{coeffs,configs}
-file=/srv/http/data/camilladsp/configs/camilladsp.yml
+mkdir -p $dircamilladsp/{coeffs,configs}
+file=$dircamilladsp/configs/camilladsp.yml
 [[ ! -e $file ]] && cat << EOF > $file
 ---
 devices:
@@ -73,7 +74,7 @@ filters:
 
 EOF
 
-ln -sf $file /srv/http/camillagui/active_config.yml
+ln -sf $file $dircamillagui/active_config.yml
 chown -R http:http $dircamillagui
 
 ### service
@@ -85,7 +86,7 @@ After=multi-user.target
 [Service]
 User=root
 Type=idle
-ExecStart=/usr/bin/python /srv/http/camillagui/main.py
+ExecStart=/usr/bin/python $dircamillagui/main.py
 
 [Install]
 WantedBy=multi-user.target
@@ -100,7 +101,7 @@ StartLimitBurst=10
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/camilladsp /srv/http/camillagui/configs/camilladsp.yml
+ExecStart=/usr/bin/camilladsp $dircamilladsp/configs/camilladsp.yml
 Restart=always
 RestartSec=1
 StandardOutput=syslog
