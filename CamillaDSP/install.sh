@@ -25,6 +25,12 @@ dircamilladsp=/srv/http/data/camilladsp
 unzip camillagui -d $dircamillagui
 rm camillagui.zip
 
+cp /srv/http/assets/img/icon.png $dircamillagui/build/icon.png
+sed -i 's/202020/000000/' $dircamillagui/build/css-variables.css
+sed -i -e 's/favicon.ico/icon.png/
+' -e 's|<noscript>|<div onclick="location.href = 'http://'+ location.hostname" style="position:fixed;right:22px;top:0;font-size:40px;color:#0077b3;font-weight:bold;cursor:pointer;">×</div>&|
+' $dircamillagui/build/index.html
+
 ### binary
 curl -L https://github.com/rern/rAudio-addons/raw/main/CamillaDSP/camilladsp.tar.xz | bsdtar xf - -C /usr/bin
 chmod +x /usr/bin/camilladsp
