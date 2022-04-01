@@ -13,7 +13,7 @@ getVersion() {
 pacman -Sy --needed --noconfirm python-aiohttp python-jsonschema python-matplotlib python-numpy python-pip python-websocket-client
 
 ### binary
-wget https://github.com/rern/rAudio-addons/raw/main/CamillaDSP/camilladsp -P /usr/bin
+curl -L https://github.com/rern/rAudio-addons/raw/main/CamillaDSP/camilladsp.tar.xz | bsdtar xf - -C /usr/bin
 chmod +x /usr/bin/camilladsp
 
 cat << EOF > /etc/systemd/system/camilladsp.service
@@ -53,7 +53,7 @@ dir=/srv/http/camillagui
 unzip camillagui -d $dir
 mkdir $dir/coeffs
 sed -i -e "s|~/camilladsp|$dir|
-" -e 's|^\(on_set_active_config: \).*|\1"/srv/http/bash/features.sh asoundconf"|
+" -e 's|^\(on_set_active_config: \).*|\1"/srv/http/bash/features.sh camilladspasound"|
 ' $dir/config/camillagui.yml
 
 cat << EOF > /srv/http/camillagui/configs/camilladsp.yml
@@ -72,6 +72,13 @@ devices:
     channels: 2
     device: hw:0,0
     format: S16LE
+
+filters:
+  New Filter 1:
+    parameters:
+      ramp_time: 200
+    type: Volume
+
 EOF
 
 cat << EOF > /etc/systemd/system/camillagui.service
