@@ -1,4 +1,4 @@
-#!/usr/bin
+#!/bin/bash
 
 alias=cami
 
@@ -10,38 +10,12 @@ getVersion() {
 				| sed 's/[^v.0-9]//g' )
 }
 
-pacman -Sy --needed --noconfirm python-aiohttp python-jsonschema python-matplotlib python-numpy python-pip python-websocket-client
+pacman -Sy --needed --noconfirm python-aiohttp python-jsonschema python-matplotlib python-numpy python-pip python-websocket-client unzip
 
 ### binary
 curl -L https://github.com/rern/rAudio-addons/raw/main/CamillaDSP/camilladsp.tar.xz | bsdtar xf - -C /usr/bin
 chmod +x /usr/bin/camilladsp
-
-cat << EOF > /etc/systemd/system/camilladsp.service
-[Unit]
-Description=CamillaDSP Daemon
-After=syslog.target
-StartLimitIntervalSec=10
-StartLimitBurst=10
-
-[Service]
-Type=simple
-ExecStart=/usr/bin/camilladsp /srv/http/camillagui/configs/camilladsp.yml
-Restart=always
-RestartSec=1
-StandardOutput=syslog
-StandardError=syslog
-SyslogIdentifier=camilladsp
-User=root
-Group=root
-CPUSchedulingPolicy=fifo
-CPUSchedulingPriority=10
-
-[Install]
-WantedBy=graphical.target
-EOF
-
 ### gui
-# python libraries
 getVersion pycamilladsp
 pip install git+https://github.com/HEnquist/pycamilladsp.git@$version
 getVersion pycamilladsp-plo
@@ -51,12 +25,13 @@ getVersion camillagui-backend
 wget https://github.com/HEnquist/camillagui-backend/releases/download/$version/camillagui.zip
 dir=/srv/http/camillagui
 unzip camillagui -d $dir
-mkdir $dir/coeffs
-sed -i -e "s|~/camilladsp|$dir|
-" -e 's|^\(on_set_active_config: \).*|\1"/srv/http/bash/features.sh camilladspasound"|
-' $dir/config/camillagui.yml
+rm camillagui.zip
+mkdir -p $dir/{coeffs,configs}
 
-cat << EOF > /srv/http/camillagui/configs/camilladsp.yml
+# config
+file=/srv/http/camillagui/configs/camilladsp.yml
+[[ ! -e $file ]] && cat << EOF > $file
+---
 devices:
   samplerate: 44100
   chunksize: 1024
@@ -81,6 +56,50 @@ filters:
 
 EOF
 
+cat << EOF > $dir/config/camillagui.yml
+---
+camilla_host: "0.0.0.0"
+camilla_port: 1234
+port: 5005
+config_dir: "/srv/http/camillagui/configs"
+coeff_dir: "/srv/http/camillagui/coeffs"
+default_config: "/srv/http/camillagui/default_config.yml"
+active_config: "/srv/http/camillagui/active_config.yml"
+update_symlink: true
+on_set_active_config: "/srv/http/bash/features.sh camilladspasound"
+on_get_active_config: null
+supported_capture_types: null
+supported_playback_types: null
+EOF
+
+ln -sf /srv/http/camillagui/{configs/camilladsp,active_config}.yml
+chown -R http:http $dir
+
+# service
+cat << EOF > /etc/systemd/system/camilladsp.service
+[Unit]
+Description=CamillaDSP Daemon
+After=syslog.target
+StartLimitIntervalSec=10
+StartLimitBurst=10
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/camilladsp /srv/http/camillagui/configs/camilladsp.yml
+Restart=always
+RestartSec=1
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=camilladsp
+User=root
+Group=root
+CPUSchedulingPolicy=fifo
+CPUSchedulingPriority=10
+
+[Install]
+WantedBy=graphical.target
+EOF
+
 cat << EOF > /etc/systemd/system/camillagui.service
 [Unit]
 Description=CamillaDSP GUI
@@ -94,8 +113,5 @@ ExecStart=/usr/bin/python /srv/http/camillagui/main.py
 [Install]
 WantedBy=multi-user.target
 EOF
-
-ln -s /srv/http/camillagui/configs/camilladsp.yml /srv/http/camillagui/active_config.yml
-chmod -R http:http $dir
 
 systemctl daemon-reload
