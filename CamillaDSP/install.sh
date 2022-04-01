@@ -10,7 +10,7 @@ getVersion() {
 				| sed 's/[^v.0-9]//g' )
 }
 
-pacman -Sy --needed --noconfirm python-aiohttp python-jsonschema python-matplotlib python-numpy python-pip python-websocket-client unzip
+pacman -Sy --needed --noconfirm python-aiohttp python-jsonschema python-matplotlib python-numpy python-pip python-websocket python-websocket-client unzip
 
 ### gui
 getVersion pycamilladsp
@@ -101,7 +101,7 @@ StartLimitBurst=10
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/camilladsp $dircamilladsp/configs/camilladsp.yml
+ExecStart=/usr/bin/camilladsp --port 1234 $dircamilladsp/configs/camilladsp.yml
 Restart=always
 RestartSec=1
 StandardOutput=syslog
