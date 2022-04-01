@@ -53,7 +53,7 @@ dir=/srv/http/camillagui
 unzip camillagui -d $dir
 mkdir $dir/coeffs
 sed -i -e "s|~/camilladsp|$dir|
-" -e 's|^\(on_set_active_config: \).*|\1"/srv/http/bash/player.sh camillaguiset"|
+" -e 's|^\(on_set_active_config: \).*|\1"/srv/http/bash/features.sh asoundconf"|
 ' $dir/config/camillagui.yml
 
 cat << EOF > /srv/http/camillagui/configs/camilladsp.yml
@@ -82,7 +82,7 @@ After=multi-user.target
 [Service]
 User=root
 Type=idle
-ExecStart=python /srv/http/camillagui/main.py
+ExecStart=/usr/bin/python /srv/http/camillagui/main.py
 
 [Install]
 WantedBy=multi-user.target
