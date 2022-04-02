@@ -22,8 +22,9 @@ getVersion camillagui-backend
 wget https://github.com/HEnquist/camillagui-backend/releases/download/$version/camillagui.zip
 dircamillagui=/srv/http/settings/camillagui
 dircamilladsp=/srv/http/data/camilladsp
+rm -rf $dircamillagui
 mkdir -p $dircamilladsp/{coeffs,configs}
-unzip camillagui -d $dircamillagui
+unzip -o camillagui -d $dircamillagui
 rm camillagui.zip
 
 fileindex=$dircamillagui/build/index.html
