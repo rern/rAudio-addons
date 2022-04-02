@@ -54,8 +54,8 @@ camilla_port: 1234
 port: 5005
 config_dir: "$dircamilladsp/configs"
 coeff_dir: "$dircamilladsp/coeffs"
-default_config: "$dircamillagui/default_config.yml"
-active_config: "$dircamillagui/active_config.yml"
+default_config: "$dircamilladsp/configs/default_config.yml"
+active_config: "$dircamilladsp/configs/active_config.yml"
 update_symlink: true
 on_set_active_config: "/srv/http/bash/features.sh camilladspasound"
 on_get_active_config: null
@@ -64,7 +64,7 @@ supported_playback_types: null
 EOF
 
 mkdir -p $dircamilladsp/{coeffs,configs}
-file=$dircamilladsp/configs/default_config..yml
+file=$dircamilladsp/configs/default_config.yml
 if [[ ! -e $file ]]; then
 	cat << EOF > $file
 ---
@@ -111,8 +111,9 @@ pipeline:
   type: Filter
 EOF
 	cp $dircamilladsp/configs/{default_config,camilladsp}.yml
+	ln -s $dircamilladsp/configs/{camilladsp,active_config}.yml
 fi
-chown -R http:http $dircamillagui
+chown -R http:http $dircamillagui $dircamilladsp
 
 ### service
 cat << EOF > /etc/systemd/system/camillagui.service
