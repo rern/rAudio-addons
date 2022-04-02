@@ -25,12 +25,9 @@ cargo build --release
 cp target/release/camilladsp /usr/bin
 ```
 
-- On-board audio - `camilladsp.yml`
-```yml
-  ...
-  playback:
-    ..
-    device: hw:0,0
-    format: S16LE
-  ...
+- Get audio hardware parameters
+```sh
+cat /proc/asound/card0/pcm0p/sub0/hw_params
 ```
+(on-board audio - sample format: S16LE)
+
