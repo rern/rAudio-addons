@@ -27,12 +27,14 @@ unzip camillagui -d $dircamillagui
 rm camillagui.zip
 
 fileindex=$dircamillagui/build/index.html
-sed -i 's/202020/000000/' $dircamillagui/build/css-variables.css
-sed -i 's/<script>/\n&\n/' $fileindex
-sed -i '/<script>/i\
-<div id="close" style="position: fixed;right: 25px;top: 0;font-size: 40px;color: #0077b3;font-weight: bold; cursor: pointer;">×</div>
-' $fileindex
-cat << 'EOF' | sed -i '/<script>/r /dev/stdin' $fileindex
+sed -i 's/<script>/\n/' $fileindex
+cat << 'EOF' | sed -i '1r /dev/stdin' $fileindex
+<style>
+body { background: #000000 }
+#close { position: fixed;right: 25px;top: 0;font-size: 40px;color: #0077b3;font-weight: bold; cursor: pointer; }
+</style>
+<div id="close">×</div>
+<script>
 document.getElementById('close').onclick = function() {
 	var hostname = location.hostname;
 	var http = new XMLHttpRequest();
