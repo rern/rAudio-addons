@@ -22,6 +22,7 @@ getVersion camillagui-backend
 wget https://github.com/HEnquist/camillagui-backend/releases/download/$version/camillagui.zip
 dircamillagui=/srv/http/settings/camillagui
 dircamilladsp=/srv/http/data/camilladsp
+mkdir -p $dircamilladsp/{coeffs,configs}
 unzip camillagui -d $dircamillagui
 rm camillagui.zip
 
@@ -63,7 +64,6 @@ supported_capture_types: null
 supported_playback_types: null
 EOF
 
-mkdir -p $dircamilladsp/{coeffs,configs}
 file=$dircamilladsp/configs/default_config.yml
 if [[ ! -e $file ]]; then
 	cat << EOF > $file
