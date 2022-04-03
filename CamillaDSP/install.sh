@@ -30,10 +30,13 @@ fileindex=$dircamillagui/build/index.html
 sed -i 's/<script>/\n/' $fileindex
 cat << 'EOF' | sed -i '1r /dev/stdin' $fileindex
 <style>
-body { background: #000000 }
-#close { position: fixed;right: 25px;top: 0;font-size: 40px;color: #0077b3;font-weight: bold; cursor: pointer; }
+body { padding-top: 40px; background: #000000; }
+.head { position: fixed; top: 0; height: 40px; width: 100%; background: #313435; box-shadow: 0px 4px 10px #000000; }
+.head img { position: absolute; width: 40px; height: 40px; }
+.head span { margin-left: 55px; font-size: 26px; font-weight: 300; letter-spacing: 20px; }
+#close { position: absolute; right: 16px; top: -12px; font-size: 40px; color: #0077b3; cursor: pointer; }
 </style>
-<div id="close">×</div>
+<div class="head"><img src="./static/media/icon.png"><span>CamillaDSP</span><div id="close">×</div></div>
 <script>
 document.getElementById('close').onclick = function() {
 	var hostname = location.hostname;
