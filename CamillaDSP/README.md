@@ -25,9 +25,7 @@ cargo build --release
 cp target/release/camilladsp /usr/bin
 ```
 
-- Get audio hardware parameters
+- Get audio hardware parameters (on-board audio - sample format: S16LE)
 ```sh
 cat /proc/asound/card0/pcm0p/sub0/hw_params
 ```
-(on-board audio - sample format: S16LE)
-
