@@ -45,8 +45,8 @@ cargo build --release
 cp target/release/camilladsp /usr/bin
 ```
 
-- Get audio hardware parameters (on-board audio - sample format: S16LE)
+- Get audio hardware parameters (RPi on-board audio - sample format: S16LE)
 ```sh
-# while playing
+# while playing - get from loopback cardN/pcmNp
 grep -r ^format: /proc/asound | sed 's|.*/\(card.\).*:\(format.*\)|\1 \2|'
 ```
