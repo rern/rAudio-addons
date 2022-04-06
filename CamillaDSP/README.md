@@ -47,5 +47,6 @@ cp target/release/camilladsp /usr/bin
 
 - Get audio hardware parameters (on-board audio - sample format: S16LE)
 ```sh
+# while playing
 grep -r ^format: /proc/asound | sed 's|.*/\(card.\).*:\(format.*\)|\1 \2|'
 ```
