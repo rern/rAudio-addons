@@ -37,10 +37,9 @@ pacman -Sy --needed cargo git pkg-config python-aiohttp python-jsonschema python
 # binary
 su alarm
 cd
-mkdir camilladsp
 getVersion camilladsp
-curl -L  https://github.com/HEnquist/camilladsp/archive/refs/tags/$version.tar.gz | bsdtar xf - -C camilladsp
-cd camilladsp
+curl -L  https://github.com/HEnquist/camilladsp/archive/refs/tags/$version.tar.gz | bsdtar xf -
+cd camilladsp${version/v/-}
 cargo build --release
 cp target/release/camilladsp /usr/bin
 ```
