@@ -23,6 +23,8 @@ CamillaDSP
 		- Symlink: `ln -s /path/to/{camilladsp,active_config}.yml`
 
 - Compile binary
+	- `cargo` cannot run with `distcc`.
+	- Docker failed to compile.
 ```sh
 pacman -Sy --needed cargo git pkg-config
 # binary
