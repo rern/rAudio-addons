@@ -24,6 +24,10 @@ CamillaDSP
 
 - Compile binary
 ```sh
+pacman -Sy --needed cargo git pkg-config
+# binary
+su alarm
+cd
 getVersion() {
 	user=HEnquist
 	repo=$1
@@ -31,12 +35,6 @@ getVersion() {
 				| awk -F'/' '/^location/ {print $NF}' \
 				| sed 's/[^v.0-9]//g' )
 }
-
-pacman -Sy --needed cargo git pkg-config python-aiohttp python-jsonschema python-matplotlib python-pip python-websocket-client
-
-# binary
-su alarm
-cd
 getVersion camilladsp
 curl -L  https://github.com/HEnquist/camilladsp/archive/refs/tags/$version.tar.gz | bsdtar xf -
 cd camilladsp${version/v/-}
