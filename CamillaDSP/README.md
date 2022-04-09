@@ -23,7 +23,13 @@ CamillaDSP
 		- Symlink: `ln -s /path/to/{camilladsp,active_config}.yml`
 
 - Compile binary
+	- `cargo` cannot run with `distcc`.
+	- Docker failed to compile.
 ```sh
+pacman -Sy --needed cargo git pkg-config
+# binary
+su alarm
+cd
 getVersion() {
 	user=HEnquist
 	repo=$1
@@ -31,21 +37,16 @@ getVersion() {
 				| awk -F'/' '/^location/ {print $NF}' \
 				| sed 's/[^v.0-9]//g' )
 }
-
-pacman -Sy --needed cargo git pkg-config python-aiohttp python-jsonschema python-matplotlib python-pip python-websocket-client
-
-# binary
-su alarm
-cd
-mkdir camilladsp
 getVersion camilladsp
-curl -L  https://github.com/HEnquist/camilladsp/archive/refs/tags/$version.tar.gz | bsdtar xf - -C camilladsp
-cd camilladsp
+curl -L  https://github.com/HEnquist/camilladsp/archive/refs/tags/$version.tar.gz | bsdtar xf -
+cd camilladsp${version/v/-}
 cargo build --release
 cp target/release/camilladsp /usr/bin
 ```
 
-- Get audio hardware parameters (on-board audio - sample format: S16LE)
+- Get audio hardware parameters (RPi on-board audio - sample format: S16LE)
 ```sh
-grep -r ^format: /proc/asound | sed 's|.*/\(card.\).*:\(format.*\)|\1 \2|'
+# while playing - get from loopback cardN/pcmNp
+card=$( aplay -l | grep 'Loopback.*device 0' | sed 's/card \(.\): .*/\1/' )
+grep -r ^format: /proc/asound/card$card/pcm${card}p | sed 's|.*/\(card.\).*:\(format.*\)|\1 \2|'
 ```
