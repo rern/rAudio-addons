@@ -26,7 +26,7 @@ CamillaDSP
 	- `cargo` cannot run with `distcc`.
 	- Docker failed to compile.
 ```sh
-pacman -Sy --needed cargo git pkg-config
+pacman -Sy --needed cargo pkg-config
 # binary
 su alarm
 cd
