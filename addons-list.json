@@ -6,11 +6,9 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220409"
+        , "version":     "20220410"
         , "revision":    [
-              "Fix - Addons - Failed install"
-            , "Fix - System - Status - Under voltage warning"
-            , "Add - Library - Remove Latest list"
+              "Fix - Features - Hide DSP if not available"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
