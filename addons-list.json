@@ -6,7 +6,7 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220415"
+        , "version":     "202204151"
         , "revision":    [
               "Fix - Volume level jump back to 100"
             , "Improve - Bluetooth and Wi-Fi status on connect/disconnect"
