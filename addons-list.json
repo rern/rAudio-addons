@@ -6,9 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220410"
+        , "version":     "20220415"
         , "revision":    [
-              "Fix - Features - Hide DSP if not available"
+              "Fix - Volume level jump back to 100"
+            , "Improve - Bluetooth and Wi-Fi status on connect/disconnect"
+            , "Improve - USB Wi-Fi handling of pre-configure, hotplug and scan"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
