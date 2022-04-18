@@ -22,28 +22,6 @@ CamillaDSP
 			- active_config: "/path/to/active_config.yml"
 		- Symlink: `ln -s /path/to/{camilladsp,active_config}.yml`
 
-- Compile binary
-	- `cargo` cannot run with `distcc`.
-	- Docker failed to compile.
-```sh
-pacman -Sy --needed cargo pkg-config
-# binary
-su alarm
-cd
-getVersion() {
-	user=HEnquist
-	repo=$1
-	version=$( curl -I https://github.com/$user/$repo/releases/latest \
-				| awk -F'/' '/^location/ {print $NF}' \
-				| sed 's/[^v.0-9]//g' )
-}
-getVersion camilladsp
-curl -L  https://github.com/HEnquist/camilladsp/archive/refs/tags/$version.tar.gz | bsdtar xf -
-cd camilladsp${version/v/-}
-cargo build --release
-cp target/release/camilladsp /usr/bin
-```
-
 - Get audio hardware parameters (RPi on-board audio - sample format: S16LE)
 ```sh
 # while playing - get from loopback cardN/pcmNp
