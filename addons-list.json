@@ -6,11 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "202204151"
+        , "version":     "20220423"
         , "revision":    [
-              "Fix - Volume level jump back to 100"
-            , "Improve - Bluetooth and Wi-Fi status on connect/disconnect"
-            , "Improve - USB Wi-Fi handling of pre-configure, hotplug and scan"
+              "Fix - Image i202204151 - NTFS disk mount"
+            , "Fix - Blank Player page after Bluetooth connected."
+            , "Add - NTFS3 support on Kernel 5.15"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
@@ -19,7 +19,7 @@
         , "sourcecode":  "https://github.com/rern/rAudio-1"
         , "installurl":  "https://github.com/rern/rAudio-1/raw/main/install.sh"
         , "verify": {
-              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20220214 ]] && echo 1"
+              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20220312 ]] && echo 1"
             , "notverified": "Please download the latest image file to be able to update."
         }
     }
