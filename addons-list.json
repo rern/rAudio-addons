@@ -6,11 +6,9 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220423"
+        , "version":     "20220428"
         , "revision":    [
-              "Fix - Image i202204151 - NTFS disk mount"
-            , "Fix - Blank Player page after Bluetooth connected."
-            , "Add - NTFS3 support on Kernel 5.15"
+              "Fix - Bluetooth issues"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
