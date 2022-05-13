@@ -6,9 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220428"
+        , "version":     "20220513"
         , "revision":    [
-              "Fix - Bluetooth issues"
+              "Fix - Relay module - Off timer while DSP enabled"
+            , "Improve - DSP - Format detection when output changed"
+            , "Improve - Bluetooth pairing and connecting"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
