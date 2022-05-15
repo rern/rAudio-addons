@@ -6,7 +6,7 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220513"
+        , "version":     "20220514"
         , "revision":    [
               "Fix - Relay module - Off timer while DSP enabled"
             , "Improve - DSP - Format detection when output changed"
