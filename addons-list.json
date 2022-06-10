@@ -6,9 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220526"
+        , "version":     "20220610"
         , "revision":    [
-              "Improve - DSP - Upgrade CamillaDSP to 1.0.0"
+              "Fix - Features - Equalizer"
+            , "Improve - Features - DSP"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
@@ -17,7 +18,7 @@
         , "sourcecode":  "https://github.com/rern/rAudio-1"
         , "installurl":  "https://github.com/rern/rAudio-1/raw/main/install.sh"
         , "verify": {
-              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20220312 ]] && echo 1"
+              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20220505 ]] && echo 1"
             , "notverified": "Please download the latest image file to be able to update."
         }
     }
