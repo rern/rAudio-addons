@@ -8,8 +8,8 @@
           "title":       "rAudio 1"
         , "version":     "20220618"
         , "revision":    [
-              "Fix - Features - DSP - New/Save profiles"
-            , "Improve -  - Features - DSP"
+              "Fix - Features - Equalizer - New/Save profiles"
+            , "Improve - Features - DSP"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
