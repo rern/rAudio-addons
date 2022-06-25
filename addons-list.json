@@ -6,10 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220618"
+        , "version":     "20220625"
         , "revision":    [
-              "Fix - Features - Equalizer - New/Save profiles"
-            , "Improve - Features - DSP"
+              "Fix - System - Status for current boot"
+			, "Fix - WebRadio with prefix other than <code>http</code> in subdirectory"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
@@ -18,7 +18,7 @@
         , "sourcecode":  "https://github.com/rern/rAudio-1"
         , "installurl":  "https://github.com/rern/rAudio-1/raw/main/install.sh"
         , "verify": {
-              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20220505 ]] && echo 1"
+              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20220526 ]] && echo 1"
             , "notverified": "Please download the latest image file to be able to update."
         }
     }
