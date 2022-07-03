@@ -6,10 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220625"
+        , "version":     "20220703"
         , "revision":    [
-              "Fix - System - Status for current boot"
-			, "Fix - WebRadio with prefix other than <code>http</code> in subdirectory"
+              "Fix - Player - Current USB sound output"
+            , "Fix - System - Refresh after setting changed"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
