@@ -25,7 +25,7 @@
     , "dab": {
           "title":       "DAB radio"
         , "buttonlabel": "<i class='fa fa-plus-circle'></i> Install"
-        , "description": "Add DAB radio reception capabilities"
+        , "description": "Add Digital Audio Broadcasting radio reception capabilities for connected SDR devices"
         , "thumbnail":   "/assets/img/addons/thumbdab.jpg"
         , "sourcecode":  "https://github.com/vale-max/rAudio-addons/raw/main/dabradio"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/dabradio/install.sh"
