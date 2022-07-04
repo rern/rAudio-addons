@@ -6,10 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220703"
+        , "version":     "20220705"
         , "revision":    [
               "Fix - Player - Current USB sound output"
-            , "Fix - System - Refresh after setting changed"
+            , "Add - DAB radio support"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
@@ -23,9 +23,9 @@
         }
     }
     , "dab": {
-          "title":       "DAB radio"
+          "title":       "DAB Radio"
         , "buttonlabel": "<i class='fa fa-plus-circle'></i> Install"
-        , "description": "Add Digital Audio Broadcasting radio reception capabilities for connected SDR devices"
+        , "description": "Add Digital Audio Broadcasting radio reception capabilities - An SDR device required."
         , "thumbnail":   "/assets/img/addons/thumbdab.jpg"
         , "sourcecode":  "https://github.com/vale-max/rAudio-addons/raw/main/dabradio"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/dabradio/install.sh"
