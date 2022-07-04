@@ -20,6 +20,8 @@ pacman -R --noconfirm dab-scanner rtsp-simple-server
 uninstallfinish
 EOF
 
+chmod +x /usr/local/bin/uninstall_dab.sh
+
 installfinish
 
 echo $info Scan DAB radio: Library update
