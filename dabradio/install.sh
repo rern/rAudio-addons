@@ -6,6 +6,8 @@ installstart "$1"
 
 pacman -Sy --noconfirm dab-scanner
 systemctl enable rtsp-simple-server
+sed -i '/ffmpeg/ {n; s/".*"/"yes"/}' /etc/mpd.conf
+/srv/http/bash/settings/player-conf.sh
 
 installfinish
 
