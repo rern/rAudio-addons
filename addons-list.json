@@ -22,6 +22,15 @@
             , "notverified": "Please download the latest image file to be able to update."
         }
     }
+    , "dab": {
+          "title":       "DAB radio"
+        , "buttonlabel": "<i class='fa fa-plus-circle'></i> Install"
+        , "description": "Add DAB radio reception capabilities"
+        , "thumbnail":   "/assets/img/addons/thumbdab.jpg"
+        , "sourcecode":  "https://github.com/vale-max/rAudio-addons/raw/main/dabradio"
+        , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/dabradio/install.sh"
+        , "hide":        1
+    }
     , "fran": {
           "title":       "Webradio - France Musique & Fip"
         , "buttonlabel": "<i class='fa fa-plus-circle'></i> Add"
