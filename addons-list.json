@@ -25,11 +25,11 @@
     , "dab": {
           "title":       "DAB Radio"
         , "buttonlabel": "<i class='fa fa-plus-circle'></i> Install"
-        , "description": "Add Digital Audio Broadcasting radio reception capabilities - An SDR device required."
+        , "description": "Add Digital Audio Broadcasting radio reception capabilities<br>(RTL-SDR dongle required)"
         , "thumbnail":   "/assets/img/addons/thumbdab.jpg"
         , "sourcecode":  "https://github.com/vale-max/rAudio-addons/raw/main/dabradio"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/dabradio/install.sh"
-        , "hide":        1
+        , "hide":        "[[ -e /usr/bin/rtsp-simple-server || ! -e /boot/kernel.img ]] && echo 1 || echo 0"
     }
     , "fran": {
           "title":       "Webradio - France Musique & Fip"
