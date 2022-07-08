@@ -6,10 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220705"
+        , "version":     "202207081"
         , "revision":    [
-              "Fix - Player - Current USB sound output"
-            , "Add - DAB radio support"
+              "Improve - Library - Back button"
+            , "Improve - Networks - Context menu"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
