@@ -29,7 +29,7 @@
         , "thumbnail":   "/assets/img/addons/thumbdab.jpg"
         , "sourcecode":  "https://github.com/vale-max/rAudio-addons/raw/main/dabradio"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/dabradio/install.sh"
-        , "hide":        "[[ -e /usr/bin/rtsp-simple-server || ! -e /boot/kernel.img ]] && echo 1 || echo 0"
+        , "hide":        "[[ -e /usr/bin/rtsp-simple-server || -e /boot/kernel.img ]] && echo 1 || echo 0"
     }
     , "fran": {
           "title":       "Webradio - France Musique & Fip"
