@@ -6,9 +6,10 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220710"
+        , "version":     "202207101"
         , "revision":    [
               "Fix - Library database update"
+            , "Fix - Networks - Handling of Wi-Fi scan which includes hidden SSIDs"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
