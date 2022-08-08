@@ -6,10 +6,14 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "202207101"
+        , "version":     "20220808"
         , "revision":    [
-              "Fix - Library database update"
-            , "Fix - Networks - Handling of Wi-Fi scan which includes hidden SSIDs"
+              "Add - USB Bluetooth dongle plug and play"
+            , "Fix - RPi Zero and 1 - USB devices not detected (downgrade kernel)"
+            , "Improve - Bluetooth - Suppress no mixer notification for unconnected devices on startup"
+            , "Improve - System - Power button setting for Audiophonics"
+            , "Improve - DAB Radio - Separate from WebRadio"
+            , "Improve - USB Wi-Fi - Auto disable on-board"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
@@ -29,7 +33,7 @@
         , "thumbnail":   "/assets/img/addons/thumbdab.jpg"
         , "sourcecode":  "https://github.com/vale-max/rAudio-addons/raw/main/dabradio"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/dabradio/install.sh"
-        , "hide":        "[[ -e /usr/bin/rtsp-simple-server || -e /boot/kernel.img ]] && echo 1 || echo 0"
+        , "hide":        "[[ -e /usr/bin/rtsp-simple-server ]] && echo 1 || echo 0"
     }
     , "fran": {
           "title":       "Webradio - France Musique & Fip"
@@ -38,7 +42,7 @@
         , "thumbnail":   "/assets/img/addons/thumbfran.gif"
         , "sourcecode":  "https://github.com/rern/rAudio-addons/raw/main/webradio"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/webradio/install.sh"
-        , "hide":        "[[ -e /srv/http/data/webradios/Fip || $( ls '/srv/http/data/webradios/https:||icecast.radiofrance.fr'* | wc -l ) == 19 ]] && echo 1 || echo 0"
+        , "hide":        "[[ -e /srv/http/data/webradio/Fip || $( ls '/srv/http/data/webradio/https:||icecast.radiofrance.fr'* | wc -l ) == 19 ]] && echo 1 || echo 0"
     }
     , "radi": {
           "title":       "Import Webradio"
