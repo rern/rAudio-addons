@@ -6,14 +6,13 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220808"
+        , "version":     "20220813"
         , "revision":    [
-              "Add - USB Bluetooth dongle plug and play"
-            , "Fix - RPi Zero and 1 - USB devices not detected (downgrade kernel)"
-            , "Improve - Bluetooth - Suppress no mixer notification for unconnected devices on startup"
-            , "Improve - System - Power button setting for Audiophonics"
-            , "Improve - DAB Radio - Separate from WebRadio"
-            , "Improve - USB Wi-Fi - Auto disable on-board"
+              "Fix - Library database update"
+            , "Fix - Cover Art - Change for DAB/Web Radio"
+            , "Fix - Cover Art proportion when taken with camera"
+            , "Fix - Settings - Toggle status on labels click"
+            , "Improve - Library - Show non UTF-8 data which must be converted by users"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
