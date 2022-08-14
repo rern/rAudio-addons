@@ -6,13 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220813"
+        , "version":     "20220814"
         , "revision":    [
-              "Fix - Library database update"
-            , "Fix - Cover Art - Change for DAB/Web Radio"
-            , "Fix - Cover Art proportion when taken with camera"
-            , "Fix - Settings - Toggle status on labels click"
-            , "Improve - Library - Show non UTF-8 data which must be converted by users"
+              "Fix - Bookmarks rename/remove"
+            , "Fix - Web Radio data refresh on start playing"
+            , "Improve - Bookmark thumbnails"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
