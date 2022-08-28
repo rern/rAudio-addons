@@ -6,11 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220814"
+        , "version":     "20220828"
         , "revision":    [
-              "Fix - Bookmarks rename/remove"
-            , "Fix - Web Radio data refresh on start playing"
-            , "Improve - Bookmark thumbnails"
+              "Fix - Tag Editor"
+            , "Fix - Library - Folder icons"
+            , "Add - System - I²S audio - Option to disable obsolete EEPROM read"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
@@ -19,7 +19,7 @@
         , "sourcecode":  "https://github.com/rern/rAudio-1"
         , "installurl":  "https://github.com/rern/rAudio-1/raw/main/install.sh"
         , "verify": {
-              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20220526 ]] && echo 1"
+              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20220708 ]] && echo 1"
             , "notverified": "Please download the latest image file to be able to update."
         }
     }
