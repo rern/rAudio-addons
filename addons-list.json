@@ -6,11 +6,11 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220814"
+        , "version":     "20220828"
         , "revision":    [
-              "Fix - Bookmarks rename/remove"
-            , "Fix - Web Radio data refresh on start playing"
-            , "Improve - Bookmark thumbnails"
+              "Fix - Tag Editor"
+            , "Fix - Library - Folder icons"
+            , "Add - System - I²S audio - Option to disable obsolete EEPROM read"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
