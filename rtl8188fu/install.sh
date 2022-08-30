@@ -10,5 +10,3 @@ blacklist r8188fu
 options rtl8188fu rtw_power_mgnt=0 rtw_enusbss=0' > /etc/modprobe.d/rtl8188fu.conf
 
 installfinish
-
-echo -e "$info Reboot required."
