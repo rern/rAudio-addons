@@ -76,12 +76,12 @@
         }
     }
     , "rtl": {
-          "title":       "Realtek RTL8188FU / RTL8188FTV Driver"
-        , "description": "Driver for Realtek RTL8188FU / RTL8188FTV USB Wi-Fi dongles"
+          "title":       "Realtek Wi-Fi Driver"
+        , "description": "Driver for Realtek RTL8188FU / RTL8188FTV Wi-Fi dongles"
         , "thumbnail":   "/assets/img/addons/thumbrtl.png"
         , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/main/rtl8188fu"
         , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/rtl8188fu/install.sh"
         , "postinfo":    "Reboot required."
-		, "hide":        1
+        , "hide":        1
     }
 }
