@@ -6,11 +6,15 @@
     }
     , "r1": {
           "title":       "rAudio 1"
-        , "version":     "20220828"
+        , "version":     "20220902"
         , "revision":    [
-              "Fix - Tag Editor"
-            , "Fix - Library - Folder icons"
-            , "Add - System - I²S audio - Option to disable obsolete EEPROM read"
+              "Fix - Update - Errors if custom color was set"
+            , "Fix - Library - Update album thumbnails"
+            , "Fix - Library - Access to empty Web Radio folders"
+            , "Fix - Playback - Bitrate for <code>*.ogg</code>"
+            , "Fix - System - Missing SoC for 3A+ and 3B+"
+            , "Improve - Playlist - Roll The Dice"
+            , "Improve - Playlist - Remove tracks individually"
         ]
         , "description": "Updates for rAudio 1"
         , "buttonlabel": "Update"
