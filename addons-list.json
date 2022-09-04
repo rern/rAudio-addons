@@ -1,91 +1,85 @@
 {
-      "push": {
-          "bash": ""
-        , "url":  ""
-        , "hide": 1
-    }
-    , "r1": {
-          "title":       "rAudio 1"
-        , "version":     "20220902"
-        , "revision":    [
-              "Fix - Update - Errors if custom color was set"
-            , "Fix - Library - Update album thumbnails"
-            , "Fix - Library - Access to empty Web Radio folders"
-            , "Fix - Playback - Bitrate for <code>*.ogg</code>"
-            , "Fix - System - Missing SoC for 3A+ and 3B+"
-            , "Improve - Playlist - Roll The Dice"
-            , "Improve - Playlist - Remove tracks individually"
-        ]
-        , "description": "Updates for rAudio 1"
-        , "buttonlabel": "Update"
-        , "nouninstall": 1
-        , "thumbnail":   "/assets/img/coverart.svg"
-        , "sourcecode":  "https://github.com/rern/rAudio-1"
-        , "installurl":  "https://github.com/rern/rAudio-1/raw/main/install.sh"
-        , "verify": {
-              "command":     "[[ $( cat /srv/http/data/addons/r1 ) < 20220708 ]] && echo 1"
-            , "notverified": "Please download the latest image file to be able to update."
-        }
-    }
-    , "dab": {
-          "title":       "DAB Radio"
-        , "buttonlabel": "<i class='fa fa-plus-circle'></i> Install"
-        , "description": "Add Digital Audio Broadcasting radio reception capabilities<br>(RTL-SDR dongle required)"
-        , "thumbnail":   "/assets/img/addons/thumbdab.jpg"
-        , "sourcecode":  "https://github.com/vale-max/rAudio-addons/raw/main/dabradio"
-        , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/dabradio/install.sh"
-        , "hide":        "[[ -e /usr/bin/rtsp-simple-server ]] && echo 1 || echo 0"
-    }
-    , "fran": {
-          "title":       "Webradio - France Musique & Fip"
-        , "buttonlabel": "<i class='fa fa-plus-circle'></i> Add"
-        , "description": "Webradio stations by <a href='https://www.francemusique.fr/'>France Musique</a> and <a href='https://www.fip.fr/'>Fip</a>"
-        , "thumbnail":   "/assets/img/addons/thumbfran.gif"
-        , "sourcecode":  "https://github.com/rern/rAudio-addons/raw/main/webradio"
-        , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/webradio/install.sh"
-        , "hide":        "[[ -e /srv/http/data/webradio/Fip || $( ls '/srv/http/data/webradio/https:||icecast.radiofrance.fr'* | wc -l ) == 19 ]] && echo 1 || echo 0"
-    }
-    , "radi": {
-          "title":       "Import Webradio"
-        , "description": "Import <code>*.pls</code> webradio files."
-        , "buttonlabel": "<i class='fa fa-input'></i> Import"
-        , "thumbnail":   "/assets/img/addons/thumbwebr.png"
-        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/main/webradio"
-        , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/webradio/importwebradio.sh"
-        , "option": {
-              "wait":    "Copy directory with webradio files:<br><br><code>Webradio/*</code> > <code>/mnt/MPD</code>"
-        }
-        , "postinfo":    "Directory <code>/mnt/MPD/Webradio</code> can be deleted."
-    }
-    , "rank": {
-          "title":       "Rank Mirror Package Servers"
-        , "description": "Fix package download errors caused by unreachable servers.<br>Rank mirror package servers by download speed and latency."
-        , "thumbnail":   "/assets/img/addons/thumbrank.png"
-        , "buttonlabel": "<i class='fa fa-bars'></i> Rank"
-        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/main/rankmirrors"
-        , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/rankmirrors/rankmirrors.sh"
-        , "option": {
-              "select": {
-                  "message": "Download test for each server:"
-                , "label":   "Seconds"
-                , "list": {
-                      "3": 3
-                    , "4": 4
-                    , "5": 5
-                    , "6": 6
-                }
-                , "checked": 3
-                , "width": 80
-            }
-        }
-    }
-    , "rtl": {
-          "title":       "Realtek Wi-Fi Driver"
-        , "description": "Driver for Realtek RTL8188FU / RTL8188FTV Wi-Fi dongles"
-        , "thumbnail":   "/assets/img/addons/thumbrtl.png"
-        , "sourcecode":  "https://github.com/rern/rAudio-addons/tree/main/rtl8188fu"
-        , "installurl":  "https://github.com/rern/rAudio-addons/raw/main/rtl8188fu/install.sh"
-        , "postinfo":    "Reboot required."
-        , "hide":        1
-    }
+	  "push" : {
+		  "bash" : ""
+		, "url"  :  ""
+		, "hide" : 1
+	}
+	, "r1" : {
+		  "title"       : "rAudio 1"
+		, "version"     : "20220904"
+		, "revision"    : [
+			  "Fix - Playback / MPD not run after update 20220902"
+		]
+		, "description" : "Updates for rAudio 1"
+		, "buttonlabel" : "Update"
+		, "nouninstall" : 1
+		, "thumbnail"   : "/assets/img/coverart.svg"
+		, "sourcecode"  : "https://github.com/rern/rAudio-1"
+		, "installurl"  : "https://github.com/rern/rAudio-1/raw/main/install.sh"
+		, "verify"      : {
+			  "command"     : "[[ $( cat /srv/http/data/addons/r1 ) < 20220805 ]] && echo 1"
+			, "notverified" : "Please download the latest image file to be able to update."
+		}
+	}
+	, "dab" : {
+		  "title"       : "DAB Radio"
+		, "buttonlabel" : "<i class='fa fa-plus-circle'></i> Install"
+		, "description" : "Add Digital Audio Broadcasting radio reception capabilities<br>(RTL-SDR dongle required)"
+		, "thumbnail"   : "/assets/img/addons/thumbdab.jpg"
+		, "sourcecode"  : "https://github.com/vale-max/rAudio-addons/raw/main/dabradio"
+		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/dabradio/install.sh"
+		, "hide"        : "[[ -e /usr/bin/rtsp-simple-server ]] && echo 1 || echo 0"
+	}
+	, "fran" : {
+		  "title"       : "Webradio - France Musique & Fip"
+		, "buttonlabel" : "<i class='fa fa-plus-circle'></i> Add"
+		, "description" : "Webradio stations by <a href='https://www.francemusique.fr/'>France Musique</a> and <a href='https://www.fip.fr/'>Fip</a>"
+		, "thumbnail"   : "/assets/img/addons/thumbfran.gif"
+		, "sourcecode"  : "https://github.com/rern/rAudio-addons/raw/main/webradio"
+		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/webradio/install.sh"
+		, "hide"        : "[[ -e /srv/http/data/webradio/Fip || $( ls '/srv/http/data/webradio/https:||icecast.radiofrance.fr'* | wc -l ) == 19 ]] && echo 1 || echo 0"
+	}
+	, "radi" : {
+		  "title"       : "Import Webradio"
+		, "description" : "Import <code>*.pls</code> webradio files."
+		, "buttonlabel" : "<i class='fa fa-input'></i> Import"
+		, "thumbnail"   : "/assets/img/addons/thumbwebr.png"
+		, "sourcecode"  : "https://github.com/rern/rAudio-addons/tree/main/webradio"
+		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/webradio/importwebradio.sh"
+		, "option"      : {
+			  "wait" : "Copy directory with webradio files:<br><br><code>Webradio/*</code> > <code>/mnt/MPD</code>"
+		}
+		, "postinfo"    : "Directory <code>/mnt/MPD/Webradio</code> can be deleted."
+	}
+	, "rank" : {
+		  "title"       : "Rank Mirror Package Servers"
+		, "description" : "Fix package download errors caused by unreachable servers.<br>Rank mirror package servers by download speed and latency."
+		, "thumbnail"   : "/assets/img/addons/thumbrank.png"
+		, "buttonlabel" : "<i class='fa fa-bars'></i> Rank"
+		, "sourcecode"  : "https://github.com/rern/rAudio-addons/tree/main/rankmirrors"
+		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/rankmirrors/rankmirrors.sh"
+		, "option"      : {
+			  "select" : {
+				  "message" : "Download test for each server:"
+				, "label"   : "Seconds"
+				, "list"    : {
+					  "3" : 3
+					, "4" : 4
+					, "5" : 5
+					, "6" : 6
+				}
+				, "checked" : 3
+				, "width"   : 80
+			}
+		}
+	}
+	, "rtl" : {
+		  "title"       : "Realtek Wi-Fi Driver"
+		, "description" : "Driver for Realtek RTL8188FU / RTL8188FTV Wi-Fi dongles"
+		, "thumbnail"   : "/assets/img/addons/thumbrtl.png"
+		, "sourcecode"  : "https://github.com/rern/rAudio-addons/tree/main/rtl8188fu"
+		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/rtl8188fu/install.sh"
+		, "postinfo"    : "Reboot required."
+		, "hide"        : 1
+	}
 }
