@@ -6,9 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio 1"
-		, "version"     : "20220904"
+		, "version"     : "20220909"
 		, "revision"    : [
-			  "Fix - Playback / MPD not run after update 20220902"
+			  "Fix - System - Restore settings and data"
+			, "Fix - Networks - Broken page caused by <code>bluez</code> not yet upgraded"
 		]
 		, "description" : "Updates for rAudio 1"
 		, "buttonlabel" : "Update"
