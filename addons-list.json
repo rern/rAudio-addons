@@ -6,7 +6,7 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio 1"
-		, "version"     : "20220909"
+		, "version"     : "20220907"
 		, "revision"    : [
 			  "Fix - System - Restore settings and data"
 			, "Fix - Networks - Broken page caused by <code>bluez</code> not yet upgraded"
