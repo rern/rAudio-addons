@@ -6,10 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio 1"
-		, "version"     : "20220907"
+		, "version"     : "20220909"
 		, "revision"    : [
-			  "Fix - System - Restore settings and data"
-			, "Fix - Networks - Broken page caused by <code>bluez</code> not yet upgraded"
+			  "Fix - Player - Broken page before 1st Library databas scan"
+			, "Fix - DAB Radio script"
 		]
 		, "description" : "Updates for rAudio 1"
 		, "buttonlabel" : "Update"
