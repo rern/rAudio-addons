@@ -8,7 +8,7 @@
 		  "title"       : "rAudio 1"
 		, "version"     : "20220909"
 		, "revision"    : [
-			  "Fix - Player - Broken page before 1st Library databas scan"
+			  "Fix - Player - Broken page before 1st Library database scan"
 			, "Fix - DAB Radio script"
 		]
 		, "description" : "Updates for rAudio 1"
