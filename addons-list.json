@@ -6,10 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio 1"
-		, "version"     : "20220909"
+		, "version"     : "20220916"
 		, "revision"    : [
-			  "Fix - Player - Broken page before 1st Library database scan"
-			, "Fix - DAB Radio script"
+			  "Fix - (RPi Zero and 1) Networks - Broken page if <code>bluez</code> not upgraded"
+			, "Fix - Web Radio - Broken Playback when add new station before updating Library database"
 		]
 		, "description" : "Updates for rAudio 1"
 		, "buttonlabel" : "Update"
@@ -81,6 +81,5 @@
 		, "sourcecode"  : "https://github.com/rern/rAudio-addons/tree/main/rtl8188fu"
 		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/rtl8188fu/install.sh"
 		, "postinfo"    : "Reboot required."
-		, "hide"        : 1
 	}
 }
