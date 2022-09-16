@@ -8,8 +8,9 @@
 		  "title"       : "rAudio 1"
 		, "version"     : "20220916"
 		, "revision"    : [
-			  "Fix - (RPi Zero and 1) Networks - Broken page if <code>bluez</code> not upgraded"
+			  "Fix - Library - Web Radio multi-level subdirectories"
 			, "Fix - Web Radio - Broken Playback when add new station before updating Library database"
+			, "Fix - (RPi Zero and 1) Networks - Broken page if <code>bluez</code> not upgraded"
 		]
 		, "description" : "Updates for rAudio 1"
 		, "buttonlabel" : "Update"
