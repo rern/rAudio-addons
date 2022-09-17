@@ -6,7 +6,7 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio 1"
-		, "version"     : "20220916"
+		, "version"     : "20220917"
 		, "revision"    : [
 			  "Fix - Library - Web Radio multi-level subdirectories"
 			, "Fix - Web Radio - Broken Playback when add new station before updating Library database"
