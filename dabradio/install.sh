@@ -4,7 +4,7 @@
 
 installstart "$1"
 
-pacman -Sy --noconfirm dab-scanner inotify-tools
+pacman -Sy --noconfirm dab-scanner
 echo "\
 [Unit]
 Description=DAB Radio metadata
