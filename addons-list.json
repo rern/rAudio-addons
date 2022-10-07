@@ -6,11 +6,12 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio 1"
-		, "version"     : "20220917"
+		, "version"     : "20221007"
 		, "revision"    : [
-			  "Fix - Library - Web Radio multi-level subdirectories"
-			, "Fix - Web Radio - Broken Playback when add new station before updating Library database"
-			, "Fix - (RPi Zero and 1) Networks - Broken page if <code>bluez</code> not upgraded"
+			  "Fix - User Guide - Missing images"
+			, "Add - Features - Server rAudio for Shared Data and files"
+			, "Improve - Shared Data refresh upadted database on all devices"
+			, "Improve - Library update"
 		]
 		, "description" : "Updates for rAudio 1"
 		, "buttonlabel" : "Update"
