@@ -6,12 +6,12 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio 1"
-		, "version"     : "20221007"
+		, "version"     : "20221010"
 		, "revision"    : [
-			  "Fix - User Guide - Missing images"
-			, "Add - Features - Server rAudio for Shared Data and files"
-			, "Improve - Shared Data refresh upadted database on all devices"
-			, "Improve - Library update"
+			  "Fix - System - Shared Data with server other than Server rAudio"
+			, "Fix - Library - Not response on click"
+			, "Fix - Playlist - Selective remove"
+			, "Improve - Web Radio coverarts for stations ending with <code>?param=...</code>"
 		]
 		, "description" : "Updates for rAudio 1"
 		, "buttonlabel" : "Update"
