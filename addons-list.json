@@ -6,12 +6,11 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio 1"
-		, "version"     : "20221010"
+		, "version"     : "20221013"
 		, "revision"    : [
-			  "Fix - System - Shared Data with server other than Server rAudio"
-			, "Fix - Library - Not response on click"
-			, "Fix - Playlist - Selective remove"
-			, "Improve - Web Radio coverarts for stations ending with <code>?param=...</code>"
+			  "Fix - Networks - Wi-Fi search"
+			, "Improve - Shared Data - Notify when server offline and option to disable"
+			, "Improve - Shared Data - Handle directory named <code>data</code> and <code>SD</code> in USB drives"
 		]
 		, "description" : "Updates for rAudio 1"
 		, "buttonlabel" : "Update"
