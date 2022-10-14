@@ -6,7 +6,7 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio 1"
-		, "version"     : "202210131"
+		, "version"     : "20221014"
 		, "revision"    : [
 			  "Fix - Networks - Wi-Fi search"
 			, "Improve - Shared Data - Notify when server offline and option to disable"
