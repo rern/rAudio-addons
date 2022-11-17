@@ -23,7 +23,7 @@
 		, "sourcecode"  : "https://github.com/rern/rAudio-1"
 		, "installurl"  : "https://github.com/rern/rAudio-1/raw/main/install.sh"
 		, "verify"      : {
-			  "command"     : "[[ $( cat /srv/http/data/addons/r1 ) < 20220917 ]] && echo 1"
+			  "command"     : "[[ $( cat /srv/http/data/addons/r1 ) < 20220904 ]] && echo 1"
 			, "notverified" : "Please download the latest image file to be able to update."
 		}
 		, "postinfo"    : "[[ ! -e /srv/http/data/mpdconf ]] && echo 'Backup of Data and Settings:<br>Backup again to include new configuration.'"
