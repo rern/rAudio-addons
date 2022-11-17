@@ -1,27 +1,32 @@
 {
 	  "push" : {
-		  "bash" : ""
+		  "bash" : "sed -i 's|/settings/addons.php|settings.php?p=addons|' /srv/http/settings/addons-progress.php"
 		, "url"  :  ""
 		, "hide" : 1
 	}
 	, "r1" : {
-		  "title"       : "rAudio 1"
-		, "version"     : "20221014"
+		  "title"       : "rAudio"
+		, "version"     : "20221117"
 		, "revision"    : [
-			  "Fix - Networks - Wi-Fi search"
-			, "Improve - Shared Data - Notify when server offline and option to disable"
-			, "Improve - Shared Data - Handle directory named <code>data</code> and <code>SD</code> in USB drives"
+			  "Fix - Playback - Stop while connected with Bluetooth sender"
+			, "Fix - <code>*.gif</code> image upload for bookmarks, coverarts and thumbnails"
+			, "Fix - Samba File Sharing not start on reboot"
+			, "Improve - Playback - Volume value precision on adjust"
+			, "Improve - Player - Settings, SoX Resampler settings"
+			, "Improve - Bluetooth pairing - no more force reconnect after paired"
+			, "Improve - Shared Data - Hide SD and USB in Library. Preserve Web Radio data on disable"
 		]
-		, "description" : "Updates for rAudio 1"
+		, "description" : "Updates for rAudio"
 		, "buttonlabel" : "Update"
 		, "nouninstall" : 1
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio-1"
 		, "installurl"  : "https://github.com/rern/rAudio-1/raw/main/install.sh"
 		, "verify"      : {
-			  "command"     : "[[ $( cat /srv/http/data/addons/r1 ) < 20220805 ]] && echo 1"
+			  "command"     : "[[ $( cat /srv/http/data/addons/r1 ) < 20220917 ]] && echo 1"
 			, "notverified" : "Please download the latest image file to be able to update."
 		}
+		, "postinfo"    : "[[ ! -e /srv/http/data/mpdconf ]] && echo 'Backup of Data and Settings:<br>Backup again to include new configuration.'"
 	}
 	, "dab" : {
 		  "title"       : "DAB Radio"
@@ -30,7 +35,7 @@
 		, "thumbnail"   : "/assets/img/addons/thumbdab.jpg"
 		, "sourcecode"  : "https://github.com/vale-max/rAudio-addons/raw/main/dabradio"
 		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/dabradio/install.sh"
-		, "hide"        : "[[ -e /usr/bin/rtsp-simple-server ]] && echo 1 || echo 0"
+		, "hide"        : "[[ -e /usr/bin/rtsp-simple-server || -e /boot/kernel/img ]] && echo 1 || echo 0"
 	}
 	, "fran" : {
 		  "title"       : "Webradio - France Musique & Fip"
@@ -61,17 +66,9 @@
 		, "sourcecode"  : "https://github.com/rern/rAudio-addons/tree/main/rankmirrors"
 		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/rankmirrors/rankmirrors.sh"
 		, "option"      : {
-			  "select" : {
-				  "message" : "Download test for each server:"
-				, "label"   : "Seconds"
-				, "list"    : {
-					  "3" : 3
-					, "4" : 4
-					, "5" : 5
-					, "6" : 6
-				}
-				, "checked" : 3
-				, "width"   : 80
+			  "text" : {
+				  "message"  : "Download test for each server:"
+				, "label"    : "Seconds"
 			}
 		}
 	}
