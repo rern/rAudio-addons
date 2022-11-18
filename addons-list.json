@@ -26,7 +26,6 @@
 			  "command"     : "[[ $( cat /srv/http/data/addons/r1 ) < 20220907 ]] && echo 1"
 			, "notverified" : "Please download the latest image file to be able to update."
 		}
-		, "postinfo"    : "[[ ! -e /srv/http/data/mpdconf ]] && echo 'Backup of Data and Settings:<br>Backup again to include new configuration.'"
 	}
 	, "dab" : {
 		  "title"       : "DAB Radio"
