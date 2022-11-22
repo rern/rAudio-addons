@@ -6,15 +6,13 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20221117"
+		, "version"     : "20221122"
 		, "revision"    : [
-			  "Fix - Playback - Stop while connected with Bluetooth sender"
-			, "Fix - <code>*.gif</code> image upload for bookmarks, coverarts and thumbnails"
-			, "Fix - Samba File Sharing not start on reboot"
-			, "Improve - Playback - Volume value precision on adjust"
-			, "Improve - Player - Settings, SoX Resampler settings"
-			, "Improve - Bluetooth pairing - no more force reconnect after paired"
-			, "Improve - Shared Data - Hide SD and USB in Library. Preserve Web Radio data on disable"
+			  "Fix - Album Thumbnails update"
+			, "Fix - AirPlay - Upgrade to match new <code>OpenSSL</code>"
+			, "Fix - Spotify - Coverart refresh"
+			, "Fix - Networks - missing LAN data after <code>pacman -Syu</code>"
+			, "Fix - System - Storage list of USB devices"
 		]
 		, "description" : "Updates for rAudio"
 		, "buttonlabel" : "Update"
