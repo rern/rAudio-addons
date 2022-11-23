@@ -6,13 +6,12 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20221122"
+		, "version"     : "20221123"
 		, "revision"    : [
-			  "Fix - Album Thumbnails update"
-			, "Fix - AirPlay - Upgrade to match new <code>OpenSSL</code>"
-			, "Fix - Spotify - Coverart refresh"
-			, "Fix - Networks - missing LAN data after <code>pacman -Syu</code>"
-			, "Fix - System - Storage list of USB devices"
+			  "Fix - Features - Browser on RPi Zoom setting"
+			, "Fix - Playback - Volume level for DACs without dB values"
+			, "Improve - SnapCast - Client + Server on the same rAudio"
+			, "Improve - Player - Default output still availble while Bluetooth receiver connected"
 		]
 		, "description" : "Updates for rAudio"
 		, "buttonlabel" : "Update"
