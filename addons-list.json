@@ -6,9 +6,12 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20221208"
+		, "version"     : "20221210"
 		, "revision"    : [
-			  "Fix - Library - Playlists counts update"
+			  "Fix - Playback - MPD sofeware volume"
+			, "Fix - Settings - Update status block on change"
+			, "Fix - Networks - Error when Bluetooth list contains receiver and sender on a single device"
+			, "Fix - Library - Playlists counts update"
 			, "Fix - Library - New bookmark missing thumbnail"
 			, "Fix - Library - Search close button"
 			, "Fix - Player - ReplayGain setting"
