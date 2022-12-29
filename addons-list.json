@@ -6,15 +6,11 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20221221"
+		, "version"     : "20221229"
 		, "revision"    : [
-			  "Fix - Radio Paradise - Global mix metadata"
-			, "Fix - Volume - Mixer Device (hardware volume) for DAC with control <code>Master</code>"
-			, "Fix - System online fetched cover arts"
-			, "Fix - Save - Shared Data - Save new playlist"
-			, "Fix - Bluetooth devices with multiple connecting profiles"
-			, "Improve - Relays settings"
-			, "Add - Library - Web Radio station bookmark"
+			  "Fix - Library - Switch to Playback on add+play / replace+play"
+			, "Fix - Time sync when connected with Wi-Fi"
+			, "Fix - Current Web Radio track error if not yet played"
 		]
 		, "description" : "Updates for rAudio"
 		, "buttonlabel" : "Update"
