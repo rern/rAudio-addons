@@ -6,11 +6,11 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20221229"
+		, "version"     : "202212291"
 		, "revision"    : [
 			  "Fix - Library - Switch to Playback on add+play / replace+play"
 			, "Fix - Time sync when connected with Wi-Fi"
-			, "Fix - Current Web Radio track error if not yet played"
+			, "Fix - Error on boot"
 		]
 		, "description" : "Updates for rAudio"
 		, "buttonlabel" : "Update"
