@@ -6,12 +6,11 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230101"
+		, "version"     : "202212291"
 		, "revision"    : [
-			  "Fix - Player settings <code>mpd.conf</code> reset after update"
-			, "Fix - System Restore - Reset to default"
-			, "Fix - Networks - Connected Wi-Fi list"
-			, "Improve - Library update status"
+			  "Fix - Library - Switch to Playback on add+play / replace+play"
+			, "Fix - Time sync when connected with Wi-Fi"
+			, "Fix - Error on boot"
 		]
 		, "description" : "Updates for rAudio"
 		, "buttonlabel" : "Update"
