@@ -6,7 +6,7 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230122"
+		, "version"     : "20230123"
 		, "revision"    : [
 			  "Fix - Album mode - thumbnails alignment"
 			, "Improve - CamillaDSP"
