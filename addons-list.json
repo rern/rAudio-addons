@@ -6,10 +6,9 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230130"
+		, "version"     : "20230129"
 		, "revision"    : [
-			  "Fix - Spotify - missing <code>spotifyd.conf</code> from i20230122 image file"
-			, "Fix - Browser on RPi zoom setting"
+			  "Fix - Browser on RPi zoom setting"
 			, "Fix - System - Restore"
 			, "Fix - Playback - Cover Art edit button"
 			, "Improve - Playback - Long artist/title/album scrolling"
