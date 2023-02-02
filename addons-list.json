@@ -6,14 +6,11 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230130"
+		, "version"     : "20230202"
 		, "revision"    : [
-			  "Fix - Spotify - missing <code>spotifyd.conf</code> from i20230122 image file"
-			, "Fix - Browser on RPi zoom setting"
-			, "Fix - System - Restore"
-			, "Fix - Playback - Cover Art edit button"
-			, "Improve - Playback - Long artist/title/album scrolling"
-			, "Improve - Library - Display album thumbnail icon when available"
+			  "Fix - Library - Missing dialog box on page with long list"
+			, "Fix - Playlist - Load saved playlist"
+			, "Fix - System - Package server setting"
 		]
 		, "description" : "Updates for rAudio"
 		, "buttonlabel" : "Update"
