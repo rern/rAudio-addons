@@ -6,11 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230202"
+		, "version"     : "20230205"
 		, "revision"    : [
-			  "Fix - Library - Missing dialog box on page with long list"
-			, "Fix - Playlist - Load saved playlist"
-			, "Fix - System - Package server setting"
+			  "Fix - Playback - Layout alignment on small screen"
+			, "Improve - Network - DHCP/Fixed IP setting"
 		]
 		, "description" : "Updates for rAudio"
 		, "buttonlabel" : "Update"
