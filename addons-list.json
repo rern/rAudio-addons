@@ -8,7 +8,7 @@
 		  "title"       : "rAudio"
 		, "version"     : "20230212"
 		, "revision"    : [
-			  "Fix - Missing LAN on RPi 3"
+			  "Fix - Missing LAN interface on RPi 3"
 			, "Fix - Color setting when Web Radio contains long list"
 			, "Fix - Playlist - Missing Web Radio cover arts"
 			, "Fix - Features - Multiple rAudio"
