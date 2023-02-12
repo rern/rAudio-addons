@@ -1,7 +1,7 @@
 {
 	  "push" : {
-		  "bash" : "sed -i 's|/settings/addons.php|/settings.php?p=addons|' /srv/http/settings/addons-progress.php"
-		, "url"  :  ""
+		  "bash" : ""
+		, "url"  : ""
 		, "hide" : 1
 	}
 	, "r1" : {
