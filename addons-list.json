@@ -6,13 +6,14 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230212"
+		, "version"     : "20230218"
 		, "revision"    : [
-			  "Fix - Missing LAN interface on RPi 3"
-			, "Fix - Color setting when Web Radio contains long list"
-			, "Fix - Playlist - Missing Web Radio cover arts"
-			, "Fix - Features - Multiple rAudios"
-			, "Improve - Settings - IP address validation"
+			  "Fix - Features - Browser on RPi for rAudio 32bit/RPi 2"
+			, "Fix - Library - Mode icon / Album spacing on some devices"
+			, "Fix - Features - Scrobbler"
+			, "Fix - System - Throttle events warning"
+			, "Add - System - HDMI Hotplug setting"
+			, "Improve - Colors setting"
 		]
 		, "description" : "Updates for rAudio"
 		, "buttonlabel" : "Update"
