@@ -6,14 +6,12 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230218"
+		, "version"     : "20230224"
 		, "revision"    : [
-			  "Fix - Features - Browser on RPi for rAudio 32bit/RPi 2"
-			, "Fix - Library - Mode icon / Album spacing on some devices"
-			, "Fix - Features - Scrobbler"
-			, "Fix - System - Throttle events warning"
-			, "Add - System - HDMI Hotplug setting"
-			, "Improve - Colors setting"
+			  "Fix - Library - Back button in file modes"
+			, "Fix - Player - ReplayGain - Mixer device option for software volume only"
+			, "Fix - Features - Login page"
+			, "Fix - System - GPIO Devices images"
 		]
 		, "description" : "Updates for rAudio"
 		, "buttonlabel" : "Update"
@@ -28,7 +26,7 @@
 	}
 	, "dab" : {
 		  "title"       : "DAB Radio"
-		, "buttonlabel" : "<i class='fa fa-plus-circle'></i> Install"
+		, "buttonlabel" : "<i class='fa fa-plus-circle i-plus-circle'></i> Install"
 		, "description" : "Add Digital Audio Broadcasting radio reception capabilities<br>(RTL-SDR dongle required)"
 		, "thumbnail"   : "/assets/img/addons/thumbdab.jpg"
 		, "sourcecode"  : "https://github.com/vale-max/rAudio-addons/raw/main/dabradio"
@@ -37,7 +35,7 @@
 	}
 	, "fran" : {
 		  "title"       : "Webradio - France Musique & Fip"
-		, "buttonlabel" : "<i class='fa fa-plus-circle'></i> Add"
+		, "buttonlabel" : "<i class='fa fa-plus-circle i-plus-circle'></i> Add"
 		, "description" : "Webradio stations by <a href='https://www.francemusique.fr/'>France Musique</a> and <a href='https://www.fip.fr/'>Fip</a>"
 		, "thumbnail"   : "/assets/img/addons/thumbfran.gif"
 		, "sourcecode"  : "https://github.com/rern/rAudio-addons/raw/main/webradio"
@@ -47,7 +45,7 @@
 	, "radi" : {
 		  "title"       : "Import Webradio"
 		, "description" : "Import <code>*.pls</code> webradio files."
-		, "buttonlabel" : "<i class='fa fa-input'></i> Import"
+		, "buttonlabel" : "<i class='fa fa-input i-input'></i> Import"
 		, "thumbnail"   : "/assets/img/addons/thumbwebr.png"
 		, "sourcecode"  : "https://github.com/rern/rAudio-addons/tree/main/webradio"
 		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/webradio/importwebradio.sh"
@@ -60,7 +58,7 @@
 		  "title"       : "Rank Mirror Package Servers"
 		, "description" : "Fix package download errors caused by unreachable servers.<br>Rank mirror package servers by download speed and latency."
 		, "thumbnail"   : "/assets/img/addons/thumbrank.png"
-		, "buttonlabel" : "<i class='fa fa-bars'></i> Rank"
+		, "buttonlabel" : "<i class='fa fa-bars i-bars'></i> Rank"
 		, "sourcecode"  : "https://github.com/rern/rAudio-addons/tree/main/rankmirrors"
 		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/rankmirrors/rankmirrors.sh"
 		, "option"      : {
