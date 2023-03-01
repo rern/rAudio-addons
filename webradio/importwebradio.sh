@@ -21,9 +21,9 @@ for file in "${files[@]}"; do
 	name=$( basename "$file" .pls )
 	url=$( grep '^File' "$file" | cut -d '=' -f2- )
 	printf "%-30s : $url\n" "$name"
-	echo $name > /srv/http/data/webradios/${url//\//|}
+	echo $name > /srv/http/data/webradio/${url//\//|}
 done
-count=$( ls -1q /srv/http/data/webradios | wc -l )
+count=$( ls -1q /srv/http/data/webradio | wc -l )
 sed -i 's/\("webradio": \).*/\1'$count'/' /srv/http/data/mpd/counts
 
 installfinish
