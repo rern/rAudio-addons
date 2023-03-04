@@ -6,14 +6,16 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230303"
+		, "version"     : "20230304"
 		, "revision"    : [
 			  "Fix - Library - Web Radio - Missing cover art after editing"
 			, "Fix - Library and Playlist not show on some devices"
 			, "Fix - Playlist - Missing search icon"
+			, "Fix - Playlist - Add track from saved playlist"
 			, "Fix - System - Relay Module setting"
 			, "Fix - System - Under voltage warnings"
 			, "Fix - System - Power Button setting"
+			, "Fix - System - NTP and mirror server settings"
 			, "Add - System - Custom Soft Limit for RPi 3B+"
 		]
 		, "description" : "Updates for rAudio"
