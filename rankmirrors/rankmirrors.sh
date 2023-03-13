@@ -34,16 +34,13 @@ tmpdir=/tmp/rankmirrors
 rm -rf $tmpdir && mkdir $tmpdir
 
 echo "
-$bar Get file list for download test ...
-"
+$bar Get file list for download test ..."
 readarray -t srcfiles <<< $( curl -sL http://mirror.archlinuxarm.org/os/ | sed -E -n '/>Arch.*gz</ {s/.*>(Arch.*gz).*/\1/; p}' )
 [[ ! $srcfiles ]] && echo "$warn Download file list failed." && exit
 
 srcL=${#srcfiles[@]}
 echo "
-File list: $srcL
-$bar Test ${#servers[@]} servers @ $sec seconds random download + 3 pings:
-"
+$bar Test ${#servers[@]} servers @ $sec seconds random download + 3 pings:"
 i=0
 for server in ${servers[@]}; do # download from each mirror
 	(( i++ ))
@@ -83,8 +80,7 @@ echo "$rankfile" > $list
 rm -rf $tmpdir
 
 echo "
-$bar Update package database ...
-"
+$bar Update package database ..."
 rm -f /var/lib/pacman/db.lck
 pacman -Sy
 
