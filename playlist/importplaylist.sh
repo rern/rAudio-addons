@@ -9,12 +9,14 @@ installstart $@
 # all files include sub-directory
 files=$( find /var/lib/mpd/playlists -type f 2> /dev/null )
 if [[ ! $files ]]; then
-	title -l '=' "$info No playlists found."
-	title -nt 'Copy *.m3u to /var/lib/mpd/playlists then run again.'
+	echo "
+$info No playlists found.
+Copy *.m3u to /var/lib/mpd/playlists then run again.
+"
 	exit
 fi
 
-title -l '=' "$bar Playlist Import ..."
+title "$bar Playlist Import ..."
 
 (( $( mpc playlist | wc -l ) > 0 )) && php /srv/http/mpdplaylist.php save _existing
 mpc -q clear

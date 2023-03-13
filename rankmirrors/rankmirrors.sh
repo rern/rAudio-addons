@@ -9,7 +9,9 @@ installstart "$1"
 sec=${args[0]}
 [[ ! $sec ]] && sec=3
 
-echo -e "\n$bar Get latest mirrorlist of package servers ..."
+echo "
+$bar Get latest mirrorlist of package servers ...
+"
 curl -sLo /tmp/mirrorlist https://github.com/archlinuxarm/PKGBUILDs/raw/master/core/pacman-mirrorlist/mirrorlist
 tmplist=/tmp/mirrorlist
 echo $( grep 'Generated' $tmplist | cut -d' ' -f2- )
@@ -31,21 +33,24 @@ readarray servers < "$tmplist"
 tmpdir=/tmp/rankmirrors
 rm -rf $tmpdir && mkdir $tmpdir
 
-echo -e "\n$bar Get file list for download test ..."
-srcfiles=( $( curl -sL mirror.archlinuxarm.org/os/ | grep 'Arch.*gz<' | sed 's/.*href="\(.*\.gz\)".*/\1/' ) )
+echo "
+$bar Get file list for download test ...
+"
+srcfiles=( $( curl -sL mirror.archlinuxarm.org/os/ \
+				| grep 'Arch.*gz<' \
+				| sed -E 's/.*href="*(.*\.gz).*/\1/' ) )
 srcL=${#srcfiles[@]}
-if (( $srcL == 0 )); then
-	title "$warn Download file list failed."
-	exit
-fi
+(( $srcL == 0 )) && echo "$warn Download file list failed." && exit
 
-echo "File list: $srcL"
-echo -e "\n$bar Test ${#servers[@]} servers @ $sec seconds random download + 3 pings:"
+echo "
+File list: $srcL
+$bar Test ${#servers[@]} servers @ $sec seconds random download + 3 pings:
+"
 i=0
 for server in ${servers[@]}; do # download from each mirror
 	(( i++ ))
 	srcfile=${srcfiles[$(( $RANDOM % $srcL ))]}
-	tcolor "Download: $srcfile" 8
+	echo "<a class='cgr'>Download: $srcfile</a>"
 	curl --max-time $sec -sLo $tmpdir/srcfile $server/os/$srcfile?$( date +%s )
 	wait
 	dl=$( du -c $tmpdir | grep total | awk '{print $1}' ) # get downloaded amount
@@ -62,24 +67,26 @@ for server in ${servers[@]}; do # download from each mirror
 	printf "%3s %-37s %11s %7s\n" $i. $server "$speed kB/s" "$latency ms"
 done
 
-rank=$( echo -e "$dl_server" | grep . | sort -g -k4,4nr -k5n )
-rankfile=$( echo -e "$rank" | cut -d' ' -f1-3 )
+rank=$( echo -e "$dl_server" | awk NF | sort -g -k4,4nr -k5n )
+rankfile=$( cut -d' ' -f1-3 <<< $rank )
 
-echo -e "\n$info Top 3 servers:"
+echo "
+$info Top 3 servers:"
 
-lines=$( echo -e "$rank" | head -3 | sed 's/Server = \|\/\$arch.*repo//g' )
+lines=$( head -3 <<< "$rank" | sed 's/Server = \|\/\$arch.*repo//g' )
 for i in 1 2 3; do
-	fields=( $( echo "$lines" | sed -n "$i p" ) )
+	fields=( $( sed -n "$i p" <<< $lines ) )
 	printf "%3s %-37s %11s %7s\n" $i. ${fields[0]} "${fields[1]} kB/s" "${fields[2]} ms"
 done
 
 list=/etc/pacman.d/mirrorlist
 [[ ! -e $list.backup ]] && cp $list $list.backup
-echo -e "$rankfile" > $list
+echo "$rankfile" > $list
 rm -rf $tmpdir
 
-echo -e "\n$bar Update package database ..."
-
+echo "
+$bar Update package database ...
+"
 rm -f /var/lib/pacman/db.lck
 pacman -Sy
 

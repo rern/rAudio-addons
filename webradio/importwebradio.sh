@@ -9,12 +9,14 @@ installstart $@
 # all files include sub-directory
 files=$( find /mnt/MPD/Webradio -type f 2> /dev/null )
 if [[ ! $files ]]; then
-	title -l '=' "$info No webradio files found."
-	title -nt 'Copy *.pls to /mnt/MPD/Webradio/ then run again.'
+	echo "
+$info No webradio files found.
+Copy *.pls to /mnt/MPD/Webradio/ then run again.
+"
 	exit
 fi
 
-title -l '=' "$bar Webradio Import ..."
+title "$bar Webradio Import ..."
 
 readarray -t files <<<"$files"
 for file in "${files[@]}"; do
