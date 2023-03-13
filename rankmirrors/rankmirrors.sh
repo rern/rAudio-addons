@@ -36,9 +36,7 @@ rm -rf $tmpdir && mkdir $tmpdir
 echo "
 $bar Get file list for download test ...
 "
-srcfiles=( $( curl -sL mirror.archlinuxarm.org/os/ \
-				| grep 'Arch.*gz<' \
-				| sed -E 's/.*href="*(.*\.gz).*/\1/' ) )
+srcfiles=( $( curl -sL http://mirror.archlinuxarm.org/os/ | sed -E -n '/>Arch.*gz</ {s/.*>(Arch.*gz).*/\1/; p}' ) )
 srcL=${#srcfiles[@]}
 (( $srcL == 0 )) && echo "$warn Download file list failed." && exit
 
