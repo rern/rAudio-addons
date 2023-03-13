@@ -36,10 +36,10 @@ rm -rf $tmpdir && mkdir $tmpdir
 echo "
 $bar Get file list for download test ...
 "
-srcfiles=( $( curl -sL http://mirror.archlinuxarm.org/os/ | sed -E -n '/>Arch.*gz</ {s/.*>(Arch.*gz).*/\1/; p}' ) )
-srcL=${#srcfiles[@]}
-(( $srcL == 0 )) && echo "$warn Download file list failed." && exit
+readarray -t srcfiles <<< $( curl -sL http://mirror.archlinuxarm.org/os/ | sed -E -n '/>Arch.*gz</ {s/.*>(Arch.*gz).*/\1/; p}' )
+[[ ! $srcfiles ]] && echo "$warn Download file list failed." && exit
 
+srcL=${#srcfiles[@]}
 echo "
 File list: $srcL
 $bar Test ${#servers[@]} servers @ $sec seconds random download + 3 pings:
