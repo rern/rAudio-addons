@@ -1,8 +1,11 @@
 #!/bin/bash
 
-. /srv/http/bash/addons.sh
+#. /srv/http/bash/settings/addons.sh
 
-installstart "$1"
+# 20230317
+[[ -e /srv/http/bash/addons.sh ]] && . /srv/http/bash/addons.sh || . /srv/http/bash/settings/addons.sh
+
+installstart $@
 
 wget -q https://github.com/rern/rAudio-addons/raw/main/rtl8188fu/rtl8188fufw.bin -P /lib/firmware/rtlwifi
 echo 'blacklist r8188eu

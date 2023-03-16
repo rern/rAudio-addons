@@ -1,8 +1,11 @@
 #!/bin/bash
 
-. /srv/http/bash/addons.sh
+#. /srv/http/bash/settings/addons.sh
 
-installstart "$1"
+# 20230317
+[[ -e /srv/http/bash/addons.sh ]] && . /srv/http/bash/addons.sh || . /srv/http/bash/settings/addons.sh
+
+installstart $@
 
 pacman -Sy --noconfirm dab-scanner
 echo "\

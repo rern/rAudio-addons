@@ -2,9 +2,12 @@
 
 alias=rank
 
-. /srv/http/bash/addons.sh
+#. /srv/http/bash/settings/addons.sh
 
-installstart "$1"
+# 20230317
+[[ -e /srv/http/bash/addons.sh ]] && . /srv/http/bash/addons.sh || . /srv/http/bash/settings/addons.sh
+
+installstart $@
 
 sec=${args[0]}
 [[ ! $sec ]] && sec=3
