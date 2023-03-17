@@ -15,10 +15,8 @@
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio-1"
 		, "installurl"  : "https://github.com/rern/rAudio-1/raw/main/install.sh"
-		, "verify"      : {
-			  "command"     : "[[ $( cat /srv/http/data/addons/r1 ) < 20221229 ]] && echo 1"
-			, "notverified" : "Please download the latest image file to be able to update."
-		}
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20221229 ]] && echo 1"
+		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
 		  "title"       : "DAB Radio"
@@ -26,7 +24,7 @@
 		, "thumbnail"   : "/assets/img/addons/thumbdab.jpg"
 		, "sourcecode"  : "https://github.com/vale-max/rAudio-addons/raw/main/dabradio"
 		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/dabradio/install.sh"
-		, "hide"        : "[[ -e /usr/bin/rtsp-simple-server || -e /boot/kernel.img ]] && echo 1 || echo 0"
+		, "hide"        : "[[ -e /usr/bin/rtsp-simple-server || -e /boot/kernel.img ]] && echo 1"
 	}
 	, "fran" : {
 		  "title"       : "Webradio - France Musique & Fip"
@@ -35,7 +33,7 @@
 		, "thumbnail"   : "/assets/img/addons/thumbfran.gif"
 		, "sourcecode"  : "https://github.com/rern/rAudio-addons/raw/main/webradio"
 		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/webradio/install.sh"
-		, "hide"        : "[[ -e /srv/http/data/webradio/Fip || $( ls '/srv/http/data/webradio/https:||icecast.radiofrance.fr'* | wc -l ) == 19 ]] && echo 1 || echo 0"
+		, "hide"        : "[[ -e /srv/http/data/webradio/Fip || $( ls '/srv/http/data/webradio/https:||icecast.radiofrance.fr'* | wc -l ) == 19 ]] && echo 1"
 	}
 	, "radi" : {
 		  "title"       : "Import Webradio"
@@ -45,7 +43,7 @@
 		, "sourcecode"  : "https://github.com/rern/rAudio-addons/tree/main/webradio"
 		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/webradio/importwebradio.sh"
 		, "option"      : {
-			  "confirm" : "Copy directory with webradio files:<br><br><code>Webradio/*</code> > <code>/mnt/MPD</code>"
+			  "message" : "Copy directory with webradio files:<br><br><code>Webradio/*</code> > <code>/mnt/MPD</code>"
 		}
 		, "postinfo"    : "Directory <code>/mnt/MPD/Webradio</code> can be deleted."
 	}
@@ -57,10 +55,8 @@
 		, "sourcecode"  : "https://github.com/rern/rAudio-addons/tree/main/rankmirrors"
 		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/rankmirrors/rankmirrors.sh"
 		, "option"      : {
-			  "text" : {
-				  "message"  : "Download test for each server:"
-				, "label"    : "Seconds"
-			}
+			  "message"   : "Download test for each server:"
+			, "textlabel" : "Seconds"
 		}
 	}
 }
