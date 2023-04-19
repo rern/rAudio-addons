@@ -18,6 +18,6 @@ ExecStart=/srv/http/bash/status-dab.sh
 " > /etc/systemd/system/dab.service
 systemctl daemon-reload
 
-timeout 1 rtl_test -t &> /dev/null && systemctl enable --now rtsp-simple-server
+timeout 1 rtl_test -t &> /dev/null && systemctl enable --now mediamtx
 
 installfinish
