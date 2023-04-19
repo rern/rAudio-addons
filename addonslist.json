@@ -13,8 +13,8 @@
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
 		, "thumbnail"   : "/assets/img/coverart.svg"
-		, "sourcecode"  : "https://github.com/rern/rAudio-1"
-		, "installurl"  : "https://github.com/rern/rAudio-1/raw/main/install.sh"
+		, "sourcecode"  : "https://github.com/rern/rAudio"
+		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
 		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20221229 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
