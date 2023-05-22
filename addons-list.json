@@ -19,7 +19,7 @@
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
 		, "verify"      : {
 			  "command"     : "[[ $( cat /srv/http/data/addons/r1 ) < 20230310 ]] && echo 1"
-			, "notverified" : "Please download the latest image file to be able to update."
+			, "notverified" : "Please download the <a href='https://github.com/rern/rAudio/releases/tag/i20230521'>latest image file</a> to be able to update."
 		}
 	}
 	, "dab" : {
