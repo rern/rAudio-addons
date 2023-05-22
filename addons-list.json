@@ -6,13 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230310"
+		, "version"     : "20230522"
 		, "revision"    : [
-			  "Fix - Playback - Library display options setting"
-			, "Fix - Playback - Missing elapsed and progress bar on small screen"
-			, "Fix - Playback - Bluetooth next song button"
-			, "Fix - System - Page loading when no internet connection"
-			, "Add - Player - Option to disable other outputs while Bluetooth connected"
+			  "Refactor - Streamline, unify and optimize"
+			, "Change - Format of setting data: AutoPlay, Output all, Equalizer, Character LCD, Browser on RPi, Relay Module, Shared Data, VU LED"
 		]
 		, "description" : "Updates for rAudio"
 		, "buttonlabel" : "Update"
@@ -21,7 +18,7 @@
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
 		, "verify"      : {
-			  "command"     : "[[ $( cat /srv/http/data/addons/r1 ) < 20221229 ]] && echo 1"
+			  "command"     : "[[ $( cat /srv/http/data/addons/r1 ) < 20230310 ]] && echo 1"
 			, "notverified" : "Please download the latest image file to be able to update."
 		}
 	}
