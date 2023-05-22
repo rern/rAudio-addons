@@ -6,7 +6,7 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230522"
+		, "version"     : "20230523"
 		, "revision"    : [
 			  "Refactor - Streamline, unify and optimize"
 			, "Change - Format of setting data: AutoPlay, Output all, Equalizer, Character LCD, Browser on RPi, Relay Module, Shared Data, VU LED"

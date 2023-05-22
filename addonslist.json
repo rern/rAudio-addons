@@ -6,9 +6,12 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230522"
+		, "version"     : "20230523"
 		, "revision"    : [
-			  "Fix - Minor issue from 20230521 images"
+			  "Fix - JSON errors while updating Library database"
+			, "Fix - System - Audio - I2S - Appended timezone list removed"
+			, "Fix - System - Data and Settings - Backup"
+			, "Fix - Playback - Embedded lyrics on NAS"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
