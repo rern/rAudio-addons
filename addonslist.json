@@ -6,15 +6,14 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230525"
+		, "version"     : "20230528"
 		, "revision"    : [
-			  "Fix - JSON errors while updating Library database"
-			, "Fix - System - Audio - I2S - Appended timezone list removed"
-			, "Fix - System - Data and Settings - Backup"
-			, "Fix - Playback - Embedded lyrics on NAS"
-			, "Fix - System - JSON errors with multiple mirror servers"
-			, "Fix - System - NAS with spaces in name and path"
-			, "Fix - Playback - Disable volume bar if No Volume enabled"
+			    "Fix - System - Shared Data with NFS server"
+			  , "Fix - System - Python upgraded - CamillaDSP, Character LCD"
+			  , "Fix - System - Power Button"
+			  , "Fix - Features - SnapServer"
+			  , "Improve - Playback - Volume bar when No Volume enabled"
+			  , "Add - Playback - Display album booklet if available locally (on click album name)"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
