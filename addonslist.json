@@ -6,14 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230528"
+		, "version"     : "20230603"
 		, "revision"    : [
-			    "Fix - System - Shared Data with NFS server"
-			  , "Fix - System - Python upgraded - CamillaDSP, Character LCD"
-			  , "Fix - System - Power Button"
-			  , "Fix - Features - SnapServer"
-			  , "Improve - Playback - Volume bar when No Volume enabled"
-			  , "Add - Playback - Display album booklet if available locally (on click album name)"
+			    "Fix - Networks - Connecting Wi-Fi from scanned list
+			  , "Fix - Playback - Booklet on touch devices"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
