@@ -6,10 +6,16 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230603"
+		, "version"     : "20230609"
 		, "revision"    : [
-			    "Fix - Networks - Connecting Wi-Fi from scanned list"
-			  , "Fix - Playback - Booklet on touch devices"
+			  "Fix - System - TFT LCD setting"
+			, "Fix - System - Disabled Bluetooth still active on kernel 6.x"
+			, "Fix - System - Shared Data enabled status"
+			, "Fix - Features - AutoPlay Bluetooth"
+			, "Fix - Features - Browser on RPi - Rotate setting"
+			, "Fix - Playback - Replace + Play Web Radio"
+			, "Fix - Playlist display setting"
+			, "Add - Library - Album sorted by artist > year/date"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
