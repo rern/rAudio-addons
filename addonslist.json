@@ -6,7 +6,7 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230615"
+		, "version"     : "20230609"
 		, "revision"    : [
 			  "Fix - Library - Web Radio - Change coverart from default icon"
 			, "Fix - Library - Count show/hide"
