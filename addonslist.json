@@ -6,9 +6,12 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230615"
+		, "version"     : "20230616"
 		, "revision"    : [
-			  "Fix - Library - Web Radio - Change coverart from default icon"
+			  "Fix - Library - Maintain scroll positions of each album"
+			, "Fix - Web Radio - Delete coverarts when stations deleted"
+			, "Fix - System - JSON error on RPi 3B+"
+			, "Fix - Library - Web Radio - Change coverart from default icon"
 			, "Fix - Library - Count show/hide"
 			, "Fix - Library - Album - Count and duplicate entries when display without year"
 			, "Fix - Networks - JSON error when connect wired LAN and Wi-Fi simultaneously"
