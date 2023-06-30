@@ -6,19 +6,21 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230620"
+		, "version"     : "20230630"
 		, "revision"    : [
-			  "Fix - Playback - Bio and album data"
-			, "Fix - Features - Scrobbler"
-			, "Improve - Playback - Add/Replace + Play while playing Web Radio"
-			, "Improve - Library - Counts after update"
+			  "Fix - Playback - Error when data contains <c>`</c> backticks"
+			, "Fix - Playback - Web Radio - sync across devices on stop"
+			, "Fix - Features - CamillaDSP not start properly"
+			, "Improve - Playback - Spotify"
+			, "Improve - Library - Exclude albums with no data"
+			, "Improve - System - Status of USB storage on connect/disconnect"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20230310 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20230522 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
@@ -37,18 +39,6 @@
 		, "sourcecode"  : "https://github.com/rern/rAudio-addons/raw/main/webradio"
 		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/webradio/install.sh"
 		, "hide"        : "[[ -e /srv/http/data/webradio/Fip || $( ls '/srv/http/data/webradio/https:||icecast.radiofrance.fr'* | wc -l ) == 19 ]] && echo 1"
-	}
-	, "radi" : {
-		  "title"       : "Import Webradio"
-		, "description" : "Import <code>*.pls</code> webradio files."
-		, "buttonlabel" : [ "input", "Import" ]
-		, "thumbnail"   : "/assets/img/addons/thumbwebr.png"
-		, "sourcecode"  : "https://github.com/rern/rAudio-addons/tree/main/webradio"
-		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/webradio/importwebradio.sh"
-		, "option"      : {
-			  "message" : "Copy directory with webradio files:<br><br><code>Webradio/*</code> > <code>/mnt/MPD</code>"
-		}
-		, "postinfo"    : "Directory <code>/mnt/MPD/Webradio</code> can be deleted."
 	}
 	, "rank" : {
 		  "title"       : "Rank Mirror Package Servers"

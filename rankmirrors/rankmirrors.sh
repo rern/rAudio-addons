@@ -2,11 +2,7 @@
 
 alias=rank
 
-# restore 20230501
-#. /srv/http/bash/settings/addons.sh
-
-# 20230501
-[[ -e /srv/http/bash/settings/addons.sh ]] && . /srv/http/bash/settings/addons.sh || . /srv/http/bash/addons.sh
+. /srv/http/bash/settings/addons.sh
 
 installstart $@
 
