@@ -38,7 +38,7 @@
 		, "thumbnail"   : "/assets/img/addons/thumbfran.gif"
 		, "sourcecode"  : "https://github.com/rern/rAudio-addons/raw/main/webradio"
 		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/webradio/install.sh"
-		, "hide"        : "[[ -e /srv/http/data/webradio/Fip || $( ls '/srv/http/data/webradio/https:||icecast.radiofrance.fr'* | wc -l ) == 19 ]] && echo 1"
+		, "hide"        : "[[ -e /srv/http/data/webradio/Fip ]] && echo 1"
 	}
 	, "rank" : {
 		  "title"       : "Rank Mirror Package Servers"
