@@ -6,21 +6,20 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230630"
+		, "version"     : "20230828"
 		, "revision"    : [
-			  "Fix - Playback - Error when data contains <c>`</c> backticks"
-			, "Fix - Playback - Web Radio - sync across devices on stop"
-			, "Fix - Features - CamillaDSP not start properly"
-			, "Improve - Playback - Spotify"
-			, "Improve - Library - Exclude albums with no data"
-			, "Improve - System - Status of USB storage on connect/disconnect"
+			  "Fix - Library - Context menu missing when list contains directories and files"
+			, "Fix - Back button on narrow screens when set to left"
+			, "Fix - Bluetooth - JSON error on connect"
+			, "New - Camilla DSP UI"
+			, "Add - Camilla DSP support for Bluetooth, AirPlay, and Spotify"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20230522 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20230620 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
