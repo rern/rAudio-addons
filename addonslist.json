@@ -50,5 +50,6 @@
 			  "message"   : "Download test for each server:"
 			, "textlabel" : "Seconds"
 		}
+		, "hide"        : "[[ -e /boot/kernel.img ]] && echo 1"
 	}
 }
