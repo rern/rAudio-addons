@@ -6,11 +6,13 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230917"
+		, "version"     : "20230828"
 		, "revision"    : [
-			  "Fix - Features - Browser on RPi on 64bit version"
-			, "Fix - System - Audiophonics power switch"
-			, "Improve - Switch from NGINX Pushstream to standard WebSocket"
+			  "Fix - Library - Context menu missing when list contains directories and files"
+			, "Fix - Back button on narrow screens when set to left"
+			, "Fix - Bluetooth - JSON error on connect"
+			, "New - Camilla DSP UI"
+			, "Add - Camilla DSP support for Bluetooth, AirPlay, and Spotify"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
