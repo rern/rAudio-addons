@@ -1,6 +1,6 @@
 {
 	  "push" : {
-		  "bash" : "sed -i 's/channel ip/channel data ip/' $dirbash/common.sh"
+		  "bash" : ""
 		, "url"  : ""
 		, "hide" : 1
 	}
@@ -8,7 +8,7 @@
 		  "title"       : "rAudio"
 		, "version"     : "20230918"
 		, "revision"    : [
-			  "Fix - System - I2S Audio setting (Image i20230917)"
+			  "Fix - System - I2S Audio setting"
 			, "Fix - Features - Browser on RPi"
 			, "Fix - System - Audiophonics power switch"
 			, "Improve - Switch from NGINX Pushstream to standard WebSocket"
