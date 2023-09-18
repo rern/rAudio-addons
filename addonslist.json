@@ -6,7 +6,7 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230918"
+		, "version"     : "20230917"
 		, "revision"    : [
 			  "Fix - System - I2S Audio setting (Image i20230917)"
 			, "Fix - Features - Browser on RPi"
