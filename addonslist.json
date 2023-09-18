@@ -6,9 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230917"
+		, "version"     : "20230918"
 		, "revision"    : [
-			  "Fix - Features - Browser on RPi"
+			  "Fix - System - I2S Audio setting (Image i20230917)"
+			, "Fix - Features - Browser on RPi"
 			, "Fix - System - Audiophonics power switch"
 			, "Improve - Switch from NGINX Pushstream to standard WebSocket"
 		]
