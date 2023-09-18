@@ -1,6 +1,6 @@
 {
 	  "push" : {
-		  "bash" : ""
+		  "bash" : "sed -i 's/channel ip/channel data ip/' $dirbash/common.sh"
 		, "url"  : ""
 		, "hide" : 1
 	}
