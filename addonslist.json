@@ -6,12 +6,15 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20230918"
+		, "version"     : "20231001"
 		, "revision"    : [
-			  "Fix - System - I2S Audio setting"
-			, "Fix - Features - Browser on RPi"
-			, "Fix - System - Audiophonics power switch"
-			, "Improve - Switch from NGINX Pushstream to standard WebSocket"
+			  "Fix - Playback - Replace + Play Web Radio"
+			, "Fix - Playback - Select = Replace + Play - No confirmation"
+			, "Fix - Display - Playlist options not saved"
+			, "Fix - Features - Browser on RPi zoom setting"
+			, "Fix - Features - Spotify authorization"
+			, "Improve - Playback - UPnP cover art"
+			, "Add - Playback setting - Progress keep-alive"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
