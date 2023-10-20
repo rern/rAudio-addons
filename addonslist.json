@@ -6,10 +6,11 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "202310131"
+		, "version"     : "20231020"
 		, "revision"    : [
-			  "Fix - Features - File Sharing - USB capacity"
-			, "Fix - Dropdown options"
+			  "Fix - Features - Firefox zoom setting after reboot"
+			, "Fix - Features - Spotify custom output device"
+			, "Fix - Features - Scrobbler"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
