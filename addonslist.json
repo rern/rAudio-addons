@@ -6,9 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20231020"
+		, "version"     : "20231022"
 		, "revision"    : [
-			  "Fix - Features - Firefox zoom setting after reboot"
+			  "Fix - RPi Zero and 1 - Refresh GUI on change"
+			, "Fix - Features - Firefox zoom setting after reboot"
 			, "Fix - Features - Spotify custom output device"
 			, "Fix - Features - Scrobbler"
 		]
