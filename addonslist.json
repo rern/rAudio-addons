@@ -1,21 +1,17 @@
 {
 	  "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20231111"
+		, "version"     : "20231105"
 		, "revision"    : [
-			  "Fix - Playback - Audio CD cover art"
-			, "Fix - Playback - Cover arts with double spaces in folder name"
-			, "Fix - Playback - Bottom bar on short screen (Bars always on)"
-			, "Fix - Addons - Disable rAudio button once updated"
-			, "Fix - Features - Scrobbler"
-			, "Fix - System - Relay Module, Power Button and VU LED on newer 64bit kernel"
+			  "Fix - System - Missing CPU temperature"
+			, "Improve - AirPlay status on pause/play"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20230909 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20230828 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
