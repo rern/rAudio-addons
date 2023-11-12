@@ -1,5 +1,10 @@
 {
-	  "r1" : {
+	  "push" : {
+		  "bash" : ""
+		, "url"  : ""
+		, "hide" : 1
+	}
+	, "r1" : {
 		  "title"       : "rAudio"
 		, "version"     : "20231111"
 		, "revision"    : [
