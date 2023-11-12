@@ -1,9 +1,5 @@
 {
-	  "0" : {
-		  "title"       : 0
-		, "hide"        : 1
-	}
-	, "r1" : {
+	  "r1" : {
 		  "title"       : "rAudio"
 		, "version"     : "20231111"
 		, "revision"    : [
