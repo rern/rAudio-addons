@@ -6,12 +6,14 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20231125"
+		, "version"     : "20231118"
 		, "revision"    : [
-			  "Fix - Features - CamillaDSP - Change/Edit configuration"
-			, "Fix - System - Rotary Encoder"
-			, "Fix - System - VU LED"
-			, "Improve - Playback - Visual response"
+			  "Fix - Features - Scrobbler"
+			, "Fix - Features - Lyrics - Not available"
+			, "Fix - Features - CamillaDSP - Change configuration and save changes to file"
+			, "Improve - Library - Support directory/folder with double spaces"
+			, "Improve - Library - Refresh on Tag Editor and update finished"
+			, "Improve - Dropdown box - Sort numbers"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
