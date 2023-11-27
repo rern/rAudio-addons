@@ -4,7 +4,7 @@
 
 installstart $@
 
-curl -sL https://github.com/rern/rAudio-addons/raw/main/webradio/radiofrance.tar.xz | bsdtar xvf - -C /
+curl -sL https://github.com/rern/rAudio-addons/raw/main/webradio/radiofrance.tar.xz | bsdtar xvf - -C /srv/http/data/webradio
 chown -R http:http $dirwebradio
 count=$( find -L $dirwebradio -type f ! -path '*/img/*' | wc -l )
 sed -i -E 's/("webradio": ).*/\1'$count'/' $dirmpd/counts
