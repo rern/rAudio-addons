@@ -8,6 +8,7 @@ curl -sL https://github.com/rern/rAudio-addons/raw/main/webradio/radiofrance.tar
 chown -R http:http $dirwebradio
 count=$( find -L $dirwebradio -type f ! -path '*/img/*' | wc -l )
 sed -i -E 's/("webradio": ).*/\1'$count'/' $dirmpd/counts
-curl -s -X POST http://127.0.0.1/pub?id=radiolist -d '{"type":"webradio","count":'$count'}'
+data='{ "channel": "radiolist", "data": {"type":"webradio","count":'$count'} }'
+[[ -e /usr/bin/websocat ]] && echo $data | websocat ws://127.0.0.1:8080 || echo $data | wsdump ws://127.0.0.1:8080 &> /dev/null
 
 installfinish
