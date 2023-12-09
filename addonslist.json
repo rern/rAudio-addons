@@ -6,20 +6,19 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20231128"
+		, "version"     : "20231210"
 		, "revision"    : [
-			  "Fix - Playlist - Update when last saved playlist deleted"
-			, "Fix - Tag Editor - For dirctory/folder contains double spaces"
-			, "Fix - Playback - Missing Radio France and FIP metadata"
-			, "Add - Playback - Options to display composer and conductor"
-			, "Add - Playback - Album booklet icon"
+			  "Fix - Library - Add to Playlist from non-file modes"
+			, "Fix - Features - Spotify - Save custom output"
+			, "Improve - Playback - Previous/Next UI response"
+			, "Add - System - Volume on Boot setting"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20230828 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20231001 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
