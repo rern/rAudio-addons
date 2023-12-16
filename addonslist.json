@@ -6,12 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20231210"
+		, "version"     : "20231216"
 		, "revision"    : [
-			  "Fix - Library - Add to Playlist from non-file modes"
-			, "Fix - Features - Spotify - Save custom output"
-			, "Improve - Playback - Previous/Next UI response"
-			, "Add - System - Volume on Boot setting"
+			  "Fix - Update periperal devices on track/state changed"
+			, "Improve - Addons - Loading speed (more so for RPi Zero and 1)"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
