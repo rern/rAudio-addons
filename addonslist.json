@@ -6,17 +6,18 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20231216"
+		, "version"     : "20240107"
 		, "revision"    : [
-			  "Fix - Update periperal devices on track/state changed"
-			, "Improve - Addons - Loading speed (more so for RPi Zero and 1)"
+			  "Fix - Playback - Bit depth status"
+			, "Fix - System - Power Button - Power off"
+			, "Improve - Features - CamillaDSP 2.0"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20231001 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20231022 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
@@ -44,8 +45,8 @@
 		, "sourcecode"  : "https://github.com/rern/rAudio-addons/tree/main/rankmirrors"
 		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/rankmirrors/rankmirrors.sh"
 		, "option"      : {
-			  "message"   : "Download test for each server:"
-			, "textlabel" : "Seconds"
+			  "message": "Download test for each server:"
+			, "list"   : [ "Seconds", "number" ]
 		}
 		, "hide"        : "[[ -e /boot/kernel.img ]] && echo 1"
 	}
