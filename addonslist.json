@@ -6,10 +6,11 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240107"
+		, "version"     : "20240108"
 		, "revision"    : [
 			  "Fix - Playback - Bit depth status"
 			, "Fix - System - Power Button - Power off"
+			, "Fix - Bookmark of path which contains double spaces"
 			, "Improve - Features - CamillaDSP 2.0"
 		]
 		, "description" : "Updates for rAudio"
