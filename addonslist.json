@@ -6,12 +6,13 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240108"
+		, "version"     : "20240113"
 		, "revision"    : [
-			  "Fix - Playback - Bit depth status"
-			, "Fix - System - Power Button - Power off"
-			, "Fix - Bookmark of path which contains double spaces"
-			, "Improve - Features - CamillaDSP 2.0"
+			  "Fix - CamillaDSP - JSON error"
+			, "Fix - Browser on RPi - Sroll on touch screen"
+			, "Fix - Playlist - Track title when switch from Web Radio"
+			, "Improve - Playlist - Add to a playlist, update on status changed"
+			, "Improve - Features - CamillaDSP 2.0.1"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
