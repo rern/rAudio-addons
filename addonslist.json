@@ -6,12 +6,12 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240122"
+		, "version"     : "20240127"
 		, "revision"    : [
-			  "Fix - System - Power Button - Obsolete API in latest kernel"
-			, "Fix - System - Add NFS storage"
-			, "Fix - Features - Access Point (switch from <c>hostapd</c>+<c>dnsmasq</c> to <c>iwd</c>)"
-			, "Fix - Library - Album artist for <c>*.wav</c> files"
+			  "Fix - Playback - Web Radio coverart"
+			, "Fix - Library and Playback settings"
+			, "Fix - Settings - Dropdown list with value 0"
+			, "Fix - Features - Browser on RPi - settings"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
