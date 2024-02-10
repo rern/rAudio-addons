@@ -9,7 +9,7 @@
 		, "version"     : "20240210"
 		, "revision"    : [
 			  "Fix - System - Backup"
-			, "Fix - Restore settings from <c>/boot/backup.gz</c>"
+			, "Fix - Restore settings from <c>/boot/*.gz</c>"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
