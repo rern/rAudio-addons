@@ -6,19 +6,17 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240127"
+		, "version"     : "20240210"
 		, "revision"    : [
-			  "Fix - Playback - Web Radio coverart"
-			, "Fix - Library and Playback settings"
-			, "Fix - Settings - Dropdown list with value 0"
-			, "Fix - Features - Browser on RPi - settings"
+			  "Fix - System - Backup"
+			, "Fix - Restore settings from <c>/boot/backup.gz</c>"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20231022 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20231210 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
