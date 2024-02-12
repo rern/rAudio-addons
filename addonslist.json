@@ -6,7 +6,7 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240210"
+		, "version"     : "20240212"
 		, "revision"    : [
 			  "Fix - System - Backup"
 			, "Fix - Restore settings from <c>/boot/*.gz</c>"
