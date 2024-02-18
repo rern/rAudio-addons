@@ -6,17 +6,19 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240212"
+		, "version"     : "20240218"
 		, "revision"    : [
-			  "Fix - System - Backup"
-			, "Fix - Restore settings from <c>/boot/*.gz</c>"
+			  "Fix - Player - No Volume"
+			, "Fix - Playback - DAC volume device with a trailing space in name"
+			, "Fix/Improve - Playback - Audio CD"
+			, "Improve - Player - DAC with cirrus-wm5102"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20231210 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20231216 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
