@@ -6,7 +6,7 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240218"
+		, "version"     : "20240219"
 		, "revision"    : [
 			  "Fix - Player - No Volume"
 			, "Fix - Playback - DAC volume device with a trailing space in name"
