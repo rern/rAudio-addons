@@ -6,10 +6,12 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240212"
+		, "version"     : "20240218"
 		, "revision"    : [
-			  "Fix - System - Backup"
-			, "Fix - Restore settings from <c>/boot/*.gz</c>"
+			  "Fix - Player - No Volume"
+			, "Fix - Playback - DAC volume device with a trailing space in name"
+			, "Fix/Improve - Playback - Audio CD"
+			, "Improve - Player - Settings"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
