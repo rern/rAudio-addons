@@ -6,11 +6,11 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240219"
+		, "version"     : "20240226"
 		, "revision"    : [
-			  "Fix - Player - No Volume"
-			, "Fix - Playback - DAC volume device with a trailing space in name"
-			, "Fix/Improve - Playback - Audio CD"
+			  "Fix - Playback - DAC volume device with a trailing space in name"
+			, "Fix - Playback - Audio CD with failed download data"
+			, "Fix/Improve - Features - DSP"
 			, "Improve - Player - Settings"
 		]
 		, "description" : "Updates for rAudio"
