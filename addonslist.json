@@ -6,12 +6,13 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240226"
+		, "version"     : "20240303"
 		, "revision"    : [
-			  "Fix - Playback - DAC volume device with a trailing space in name"
-			, "Fix - Playback - Audio CD with failed download data"
-			, "Fix/Improve - Features - DSP"
+			  "Fix - Playback - DAC volume not maintained"
+			, "Fix - Playback - missing DSP sampling data"
+			, "Improve - Features - DSP with Bluetooth"
 			, "Improve - Player - Settings"
+			, "Add - Networks - Rename Bluetooth alias"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
