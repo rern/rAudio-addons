@@ -6,7 +6,7 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240303"
+		, "version"     : "202403031"
 		, "revision"    : [
 			  "Fix - Playback - DAC volume not maintained"
 			, "Fix - Playback - missing DSP sampling data"
