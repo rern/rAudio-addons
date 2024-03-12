@@ -6,10 +6,11 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240310"
+		, "version"     : "20240312"
 		, "revision"    : [
 			  "Fix: Library - Infinite refresh when display default coverart"
 			, "Fix: Player - USB DAC volume not maintained"
+			, "Fix: Player - Output Device list"
 			, "Fix: System - Storage - Mounts with sapces in name not shown as mounted"
 			, "Fix: Settings - Layout of some dialog boxes"
 			, "Improve: Library home - Show modes with no data as grayed out"
