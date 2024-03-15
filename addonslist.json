@@ -6,23 +6,19 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240312"
+		, "version"     : "20240315"
 		, "revision"    : [
-			  "Fix: Library - Infinite refresh when display default coverart"
-			, "Fix: Player - USB DAC volume not maintained"
-			, "Fix: Player - Output Device list"
-			, "Fix: System - Storage - Mounts with sapces in name not shown as mounted"
-			, "Fix: Settings - Layout of some dialog boxes"
-			, "Improve: Library home - Show modes with no data as grayed out"
-			, "Improve: Library file modes - Show no data and empty directories"
-			, "Improve: Library mode lists"
+			  "Fix: Library - Slow browsing in file modes"
+			, "Fix: Features - Spotify volume control"
+			, "Fix: Libraary - Updating album thumbnails"
+			, "Improve - Player - Maintain USB DAC volume"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20240108 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20240113 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
