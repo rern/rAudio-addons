@@ -6,12 +6,12 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240330"
+		, "version"     : "20240316"
 		, "revision"    : [
-			  "Fix: Playback - Next random track on click"
-			, "Fix: Playlist - Replaced by saved playlist"
-			, "Fix: Networks - Wi-Fi static IP"
-			, "Fix: Library - Excluded directories/folders"
+			  "Fix: Library - Slow browsing in file modes"
+			, "Fix: Features - Spotify volume control"
+			, "Fix: Libraary - Updating album thumbnails"
+			, "Improve - Player - Maintain USB DAC volume"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
