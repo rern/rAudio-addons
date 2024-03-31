@@ -6,7 +6,7 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240330"
+		, "version"     : "20240331"
 		, "revision"    : [
 			  "Fix: Playback - Next random track on click"
 			, "Fix: Playlist - Replaced by saved playlist"
