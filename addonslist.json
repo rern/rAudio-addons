@@ -6,12 +6,11 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240331"
+		, "version"     : "20240406"
 		, "revision"    : [
-			  "Fix: Playback - Next random track on click"
-			, "Fix: Playlist - Replaced by saved playlist"
-			, "Fix: Networks - Wi-Fi static IP"
-			, "Fix: Library - Excluded directories/folders"
+			  "Fix: Library - Slow browsing in file modes"
+			, "Fix: Features - Browser on RPi mouse pointer setting"
+			, "Fix: System - Restore data"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
