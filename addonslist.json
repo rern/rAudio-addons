@@ -6,11 +6,13 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240406"
+		, "version"     : "20240408"
 		, "revision"    : [
 			  "Fix: Library - Slow browsing in file modes"
 			, "Fix: Features - Browser on RPi mouse pointer setting"
 			, "Fix: System - Restore data"
+			, "Fix: Network - Missing Wired LAN IP address"
+			, "Fix: Network - Connecting Wi-Fi from list"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
