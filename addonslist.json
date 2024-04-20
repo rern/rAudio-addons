@@ -1,25 +1,18 @@
 {
-	  "push" : {
-		  "bash" : ""
-		, "url"  : ""
-		, "hide" : 1
-	}
-	, "r1" : {
+	  "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240408"
+		, "version"     : "20240420"
 		, "revision"    : [
-			  "Fix: Library - Slow browsing in file modes"
-			, "Fix: Features - Browser on RPi mouse pointer setting"
-			, "Fix: System - Restore data"
-			, "Fix: Network - Missing Wired LAN IP address"
-			, "Fix: Network - Connecting Wi-Fi from list"
+			  "Fix: Library - Add/Replace + Play in non-file modes"
+			, "Fix: Playlist - Toggle consume mode while playlist empty"
+			, "Fix: Player - Maximum buffer size"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20240113 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20240219 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
