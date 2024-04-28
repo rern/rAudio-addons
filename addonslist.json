@@ -6,11 +6,9 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240420"
+		, "version"     : "20240428"
 		, "revision"    : [
-			  "Fix: Library - Add/Replace + Play in non-file modes"
-			, "Fix: Playlist - Toggle consume mode while playlist empty"
-			, "Fix: Player - Maximum buffer size"
+			  "Fix: Status of Bluetooth playback in receiver mode"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
