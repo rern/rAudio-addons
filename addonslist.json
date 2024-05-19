@@ -6,16 +6,18 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240428"
+		, "version"     : "20240519"
 		, "revision"    : [
-			  "Fix: Status of Bluetooth playback in receiver mode"
+			  "Fix: Features - Multiple rAudios setting"
+			, "Improve: Features - SnapClient and SnapServer"
+			, "Improve: Features - Replace SnapClient setting with Snapweb"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20240219 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20240316 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
