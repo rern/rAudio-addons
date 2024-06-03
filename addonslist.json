@@ -6,7 +6,7 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240601"
+		, "version"     : "20240603"
 		, "revision"    : [
 			  "Fix: Playback - Suppress QR code on replace play"
 			, "Fix: Playback - Not response after browser moved to background"
