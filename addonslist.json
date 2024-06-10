@@ -6,18 +6,19 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240603"
+		, "version"     : "20240610"
 		, "revision"    : [
-			  "Fix: Playback - Suppress QR code on replace play"
-			, "Fix: Playback - Not response after browser moved to background"
-			, "Improve: System - Storage - Mount without ping"
+			  "Fix: Playback - Mute"
+			, "Fix: DSP volume control"
+			, "Improve: Disable Web Radio tracks while offline"
+			, "Improve: Playlist - Tracks with no time data"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20240316 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20240408 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
