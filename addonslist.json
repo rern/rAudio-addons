@@ -6,11 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240610"
+		, "version"     : "20240611"
 		, "revision"    : [
 			  "Fix: Playback - Mute"
 			, "Fix: DSP volume control"
-			, "Improve: Disable Web Radio tracks while offline"
 			, "Improve: Playlist - Tracks with no time data"
 		]
 		, "description" : "Updates for rAudio"
