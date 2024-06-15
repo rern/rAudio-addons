@@ -6,11 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240612"
+		, "version"     : "20240615"
 		, "revision"    : [
-			  "Fix: Playback - Mute"
-			, "Fix: DSP volume control"
-			, "Improve: Playlist - Tracks with no time data"
+			  "Fix: System - Rotary Encoder"
+			, "Improve: Volume control in all modes"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
