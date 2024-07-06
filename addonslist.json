@@ -6,10 +6,13 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240615"
+		, "version"     : "20240706"
 		, "revision"    : [
-			  "Fix: System - Rotary Encoder"
-			, "Improve: Volume control in all modes"
+			  "Fix: Features - AutoPlay - Bluetooth"
+			, "Fix: Playback/Player - Bluetooth volume control"
+			, "Fix: System - Character LCD - GPIO setting"
+			, "Improve: Playback - Keyboard navigation"
+			, "Add: Settings - Keyboard navigation"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
