@@ -6,7 +6,7 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240706"
+		, "version"     : "20240707"
 		, "revision"    : [
 			  "Fix: Features - AutoPlay - Bluetooth"
 			, "Fix: Playback/Player - Bluetooth volume control"
