@@ -6,18 +6,19 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240719"
+		, "version"     : "20240818"
 		, "revision"    : [
-			  "Fix & Improve: System - Shared Data"
-			, "Fix: Library - Bookmarks traversing"
-			, "Fix: Playback - Character LCD"
+			  "Fix: NTFS drive on RPi Zero and 1"
+			, "Fix: Library - Album sorted by artist"
+			, "Improve: Library search"
+			, "Improve: Playlist response"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20240408 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20240601 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
