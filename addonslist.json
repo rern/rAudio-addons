@@ -6,12 +6,14 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240818"
+		, "version"     : "20240906"
 		, "revision"    : [
-			  "Fix: NTFS drive on RPi Zero and 1"
-			, "Fix: Library - Album sorted by artist"
-			, "Improve: Library search"
-			, "Improve: Playlist response"
+			  "Fix: Player - Custom SoX Resampler"
+			, "Fix: Dialog box position"
+			, "Fix: Library - Update album thumbnails when run more than once"
+			, "Fix: Audio CD coverart"
+			, "Improve - System - Relay Module"
+			, "Add - Features - Password Login - Option for settingspages only"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
