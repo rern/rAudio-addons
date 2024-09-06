@@ -6,14 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240906"
+		, "version"     : "20240913"
 		, "revision"    : [
-			  "Fix: Player - Custom SoX Resampler"
-			, "Fix: Dialog box position"
-			, "Fix: Library - Update album thumbnails when run more than once"
-			, "Fix: Audio CD coverart"
-			, "Improve - System - Relay Module"
-			, "Add - Features - Password Login - Option for setting pages only"
+			  "Add - System - Volume Limit maximum"
+			, "Change - System - Volume Boot to startuo in Volume Limit"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
