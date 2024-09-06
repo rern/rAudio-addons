@@ -13,14 +13,14 @@
 			, "Fix: Library - Update album thumbnails when run more than once"
 			, "Fix: Audio CD coverart"
 			, "Improve - System - Relay Module"
-			, "Add - Features - Password Login - Option for settingspages only"
+			, "Add - Features - Password Login - Option for setting pages only"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20240601 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20240707 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
