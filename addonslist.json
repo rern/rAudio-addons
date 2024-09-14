@@ -6,7 +6,7 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240914"
+		, "version"     : "202409141"
 		, "revision"    : [
 			  "Fix: Update Thumbnails options"
 			, "Fix: Radio Paradise / Radio France edit"
