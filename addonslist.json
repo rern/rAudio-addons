@@ -6,21 +6,21 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "202409141"
+		, "version"     : "20240921"
 		, "revision"    : [
-			  "Fix: Update Thumbnails options"
-			, "Fix: Radio Paradise / Radio France edit"
-			, "Fix: Coverart error in track lists"
-			, "Fix: System: USB drives APM error"
-			, "Add: Features - Volume Limit"
-			, "Change: System - Volume Boot moved to Features - Volume Limit"
+			  "Fix: Library - Tag Editor"
+			, "Fix: Library - Hide coverart band in track list"
+			, "Fix: Library - Latest albums"
+			, "Fix: Library - Web Radio - Replace and play"
+			, "Fix: Library - Index bar on short screen"
+			, "Fix: Playlist - Remove by range"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20240707 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20240719 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
