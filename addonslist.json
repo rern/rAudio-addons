@@ -6,14 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20240921"
+		, "version"     : "20241011"
 		, "revision"    : [
-			  "Fix: Library - Tag Editor"
-			, "Fix: Library - Hide coverart band in track list"
-			, "Fix: Library - Latest albums"
-			, "Fix: Library - Web Radio - Replace and play"
-			, "Fix: Library - Index bar on short screen"
-			, "Fix: Playlist - Remove by range"
+			  "Fix: Library - WebRadio multilevel subfolders"
+			, "Fix: Networks - Static IP Wi-Fi"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
@@ -48,8 +44,10 @@
 		, "sourcecode"  : "https://github.com/rern/rAudio-addons/tree/main/rankmirrors"
 		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/rankmirrors/rankmirrors.sh"
 		, "option"      : {
-			  "message": "Download test for each server:"
-			, "list"   : [ "Seconds", "number" ]
+			  "message"  : "Download test for each server:"
+			, "list"     : [ "Seconds", "number", { "updn": { "step": 1, "min": 2, "max": 10 } } ]
+			, "values"   : 3
+			, "boxwidth" : 80
 		}
 		, "hide"        : "[[ -e /boot/kernel.img ]] && echo 1"
 	}
