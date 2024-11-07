@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo $$ > /srv/http/data/shm/ppid
-
 alias=rank
 
 . /srv/http/bash/settings/addons.sh
