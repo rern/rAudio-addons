@@ -6,7 +6,8 @@ alias=rank
 
 installstart $@
 
-sec=$1
+sec=${args[0]}
+[[ ! $sec ]] && sec=3
 
 echo "
 $bar Get latest mirrorlist of package servers ...
