@@ -4,6 +4,8 @@ alias=rank
 
 . /srv/http/bash/settings/addons.sh
 
+echo rank > $dirshm/ppid
+
 installstart $@
 
 sec=${args[0]}
