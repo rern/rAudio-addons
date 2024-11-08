@@ -4,7 +4,7 @@ alias=rank
 
 . /srv/http/bash/settings/addons.sh
 
-echo rank > $dirshm/ppid
+basename $0 .sh > $dirshm/script
 
 installstart $@
 
