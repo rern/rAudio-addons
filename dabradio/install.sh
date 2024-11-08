@@ -5,16 +5,25 @@
 installstart $@
 
 pacman -Sy --noconfirm dab-scanner
+
+dir=/etc/systemd/system
 echo "\
 [Unit]
 Description=DAB Radio metadata
+Requires=mediamtx.service
+After=mediamtx.service
 
 [Service]
 Type=simple
 ExecStart=/srv/http/bash/status-dab.sh
-" > /etc/systemd/system/dab.service
-systemctl daemon-reload
+" > $dir/dab.service
 
-timeout 1 rtl_test -t &> /dev/null && systemctl enable --now mediamtx
+dir+=/mediamtx.service.d
+mkdir -p $dir
+echo "\
+[Unit]
+BindsTo=dab.service
+" > $dir/override.conf
+systemctl daemon-reload
 
 installfinish
