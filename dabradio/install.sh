@@ -18,4 +18,6 @@ systemctl daemon-reload
 
 timeout 1 rtl_test -t &> /dev/null && systemctl enable --now mediamtx
 
+mkdir -p $dirdata/dabradio
+
 installfinish
