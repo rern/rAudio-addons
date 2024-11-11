@@ -1,0 +1,276 @@
+#  dab-scanner-rtlsdr -C 5A
+dab_scanner V 1.0alfa,
+Copyright 2018 J van Katwijk, Lazy Chair Computing
+2018 Hayati Ayguen
+2019 J van Katwijk
+2020 J van Katwijk
+going for rtlsdr 174928000 50
+OK, functions seem to be loaded
+Found Elonics E4000 tuner
+samplerate set to 2048000
+Supported gain values (14): -1.0 1.5 4.0 6.5 9.0 11.5 14.0 16.5 19.0 21.5 24.0 2                                        9.0 34.0 42.0
+effective gain: gain 16.5
+checking data in channel 5A
+dab processor will stop
+checking data in channel 5B
+dab processor will stop
+checking data in channel 5C
+program Dlf Kultur       is part of the ensemble
+program Schwarzwaldradio is part of the ensemble
+program ENERGY           is part of the ensemble
+program SCHLAGERPARADIES is part of the ensemble
+program Absolut relax    is part of the ensemble
+program PPP-RTK-AdV      (data) is part of the ensemble
+program RADIO BOB!       is part of the ensemble
+program DRadio Daten     (data) is part of the ensemble
+program Dlf Nova         is part of the ensemble
+ensemble DR Deutschland   is (10BC) recognized
+program ERF Plus         is part of the ensemble
+program Dlf              is part of the ensemble
+program EPG Deutschland  (data) is part of the ensemble
+program TPEG             (data) is part of the ensemble
+program DRadio DokDeb    is part of the ensemble
+program TPEG_MM          (data) is part of the ensemble
+program radio horeb      is part of the ensemble
+program KLASSIK RADIO    is part of the ensemble
+program SUNSHINE LIVE    is part of the ensemble
+
+
+
+Ensemble DR Deutschland  ; ensembleId 10BC; channel 5C;
+
+
+Audio services
+type;program name;channel;serviceId;subchannelId;start address;length (CU); bit                                         rate;DAB/DAB+; genre; prot level; code rate; language
+
+audioservice;Dlf Kultur      ;5C;D220;11;584;112;112;DAB+;7;EEP 2-A;3/8;unknown;
+dataservice;Dlf Kultur      ;5C;D220;14;836;24;32;no FEC;EEP 3-A;unknown;Transpa                                        rent Data Channel (TDC);yes;
+audioservice;Schwarzwaldradio;5C;100D;7;246;42;64;DAB+;27;EEP 2-B;4/7;unknown;
+audioservice;ENERGY          ;5C;1A45;4;102;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;SCHLAGERPARADIES;5C;10C3;20;288;42;64;DAB+;15;EEP 2-B;4/7;unknown;
+audioservice;Absolut relax   ;5C;17FA;3;48;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;RADIO BOB!      ;5C;15DD;22;384;54;72;DAB+;11;EEP 3-A;1/2;unknown;
+audioservice;Dlf Nova        ;5C;D230;12;696;104;104;DAB+;2;EEP 2-A;3/8;unknown;
+audioservice;ERF Plus        ;5C;1A64;2;0;48;64;DAB+;20;EEP 3-A;1/2;unknown;
+audioservice;Dlf             ;5C;D210;10;480;104;104;DAB+;3;EEP 2-A;3/8;unknown;
+audioservice;DRadio DokDeb   ;5C;D240;13;800;36;48;DAB+;3;EEP 3-A;1/2;unknown;
+audioservice;radio horeb     ;5C;D01C;5;156;36;48;DAB+;20;EEP 3-A;1/2;unknown;
+audioservice;KLASSIK RADIO   ;5C;D75B;6;192;54;72;DAB+;13;EEP 3-A;1/2;unknown;
+audioservice;SUNSHINE LIVE   ;5C;15DC;21;330;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+dataservice;Dlf Kultur      ;5C;D220;14;836;24;32;no FEC;EEP 3-A;unknown;Transpa                                        rent Data Channel (TDC);yes;
+
+
+
+Data Services
+type;program name;channel;serviceId;subchannelId;start address;length (CU); bit                                         rate; FEC; prot level; appType; DSCTy; subService;
+
+dataservice;PPP-RTK-AdV      (data);5C;E0D210BC;32;468;6;8;FEC;EEP 3-A;unknown;T                                        ransparent Data Channel (TDC);no;
+dataservice;EPG Deutschland  (data);5C;E0D110BC;30;438;18;24;FEC;EEP 3-A;SPI, wa                                        s EPG;Multimedia Object Transfer (MOT);no;
+dataservice;TPEG             (data);5C;E0D010BC;31;456;12;16;FEC;EEP 3-A;TPEG;Tr                                        ansparent Data Channel (TDC);no;
+dataservice;TPEG_MM          (data);5C;E0D310BC;33;474;6;8;no FEC;EEP 3-A;TPEG;T                                        ransparent Data Channel (TDC);no;
+dab processor will stop
+checking data in channel 5D
+dab processor will stop
+checking data in channel 6A
+dab processor will stop
+checking data in channel 6B
+dab processor will stop
+checking data in channel 6C
+dab processor will stop
+checking data in channel 6D
+dab processor will stop
+checking data in channel 7A
+dab processor will stop
+checking data in channel 7B
+dab processor will stop
+checking data in channel 7C
+dab processor will stop
+checking data in channel 7D
+dab processor will stop
+checking data in channel 8A
+dab processor will stop
+checking data in channel 8B
+dab processor will stop
+checking data in channel 8C
+dab processor will stop
+checking data in channel 8D
+dab processor will stop
+checking data in channel 9A
+dab processor will stop
+checking data in channel 9B
+ensemble Antenne DE       is (11F7) recognized
+program Absolut TOP      is part of the ensemble
+program Absolut BELLA    is part of the ensemble
+program Absolut HOT      is part of the ensemble
+program Absolut OLDIE    is part of the ensemble
+program ROCK ANTENNE     is part of the ensemble
+program RTL RADIO        is part of the ensemble
+program OLDIE ANTENNE    is part of the ensemble
+program 80s80s           is part of the ensemble
+program TOGGO Radio      is part of the ensemble
+program BALLERMANN RADIO is part of the ensemble
+program NOSTALGIE        is part of the ensemble
+program 90s90s           is part of the ensemble
+program Beats Radio      is part of the ensemble
+program Absolut GERMANY  is part of the ensemble
+program AIDAradio        is part of the ensemble
+program Brillux Radio    is part of the ensemble
+
+
+
+Ensemble Antenne DE      ; ensembleId 11F7; channel 9B;
+
+
+Audio services
+type;program name;channel;serviceId;subchannelId;start address;length (CU); bit rate;DAB/DAB+; g                        enre; prot level; code rate; language
+
+audioservice;Absolut TOP     ;9B;1218;8;270;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;Absolut BELLA   ;9B;1219;9;324;54;72;DAB+;15;EEP 3-A;1/2;unknown;
+audioservice;Absolut HOT     ;9B;DC1A;7;216;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;Absolut OLDIE   ;9B;121A;10;378;54;72;DAB+;27;EEP 3-A;1/2;unknown;
+audioservice;ROCK ANTENNE    ;9B;121B;1;0;54;72;DAB+;11;EEP 3-A;1/2;unknown;
+audioservice;RTL RADIO       ;9B;1229;4;108;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;OLDIE ANTENNE   ;9B;121D;2;54;54;72;DAB+;27;EEP 3-A;1/2;unknown;
+audioservice;80s80s          ;9B;1057;12;486;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;TOGGO Radio     ;9B;1298;5;162;54;72;DAB+;18;EEP 3-A;1/2;unknown;
+audioservice;BALLERMANN RADIO;9B;12C8;11;432;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;NOSTALGIE       ;9B;122A;13;540;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;90s90s          ;9B;12E9;16;702;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;Beats Radio     ;9B;1258;14;594;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;Absolut GERMANY ;9B;121C;18;810;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;AIDAradio       ;9B;1259;17;756;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;Brillux Radio   ;9B;1299;15;648;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+dab processor will stop
+checking data in channel 9C
+dab processor will stop
+checking data in channel 9D
+program BOLLERWAGEN      is part of the ensemble
+program ANTENNE NRW      is part of the ensemble
+program ENERGY NRW       is part of the ensemble
+program Schlager Radio   is part of the ensemble
+program kulthitRADIO     is part of the ensemble
+program Radio TEDDY NRW  is part of the ensemble
+program RADIO 21 NRW     is part of the ensemble
+program Radio Holiday    is part of the ensemble
+program NOXX             is part of the ensemble
+program OLDIE ANTENNE    is part of the ensemble
+program Radio Paradiso   is part of the ensemble
+program NRW1             is part of the ensemble
+program 80erRadioHarmony is part of the ensemble
+program Radio Paloma     is part of the ensemble
+program bigFM            is part of the ensemble
+program STAR FM MAX ROCK is part of the ensemble
+ensemble Mein NRW DAB+    is (1205) recognized
+
+
+
+Ensemble Mein NRW DAB+   ; ensembleId 1205; channel 9D;
+
+
+Audio services
+type;program name;channel;serviceId;subchannelId;start address;length (CU); bit rate;DAB/DAB+; g                        enre; prot level; code rate; language
+
+audioservice;BOLLERWAGEN     ;9D;1498;6;324;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;ANTENNE NRW     ;9D;1598;7;378;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;ENERGY NRW      ;9D;1B98;2;108;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;Schlager Radio  ;9D;1735;1;54;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;kulthitRADIO    ;9D;1A98;12;594;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;Radio TEDDY NRW ;9D;1B2E;4;216;54;72;DAB+;18;EEP 3-A;1/2;unknown;
+audioservice;RADIO 21 NRW    ;9D;1E98;5;270;54;72;DAB+;11;EEP 3-A;1/2;unknown;
+audioservice;Radio Holiday   ;9D;1698;8;432;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;NOXX            ;9D;1898;10;486;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;OLDIE ANTENNE   ;9D;1A9A;15;702;54;72;DAB+;27;EEP 3-A;1/2;unknown;
+audioservice;Radio Paradiso  ;9D;1C98;3;162;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;NRW1            ;9D;149E;17;810;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;80erRadioHarmony;9D;1364;13;648;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;Radio Paloma    ;9D;1C2A;0;0;54;72;DAB+;12;EEP 3-A;1/2;unknown;
+audioservice;bigFM           ;9D;1D98;16;756;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;STAR FM MAX ROCK;9D;1B85;11;540;54;72;DAB+;11;EEP 3-A;1/2;unknown;
+dab processor will stop
+checking data in channel 10A
+dab processor will stop
+checking data in channel 10B
+dab processor will stop
+checking data in channel 10C
+dab processor will stop
+checking data in channel 10D
+dab processor will stop
+checking data in channel 11A
+dab processor will stop
+checking data in channel 11B
+dab processor will stop
+checking data in channel 11C
+dab processor will stop
+checking data in channel 11D
+program WDR 2 MÜNSTERL   is part of the ensemble
+program WDR 2 AACHEN     is part of the ensemble
+program WDR 2 OWL        is part of the ensemble
+program WDR 2 RUHRGEBIET is part of the ensemble
+program WDR Maus         is part of the ensemble
+program WDR 2 RHEIN-RUHR is part of the ensemble
+program WDR Event        is part of the ensemble
+program WDR 2 BERG.-LAND is part of the ensemble
+program WDR 2 SÜDWESTF   is part of the ensemble
+ensemble Radio fuer NRW   is (10EC) recognized
+program WDR 5            is part of the ensemble
+program WDR 4            is part of the ensemble
+program WDR 2 RHEINLAND  is part of the ensemble
+program 1LIVE            is part of the ensemble
+program WDR 3            is part of the ensemble
+program WDR-EPG          (data) is part of the ensemble
+program WDRcosmo         is part of the ensemble
+program ARD TPEG         (data) is part of the ensemble
+program 1LIVE diGGi      is part of the ensemble
+
+
+
+Ensemble Radio fuer NRW  ; ensembleId 10EC; channel 11D;
+
+
+Audio services
+type;program name;channel;serviceId;subchannelId;start address;length (CU); bit rate;DAB/DAB+; g                        enre; prot level; code rate; language
+
+audioservice;WDR 2 MÜNSTERL  ;11D;DA92;20;702;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;WDR 2 AACHEN    ;11D;D492;19;648;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;WDR 2 OWL       ;11D;D592;18;594;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;WDR 2 RUHRGEBIET;11D;D692;17;540;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;WDR Maus        ;11D;DF95;2;54;48;64;DAB+;18;EEP 3-A;1/2;unknown;
+audioservice;WDR 2 RHEIN-RUHR;11D;D792;16;486;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;WDR Event       ;11D;DF96;6;252;36;48;DAB+;29;EEP 3-A;1/2;unknown;
+audioservice;WDR 2 BERG.-LAND;11D;DC92;22;810;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;WDR 2 SÜDWESTF  ;11D;DB92;21;756;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;WDR 5           ;11D;D395;4;156;48;64;DAB+;8;EEP 3-A;1/2;unknown;
+audioservice;WDR 4           ;11D;D394;14;360;54;72;DAB+;27;EEP 3-A;1/2;unknown;
+audioservice;WDR 2 RHEINLAND ;11D;D392;7;288;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;1LIVE           ;11D;D391;1;0;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;WDR 3           ;11D;D393;15;414;72;96;DAB+;7;EEP 3-A;1/2;unknown;
+audioservice;WDRcosmo        ;11D;D496;5;204;48;64;DAB+;10;EEP 3-A;1/2;unknown;
+audioservice;1LIVE diGGi     ;11D;DF91;3;102;54;72;DAB+;10;EEP 3-A;1/2;unknown;
+
+
+
+Data Services
+type;program name;channel;serviceId;subchannelId;start address;length (CU); bit rate; FEC; prot                         level; appType; DSCTy; subService;
+
+dataservice;WDR-EPG          (data);11D;E0D01004;9;342;6;8;FEC;EEP 3-A;SPI, was EPG;Multimedia O                        bject Transfer (MOT);no;
+dab processor will stop
+checking data in channel 12A
+dab processor will stop
+checking data in channel 12B
+dab processor will stop
+checking data in channel 12C
+dab processor will stop
+checking data in channel 12D
+dab processor will stop
+checking data in channel 13A
+dab processor will stop
+checking data in channel 13B
+dab processor will stop
+checking data in channel 13C
+dab processor will stop
+checking data in channel 13D
+dab processor will stop
+checking data in channel 13E
+dab processor will stop
+checking data in channel 13F
+dab processor will stop
