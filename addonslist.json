@@ -28,7 +28,7 @@
 		, "thumbnail"   : "/assets/img/addons/thumbdab.jpg"
 		, "sourcecode"  : "https://github.com/vale-max/rAudio-addons/raw/main/dabradio"
 		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/dabradio/install.sh"
-		, "postmessage" : "<a class='helpmenu tab'><i class='i-features'></i> Features</a><a class='helpmenu label'>DAB Radio<i class='i-dabradio'></i> </a> <i class='i-gear btn'></i>"
+		, "postmessage" : "<a class='helpmenu tab'><i class='i-features'></i> Features</a><a class='helpmenu label'>DAB Radio<i class='i-dabradio'></i></a>"
 		, "hide"        : "[[ -e /usr/bin/mediamtx || -e /boot/kernel.img ]] && echo 1"
 	}
 	, "fran" : {
