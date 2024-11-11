@@ -24,7 +24,7 @@
 	}
 	, "dab" : {
 		  "title"       : "DAB Radio"
-		, "description" : "Add Digital Audio Broadcasting radio reception capabilities<br>(RTL-SDR dongle required)"
+		, "description" : "Add Digital Audio Broadcasting radio reception capabilities<br>(USB SDR dongle required)"
 		, "thumbnail"   : "/assets/img/addons/thumbdab.jpg"
 		, "sourcecode"  : "https://github.com/vale-max/rAudio-addons/raw/main/dabradio"
 		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/dabradio/install.sh"
