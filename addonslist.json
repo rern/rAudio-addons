@@ -6,20 +6,21 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20241108"
+		, "version"     : "20241129"
 		, "revision"    : [
-			  "Fix: Playlist - Remove tracks with context menu"
-			, "Fix: System - Power Button setting"
-			, "Fix: VU meter and Spectrum OLED"
-			, "Change: DAB radio scan from Library to setting in Features"
-			, "Improve: Playlist - Remove by range"
+			  "Fix: Networks - Blank page"
+			, "Fix: Networks - Connecting Wi-Fi on RPi 3, 2"
+			, "Fix: Networks - Status of Wi-Fi with static IP"
+			, "Fix: Features - Password Login"
+			, "Fix: System - Character LCD"
+			, "Improve: Settings pages"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20240719 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20240818 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
