@@ -6,14 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20241130"
+		, "version"     : "20241206"
 		, "revision"    : [
-			  "Fix: Networks - Blank page"
-			, "Fix: Networks - Connecting Wi-Fi on RPi 3, 2"
-			, "Fix: Networks - Status of Wi-Fi with static IP"
-			, "Fix: Features - Password Login"
-			, "Fix: System - Character LCD"
-			, "Improve: Settings pages"
+			  "Fix: Player - Setting page error"
+			, "<a href='https://github.com/rern/rAudio/releases'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
