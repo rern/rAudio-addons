@@ -6,7 +6,7 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20241207"
+		, "version"     : "202412061"
 		, "revision"    : [
 			  "Fix: Player - Setting page error"
 			, "Fix: System - Add network storage"
