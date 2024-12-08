@@ -6,11 +6,11 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20241207"
+		, "version"     : "20241208"
 		, "revision"    : [
 			  "Fix: Player - Setting page error"
 			, "Fix: System - Add network storage"
-			, "<a href='https://github.com/rern/rAudio/releases'>Change log</a>"
+			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
