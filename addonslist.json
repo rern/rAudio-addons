@@ -6,10 +6,12 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20241208"
+		, "version"     : "20241211"
 		, "revision"    : [
-			  "Fix: Player - Setting page error"
-			, "Fix: System - Add network storage"
+			  "Fix: Features - Multiple rAudio setting"
+			, "Improve: Networks - Connect Wi-Fi"
+			, "Improve: Playback - Long-press up/down volume control"
+			, "Add: Playback - Option to disable overlay controls"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
