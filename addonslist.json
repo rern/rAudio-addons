@@ -6,12 +6,12 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20241211"
+		, "version"     : "20241227"
 		, "revision"    : [
-			  "Fix: Features - Multiple rAudio setting"
-			, "Improve: Networks - Connect Wi-Fi"
-			, "Improve: Playback - Long-press up/down volume control"
-			, "Add: Playback - Option to disable overlay controls"
+			  "Fix: Library - Add web radio to subfolder"
+			, "Fix: Library - Scroll position"
+			, "Fix: Library - List of <c>*.cue</c> and cover art"
+			, "Fix: Playlist - Progress counter"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
@@ -19,7 +19,7 @@
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20240921 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20241011 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
