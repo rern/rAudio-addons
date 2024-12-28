@@ -6,12 +6,13 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20241227"
+		, "version"     : "20241228"
 		, "revision"    : [
 			  "Fix: Library - Add web radio to subfolder"
 			, "Fix: Library - Scroll position"
 			, "Fix: Library - List of <c>*.cue</c> and cover art"
 			, "Fix: Playlist - Progress counter"
+			, "Fix: System - Character LCD and Spectrum OLED"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
