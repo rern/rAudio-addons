@@ -6,13 +6,12 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20241228"
+		, "version"     : "20250111"
 		, "revision"    : [
-			  "Fix: Library - Add web radio to subfolder"
-			, "Fix: Library - Scroll position"
-			, "Fix: Library - List of <c>*.cue</c> and cover art"
-			, "Fix: Playlist - Progress counter"
-			, "Fix: System - Character LCD and Spectrum OLED"
+			  "Fix: System - Relays Module timer"
+			, "Fix: System - Character LCD on GPIO"
+			, "Improve: System - Character LCD, Spectrum OLED"
+			, "Improve: Playlist - Web Radio data while playing"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
@@ -20,7 +19,7 @@
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20241011 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20241110 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
