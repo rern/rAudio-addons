@@ -6,12 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20250111"
+		, "version"     : "20250208"
 		, "revision"    : [
-			  "Fix: System - Relays Module timer"
-			, "Fix: System - Character LCD on GPIO"
-			, "Improve: System - Character LCD, Spectrum OLED"
-			, "Improve: Playlist - Web Radio data while playing"
+			  "Fix: Library search"
+			, "Improve: Features - CamillaDSP"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
@@ -19,7 +17,7 @@
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20241110 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20241130 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
