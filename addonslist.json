@@ -6,10 +6,9 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20250208"
+		, "version"     : "20250215"
 		, "revision"    : [
-			  "Fix: Library search"
-			, "Improve: Features - CamillaDSP"
+			  "Fix: Features - CamillaDSP setting of some filter types"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
