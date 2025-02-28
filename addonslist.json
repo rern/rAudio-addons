@@ -6,9 +6,12 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20250215"
+		, "version"     : "20250228"
 		, "revision"    : [
-			  "Fix: Features - CamillaDSP setting of some filter types"
+			  "Fix: Library - Drag to rearrange"
+			, "Fix: Library - Bookmark thumbnails edit"
+			, "Fix: Playlist - Search"
+			, "Improve: Features - CamillaDSP"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
