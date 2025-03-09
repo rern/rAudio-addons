@@ -6,12 +6,14 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20250228"
+		, "version"     : "20250309"
 		, "revision"    : [
-			  "Fix: Library - Drag to rearrange"
-			, "Fix: Library - Bookmark thumbnails edit"
-			, "Fix: Playlist - Search"
+			  "Fix: Library - Counts toggle"
+			, "Fix: Networks - Wi-Fi scan when there is no saved profiles"
+			, "Improve: Library - Bookmark long-press"
+			, "Improve: Playback - Graphic equalizer"
 			, "Improve: Features - CamillaDSP"
+			, "Add: Get lyrics from <c>*.lrc</c> file if available"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
@@ -19,7 +21,7 @@
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20241208 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20250111 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
