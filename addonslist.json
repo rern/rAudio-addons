@@ -6,14 +6,13 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "202503091"
+		, "version"     : "20250322"
 		, "revision"    : [
-			  "Fix: Library - Counts toggle"
-			, "Fix: Networks - Wi-Fi scan when there is no saved profiles"
-			, "Improve: Library - Bookmark long-press"
-			, "Improve: Playback - Graphic equalizer"
-			, "Improve: Features - CamillaDSP"
-			, "Add: Get lyrics from <c>*.lrc</c> file if available"
+			  "Fix: Playback - Graphic equalizer - Add new preset"
+			, "Fix: Networks - Edit connection"
+			, "Improve - Propagation of changed database, coverarts or thumbnails"
+			, "Improve - Library - Change bookmark thumbnails"
+			, "Add: Library - Change folder thumbnails"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
