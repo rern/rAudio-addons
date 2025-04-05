@@ -6,13 +6,12 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20250322"
+		, "version"     : "20250404"
 		, "revision"    : [
-			  "Fix: Playback - Graphic equalizer - Add new preset"
-			, "Fix: Networks - Edit connection"
-			, "Improve - Propagation of changed database, coverarts or thumbnails"
-			, "Improve - Library - Change bookmark thumbnails"
-			, "Add: Library - Change folder thumbnails"
+			  "Fix: Library home - Hidden items when Count disabled."
+			, "Fix: Snapcast - Upgrade"
+			, "Improve: Refresh changes after switch back to rAudio"
+			, "Improve: Networks - Allow to connect Wi-Fi while Access Point enabled"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
