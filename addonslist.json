@@ -6,7 +6,7 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20250420"
+		, "version"     : "20250421"
 		, "revision"    : [
 			  "Fix: Features - Browser - Swipe"
 			, "Fix: System - VU LED"
