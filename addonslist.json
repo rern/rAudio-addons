@@ -6,12 +6,14 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20250404"
+		, "version"     : "20250420"
 		, "revision"    : [
-			  "Fix: Library home - Hidden items when Count disabled."
-			, "Fix: Snapcast - Upgrade"
-			, "Improve: Refresh changes after switch back to rAudio"
-			, "Improve: Networks - Allow to connect Wi-Fi while Access Point enabled"
+			  "Fix: Features - Browser - Swipe"
+			, "Fix: System - VU LED"
+			, "Fix: Player - Output - Device - I²S audio name"
+			, "Fix: Library - Web Radio folder delete, rename"
+			, "Fix: Library - Maintain current page position"
+			, "Improve - Library - Latest list"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
@@ -19,7 +21,7 @@
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20250111 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20250208 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
