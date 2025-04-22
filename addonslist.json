@@ -6,13 +6,15 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20250421"
+		, "version"     : "20250422"
 		, "revision"    : [
-			  "Fix: Features - Browser - Swipe"
-			, "Fix: System - VU LED"
-			, "Fix: Player - Output - Device - I²S audio name"
+			  "Fix: Library - Album mode - Duplicate items and position"
+			, "Fix: Library - Web Radio - Path navigating"
 			, "Fix: Library - Web Radio folder delete, rename"
 			, "Fix: Library - Maintain current page position"
+			, "Fix: Features - Browser - Swipe"
+			, "Fix: System - VU LED"
+			, "Fix: Player - Output - Device - I²S audio name"
 			, "Improve - Library - Latest list"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
