@@ -6,16 +6,12 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20250422"
+		, "version"     : "20250502"
 		, "revision"    : [
-			  "Fix: Library - Album mode - Duplicate items and position"
-			, "Fix: Library - Web Radio - Path navigating"
-			, "Fix: Library - Web Radio folder delete, rename"
-			, "Fix: Library - Maintain current page position"
-			, "Fix: Features - Browser - Swipe"
-			, "Fix: System - VU LED"
-			, "Fix: Player - Output - Device - I²S audio name"
-			, "Improve - Library - Latest list"
+			  "Fix: Library - Mode track list"
+			, "Fix: Library - Arrange order and refresh new bookmarks"
+			, "Fix: Library - Web Radio - Count and station art"
+			, "Fix: Playback - Web Radio - cover art"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
@@ -23,7 +19,7 @@
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20250208 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20250228 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
