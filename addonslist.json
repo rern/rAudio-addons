@@ -6,12 +6,11 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20250502"
+		, "version"     : "20250516"
 		, "revision"    : [
-			  "Fix: Library - Mode track list"
-			, "Fix: Library - Arrange order and refresh new bookmarks"
-			, "Fix: Library - Web Radio - Count and station art"
-			, "Fix: Playback - Web Radio - cover art"
+			  "Fix: Library - Modes - Add to playlist"
+			, "Improve: Color setting - Replace plugin with native code"
+			, "Improve: Web Radio - Refresh after: add/remove folder and bookmark"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
