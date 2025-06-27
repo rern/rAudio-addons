@@ -6,11 +6,14 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20250516"
+		, "version"     : "20250627"
 		, "revision"    : [
-			  "Fix: Library - Modes - Add to playlist"
-			, "Improve: Color setting - Replace plugin with native code"
-			, "Improve: Web Radio - Refresh after: add/remove folder and bookmark"
+			  "Fix: Playlist - Refresh track count on delete"
+			, "Fix: Tag Editor / Track info - Search by tag icons"
+			, "Improve: Replace plugins with native javascripts: <c>lazysizes</c> <c>roundSlider</c> <c>Select2</c> <c>simple-keyboard</c> <c>Sortable</c>"
+			, "Improve: Playlist - Web Radio coverart"
+			, "Improve: Color setting - Add mouse wheel and keyboard shortcut - +/-/up/down/left/right"
+			, "Improve: Volume control"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
