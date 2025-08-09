@@ -6,14 +6,15 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20250627"
+		, "version"     : "20250809"
 		, "revision"    : [
-			  "Fix: Playlist - Refresh track count on delete"
-			, "Fix: Tag Editor / Track info - Search by tag icons"
-			, "Improve: Replace plugins with native javascripts: <c>lazysizes</c> <c>roundSlider</c> <c>Select2</c> <c>simple-keyboard</c> <c>Sortable</c>"
-			, "Improve: Playlist - Web Radio coverart"
-			, "Improve: Color setting - Add mouse wheel and keyboard shortcut - +/-/up/down/left/right"
-			, "Improve: Volume control"
+			  "Fix: Features - Stop Timer"
+			, "Fix: Features - Server rAudio"
+			, "Fix: System - Shared Data"
+			, "Fix: System - Spectrum OLED"
+			, "Fix: Features - Browser - On while play, Screen off"
+			, "Fix: Networks - Bluetooth name list"
+			, "Improve: Networks - Connect Wi-Fi"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
@@ -21,7 +22,7 @@
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20250228 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20250502 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
