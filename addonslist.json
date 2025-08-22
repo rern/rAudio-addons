@@ -6,15 +6,11 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20250809"
+		, "version"     : "20250822"
 		, "revision"    : [
-			  "Fix: Features - Stop Timer"
-			, "Fix: Features - Server rAudio"
-			, "Fix: System - Shared Data"
-			, "Fix: System - Spectrum OLED"
-			, "Fix: Features - Browser - On while play, Screen off"
-			, "Fix: Networks - Bluetooth name list"
-			, "Improve: Networks - Connect Wi-Fi"
+			  "Fix: Library - Web Radio back button"
+			, "Fix: Library - Latest list"
+			, "Fix: Spotify (downgrade)"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
