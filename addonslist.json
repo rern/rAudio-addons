@@ -6,11 +6,9 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20250822"
+		, "version"     : "20251109"
 		, "revision"    : [
-			  "Fix: Library - Web Radio back button"
-			, "Fix: Library - Latest list"
-			, "Fix: Spotify (downgrade)"
+			  "Fix: Library - Refresh on track changed"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
@@ -18,7 +16,7 @@
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20250502 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20250627 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
