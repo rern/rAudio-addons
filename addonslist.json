@@ -6,9 +6,13 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20251109"
+		, "version"     : "20260111"
 		, "revision"    : [
-			  "Fix: Library - Refresh on track changed"
+			  "Fix: Library - Refresh on Add + Play"
+			, "Fix: System - Rotary Encoder - on armv7h"
+			, "Fix: Features - Browser - Sleep"
+			, "Improve: Features - Upgrade Spotify"
+			, "Improve: System - Group display setting and add RPi Touch Display 2 support"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
@@ -16,7 +20,7 @@
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20250627 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20251109 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
 	, "dab" : {
