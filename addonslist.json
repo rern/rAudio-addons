@@ -6,13 +6,17 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20260111"
+		, "version"     : "20260212"
 		, "revision"    : [
-			  "Fix: Library - Refresh on Add + Play"
-			, "Fix: System - Rotary Encoder - on armv7h"
-			, "Fix: Features - Browser - Sleep"
-			, "Improve: Features - Upgrade Spotify"
-			, "Improve: System - Group display setting and add RPi Touch Display 2 support"
+			  "Fix: Playback - Bluetooth Renderer"
+			, "Fix: Playback - Currently connected Bluetooth - Reconnect on reboot"
+			, "Fix: Playback - SnapClient - Web Radio station art"
+			, "Fix: Networks - Bluetooth device info"
+			, "Improve: Player - Volume - Bluetooth sender"
+			, "Improve: Networks - USB Wi-Fi connection"
+			, "Improve: System - Bluetooth setting - Reboot only when necessary"
+			, "Add: System - Storage - List local devices, NVMe and SATA"
+			, "Add: System - Storage - Format unpartitioned/unformatted devices"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
