@@ -6,7 +6,7 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "202602121"
+		, "version"     : "202602122"
 		, "revision"    : [
 			  "Fix: Playback - Bluetooth Renderer"
 			, "Fix: Playback - Currently connected Bluetooth - Reconnect on reboot"
