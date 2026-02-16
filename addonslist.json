@@ -6,17 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "202602122"
+		, "version"     : "20260216"
 		, "revision"    : [
-			  "Fix: Playback - Bluetooth Renderer"
-			, "Fix: Playback - Currently connected Bluetooth - Reconnect on reboot"
-			, "Fix: Playback - SnapClient - Web Radio station art"
-			, "Fix: Networks - Bluetooth device info"
-			, "Improve: Player - Volume - Bluetooth sender"
-			, "Improve: Networks - USB Wi-Fi connection"
-			, "Improve: System - Bluetooth setting - Reboot only when necessary"
-			, "Add: System - Storage - List local devices, NVMe and SATA"
-			, "Add: System - Storage - Format unpartitioned/unformatted devices"
+			  "Fix: Playback - Radio Paradise metadata"
+			, "Add: <a href='https://github.com/rern/rAudio?tab=readme-ov-file#how-to'>Select image file directly</a> in <wh>Raspberri Pi Imager</wh> (no needs to pre-download)"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
