@@ -10,9 +10,7 @@ basename $0 .sh > $dirshm/script
 
 installstart $@
 
-rate-mirrors --allow-root --save=mirrorlist archarm
-grep ^Server mirrorlist > /etc/pacman.d/mirrorlist
-rm mirrorlist
+rate_mirrors --allow-root --disable-comments-in-file --save /etc/pacman.d/mirrorlist archarm
 
 echo "
 $bar Update package database ..."
