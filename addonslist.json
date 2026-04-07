@@ -6,9 +6,12 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20260401"
+		, "version"     : "20260407"
 		, "revision"    : [
-			  "Fix: DAB Radio - No stations after successful scan"
+			  "Fix: Playback - Progress knob / bar"
+			, "Fix: Features - Browser - Zoom"
+			, "Fix: Features - rAudio Server"
+			, "Fix: Player - Output Device"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
