@@ -18,7 +18,7 @@
 		, "nouninstall" : 1
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
-		, "installurl"  : "https://raw.githubusercontent.com/rern/rAudio/main/install.sh"
+		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
 		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20260111 ]] && echo 1"
 		, "notverified" : "Please download the latest image file to be able to update."
 	}
@@ -27,7 +27,7 @@
 		, "description" : "Add Digital Audio Broadcasting radio reception capabilities<br>(USB SDR dongle required)"
 		, "thumbnail"   : "/assets/img/addons/thumbdab.jpg"
 		, "sourcecode"  : "https://github.com/vale-max/rAudio-addons/raw/main/dabradio"
-		, "installurl"  : "https://raw.githubusercontent.com/rern/rAudio-addons/main/dabradio/install.sh"
+		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/dabradio/install.sh"
 		, "postmessage" : "<a class='helpmenu tab'><i class='i-features'></i> Features</a><a class='helpmenu label'>DAB Radio<i class='i-dabradio'></i></a>"
 		, "hide"        : "[[ -e /usr/bin/mediamtx || -e /boot/kernel.img ]] && echo 1"
 	}
@@ -37,7 +37,7 @@
 		, "description" : "Webradio stations by <a href='https://www.francemusique.fr/'>France Musique</a> and <a href='https://www.fip.fr/'>Fip</a>"
 		, "thumbnail"   : "/assets/img/addons/thumbfran.gif"
 		, "sourcecode"  : "https://github.com/rern/rAudio-addons/raw/main/webradio"
-		, "installurl"  : "https://raw.githubusercontent.com/rern/rAudio-addons/main/webradio/install.sh"
+		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/webradio/install.sh"
 		, "hide"        : "[[ -e /srv/http/data/webradio/Fip ]] && echo 1"
 	}
 	, "rank" : {
@@ -46,7 +46,7 @@
 		, "thumbnail"   : "/assets/img/addons/thumbrank.png"
 		, "buttonlabel" : [ "bars", "Rank" ]
 		, "sourcecode"  : "https://github.com/rern/rAudio-addons/tree/main/rankmirrors"
-		, "installurl"  : "https://raw.githubusercontent.com/rern/rAudio-addons/main/rankmirrors/rankmirrors.sh"
+		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/rankmirrors/rankmirrors.sh"
 		, "option"      : {
 			  "message"  : "Download test for each server:"
 			, "list"     : [ "Seconds", "number", { "updn": { "step": 1, "min": 2, "max": 10 } } ]
