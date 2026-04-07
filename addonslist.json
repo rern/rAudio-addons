@@ -47,12 +47,6 @@
 		, "buttonlabel" : [ "bars", "Rank" ]
 		, "sourcecode"  : "https://github.com/rern/rAudio-addons/tree/main/rankmirrors"
 		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/rankmirrors/rankmirrors.sh"
-		, "option"      : {
-			  "message"  : "Download test for each server:"
-			, "list"     : [ "Seconds", "number", { "updn": { "step": 1, "min": 2, "max": 10 } } ]
-			, "values"   : 3
-			, "boxwidth" : 80
-		}
 		, "hide"        : "[[ -e /boot/kernel.img ]] && echo 1"
 	}
 }
