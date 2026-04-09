@@ -6,9 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20260407"
+		, "version"     : "20260409"
 		, "revision"    : [
-			  "Fix: Playback - Progress knob / bar"
+			  "Fix: Settings - Regression bugs"
+			, "Fix: Playback - Progress knob / bar"
 			, "Fix: Features - Browser - Zoom"
 			, "Fix: Features - rAudio Server"
 			, "Fix: Player - Output Device"
