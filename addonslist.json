@@ -6,13 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20260409"
+		, "version"     : "20260415"
 		, "revision"    : [
-			  "Fix: Settings - Regression bugs"
-			, "Fix: Playback - Progress knob / bar"
-			, "Fix: Features - Browser - Zoom"
-			, "Fix: Features - rAudio Server"
-			, "Fix: Player - Output Device"
+			  "Fix and improve: Features - rAudio Server - Show <c>SD</c> and <c>USB</c> in Windows"
+			, "Fix: Playlist - Refesh on track change"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
@@ -20,8 +17,8 @@
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20260111 ]] && echo 1"
-		, "notverified" : "Please download the latest image file to be able to update."
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20260212 ]] && echo 1"
+		, "notverified" : "Please <a href='https://github.com/rern/rAudio/discussions/2042'>install the latest image</a> to be able to update."
 	}
 	, "dab" : {
 		  "title"       : "DAB Radio"
@@ -46,7 +43,7 @@
 		, "description" : "Fix package download errors caused by unreachable servers.<br>Rank mirror package servers by download speed and latency."
 		, "thumbnail"   : "/assets/img/addons/thumbrank.png"
 		, "buttonlabel" : [ "bars", "Rank" ]
-		, "sourcecode"  : "https://github.com/rern/rAudio-addons/tree/main/rankmirrors"
+		, "sourcecode"  : "https://github.com/rern/rAudio-addons/raw/main/rankmirrors"
 		, "installurl"  : "https://github.com/rern/rAudio-addons/raw/main/rankmirrors/rankmirrors.sh"
 		, "hide"        : "[[ -e /boot/kernel.img ]] && echo 1"
 	}
