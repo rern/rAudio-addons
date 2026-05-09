@@ -6,10 +6,17 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20260415"
+		, "version"     : "20260509"
 		, "revision"    : [
-			  "Fix and improve: Features - rAudio Server - Show <c>SD</c> and <c>USB</c> in Windows"
-			, "Fix: Playlist - Refesh on track change"
+			  "Fix: Features - Server rAudio"
+			, "Fix: System - Shared Data - Propagate on done"
+			, "Fix: Playback - Refresh cover art on track change from web radio"
+			, "Fix: Playback - Character LCD - Refresh on track change to/from web radio"
+			, "Fix: Features - Server rAudio"
+			, "Fix: Playlist - Refresh on track change"
+			, "Fix - Improve: System - Spectrum OLED"
+			, "Improve: Features - Browser - Mouse pointer - Plug and Play"
+			, "Upgrade: Features - CamillaDSP"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
@@ -17,7 +24,7 @@
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20260212 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20260216 ]] && echo 1"
 		, "notverified" : "Please <a href='https://github.com/rern/rAudio/discussions/2042'>install the latest image</a> to be able to update."
 	}
 	, "dab" : {
