@@ -10,11 +10,11 @@ basename $0 .sh > $dirshm/script
 
 installstart $@
 
-rate_mirrors --allow-root --disable-comments-in-file --save /etc/pacman.d/mirrorlist archarm
+rate_mirrors --allow-root --disable-comments-in-file --save=/etc/pacman.d/mirrorlist archarm
 
 echo "
 $bar Update package database ..."
 rm -f /var/lib/pacman/db.lck
-pacman -Sy
+pacman -Syy
 
 installfinish
