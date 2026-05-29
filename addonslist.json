@@ -6,17 +6,14 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20260509"
+		, "version"     : "20260529"
 		, "revision"    : [
-			  "Fix: Features - Server rAudio"
-			, "Fix: System - Shared Data - Propagate on done"
-			, "Fix: Playback - Refresh cover art on track change from web radio"
-			, "Fix: Playback - Character LCD - Refresh on track change to/from web radio"
-			, "Fix: Features - Server rAudio"
-			, "Fix: Playlist - Refresh on track change"
-			, "Fix - Improve: System - Spectrum OLED"
-			, "Improve: Features - Browser - Mouse pointer - Plug and Play"
-			, "Upgrade: Features - CamillaDSP"
+			  "Fix: System - Character LCD"
+			, "Fix: System - Spectrum OLED - Spectrum only setting"
+			, "Fix: Playback - Renderers on stop"
+			, "Fix: Auto disable mouse pointer on Touch screen"
+			, "Fix: Guide"
+			, "Improve: Playback - AirPlay"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
