@@ -6,12 +6,14 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20260709"
+		, "version"     : "20260529"
 		, "revision"    : [
-			  "Improve: Playback - Response"
-			, "Improve: Playback - UpnP"
-			, "Fix: Bluetooth failed when switch track from Web radio to local file."
-			, "Fix: Equalizer not properly switch to selected preset"
+			  "Fix: System - Character LCD"
+			, "Fix: System - Spectrum OLED - Spectrum only setting"
+			, "Fix: Playback - Renderers on stop"
+			, "Fix: Auto disable mouse pointer on Touch screen"
+			, "Fix: Guide"
+			, "Improve: Playback - AirPlay"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
@@ -19,7 +21,7 @@
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20260509 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20260216 ]] && echo 1"
 		, "notverified" : "Please <a href='https://github.com/rern/rAudio/discussions/2042'>install the latest image</a> to be able to update."
 	}
 	, "dab" : {
