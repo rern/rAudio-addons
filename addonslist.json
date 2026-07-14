@@ -6,12 +6,9 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20260709"
+		, "version"     : "20260714"
 		, "revision"    : [
-			  "Improve: Playback - Response"
-			, "Improve: Playback - UpnP"
-			, "Fix: Bluetooth failed when switch track from Web radio to local file."
-			, "Fix: Equalizer not properly switch to selected preset"
+			  "Fix: Library coverart in track list"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
