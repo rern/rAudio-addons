@@ -6,9 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20260714"
+		, "version"     : "20260718"
 		, "revision"    : [
-			  "Fix: Library coverart in track list"
+			  "Fix: Playback - Bitrate"
+			  "Fix: Player - Missing options"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
