@@ -6,9 +6,10 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20260718"
+		, "version"     : "20260719"
 		, "revision"    : [
-			  "Fix: Playback - Bitrate"
+			  "Fix: Playback - Hide volume when no mixer"
+			, "Fix: Playback - Bitrate"
 			, "Fix: Player - Missing options"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
