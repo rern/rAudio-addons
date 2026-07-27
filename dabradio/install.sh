@@ -7,7 +7,8 @@ installstart $@
 pacman -Sy --noconfirm dab-scanner
 
 file=/etc/systemd/system/dab.service
-[[ ! -e $file ]] && echo "\
+if [[ ! -e $file ]]; then
+	echo "\
 [Unit]
 Description=DAB Radio metadata
 
@@ -15,6 +16,7 @@ Description=DAB Radio metadata
 Type=simple
 ExecStart=/srv/http/bash/status-dab.sh
 " > $file
-systemctl daemon-reload
+	systemctl daemon-reload
+fi
 
 installfinish
