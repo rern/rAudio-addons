@@ -6,12 +6,17 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20260719.1"
+		, "version"     : "20260801"
 		, "revision"    : [
-			  "Fix: Playback - Hardware volume control"
-			, "Fix: Playback - Hide volume when no mixer"
-			, "Fix: Playback - Bitrate"
-			, "Fix: Player - Missing options"
+			  "Fix: Playback"
+			, "- Bio images"
+			, "- Bluetooth earbuds / devices - sampling not 44100:16:0"
+			, "- Character LCD"
+			, "- DSD sampling data"
+			, "- Embedded lyrics"
+			, "- Online coverarts"
+			, "- Value of software volume"
+			, "Fix: System - Spectrum OLED setting"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
@@ -19,7 +24,7 @@
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20260509 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20260529 ]] && echo 1"
 		, "notverified" : "Please <a href='https://github.com/rern/rAudio/discussions/2042'>install the latest image</a> to be able to update."
 	}
 	, "dab" : {
