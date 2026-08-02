@@ -16,5 +16,5 @@ from [**Addons Menu**](https://github.com/rern/RuneAudio_Addons)
 
 or from SSH terminal
 ```sh
-wget -qN --show-progress https://github.com/rern/RuneAudio/raw/master/rankmirrors/rankmirrors.sh -P /usr/local/bin; chmod +x /usr/local/bin/rankmirrors.sh; rankmirrors.sh
+wget -qN --show-progress https://github.com/rern/rAudio-addons/raw/refs/heads/main/rankmirrors/rankmirrors.sh -P /usr/local/bin; chmod +x /usr/local/bin/rankmirrors.sh; rankmirrors.sh
 ```
