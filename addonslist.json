@@ -6,7 +6,7 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20260818"
+		, "version"     : "20260819"
 		, "revision"    : [
 			  "Fix: Frozen GUI when AirPlay enabled."
 			, "Fix: <c>*.cue</c> display."
