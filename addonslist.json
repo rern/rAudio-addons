@@ -6,17 +6,13 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20260801"
+		, "version"     : "20260818"
 		, "revision"    : [
-			  "Fix: Playback"
-			, "- Bio images"
-			, "- Bluetooth earbuds / devices - sampling not 44100:16:0"
-			, "- Character LCD"
-			, "- DSD sampling data"
-			, "- Embedded lyrics"
-			, "- Online coverarts"
-			, "- Value of software volume"
-			, "Fix: System - Spectrum OLED setting"
+			  "Fix: Frozen GUI when AirPlay enabled."
+			, "Fix: <c>*.cue</c> display."
+			, "Improve: Audio CD metadata and cover art - Normalize data"
+			, "Change: Player - Remove FFmpeg option (enabled by default - no more slow Library update)"
+			, "Change: Web Radio station and audio CD data - Normalize files to directory based."
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
