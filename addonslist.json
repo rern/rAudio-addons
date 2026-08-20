@@ -6,10 +6,12 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20260819"
+		, "version"     : "20260820"
 		, "revision"    : [
-			  "Fix: Frozen GUI when AirPlay enabled."
+			  "Fix: Library - Album - Remove from list."
+			, "Fix: Library - Tag Editor for <c>*.cue</c> files"
 			, "Fix: <c>*.cue</c> display."
+			, "Fix: Frozen GUI when AirPlay enabled."
 			, "Improve: Audio CD metadata and cover art - Normalize data"
 			, "Change: Player - Remove FFmpeg option (enabled by default - no more slow Library update)"
 			, "Change: Web Radio station and audio CD data - Normalize files to directory based."
