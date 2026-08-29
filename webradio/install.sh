@@ -5,9 +5,9 @@
 installstart $@
 
 curl -sL https://github.com/rern/rAudio-addons/raw/main/webradio/radiofrance.tar.xz | bsdtar xvf - -C /
+chown -R http:http $dirwebradio
 count=$( find -L $dirwebradio -type f -name data | wc -l )
 sed -i -E 's/("webradio": ).*/\1'$count'/' $dirmpd/counts
-data='{ "channel": "radiolist", "data": {"type":"webradio","count":'$count'} }'
-[[ -e /usr/bin/websocat ]] && echo $data | websocat ws://127.0.0.1:8080 || echo $data | wsdump ws://127.0.0.1:8080 &> /dev/null
+pushData radiolist '{ "channel": "radiolist", "data": {"type":"webradio","count":'$count'} }'
 
 installfinish
