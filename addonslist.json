@@ -6,15 +6,15 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20260820"
+		, "version"     : "20260909"
 		, "revision"    : [
-			  "Fix: Library - Album - Remove from list."
-			, "Fix: Library - Tag Editor for <c>*.cue</c> files"
-			, "Fix: <c>*.cue</c> display."
-			, "Fix: Frozen GUI when AirPlay enabled."
-			, "Improve: Audio CD metadata and cover art - Normalize data"
-			, "Change: Player - Remove FFmpeg option (enabled by default - no more slow Library update)"
-			, "Change: Web Radio station and audio CD data - Normalize files to directory based."
+			  "Fix: Library - Replace thumbnail"
+			, "Fix: Library - Search"
+			, "Fix: Playback - Booklet"
+			, "Fix: Playback - Software volume"
+			, "Fix: Features - CamillaDSP"
+			, "Fix: System - Character LCD"
+			, "Fix: System - Rotary Encoder - Software volume"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
@@ -22,7 +22,7 @@
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20260529 ]] && echo 1"
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20260709 ]] && echo 1"
 		, "notverified" : "Please <a href='https://github.com/rern/rAudio/discussions/2042'>install the latest image</a> to be able to update."
 	}
 	, "dab" : {
