@@ -6,15 +6,9 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20260909"
+		, "version"     : "20260913"
 		, "revision"    : [
-			  "Fix: Library - Replace thumbnail"
-			, "Fix: Library - Search"
-			, "Fix: Playback - Booklet"
-			, "Fix: Playback - Software volume"
-			, "Fix: Features - CamillaDSP"
-			, "Fix: System - Character LCD"
-			, "Fix: System - Rotary Encoder - Software volume"
+			  "Fix: Library - Track list"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
