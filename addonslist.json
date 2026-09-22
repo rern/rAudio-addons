@@ -6,9 +6,14 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20260913"
+		, "version"     : "20260922"
 		, "revision"    : [
-			  "Fix: Library - Track list"
+			  "Fix: Playback - AirPlay"
+			, "Fix: Playback - Character LCD for renderers"
+			, "Fix: Playback - Lyrics"
+			, "Fix: Playback - Spotify - Cover art"
+			, "Fix: Library - Online cover art in track list"
+			, "Fix: Library - Web radio bookmarks"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
@@ -16,8 +21,8 @@
 		, "thumbnail"   : "/assets/img/coverart.svg"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
-		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20260709 ]] && echo 1"
-		, "notverified" : "Please <a href='https://github.com/rern/rAudio/discussions/2042'>install the latest image</a> to be able to update."
+		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20260719 ]] && echo 1"
+		, "notverified" : "Please <a href='https://github.com/rern/rAudio/discussions/2042' target='_blank'>install the latest image</a> to be able to update."
 	}
 	, "dab" : {
 		  "title"       : "DAB Radio"
