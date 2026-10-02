@@ -6,19 +6,19 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20260922"
+		, "version"     : "20261002"
 		, "revision"    : [
-			  "Fix: Playback - AirPlay"
-			, "Fix: Playback - Character LCD for renderers"
-			, "Fix: Playback - Lyrics"
-			, "Fix: Playback - Spotify - Cover art"
-			, "Fix: Library - Online cover art in track list"
-			, "Fix: Library - Web radio bookmarks"
+			  "Fix: Library - Mode display with hidden counts"
+			, "Fix: Playback - Equalizer"
+			, "Fix: Playback - Radio Paradise and Radio France start / stop"
+			, "Fix: Playback - Scrobble"
+			, "Fix: Playback - Spectrum OLED"
+			, "Fix: Features - CamillaDSP"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
 		, "nouninstall" : 1
-		, "thumbnail"   : "/assets/img/coverart.svg"
+		, "thumbnail"   : "/assets/img/coverart.svg?v=1788510000"
 		, "sourcecode"  : "https://github.com/rern/rAudio"
 		, "installurl"  : "https://github.com/rern/rAudio/raw/main/install.sh"
 		, "verify"      : "[[ $( cat /srv/http/data/addons/r1 ) < 20260719 ]] && echo 1"
