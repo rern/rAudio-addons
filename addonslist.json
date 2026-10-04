@@ -6,7 +6,7 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20261002"
+		, "version"     : "20261003"
 		, "revision"    : [
 			  "Fix: Library - Mode display with hidden counts"
 			, "Fix: Playback - Equalizer"
