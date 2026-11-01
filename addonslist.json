@@ -6,14 +6,17 @@
 	}
 	, "r1" : {
 		  "title"       : "rAudio"
-		, "version"     : "20261003"
+		, "version"     : "20261101"
 		, "revision"    : [
-			  "Fix: Library - Mode display with hidden counts"
-			, "Fix: Playback - Equalizer"
-			, "Fix: Playback - Radio Paradise and Radio France start / stop"
-			, "Fix: Playback - Scrobble"
-			, "Fix: Playback - Spectrum OLED"
-			, "Fix: Features - CamillaDSP"
+			  "Fix: Playback - Bluetooth buttons"
+			, "Fix: Library - Search - Album track list"
+			, "Fix: Settings - Color"
+			, "Fix: Player - Change Output device"
+			, "Improve: Playback - Streamline volume controls"
+			, "Improve: Playback - Maintain volume level of each device"
+			, "Improve: Networks - Bluetooth - Connect / Disconnect"
+			, "Improve: Features - CamillaDSP - Bluetooth receiver / sender"
+			, "Improve: Features - CamillaDSP - Configuration directory"
 			, "<a href='https://github.com/rern/rAudio/releases' target='_blank'>Change log</a>"
 		]
 		, "description" : "Updates for rAudio"
